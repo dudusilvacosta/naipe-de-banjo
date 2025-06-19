@@ -1,13 +1,18 @@
 <template>
-  <q-page padding>
-    <div class="q-pa-md">
-      <div class="q-gutter-sm row items-start">
-        <q-img src="../assets/foto.jpg" :ratio="16 / 9" />
-      </div>
-    </div>
-  </q-page>
+  <div class="row justify-center q-gutter-sm">
+    <q-intersection v-for="index in 60" :key="index" transition="scale" class="example-item">
+      <q-card flat bordered class="q-ma-sm">
+        <img src="../assets/foto.jpg" />
+      </q-card>
+    </q-intersection>
+  </div>
 </template>
 
-<script setup lang="ts">
-//
-</script>
+<style lang="sass" scoped>
+.example-item
+  width: 290px
+
+@media screen and (max-width: 600px)
+  .example-item
+    width: 100%
+</style>
