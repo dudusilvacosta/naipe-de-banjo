@@ -2,7 +2,7 @@
   <q-page padding>
     <div class="q-pa-md">
       <div class="q-gutter-sm row items-start">
-        <q-img src="https://picsum.photos/500/300" :ratio="16 / 9" />
+        <q-img src="../assets/foto.jpg" :ratio="16 / 9" />
       </div>
     </div>
   </q-page>
