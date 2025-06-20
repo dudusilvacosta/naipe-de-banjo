@@ -2,7 +2,7 @@
   <div class="q-pa-md">
     <div class="categorias">
       <div class="q-pa-md q-gutter-sm">
-        <div class="text-h4">
+        <div class="text-h5">
           <router-link
             to="/cifras"
             class="q-item q-item-type row no-wrap"
@@ -14,7 +14,7 @@
 
         <q-separator />
 
-        <div class="text-h4">
+        <div class="text-h5">
           <router-link
             to="/cifras"
             class="q-item q-item-type row no-wrap"
@@ -26,7 +26,7 @@
 
         <q-separator />
 
-        <div class="text-h4">
+        <div class="text-h5">
           <router-link
             to="/cifras"
             class="q-item q-item-type row no-wrap"
@@ -38,7 +38,7 @@
 
         <q-separator />
 
-        <div class="text-h4">
+        <div class="text-h5">
           <router-link
             to="/cifras"
             class="q-item q-item-type row no-wrap"
@@ -50,7 +50,7 @@
 
         <q-separator />
 
-        <div class="text-h4">
+        <div class="text-h5">
           <router-link
             to="/cifras"
             class="q-item q-item-type row no-wrap"
