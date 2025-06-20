@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-center q-gutter-sm">
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
@@ -8,7 +8,7 @@
         />
       </q-card>
     </q-intersection>
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
@@ -16,7 +16,7 @@
         />
       </q-card>
     </q-intersection>
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
@@ -24,7 +24,7 @@
         />
       </q-card>
     </q-intersection>
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
@@ -32,7 +32,7 @@
         />
       </q-card>
     </q-intersection>
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
@@ -40,7 +40,7 @@
         />
       </q-card>
     </q-intersection>
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
@@ -48,7 +48,7 @@
         />
       </q-card>
     </q-intersection>
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
@@ -56,7 +56,7 @@
         />
       </q-card>
     </q-intersection>
-    <q-intersection transition="scale" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"

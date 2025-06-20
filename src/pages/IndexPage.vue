@@ -1,6 +1,6 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <h2>História</h2>
+  <q-page class="q-pa-md">
+    <h3>História</h3>
   </q-page>
 </template>
 
