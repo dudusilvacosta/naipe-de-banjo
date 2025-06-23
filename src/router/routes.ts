@@ -7,6 +7,11 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
   },
   {
+    path: '/historia',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/HistoriaPage.vue') }],
+  },
+  {
     path: '/fotos',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/FotosPage.vue') }],
@@ -55,6 +60,11 @@ const routes: RouteRecordRaw[] = [
     path: '/links',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/LinksPage.vue') }],
+  },
+  {
+    path: '/recados',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/RecadoPage.vue') }],
   },
   {
     path: '/:catchAll(.*)*',

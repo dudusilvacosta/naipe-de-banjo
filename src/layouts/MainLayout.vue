@@ -32,10 +32,16 @@ import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink
 
 const linksList: EssentialLinkProps[] = [
   {
+    title: 'Início',
+    caption: 'boas-vindas',
+    icon: 'home',
+    link: '/',
+  },
+  {
     title: 'História',
     caption: 'o banjo no batalhão',
     icon: 'menu_book',
-    link: '/',
+    link: '/historia',
   },
   {
     title: 'Fotos',
@@ -66,6 +72,12 @@ const linksList: EssentialLinkProps[] = [
     caption: 'materiais de estudo',
     icon: 'cloud',
     link: '/links',
+  },
+  {
+    title: 'Recados',
+    caption: 'fique informado',
+    icon: 'notifications',
+    link: '/recados',
   },
 ];
 
