@@ -33,19 +33,19 @@ import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink
 const linksList: EssentialLinkProps[] = [
   {
     title: 'História',
-    caption: 'nossa história',
+    caption: 'o banjo no batalhão',
     icon: 'menu_book',
     link: '/',
   },
   {
     title: 'Fotos',
-    caption: 'nossas fotos',
+    caption: 'oficinas, ensaios e cortejos',
     icon: 'image',
     link: '/fotos',
   },
   {
     title: 'Vídeos',
-    caption: 'nossos vídeos',
+    caption: 'oficinas, ensaios e cortejos',
     icon: 'smart_display',
     link: '/videos',
   },
