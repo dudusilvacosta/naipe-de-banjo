@@ -5,7 +5,7 @@
     </q-breadcrumbs>
   </div>
   <div class="ibg">
-    <q-scroll-area style="height: calc(100vh - 50px); width: 100%">
+    <q-scroll-area style="height: calc(100svh - 50px); width: 100%">
       <div class="q-ma-md q-py-xs">
         <p>É muito bom ver você em nosso web app dos Banjoístas do Batalhão da Estrela!</p>
         <p>

@@ -68,7 +68,7 @@
 </template>
 <style scoped>
 .categorias {
-  height: calc(100vh - 50px);
+  height: calc(100svh - 50px);
   display: flex;
   flex-wrap: wrap;
 }
