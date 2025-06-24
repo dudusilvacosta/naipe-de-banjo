@@ -1,4 +1,9 @@
 <template>
+  <div class="q-pa-md q-gutter-sm">
+    <q-breadcrumbs>
+      <q-breadcrumbs-el label="Fotos" icon="image" />
+    </q-breadcrumbs>
+  </div>
   <div class="row justify-center q-gutter-sm" style="margin-top: 1px">
     <q-intersection v-for="index in 30" :key="index" class="example-item" @click="card = true">
       <q-card flat bordered>

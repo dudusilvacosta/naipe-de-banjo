@@ -1,4 +1,9 @@
 <template>
+  <div class="q-pa-md q-gutter-sm">
+    <q-breadcrumbs>
+      <q-breadcrumbs-el label="Links" icon="link" />
+    </q-breadcrumbs>
+  </div>
   <a
     href="https://drive.google.com/file/d/1MvmmSv0lq9RauqsHt5MF9dIPHAkz5S0t/view?usp=drive_link"
     target="_blank"

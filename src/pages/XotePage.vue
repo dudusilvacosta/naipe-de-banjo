@@ -1,4 +1,10 @@
 <template>
+  <div class="q-pa-md q-gutter-sm">
+    <q-breadcrumbs>
+      <q-breadcrumbs-el label="Cifras" icon="music_note" />
+      <q-breadcrumbs-el label="Xote" />
+    </q-breadcrumbs>
+  </div>
   <div class="q-pa-md">
     <q-list padding bordered class="rounded-borders">
       <q-expansion-item

@@ -1,4 +1,9 @@
 <template>
+  <div class="q-pa-md q-gutter-sm">
+    <q-breadcrumbs>
+      <q-breadcrumbs-el label="Cifras" icon="music_note" />
+    </q-breadcrumbs>
+  </div>
   <div class="categorias ibg">
     <div class="q-pa-md q-gutter-sm">
       <div class="text-h6">

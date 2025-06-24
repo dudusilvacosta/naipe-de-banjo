@@ -3,10 +3,9 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-        <q-avatar>
-          <img src="../assets/logo.png" />
-        </q-avatar>
-        <q-toolbar-title> Naipe de Banjo </q-toolbar-title>
+        <q-toolbar-title style="color: #be961e; font-weight: bold">
+          Naipe de Banjo
+        </q-toolbar-title>
 
         <div>v1.0.0</div>
       </q-toolbar>
@@ -70,7 +69,7 @@ const linksList: EssentialLinkProps[] = [
   {
     title: 'Links',
     caption: 'materiais de estudo',
-    icon: 'cloud',
+    icon: 'link',
     link: '/links',
   },
   {

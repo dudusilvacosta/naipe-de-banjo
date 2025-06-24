@@ -1,4 +1,9 @@
 <template>
+  <div class="q-pa-md q-gutter-sm">
+    <q-breadcrumbs>
+      <q-breadcrumbs-el label="Aulas" icon="school" />
+    </q-breadcrumbs>
+  </div>
   <div class="row justify-center q-gutter-sm">
     <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">

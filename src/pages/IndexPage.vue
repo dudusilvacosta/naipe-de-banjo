@@ -1,7 +1,12 @@
 <template>
-  <div class="q-ma-md ibg">
-    <q-scroll-area style="height: 90vh; max-width: 100%">
-      <div class="q-py-xs">
+  <div class="q-pa-md q-gutter-sm">
+    <q-breadcrumbs>
+      <q-breadcrumbs-el label="Início" icon="home" />
+    </q-breadcrumbs>
+  </div>
+  <div class="ibg">
+    <q-scroll-area style="height: calc(100vh - 50px); width: 100%">
+      <div class="q-ma-md q-py-xs">
         <p>É muito bom ver você em nosso web app dos Banjoístas do Batalhão da Estrela!</p>
         <p>
           Aqui você encontra um pouco da história do banjo no batalhão, fotos, vídeos, cifras de
