@@ -66,6 +66,102 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Toada do Igapó"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">Dm</p>
+            <p>E morena já faz mais de ano</p>
+            <p class="vermelho">
+              D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Que eu não voltei pra te espiar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Fui olhar outros campos Vi foi tanto lugar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Fui olhar outros campos Vi foi tanto lugar</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; Gm
+            </p>
+            <p>E no meu peito bate uma saudade forte</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; A
+            </p>
+            <p>E o vento do Norte</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;Dm
+            </p>
+            <p>Me levou pro além-mar</p>
+
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;Dm
+            </p>
+            <p>Meu vaqueiro, o Boi Pavulagem é sina</p>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;Dm
+            </p>
+            <p>Meu vaqueiro, o Boi Pavulagem é sina</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Que balança nos festejos</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Das pequenas do Igapó</p>
+            <p class="vermelho">
+              D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Que balança nos festejos</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Das pequenas do Igapó</p>
+
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+            </p>
+            <p>Repare a estrela nesse guarnecê pequeno</p>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+            </p>
+            <p>Repare a estrela nesse guarnecê pequeno</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm &nbsp; &nbsp; &nbsp;A &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Taí o boi, taí o boi, morena</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
     </q-list>
   </div>
 </template>

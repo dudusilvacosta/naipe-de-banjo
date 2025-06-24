@@ -24,6 +24,7 @@
 
 <style scoped>
 .ibg {
+  max-width: 800px;
   background-image: url('../assets/banjonotas.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
