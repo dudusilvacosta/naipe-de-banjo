@@ -1,5 +1,5 @@
 <template>
-  <div class="categorias">
+  <div class="categorias ibg">
     <div class="q-pa-md q-gutter-sm">
       <div class="text-h6">
         <router-link
@@ -63,7 +63,14 @@
 </template>
 <style scoped>
 .categorias {
+  height: calc(100vh - 50px);
   display: flex;
   flex-wrap: wrap;
+}
+
+.ibg {
+  background-image: url('../assets/cifras.png');
+  background-repeat: repeat-y;
+  background-position: right top;
 }
 </style>
