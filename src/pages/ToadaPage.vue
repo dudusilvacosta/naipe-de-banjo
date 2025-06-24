@@ -11,6 +11,81 @@
         dense
         dense-toggle
         expand-separator
+        label="Estrela do Chão"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">Cm</p>
+            <p>Menina que pula a fogueira Teu boi já chegou</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;G#
+            </p>
+            <p>Vem pra perto de mim</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A# &nbsp;&nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Cm
+            </p>
+            <p>Vem me ouvir que sou teu cantador</p>
+            <p class="vermelho">Cm</p>
+            <p>E canto cantigas bonitas Toadas de amor</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp; G#
+            </p>
+            <p>Coração me encanta</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;A# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Cm
+            </p>
+            <p>Incendeia e clareia o que sou</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A# &nbsp;&nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; G
+            </p>
+            <p>Eu que sou moleque querendo</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Cm
+            </p>
+            <p>Abraçar o mundo</p>
+            <p class="vermelho">
+              G# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+            </p>
+            <p>E capitão do batalhão desse boi</p>
+            <p class="vermelho">
+              C &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;G
+            </p>
+            <p>Ê boi vê se dança pra ela</p>
+            <p class="vermelho">
+              Am &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; G
+            </p>
+            <p>A mais bela estrela do chão</p>
+            <p class="vermelho">
+              F &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; C
+            </p>
+            <p>Teu céu é aqui no terreiro</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;G
+            </p>
+            <p>Quero ser o primeiro</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; C
+            </p>
+            <p>A sentir teu calor teu clarão</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
         label="Iniciais BP"
         header-class="text-primary"
       >

@@ -65,8 +65,8 @@
             <p>Chico Braga eu me lembro Batucando na rua</p>
             <p class="vermelho">
               F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7 &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; F#m
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; F#m
             </p>
             <p>Falando que a princesa Nasceu do sol e da lua</p>
             <p class="vermelho">
