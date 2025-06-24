@@ -1,11 +1,11 @@
 <template>
-  <div class="q-pa-md q-gutter-sm">
+  <div class="q-pl-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Início" icon="home" />
     </q-breadcrumbs>
   </div>
   <div class="ibg">
-    <q-scroll-area style="height: calc(100svh - 50px); width: 100%">
+    <q-scroll-area style="height: calc(100svh - 71px); width: 100%">
       <div class="q-ma-md q-py-xs">
         <p>É muito bom ver você em nosso web app dos Banjoístas do Batalhão da Estrela!</p>
         <p>

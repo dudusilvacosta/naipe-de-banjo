@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md q-gutter-sm">
+  <div class="q-pl-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Vídeos" icon="smart_display" />
     </q-breadcrumbs>

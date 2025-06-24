@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md q-gutter-sm">
+  <div class="q-pl-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
@@ -68,7 +68,7 @@
 </template>
 <style scoped>
 .categorias {
-  height: calc(100svh - 50px);
+  height: calc(100svh - 71px);
   display: flex;
   flex-wrap: wrap;
 }
