@@ -30,7 +30,7 @@
 
       <q-separator />
 
-      <div class="text-h6">
+      <!-- <div class="text-h6">
         <router-link
           to="/cifras/retumbao"
           class="q-item q-item-type row no-wrap"
@@ -40,7 +40,7 @@
         </router-link>
       </div>
 
-      <q-separator />
+      <q-separator /> -->
 
       <div class="text-h6">
         <router-link
