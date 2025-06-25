@@ -44,7 +44,6 @@
               &nbsp; &nbsp; &nbsp; &nbsp; F#m
             </p>
             <p>Maré não está pra peixe Já é hora de ir embora</p>
-
             <p class="vermelho">
               F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -57,7 +56,6 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
             </p>
             <p>Vaguei, linda sereia Nos versos dessa canção</p>
-
             <p class="vermelho">
               F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp;C#7
@@ -81,7 +79,6 @@
               &nbsp; &nbsp; &nbsp; &nbsp;F#m
             </p>
             <p>Que a menina morena À noite, virou sereia</p>
-
             <p class="vermelho">
               F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
