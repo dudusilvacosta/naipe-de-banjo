@@ -7,6 +7,7 @@
   </div>
   <div class="q-pa-md">
     <q-list padding bordered class="rounded-borders">
+      <!-- Carimbó da Ilha -->
       <q-expansion-item
         dense
         dense-toggle
@@ -94,6 +95,7 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Carimbó do Marajó -->
       <q-expansion-item
         dense
         dense-toggle

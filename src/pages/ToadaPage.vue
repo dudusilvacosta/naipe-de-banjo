@@ -7,6 +7,7 @@
   </div>
   <div class="q-pa-md">
     <q-list padding bordered class="rounded-borders">
+      <!-- Balança de Ouro -->
       <q-expansion-item
         dense
         dense-toggle
@@ -68,6 +69,7 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Boi da Lua -->
       <q-expansion-item
         dense
         dense-toggle
@@ -133,6 +135,7 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Estrela do Chão -->
       <q-expansion-item
         dense
         dense-toggle
@@ -208,6 +211,7 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Iniciais BP -->
       <q-expansion-item
         dense
         dense-toggle
@@ -267,6 +271,7 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Toada do Igapó -->
       <q-expansion-item
         dense
         dense-toggle
