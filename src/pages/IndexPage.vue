@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pl-md">
+  <div class="q-pa-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Início" icon="home" />
     </q-breadcrumbs>

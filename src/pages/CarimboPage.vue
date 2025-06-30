@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pl-md">
+  <div class="q-pa-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
       <q-breadcrumbs-el label="Carimbó" />
@@ -142,12 +142,11 @@
             <p>Ver a flor no galho da roseira</p>
             <p class="vermelho">
               Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+              &nbsp; &nbsp; D
             </p>
             <p>Pelo vento forte perfumar</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; A7
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7
             </p>
             <p>Dança no balanço do milheiro</p>
             <p class="vermelho">

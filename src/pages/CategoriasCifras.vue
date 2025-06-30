@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pl-md">
+  <div class="q-pa-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
@@ -75,7 +75,7 @@
 
 .ibg {
   background-image: url('../assets/cifras.png');
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-position: right top;
 }
 </style>

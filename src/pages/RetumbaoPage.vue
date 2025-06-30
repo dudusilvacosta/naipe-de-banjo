@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pl-md">
+  <div class="q-pa-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
       <q-breadcrumbs-el label="Retumbão" />

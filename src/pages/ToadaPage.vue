@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pl-md">
+  <div class="q-pa-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
       <q-breadcrumbs-el label="Toada" />
@@ -268,6 +268,71 @@
             <p>Estrelinhas tão cintilantes</p>
             <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7</p>
             <p>Que é pra todo mundo ver</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Reunida -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Reunida"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp; E
+            </p>
+            <p>Lá vem meu boi, lá vem pelas ruas de Belém</p>
+            <p class="vermelho">
+              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp; E
+            </p>
+            <p>Lá vem meu boi, lá vem pelas ruas de Belém</p>
+            <p class="vermelho">
+              C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G#m &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Quem querer eu dou meu coração</p>
+            <p class="vermelho">
+              C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; G#m
+            </p>
+            <p>Pra quela moça donzela</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E
+            </p>
+            <p>Que sorrir pro meu batalhão</p>
+            <p class="vermelho">
+              C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#m &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E
+            </p>
+            <p>Vem meu amor pelo céu tem estrelas</p>
+            <p class="vermelho">
+              C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G#m
+            </p>
+            <p>Anel brilhante da lua</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp;F# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;F &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Lumiando pra te balançar</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Balanço esse boi pra te ver dançar</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E
+            </p>
+            <p>Balanço esse boi (ê boi) Pra te na morar</p>
           </q-card-section>
         </q-card>
       </q-expansion-item>
