@@ -168,6 +168,62 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Dança do carimbó (Dona Maria) -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Dança do carimbó (Dona Maria)"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              C7
+            </p>
+            <p>Dona Maria que dança é essa</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Que a gente dança só</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+            </p>
+            <p>Dona Maria que dança é essa</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>É carimbó, é carimbó</p>
+            <p class="vermelho">
+              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; F
+            </p>
+            <p>Braço pra cima, braço pra baixo</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; F
+            </p>
+            <p>Agora eu já sei como é que é</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+            </p>
+            <p>Só falta bater a mão</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Batendo também o pé</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+            </p>
+            <p>Só falta bater a mão</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Batendo também o pé</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
     </q-list>
   </div>
 </template>
