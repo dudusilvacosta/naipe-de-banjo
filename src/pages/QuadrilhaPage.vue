@@ -166,6 +166,68 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Olha Pro Céu -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Olha pro Céu"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">Dm</p>
+            <p>Olha pro céu, meu amor</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Vê como ele está lindo</p>
+            <p class="vermelho">
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp; Dm
+            </p>
+            <p>Olha praquele balão multicor</p>
+            <p class="vermelho">
+              A &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp; &nbsp; Dm
+            </p>
+            <p>Como no céu vai sumindo</p>
+            <p class="vermelho">D</p>
+            <p>Foi numa noite igual a esta</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
+            </p>
+            <p>Que tu me deste o coração</p>
+            <p>O céu estava assim em festa</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+            </p>
+            <p>Porque era noite de São João</p>
+            <p class="vermelho">
+              Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
+            </p>
+            <p>Havia balões no ar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; G
+            </p>
+            <p>Xote, baião no salão</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; D
+            </p>
+            <p>No terreiro o teu olhar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; D
+            </p>
+            <p>Que incendiou meu coração</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
     </q-list>
   </div>
 </template>
