@@ -18,13 +18,13 @@
         <q-card>
           <q-card-section>
             <p class="vermelho">Dm</p>
-            <p>Canoa, me leva pra ver minha amada Que tá no cruzeiro</p>
+            <p>Canoa, me leva pra ver minha amada que tá no cruzeiro</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; A
             </p>
-            <p>Fiando e bordando o couro do boi As minhas bandeiras</p>
+            <p>Fiando e bordando o couro do boi as minhas bandeiras</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm
@@ -38,7 +38,7 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
             </p>
-            <p>Passando ligeira no céu do Guamá Pra mim, um sinal sagrado e bonito</p>
+            <p>Passando ligeira no céu do Guamá pra mim, um sinal sagrado e bonito</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -146,7 +146,7 @@
         <q-card>
           <q-card-section>
             <p class="vermelho">Cm</p>
-            <p>Menina que pula a fogueira Teu boi já chegou</p>
+            <p>Menina que pula a fogueira teu boi já chegou</p>
             <p class="vermelho">
               &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
               &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;G#
@@ -158,7 +158,7 @@
             </p>
             <p>Vem me ouvir que sou teu cantador</p>
             <p class="vermelho">Cm</p>
-            <p>E canto cantigas bonitas Toadas de amor</p>
+            <p>E canto cantigas bonitas toadas de amor</p>
             <p class="vermelho">
               &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
               &nbsp; &nbsp; &nbsp; G#
@@ -358,7 +358,7 @@
               &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
             </p>
-            <p>Fui olhar outros campos Vi foi tanto lugar</p>
+            <p>Fui olhar outros campos vi foi tanto lugar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -369,7 +369,7 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; A
             </p>
-            <p>E o vento do Norte</p>
+            <p>E o vento do norte</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp;Dm
@@ -400,7 +400,7 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; Dm
             </p>
-            <p>Das pequenas do Igapó</p>
+            <p>Das pequenas do igapó</p>
 
             <p class="vermelho">
               Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
