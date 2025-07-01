@@ -41,7 +41,7 @@
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
-          src="hhttps://www.youtube.com/embed/9088ULOLQa4?si=YUBu1u1abwy4JOrJ"
+          src="https://www.youtube.com/embed/9088ULOLQa4?si=YUBu1u1abwy4JOrJ"
         />
       </q-card>
     </q-intersection>
