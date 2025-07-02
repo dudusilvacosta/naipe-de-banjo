@@ -44,13 +44,13 @@ const linksList: EssentialLinkProps[] = [
   },
   {
     title: 'Fotos',
-    caption: 'oficinas, ensaios e cortejos',
+    caption: 'cortejos',
     icon: 'image',
     link: '/fotos',
   },
   {
     title: 'Vídeos',
-    caption: 'oficinas, ensaios e cortejos',
+    caption: 'momentos',
     icon: 'smart_display',
     link: '/videos',
   },
@@ -68,7 +68,7 @@ const linksList: EssentialLinkProps[] = [
   },
   {
     title: 'Links',
-    caption: 'materiais de estudo',
+    caption: 'downloads e mais',
     icon: 'link',
     link: '/links',
   },
