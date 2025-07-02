@@ -13,10 +13,6 @@
           músicas, aulas de teoria musical, links para download de apostilas e também fica por
           dentro de todos os recados importantes.
         </p>
-        <p>
-          Para navegar, basta clicar no ícone de menu no canto superior esquerdo da tela e explorar
-          à vontade!
-        </p>
       </div>
     </q-scroll-area>
   </div>

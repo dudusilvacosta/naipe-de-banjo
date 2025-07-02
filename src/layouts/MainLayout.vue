@@ -58,7 +58,7 @@ const linksList: EssentialLinkProps[] = [
     title: 'Cifras',
     caption: 'músicas cifradas',
     icon: 'music_note',
-    link: '/categorias/cifras',
+    link: '/cifras',
   },
   {
     title: 'Aulas',

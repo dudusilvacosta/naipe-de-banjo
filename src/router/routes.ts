@@ -27,9 +27,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/VideosPage.vue') }],
   },
   {
-    path: '/categorias/cifras',
+    path: '/cifras',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/CategoriasCifras.vue') }],
+    children: [{ path: '', component: () => import('src/pages/CifrasPage.vue') }],
   },
   {
     path: '/cifras/carimbo',
@@ -60,6 +60,21 @@ const routes: RouteRecordRaw[] = [
     path: '/aulas',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/AulasPage.vue') }],
+  },
+  {
+    path: '/aulas/teoria-musical',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/TeoriaMusicalPage.vue') }],
+  },
+  {
+    path: '/aulas/acordes-cifras',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/AcordesCifrasPage.vue') }],
+  },
+  {
+    path: '/aulas/graus-harmonia',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/GrausHarmoniaPage.vue') }],
   },
   {
     path: '/links',
