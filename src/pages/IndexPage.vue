@@ -5,7 +5,7 @@
     </q-breadcrumbs>
   </div>
   <div class="ibg">
-    <q-scroll-area style="height: calc(100svh - 71px); width: 100%">
+    <q-scroll-area style="height: calc(100svh - 103px); width: 100%">
       <div class="q-ma-md q-py-xs">
         <p>É muito bom ver você em nosso web app dos Banjoístas do Batalhão da Estrela!</p>
         <p>
@@ -20,7 +20,7 @@
 
 <style scoped>
 .ibg {
-  max-width: 800px;
+  max-width: 500px;
   background-image: url('../assets/banjonotas.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
