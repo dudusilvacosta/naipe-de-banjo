@@ -2,7 +2,7 @@
   <div class="q-pa-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Fotos" icon="image" />
-      <q-breadcrumbs-el label="Junho 2025" />
+      <q-breadcrumbs-el label="Junho 2024" />
     </q-breadcrumbs>
   </div>
   <div class="row justify-center q-gutter-sm">
