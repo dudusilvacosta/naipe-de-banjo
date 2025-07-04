@@ -6,7 +6,7 @@
   </div>
   <div class="q-px-lg q-py-md">
     <q-timeline color="secondary">
-      <q-timeline-entry heading> Timeline heading </q-timeline-entry>
+      <q-timeline-entry heading> A ideia </q-timeline-entry>
 
       <q-timeline-entry title="Event Title" subtitle="February 22, 1986">
         <div>
@@ -30,7 +30,7 @@
         </div>
       </q-timeline-entry>
 
-      <q-timeline-entry heading> November, 2017 </q-timeline-entry>
+      <q-timeline-entry heading> A estreia </q-timeline-entry>
 
       <q-timeline-entry title="Event Title" subtitle="February 22, 1986">
         <div>

@@ -6,7 +6,7 @@
   </div>
   <div class="q-pa-md">
     <q-list bordered separator>
-      <q-item clickable v-ripple to="/fotos/cirio2025" exact>
+      <q-item clickable v-ripple to="/fotos/junho25" exact>
         <q-item-section avatar>
           <q-avatar rounded size="100px">
             <img
@@ -17,7 +17,7 @@
         <q-item-section>Arraial da Floresta</q-item-section>
       </q-item>
 
-      <q-item clickable v-ripple to="/fotos/junho25" exact>
+      <q-item clickable v-ripple to="/fotos/cirio24" exact>
         <q-item-section avatar>
           <q-avatar rounded size="100px">
             <img
@@ -28,7 +28,7 @@
         <q-item-section>Círio 2024</q-item-section>
       </q-item>
 
-      <q-item clickable v-ripple to="/fotos/cirio2024" exact>
+      <q-item clickable v-ripple to="/fotos/junho24" exact>
         <q-item-section avatar>
           <q-avatar rounded size="100px">
             <img
