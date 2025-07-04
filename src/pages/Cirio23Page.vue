@@ -2,35 +2,35 @@
   <div class="q-pa-md">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Fotos" icon="image" />
-      <q-breadcrumbs-el label="Junho 2024" />
+      <q-breadcrumbs-el label="Outubro 2023" />
     </q-breadcrumbs>
   </div>
   <div class="row justify-center q-gutter-sm">
     <q-intersection class="example-item" @click="card10 = true">
       <q-card flat bordered>
         <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-24/1.jpeg?raw=true"
+          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-23/1.jpeg?raw=true"
         />
       </q-card>
     </q-intersection>
     <q-dialog v-model="card10">
       <q-card class="my-card">
         <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-24/1.jpeg?raw=true"
+          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-23/1.jpeg?raw=true"
         />
       </q-card>
     </q-dialog>
     <q-intersection class="example-item" @click="card9 = true">
       <q-card flat bordered>
         <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-24/2.jpeg?raw=true"
+          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-23/2.jpeg?raw=true"
         />
       </q-card>
     </q-intersection>
     <q-dialog v-model="card9">
       <q-card class="my-card">
         <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-24/2.jpeg?raw=true"
+          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-23/2.jpeg?raw=true"
         />
       </q-card>
     </q-dialog>

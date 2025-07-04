@@ -38,6 +38,17 @@
         </q-item-section>
         <q-item-section>Arraial do Saber</q-item-section>
       </q-item>
+
+      <q-item clickable v-ripple to="/fotos/cirio23" exact>
+        <q-item-section avatar>
+          <q-avatar rounded size="100px">
+            <img
+              src="https://420576d5f5d16b12d00d53a989e5098a.cdn.bubble.io/f1694728956788x702714936218019800/376008234_18273573952153912_4564337670266088111_n.jpg"
+            />
+          </q-avatar>
+        </q-item-section>
+        <q-item-section>Círio 2023</q-item-section>
+      </q-item>
     </q-list>
   </div>
 </template>

@@ -5,11 +5,19 @@
     </q-breadcrumbs>
   </div>
   <div class="row justify-center q-gutter-sm">
-    <q-intersection v-for="index in 30" :key="index" class="example-item">
+    <q-intersection class="example-item">
       <q-card flat bordered class="q-ma-sm">
         <q-video
           :ratio="16 / 9"
-          src="https://www.youtube.com/embed/DAGp4eleam4?si=yh7wMG3h9pRQDoJX"
+          src="https://www.youtube.com/embed/RTBWrJWvTvs?si=utNw-cwOy1UjKwyJ"
+        />
+      </q-card>
+    </q-intersection>
+    <q-intersection class="example-item">
+      <q-card flat bordered class="q-ma-sm">
+        <q-video
+          :ratio="16 / 9"
+          src="https://www.youtube.com/embed/NgOI7yVn-lk?si=4nIaA92Uu-Hl03T3"
         />
       </q-card>
     </q-intersection>
