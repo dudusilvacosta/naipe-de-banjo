@@ -219,6 +219,106 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Boi da Estrela -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Boi da Estrela"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D#m7</p>
+              <p>A roseira tá florida</p>
+
+              <p class="vermelho">
+                G#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#m
+              </p>
+              <p>o jardim tá perfumado</p>
+
+              <p class="vermelho">F#m</p>
+              <p>Vento da campina</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; G#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#m
+              </p>
+              <p>O céu todo estrelado</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; C#m</p>
+              <p>E a lua faz clarão</p>
+
+              <p class="vermelho">G#7</p>
+              <p>O terreiro iluminado</p>
+
+              <p class="vermelho">
+                A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#m &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; F#m
+              </p>
+              <p>Vem chegando o boi da estrela</p>
+
+              <p class="vermelho">
+                F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;D#m7
+              </p>
+              <p>Trazendo mastro e bandeira</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; G#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; C#m
+              </p>
+              <p>De São João do Carneirinho</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; D#m7
+              </p>
+              <p>Vem trazendo um batalhão</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;G#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; C#m
+              </p>
+              <p>Cantando e dançando toada de boi</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;C#m
+              </p>
+              <p>Dança boi da estrela</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#m
+              </p>
+              <p>No clarão da lua cheia</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp;F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C#m
+              </p>
+              <p>Dança boi da estrela</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;C#m
+              </p>
+              <p>No clarão do sol dourado</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;D#m7
+              </p>
+              <p>Dança para o sol e para lua</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#7 &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                C#m
+              </p>
+              <p>No meio da praça No meio da rua</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Estrela do Chão -->
         <q-expansion-item
           dense
