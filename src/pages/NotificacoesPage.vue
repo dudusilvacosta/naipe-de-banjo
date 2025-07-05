@@ -6,7 +6,7 @@
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Notificações" icon="notifications" />
     </q-breadcrumbs>
-    <div class="q-pa-md row justify-center">
+    <div class="q-pa-md row">
       <div style="width: 100%; max-width: 400px">
         <q-chat-message
           :text="[
