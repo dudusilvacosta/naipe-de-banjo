@@ -9,6 +9,87 @@
     </q-breadcrumbs>
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
+        <!-- Boi Brinquedo -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Boi Brinquedo"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">D</p>
+              <p>Vem chegando o mês de maio</p>
+              <p>E eu já vou me preparando</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              </p>
+              <p>Com bandeiras, fitas, flores</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              </p>
+              <p>Com as cores do arco-íris</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D</p>
+              <p>Vou serenando e imaginando o boi azul</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp;&nbsp; D &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              </p>
+              <p>Balanceando com seu batalhão da estrela</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; D</p>
+              <p>E pelas ruas de Belém vira um folguedo</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; D
+              </p>
+              <p>Vira um tesouro da cultura popular</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                D
+              </p>
+              <p>Dança boi pavulagem, dança que eu quero ver</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; D
+              </p>
+              <p>Dança e balança, pelas ruas eu quero ver</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;D
+              </p>
+              <p>Dança boi pavulagem, dança que eu quero ver</p>
+
+              <p class="vermelho">
+                Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E
+              </p>
+              <p>Meu brinquedo encantador,</p>
+
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+              </p>
+              <p>prenda bela de São João…</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Balança de Ouro -->
         <q-expansion-item
           dense
