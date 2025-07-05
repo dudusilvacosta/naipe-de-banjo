@@ -2,152 +2,154 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <q-breadcrumbs class="q-pa-md">
-    <q-breadcrumbs-el label="Fotos" icon="image" />
-    <q-breadcrumbs-el label="Junho 2025" />
-  </q-breadcrumbs>
+  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+    <q-breadcrumbs class="q-mb-sm">
+      <q-breadcrumbs-el label="Fotos" icon="image" />
+      <q-breadcrumbs-el label="Junho 2025" />
+    </q-breadcrumbs>
 
-  <div class="row justify-center q-gutter-sm">
-    <q-intersection class="example-item" @click="card10 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/10.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card10">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/10.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card9 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/9.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card9">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/9.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card8 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/8.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card8">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/8.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card7 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/7.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card7">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/7.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card6 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/6.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card6">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/6.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card5 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/5.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card5">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/5.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card4 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/4.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card4">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/4.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card3 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/3.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card3">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/3.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card2 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/2.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card2">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/2.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
-    <q-intersection class="example-item" @click="card1 = true">
-      <q-card flat bordered>
-        <img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/1.jpeg?raw=true"
-        />
-      </q-card>
-    </q-intersection>
-    <q-dialog v-model="card1">
-      <q-card class="my-card">
-        <q-img
-          src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/1.jpeg?raw=true"
-        />
-      </q-card>
-    </q-dialog>
+    <div class="row justify-center q-gutter-sm">
+      <q-intersection class="example-item" @click="card10 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/10.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card10">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/10.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card9 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/9.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card9">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/9.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card8 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/8.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card8">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/8.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card7 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/7.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card7">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/7.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card6 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/6.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card6">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/6.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card5 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/5.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card5">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/5.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card4 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/4.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card4">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/4.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card3 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/3.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card3">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/3.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card2 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/2.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card2">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/2.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+      <q-intersection class="example-item" @click="card1 = true">
+        <q-card flat bordered>
+          <img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/1.jpeg?raw=true"
+          />
+        </q-card>
+      </q-intersection>
+      <q-dialog v-model="card1">
+        <q-card class="my-card">
+          <q-img
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/junho-25/1.jpeg?raw=true"
+          />
+        </q-card>
+      </q-dialog>
+    </div>
   </div>
 </template>
 

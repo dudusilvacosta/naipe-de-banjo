@@ -2,38 +2,37 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
-    <q-breadcrumbs>
+  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+    <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
-  </div>
-  <div class="categorias ibg">
-    <div class="q-pa-md q-gutter-sm">
-      <div class="text-h6">
-        <router-link
-          to="/cifras/carimbo"
-          class="q-item q-item-type row no-wrap"
-          style="text-decoration: none"
-        >
-          Carimbó
-        </router-link>
-      </div>
+    <div class="categorias ibg">
+      <div class="q-pa-md q-gutter-sm">
+        <div class="text-h6">
+          <router-link
+            to="/cifras/carimbo"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Carimbó
+          </router-link>
+        </div>
 
-      <q-separator />
+        <q-separator />
 
-      <div class="text-h6">
-        <router-link
-          to="/cifras/toada"
-          class="q-item q-item-type row no-wrap"
-          style="text-decoration: none"
-        >
-          Toada
-        </router-link>
-      </div>
+        <div class="text-h6">
+          <router-link
+            to="/cifras/toada"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Toada
+          </router-link>
+        </div>
 
-      <q-separator />
+        <q-separator />
 
-      <!-- <div class="text-h6">
+        <!-- <div class="text-h6">
         <router-link
           to="/cifras/retumbao"
           class="q-item q-item-type row no-wrap"
@@ -45,26 +44,27 @@
 
       <q-separator /> -->
 
-      <div class="text-h6">
-        <router-link
-          to="/cifras/quadrilha"
-          class="q-item q-item-type row no-wrap"
-          style="text-decoration: none"
-        >
-          Quadrilha
-        </router-link>
-      </div>
+        <div class="text-h6">
+          <router-link
+            to="/cifras/quadrilha"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Quadrilha
+          </router-link>
+        </div>
 
-      <q-separator />
+        <q-separator />
 
-      <div class="text-h6">
-        <router-link
-          to="/cifras/xote"
-          class="q-item q-item-type row no-wrap"
-          style="text-decoration: none"
-        >
-          Xote
-        </router-link>
+        <div class="text-h6">
+          <router-link
+            to="/cifras/xote"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Xote
+          </router-link>
+        </div>
       </div>
     </div>
   </div>

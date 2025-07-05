@@ -2,28 +2,28 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
-    <q-breadcrumbs>
+  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+    <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Vídeos" icon="smart_display" />
     </q-breadcrumbs>
-  </div>
-  <div class="row justify-center q-gutter-sm">
-    <q-intersection class="example-item">
-      <q-card flat bordered class="q-ma-sm">
-        <q-video
-          :ratio="16 / 9"
-          src="https://www.youtube.com/embed/RTBWrJWvTvs?si=utNw-cwOy1UjKwyJ"
-        />
-      </q-card>
-    </q-intersection>
-    <q-intersection class="example-item">
-      <q-card flat bordered class="q-ma-sm">
-        <q-video
-          :ratio="16 / 9"
-          src="https://www.youtube.com/embed/NgOI7yVn-lk?si=4nIaA92Uu-Hl03T3"
-        />
-      </q-card>
-    </q-intersection>
+    <div class="row justify-center q-gutter-sm">
+      <q-intersection class="example-item">
+        <q-card flat bordered class="q-ma-sm">
+          <q-video
+            :ratio="16 / 9"
+            src="https://www.youtube.com/embed/RTBWrJWvTvs?si=utNw-cwOy1UjKwyJ"
+          />
+        </q-card>
+      </q-intersection>
+      <q-intersection class="example-item">
+        <q-card flat bordered class="q-ma-sm">
+          <q-video
+            :ratio="16 / 9"
+            src="https://www.youtube.com/embed/NgOI7yVn-lk?si=4nIaA92Uu-Hl03T3"
+          />
+        </q-card>
+      </q-intersection>
+    </div>
   </div>
 </template>
 

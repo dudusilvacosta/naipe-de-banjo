@@ -2,25 +2,25 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
-    <q-breadcrumbs>
+  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+    <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Notificações" icon="notifications" />
     </q-breadcrumbs>
-  </div>
-  <div class="q-pa-md row justify-center">
-    <div style="width: 100%; max-width: 400px">
-      <q-chat-message
-        :text="[
-          'Seja bem-vindo(a)! 🎉 Este espaço é dedicado exclusivamente às suas notificações. Aqui você receberá avisos importantes como atualizações, novidades, mensagens e lembretes relevantes para você. Tudo organizado e ao seu alcance. Fique de olho nas notificações e aproveite ao máximo o nosso app!',
-        ]"
-        class="q-mb-md"
-      />
+    <div class="q-pa-md row justify-center">
+      <div style="width: 100%; max-width: 400px">
+        <q-chat-message
+          :text="[
+            '🎉 Este espaço é dedicado exclusivamente às suas notificações. Aqui você receberá avisos importantes como atualizações, novidades, mensagens e lembretes relevantes para você. Tudo organizado e ao seu alcance. Fique de olho nas notificações e aproveite ao máximo o nosso app!',
+          ]"
+          class="q-mb-md"
+        />
 
-      <q-chat-message
-        :text="[
-          '📢 Aviso Importante Este aplicativo ainda está em fase de desenvolvimento. Por isso, pedimos que o compartilhamento seja feito somente entre os membros do grupo de testes.👀 Encontrou algum erro, bug ou tem alguma sugestão? Sua opinião é muito importante! Por favor, compartilhe com a equipe de desenvolvimento. 🙏 Agradecemos pela colaboração e paciência!',
-        ]"
-      />
+        <q-chat-message
+          :text="[
+            '📢 Aviso Importante Este aplicativo ainda está em fase de desenvolvimento. Por isso, pedimos que o compartilhamento seja feito somente entre os membros do grupo de testes. 👀 Encontrou algum erro, bug ou tem alguma sugestão? Sua opinião é muito importante! Por favor, compartilhe com a equipe de desenvolvimento. 🙏 Agradecemos pela colaboração e paciência!',
+          ]"
+        />
+      </div>
     </div>
   </div>
 </template>

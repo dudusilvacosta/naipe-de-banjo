@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
+  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="História" icon="menu_book" />
     </q-breadcrumbs>

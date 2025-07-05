@@ -2,12 +2,10 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
-    <q-breadcrumbs>
+  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+    <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Aulas" icon="school" />
     </q-breadcrumbs>
-  </div>
-  <div class="q-pa-md" style="max-width: 350px">
     <q-list bordered separator>
       <q-item clickable v-ripple to="/aulas/teoria-musical" exact>
         <q-item-section>

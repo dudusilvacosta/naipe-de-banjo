@@ -2,13 +2,11 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
-    <q-breadcrumbs>
+  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+    <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
       <q-breadcrumbs-el label="Carimbó" />
     </q-breadcrumbs>
-  </div>
-  <div class="q-pa-md">
     <q-list padding bordered class="rounded-borders">
       <!-- Carimbó da Ilha -->
       <q-expansion-item
