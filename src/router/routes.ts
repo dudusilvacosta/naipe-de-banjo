@@ -97,9 +97,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/LinksPage.vue') }],
   },
   {
-    path: '/recados',
+    path: '/notificacoes',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/RecadoPage.vue') }],
+    children: [{ path: '', component: () => import('pages/NotificacoesPage.vue') }],
   },
   {
     path: '/:catchAll(.*)*',

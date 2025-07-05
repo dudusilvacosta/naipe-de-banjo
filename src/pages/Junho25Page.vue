@@ -1,10 +1,12 @@
 <template>
-  <div class="q-pa-md">
-    <q-breadcrumbs>
-      <q-breadcrumbs-el label="Fotos" icon="image" />
-      <q-breadcrumbs-el label="Junho 2025" />
-    </q-breadcrumbs>
+  <div style="height: 1px">
+    <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
+  <q-breadcrumbs class="q-pa-md">
+    <q-breadcrumbs-el label="Fotos" icon="image" />
+    <q-breadcrumbs-el label="Junho 2025" />
+  </q-breadcrumbs>
+
   <div class="row justify-center q-gutter-sm">
     <q-intersection class="example-item" @click="card10 = true">
       <q-card flat bordered>
@@ -150,8 +152,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import { useTimeout } from 'quasar';
 
+const showProgress = ref(true);
+const { registerTimeout } = useTimeout();
 const card1 = ref(false);
 const card2 = ref(false);
 const card3 = ref(false);
@@ -162,6 +167,12 @@ const card7 = ref(false);
 const card8 = ref(false);
 const card9 = ref(false);
 const card10 = ref(false);
+
+onMounted(() => {
+  registerTimeout(() => {
+    showProgress.value = false;
+  }, 1000); // 1 segundo = 1000 ms
+});
 </script>
 <style lang="sass" scoped>
 .my-card

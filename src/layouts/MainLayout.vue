@@ -73,10 +73,10 @@ const linksList: EssentialLinkProps[] = [
     link: '/links',
   },
   {
-    title: 'Recados',
+    title: 'Notificações',
     caption: 'fique informado',
     icon: 'notifications',
-    link: '/recados',
+    link: '/notificacoes',
   },
 ];
 
