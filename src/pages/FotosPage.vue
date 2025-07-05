@@ -2,56 +2,62 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pl-md q-pt-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
     <q-breadcrumbs class="q-pb-sm">
       <q-breadcrumbs-el label="Fotos" icon="image" />
     </q-breadcrumbs>
 
-    <q-list bordered separator>
-      <q-item clickable v-ripple to="/fotos/junho25" exact>
-        <q-item-section avatar>
-          <q-avatar rounded size="100px">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-_7LtuZTxL6fgVcqKFVeZQug5LVCnx0uf6w&s"
-            />
-          </q-avatar>
-        </q-item-section>
-        <q-item-section>Arraial da Floresta</q-item-section>
-      </q-item>
+    <div class="categorias ibg">
+      <div class="q-gutter-sm">
+        <div class="text-h6">
+          <router-link
+            to="/fotos/junho25"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Arraial da Floresta
+          </router-link>
+        </div>
 
-      <q-item clickable v-ripple to="/fotos/cirio24" exact>
-        <q-item-section avatar>
-          <q-avatar rounded size="100px">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgocwHYLok7UTfdtZrJzJV_9ANs7_o5r2oLw&s"
-            />
-          </q-avatar>
-        </q-item-section>
-        <q-item-section>Círio 2024</q-item-section>
-      </q-item>
+        <q-separator />
 
-      <q-item clickable v-ripple to="/fotos/junho24" exact>
-        <q-item-section avatar>
-          <q-avatar rounded size="100px">
-            <img
-              src="https://correioparaense.com.br/wp-content/uploads/2023/04/ARRAIAL-DO-PAVULAGEM-1-927x1024.jpeg"
-            />
-          </q-avatar>
-        </q-item-section>
-        <q-item-section>Arraial do Saber</q-item-section>
-      </q-item>
+        <div class="text-h6">
+          <router-link
+            to="/fotos/cirio24"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Círio 2024
+          </router-link>
+        </div>
 
-      <q-item clickable v-ripple to="/fotos/cirio23" exact>
-        <q-item-section avatar>
-          <q-avatar rounded size="100px">
-            <img
-              src="https://420576d5f5d16b12d00d53a989e5098a.cdn.bubble.io/f1694728956788x702714936218019800/376008234_18273573952153912_4564337670266088111_n.jpg"
-            />
-          </q-avatar>
-        </q-item-section>
-        <q-item-section>Círio 2023</q-item-section>
-      </q-item>
-    </q-list>
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/fotos/junho24"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Arraial do Saber
+          </router-link>
+        </div>
+
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/fotos/cirio23"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Círio 2023
+          </router-link>
+        </div>
+
+        <q-separator />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -68,3 +74,16 @@ onMounted(() => {
   }, 1000); // 1 segundo = 1000 ms
 });
 </script>
+<style scoped>
+.categorias {
+  height: calc(100svh - 71px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ibg {
+  background-image: url('../assets/cifras.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+</style>

@@ -8,8 +8,6 @@
     </q-breadcrumbs>
 
     <q-timeline color="secondary" class="q-mt-sm">
-      <q-timeline-entry heading> Title </q-timeline-entry>
-
       <q-timeline-entry title="Event Title" subtitle="February 22, 1986">
         <div>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -32,8 +30,6 @@
         </div>
       </q-timeline-entry>
 
-      <q-timeline-entry heading> Title </q-timeline-entry>
-
       <q-timeline-entry title="Event Title" subtitle="February 22, 1986">
         <div>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -55,8 +51,6 @@
           est laborum.
         </div>
       </q-timeline-entry>
-
-      <q-timeline-entry heading> Title </q-timeline-entry>
 
       <q-timeline-entry title="Event Title" subtitle="February 22, 1986">
         <div>

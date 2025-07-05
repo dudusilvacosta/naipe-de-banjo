@@ -2,22 +2,35 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pl-md q-pt-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Links" icon="link" />
     </q-breadcrumbs>
-    <a
-      href="https://drive.google.com/file/d/1MvmmSv0lq9RauqsHt5MF9dIPHAkz5S0t/view?usp=drive_link"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Roda Cantada 2025 <q-icon name="picture_as_pdf" size="xs"
-    /></a>
-    <a
-      href="https://drive.google.com/file/d/1D5qR1A2L8nzHRdISlIMpoK8Azvb_PTMU/view?usp=drive_link"
-      target="_blank"
-      rel="noopener noreferrer"
-      >Roda Cantada 2024 <q-icon name="picture_as_pdf" size="xs"
-    /></a>
+    <div class="categorias ibg">
+      <div class="q-gutter-sm">
+        <div class="text-h6">
+          <a
+            href="https://drive.google.com/file/d/1MvmmSv0lq9RauqsHt5MF9dIPHAkz5S0t/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Roda Cantada 2025</a
+          >
+        </div>
+
+        <q-separator />
+
+        <div class="text-h6">
+          <a
+            href="https://drive.google.com/file/d/1D5qR1A2L8nzHRdISlIMpoK8Azvb_PTMU/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Roda Cantada 2024</a
+          >
+        </div>
+
+        <q-separator />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,9 +50,20 @@ onMounted(() => {
 
 <style>
 a {
-  display: block;
   margin-bottom: 10px;
   color: #1976d2;
   text-decoration: none;
+}
+
+.categorias {
+  height: calc(100svh - 71px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ibg {
+  background-image: url('../assets/cifras.png');
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 </style>

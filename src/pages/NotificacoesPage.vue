@@ -2,12 +2,15 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pl-md q-pt-md q-pr-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Notificações" icon="notifications" />
     </q-breadcrumbs>
-    <div class="q-pa-md row">
-      <div style="width: 100%; max-width: 400px">
+    <div
+      class="q-pl-md q-pt-md q-pr-md row"
+      style="min-height: calc(100svh - 96px); background-color: aquamarine"
+    >
+      <div style="width: 100%; letter-spacing: 1px; max-width: 400px; font-weight: 500">
         <q-chat-message
           :text="[
             '🎉 Este espaço é dedicado exclusivamente às suas notificações. Aqui você receberá avisos importantes como atualizações, novidades, mensagens e lembretes relevantes para você. Tudo organizado e ao seu alcance. Fique de olho nas notificações e aproveite ao máximo o nosso app!',

@@ -2,29 +2,50 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pl-md q-pt-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Aulas" icon="school" />
     </q-breadcrumbs>
-    <q-list bordered separator>
-      <q-item clickable v-ripple to="/aulas/teoria-musical" exact>
-        <q-item-section>
-          <q-item-label>Teoria Musical</q-item-label>
-        </q-item-section>
-      </q-item>
 
-      <q-item clickable v-ripple to="/aulas/acordes-cifras" exact>
-        <q-item-section>
-          <q-item-label>Formação de acordes e leitura de cifras</q-item-label>
-        </q-item-section>
-      </q-item>
+    <div class="categorias ibg">
+      <div class="q-gutter-sm">
+        <div class="text-h6">
+          <router-link
+            to="/aulas/teoria-musical"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Teoria Musical
+          </router-link>
+        </div>
 
-      <q-item clickable v-ripple to="/aulas/graus-harmonia" exact>
-        <q-item-section>
-          <q-item-label>Graus musicais - Harmonia tonal</q-item-label>
-        </q-item-section>
-      </q-item>
-    </q-list>
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/aulas/acordes-cifras"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Acordes e Cifras
+          </router-link>
+        </div>
+
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/cifras/quadrilha"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none"
+          >
+            Graus e Harmonia
+          </router-link>
+        </div>
+
+        <q-separator />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -41,3 +62,17 @@ onMounted(() => {
   }, 1000); // 1 segundo = 1000 ms
 });
 </script>
+
+<style scoped>
+.categorias {
+  height: calc(100svh - 71px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ibg {
+  background-image: url('../assets/cifras.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+</style>
