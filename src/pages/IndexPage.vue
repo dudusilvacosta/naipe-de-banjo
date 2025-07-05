@@ -41,7 +41,6 @@ onMounted(() => {
   max-width: 40rem;
   margin: 0 auto;
   height: calc(100vh - 51px);
-  background-color: #fdfdfd;
   background-image: url('../assets/banjonotas.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
