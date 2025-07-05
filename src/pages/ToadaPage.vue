@@ -9,6 +9,69 @@
     </q-breadcrumbs>
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
+        <!-- Balança de Ouro -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Balança de Ouro"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">Dm</p>
+              <p>Canoa, me leva pra ver minha amada que tá no cruzeiro</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; A
+              </p>
+              <p>Fiando e bordando o couro do boi as minhas bandeiras</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;Dm
+              </p>
+              <p>Com linhas de ouro e fita amarela</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+              </p>
+              <p>Olhei na janela e vi uma estrela</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
+              </p>
+              <p>Passando ligeira no céu do Guamá pra mim, um sinal sagrado e bonito</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;Dm
+              </p>
+              <p>É meu São João abrindo a cancela</p>
+              <p class="vermelho">
+                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+              </p>
+              <p>Vai meu batalhão alegre e formoso</p>
+              <p class="vermelho">
+                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm
+              </p>
+              <p>Nossa fortaleza é linda de ver</p>
+              <p class="vermelho">
+                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Dm
+              </p>
+              <p>A rapaziada é balança de ouro</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;&nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Dm
+              </p>
+              <p>Esse boi é um tesouro, é meu bem-querer</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Boi Brinquedo -->
         <q-expansion-item
           dense
@@ -84,72 +147,9 @@
               <p>Meu brinquedo encantador,</p>
 
               <p class="vermelho">
-                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
               </p>
               <p>prenda bela de São João…</p>
-            </q-card-section>
-          </q-card>
-        </q-expansion-item>
-        <!-- Balança de Ouro -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Balança de Ouro"
-          header-class="text-primary"
-        >
-          <q-card>
-            <q-card-section>
-              <p class="vermelho">Dm</p>
-              <p>Canoa, me leva pra ver minha amada que tá no cruzeiro</p>
-              <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; A
-              </p>
-              <p>Fiando e bordando o couro do boi as minhas bandeiras</p>
-              <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;Dm
-              </p>
-              <p>Com linhas de ouro e fita amarela</p>
-              <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
-              </p>
-              <p>Olhei na janela e vi uma estrela</p>
-              <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
-              </p>
-              <p>Passando ligeira no céu do Guamá pra mim, um sinal sagrado e bonito</p>
-              <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;Dm
-              </p>
-              <p>É meu São João abrindo a cancela</p>
-              <p class="vermelho">
-                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
-              </p>
-              <p>Vai meu batalhão alegre e formoso</p>
-              <p class="vermelho">
-                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm
-              </p>
-              <p>Nossa fortaleza é linda de ver</p>
-              <p class="vermelho">
-                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Dm
-              </p>
-              <p>A rapaziada é balança de ouro</p>
-              <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;&nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; Dm
-              </p>
-              <p>Esse boi é um tesouro, é meu bem-querer</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
@@ -352,6 +352,101 @@
               <p>Estrelinhas tão cintilantes</p>
               <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7</p>
               <p>Que é pra todo mundo ver</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+
+        <!-- Noite de São João -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Noite de São João"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+              </p>
+              <p>Eu fiz promessa pro meu boi</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Dm
+              </p>
+              <p>Pra você ficar comigo</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+              </p>
+              <p>Se nessa noite de São João</p>
+
+              <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm</p>
+              <p>Você aparecer</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Gm
+              </p>
+              <p>Eu te faço um verso</p>
+
+              <p class="vermelho">
+                A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Dm
+              </p>
+              <p>Trago o meu batalhão</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;Gm
+              </p>
+              <p>Pra cantar toada bonita</p>
+
+              <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm</p>
+              <p>Pro meu boi</p>
+
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
+              </p>
+              <p>E nesse verso meu canto dirá</p>
+
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+              </p>
+              <p>Qual a cor que tem os olhos teus</p>
+
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
+              </p>
+              <p>Vem minha estrela azulada</p>
+
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; D
+              </p>
+              <p>Levanta Boi Pavulagem!</p>
+
+              <p class="vermelho">Em</p>
+              <p>Encanto dos olhos teus</p>
+
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; D
+              </p>
+              <p>Levanta Boi Pavulagem!</p>
+
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+              </p>
+              <p>Encanto dos olhos meus Vem ver, morena</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
