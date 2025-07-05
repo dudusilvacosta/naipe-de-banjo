@@ -6,11 +6,11 @@
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Boas-Vindas" icon="celebration" />
     </q-breadcrumbs>
-    <p>É muito bom ver você em nosso web app dos Banjoístas do Batalhão da Estrela!</p>
+    <p>É muito bom ver você no site do naipe de banjo do Batalhão da Estrela!</p>
     <p>
       Aqui você encontra um pouco da história do banjo no batalhão, fotos, vídeos, cifras de
-      músicas, aulas de teoria musical, links para download de apostilas e também fica por dentro de
-      todos os recados importantes.
+      músicas, aulas de teoria musical, links para download e também fica por dentro de todos os
+      recados importantes.
     </p>
   </div>
 </template>
