@@ -9,6 +9,79 @@
     </q-breadcrumbs>
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
+        <!-- Ataiô -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Ataiô"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">G# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#</p>
+              <p>Nos olhos tá escrito</p>
+              <p class="vermelho">
+                C# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G# &nbsp;&nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;D#m &nbsp; &nbsp; &nbsp; G#
+              </p>
+              Tá escrito que você namora
+              <p class="vermelho">
+                C# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; Fm
+              </p>
+              <p>Que você serena e chora</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb7 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;D#7 &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp;G# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              </p>
+              <p>Com saudade desse amor</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Ab7
+              </p>
+              <p>Olhei pro céu</p>
+              Pro chão você no meu caminho
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C#
+              </p>
+              <p>Também vou chorar baixinho</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#
+              </p>
+              <p>Se você disser que não</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;C# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G#
+              </p>
+              <p>Tem zabumbeiro na zabumba marcação</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bbm &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D#7 &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G#
+              </p>
+              <p>Sacode xote o arrasta-pé nesse salão</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Ab7
+              </p>
+              <p>No passa a dança</p>
+              <p>No passo que a dança dá</p>
+              <p>Mesmo que você duvide</p>
+              <p>Se espiche pra escorregar</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#
+              </p>
+              <p>Meu namoro não tem pressa</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C# &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#
+              </p>
+              <p>Meu amor pode esperar</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Domingo de Tartde -->
         <q-expansion-item
           dense
