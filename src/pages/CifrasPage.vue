@@ -12,7 +12,7 @@
           <router-link
             to="/cifras/carimbo"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Carimbó
           </router-link>
@@ -24,7 +24,7 @@
           <router-link
             to="/cifras/toada"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Toada
           </router-link>
@@ -36,7 +36,7 @@
         <router-link
           to="/cifras/retumbao"
           class="q-item q-item-type row no-wrap"
-          style="text-decoration: none; color: #1976d2"
+          style="text-decoration: none; color: #0a66c2"
         >
           Retumbão
         </router-link>
@@ -48,7 +48,7 @@
           <router-link
             to="/cifras/quadrilha"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Quadrilha
           </router-link>
@@ -60,7 +60,7 @@
           <router-link
             to="/cifras/xote"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Xote
           </router-link>
@@ -86,7 +86,7 @@ onMounted(() => {
 
 <style scoped>
 .categorias {
-  height: calc(100svh - 71px);
+  height: calc(100svh - 127px);
   display: flex;
   flex-wrap: wrap;
 }

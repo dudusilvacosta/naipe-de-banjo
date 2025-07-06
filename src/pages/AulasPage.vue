@@ -13,7 +13,7 @@
           <router-link
             to="/aulas/teoria-musical"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Teoria Musical
           </router-link>
@@ -25,7 +25,7 @@
           <router-link
             to="/aulas/acordes-cifras"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Acordes e Cifras
           </router-link>
@@ -37,7 +37,7 @@
           <router-link
             to="/cifras/quadrilha"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Graus e Harmonia
           </router-link>
@@ -65,7 +65,7 @@ onMounted(() => {
 
 <style scoped>
 .categorias {
-  height: calc(100svh - 71px);
+  height: calc(100svh - 127px);
   display: flex;
   flex-wrap: wrap;
 }

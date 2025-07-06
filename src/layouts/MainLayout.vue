@@ -22,6 +22,17 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer style="height: 30px; display: flex; align-items: center; background-color: #e0e0e0">
+      <q-toolbar>
+        <q-toolbar-title class="text-subtitle2 text-grey-8">
+          Naipe de Banjo 1.0.0 &copy; 2025
+          <a href="https://eduardosilvacosta.netlify.app/" target="_blank"
+            >Eduardo Silva Costa</a
+          ></q-toolbar-title
+        >
+      </q-toolbar>
+    </q-footer>
   </q-layout>
 </template>
 
@@ -86,3 +97,10 @@ function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 </script>
+
+<style scoped>
+a {
+  text-decoration: none;
+  color: #0a66c2;
+}
+</style>

@@ -13,7 +13,7 @@
           <router-link
             to="/fotos/junho25"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Arraial da Floresta
           </router-link>
@@ -25,7 +25,7 @@
           <router-link
             to="/fotos/cirio24"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Círio 2024
           </router-link>
@@ -37,7 +37,7 @@
           <router-link
             to="/fotos/junho24"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Arraial do Saber
           </router-link>
@@ -49,7 +49,7 @@
           <router-link
             to="/fotos/cirio23"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #1976d2"
+            style="text-decoration: none; color: #0a66c2"
           >
             Círio 2023
           </router-link>
@@ -76,7 +76,7 @@ onMounted(() => {
 </script>
 <style scoped>
 .categorias {
-  height: calc(100svh - 71px);
+  height: calc(100svh - 127px);
   display: flex;
   flex-wrap: wrap;
 }

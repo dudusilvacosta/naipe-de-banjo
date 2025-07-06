@@ -51,12 +51,12 @@ onMounted(() => {
 <style>
 a {
   margin-bottom: 10px;
-  color: #1976d2;
+  color: #0a66c2;
   text-decoration: none;
 }
 
 .categorias {
-  height: calc(100svh - 71px);
+  height: calc(100svh - 127px);
   display: flex;
   flex-wrap: wrap;
 }
