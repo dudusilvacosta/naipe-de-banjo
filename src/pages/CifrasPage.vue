@@ -12,7 +12,7 @@
           <router-link
             to="/cifras/carimbo"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none"
+            style="text-decoration: none; color: #1976d2"
           >
             Carimbó
           </router-link>
@@ -24,7 +24,7 @@
           <router-link
             to="/cifras/toada"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none"
+            style="text-decoration: none; color: #1976d2"
           >
             Toada
           </router-link>
@@ -36,7 +36,7 @@
         <router-link
           to="/cifras/retumbao"
           class="q-item q-item-type row no-wrap"
-          style="text-decoration: none"
+          style="text-decoration: none; color: #1976d2"
         >
           Retumbão
         </router-link>
@@ -48,7 +48,7 @@
           <router-link
             to="/cifras/quadrilha"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none"
+            style="text-decoration: none; color: #1976d2"
           >
             Quadrilha
           </router-link>
@@ -60,7 +60,7 @@
           <router-link
             to="/cifras/xote"
             class="q-item q-item-type row no-wrap"
-            style="text-decoration: none"
+            style="text-decoration: none; color: #1976d2"
           >
             Xote
           </router-link>
@@ -93,6 +93,7 @@ onMounted(() => {
 
 .ibg {
   background-image: url('../assets/cifras.png');
+  background-size: 50% auto;
   background-repeat: no-repeat;
   background-position: right top;
 }
