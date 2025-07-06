@@ -145,6 +145,6 @@ onMounted(() => {
   background-image: url('../assets/fundofotos.png');
   background-repeat: no-repeat;
   background-size: 65% auto;
-  background-position: right top;
+  background-position: right center;
 }
 </style>
