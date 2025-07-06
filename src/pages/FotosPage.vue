@@ -15,7 +15,7 @@
             class="q-item q-item-type row no-wrap"
             style="text-decoration: none; color: #0a66c2"
           >
-            Arraial da Floresta
+            Junho 2025
           </router-link>
         </div>
 
@@ -39,7 +39,7 @@
             class="q-item q-item-type row no-wrap"
             style="text-decoration: none; color: #0a66c2"
           >
-            Arraial do Saber
+            Junho 2024
           </router-link>
         </div>
 
@@ -54,6 +54,66 @@
             Círio 2023
           </router-link>
         </div>
+
+        <!-- <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/fotos/junho23"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Junho 2023
+          </router-link>
+        </div>
+
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/fotos/cirio19"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Círio 2019
+          </router-link>
+        </div>
+
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/fotos/junho19"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Junho 2019
+          </router-link>
+        </div>
+
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/fotos/cirio18"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Círio 2018
+          </router-link>
+        </div>
+
+        <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/fotos/junho18"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Junho 2018
+          </router-link>
+        </div> -->
 
         <q-separator />
       </div>
