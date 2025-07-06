@@ -71,8 +71,9 @@ onMounted(() => {
 }
 
 .ibg {
-  background-image: url('../assets/cifras.png');
+  background-image: url('../assets/fundoaulas.png');
   background-repeat: no-repeat;
-  background-position: right top;
+  background-size: 65% auto;
+  background-position: right bottom;
 }
 </style>

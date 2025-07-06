@@ -8,7 +8,7 @@
     </q-breadcrumbs>
     <div
       class="q-pl-md q-pt-md q-pr-md row"
-      style="min-height: calc(100svh - 127px); background-color: aquamarine"
+      style="min-height: calc(100svh - 127px); background-color: #f5f5f5"
     >
       <div style="width: 100%; letter-spacing: 1px; max-width: 400px; font-weight: 500">
         <q-chat-message

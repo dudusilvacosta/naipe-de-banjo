@@ -62,8 +62,9 @@ a {
 }
 
 .ibg {
-  background-image: url('../assets/cifras.png');
+  background-image: url('../assets/fundolinks.png');
   background-repeat: no-repeat;
-  background-position: right top;
+  background-size: 50% auto;
+  background-position: right bottom;
 }
 </style>
