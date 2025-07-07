@@ -29,6 +29,16 @@
         </div>
 
         <q-separator />
+        <div class="text-h6">
+          <a
+            href="https://drive.google.com/file/d/1-P0kq_pX7-tgelpaswFQB0wrZLhW4aKw/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Roda Cantada 2023</a
+          >
+        </div>
+
+        <q-separator />
       </div>
     </div>
   </div>
