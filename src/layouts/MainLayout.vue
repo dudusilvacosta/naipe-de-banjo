@@ -47,15 +47,15 @@ const linksList: EssentialLinkProps[] = [
     icon: 'home',
     link: '/',
   },
-  {
-    title: 'História',
-    caption: 'o banjo no batalhão',
-    icon: 'menu_book',
-    link: '/historia',
-  },
+  // {
+  //   title: 'História',
+  //   caption: 'o banjo no batalhão',
+  //   icon: 'menu_book',
+  //   link: '/historia',
+  // },
   {
     title: 'Fotos',
-    caption: 'cortejos e bastidores',
+    caption: 'ensaios e cortejos',
     icon: 'image',
     link: '/fotos',
   },
@@ -67,7 +67,7 @@ const linksList: EssentialLinkProps[] = [
   },
   {
     title: 'Cifras',
-    caption: 'ritmos do Pará e outros',
+    caption: 'roda cantada e cortejo',
     icon: 'music_note',
     link: '/cifras',
   },
@@ -79,13 +79,13 @@ const linksList: EssentialLinkProps[] = [
   },
   {
     title: 'Links',
-    caption: 'materiais e recursos extras',
+    caption: 'recursos extras',
     icon: 'link',
     link: '/links',
   },
   {
     title: 'Notificações',
-    caption: 'novidades para o banjo',
+    caption: 'notícias e avisos',
     icon: 'notifications',
     link: '/notificacoes',
   },

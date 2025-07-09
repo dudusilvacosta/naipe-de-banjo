@@ -6,15 +6,20 @@
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Boas-Vindas" icon="celebration" />
     </q-breadcrumbs>
-    <p>É muito bom ver você no site feito para o naipe de banjo do Batalhão da Estrela!</p>
     <p>
-      Aqui você encontra um pouco da história do naipe de banjo no batalhão, fotos, vídeos, cifras
-      de músicas, aulas de teoria musical, links para download e também fica por dentro de todos os
-      recados importantes.
+      É muito bom ter você aqui no site feito com carinho para o naipe de banjo do Batalhão da
+      Estrela!
     </p>
+
     <p>
-      Este site foi feito para ser tanto uma ferrafenta de apoio para os músicos do naipe de banjo
-      quanto para os admiradores do naipe. Esperamos que você goste e que ele seja útil para você!
+      Aqui você encontra um pouco da história do banjo no batalhão, fotos, vídeos, cifras das
+      músicas, aulas de teoria musical, links para download e os recados mais importantes.
+    </p>
+
+    <p>
+      Este site foi criado como uma ferramenta de apoio para os músicos do naipe de banjo e também
+      para quem admira esse trabalho. Esperamos que você aproveite o conteúdo e que ele seja útil
+      para você!
     </p>
   </div>
 </template>

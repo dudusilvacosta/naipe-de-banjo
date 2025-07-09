@@ -44,6 +44,18 @@
         </div>
 
         <q-separator />
+
+        <div class="text-h6">
+          <router-link
+            to="/aulas/carimbo-cifrado"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Carimbó Cifrado
+          </router-link>
+        </div>
+
+        <q-separator />
       </div>
     </div>
   </div>

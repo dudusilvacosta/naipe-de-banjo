@@ -92,6 +92,11 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/GrausHarmoniaPage.vue') }],
   },
   {
+    path: '/aulas/carimbo-cifrado',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/CarimboCifradoPage.vue') }],
+  },
+  {
     path: '/links',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/LinksPage.vue') }],
