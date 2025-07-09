@@ -74,7 +74,7 @@ a {
 .ibg {
   background-image: url('../assets/fundolinks.png');
   background-repeat: no-repeat;
-  background-size: 70% auto;
-  background-position: right center;
+  background-size: 60% auto;
+  background-position: right top;
 }
 </style>

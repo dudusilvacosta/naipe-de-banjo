@@ -85,7 +85,7 @@ onMounted(() => {
 .ibg {
   background-image: url('../assets/fundoaulas.png');
   background-repeat: no-repeat;
-  background-size: 65% auto;
+  background-size: 55% auto;
   background-position: right bottom;
 }
 </style>
