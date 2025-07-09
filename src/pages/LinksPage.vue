@@ -2,11 +2,11 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pl-md q-pt-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pa-md ibg">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Links" icon="link" />
     </q-breadcrumbs>
-    <div class="categorias ibg">
+    <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
           <a
@@ -65,16 +65,16 @@ a {
   text-decoration: none;
 }
 
-.categorias {
-  height: calc(100svh - 127px);
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .ibg {
   background-image: url('../assets/fundolinks.png');
   background-repeat: no-repeat;
-  background-size: 60% auto;
+  background-size: 50% auto;
   background-position: right top;
+}
+
+.categorias {
+  height: calc(100svh - 142px);
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>
