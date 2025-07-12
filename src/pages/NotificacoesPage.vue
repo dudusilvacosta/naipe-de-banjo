@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pl-md q-pt-md q-pr-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pl-md q-pt-md q-pr-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Notificações" icon="notifications" />
     </q-breadcrumbs>

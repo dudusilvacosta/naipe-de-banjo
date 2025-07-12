@@ -88,7 +88,6 @@ onMounted(() => {
 .ibg {
   background-image: url('../assets/cifras.png');
   background-repeat: repeat-y;
-  background-size: 50% auto;
   background-position: top right;
 }
 

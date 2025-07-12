@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Vídeos" icon="smart_display" />
     </q-breadcrumbs>

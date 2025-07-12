@@ -2,15 +2,12 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Aulas" icon="school" />
       <q-breadcrumbs-el label="Formação de acordes e leitura de cifras" />
     </q-breadcrumbs>
-    <div
-      class="row justify-center q-gutter-sm"
-      style="width: 100%; max-width: 40rem; margin: 0 auto"
-    >
+    <div class="row justify-center q-gutter-sm">
       <q-intersection class="example-item">
         <q-card flat bordered class="q-ma-sm">
           <q-video

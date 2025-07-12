@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md" style="width: 100%; max-width: 40rem; margin: 0 auto">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
       <q-breadcrumbs-el label="Toada" />
@@ -69,6 +69,92 @@
                 &nbsp; Dm
               </p>
               <p>Esse boi é um tesouro, é meu bem-querer</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+        <!-- Batalhão das Estrelas -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Batalhão das Estrelas"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Em &nbsp; &nbsp; C
+              </p>
+              <p>Abre os olhos, morena vem ver meu boi</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+              </p>
+              <p>Tá vindo da estrela, traz batalhão afiado</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; G
+              </p>
+              <p>E o couro bordado pro contrário ver.</p>
+              <p class="vermelho">
+                Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp;C &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+              </p>
+              <p>Sei que ele ainda sente saudade</p>
+              <p class="vermelho">
+                Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+              </p>
+              <p>Quando vê a bandeira azulada passar pela praça</p>
+              <p class="vermelho">
+                C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+              </p>
+              <p>Modelo de graça do meu são João.</p>
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; D
+              </p>
+              <p>Do arraial que é do sol</p>
+              <p class="vermelho">
+                Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; D
+              </p>
+              <p>Do arraial que é da lua</p>
+              <p class="vermelho">
+                C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+              </p>
+              <p>Do povo na rua</p>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+              </p>
+              <p>Do meu guarnicê.</p>
+              <p class="vermelho">C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
+              <p>Canta,Vardé</p>
+              <p class="vermelho">
+                C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+              </p>
+              <p>Vardé das cuieiras</p>
+              <p class="vermelho">
+                C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;G
+              </p>
+              <p>Que eu estrondo lá fora</p>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Em
+              </p>
+              <p>E quando eu for embora, contrário</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp;
+                &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; G
+              </p>
+              <p>Nesse adeus é que tu choras</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
@@ -455,7 +541,6 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
-
         <!-- Noite de São João -->
         <q-expansion-item
           dense

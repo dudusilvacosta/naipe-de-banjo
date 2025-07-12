@@ -44,12 +44,6 @@ onMounted(() => {
   height: calc(100vh - 81px);
   background-image: url('../assets/banjonotas.png');
   background-repeat: no-repeat;
-  background-size: auto 57vh;
   background-position: left bottom;
-}
-@media screen and (max-width: 700px) {
-  .ibg {
-    background-size: 100% auto;
-  }
 }
 </style>
