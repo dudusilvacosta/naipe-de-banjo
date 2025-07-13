@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="ibg q-pa-md">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Boas-Vindas" icon="celebration" />
     </q-breadcrumbs>
@@ -22,6 +22,7 @@
       para você!
     </p>
   </div>
+  <div class="ibg"></div>
 </template>
 
 <script setup lang="ts">
@@ -41,9 +42,10 @@ onMounted(() => {
 <style scoped>
 .ibg {
   width: 100%;
-  height: calc(100vh - 81px);
+  height: 50vh;
   background-image: url('../assets/banjonotas.png');
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: bottom center;
+  width: 100%;
 }
 </style>

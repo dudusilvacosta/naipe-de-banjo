@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md ibg">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Fotos" icon="image" />
     </q-breadcrumbs>
@@ -118,6 +118,7 @@
         <q-separator />
       </div>
     </div>
+    <div class="ibg"></div>
   </div>
 </template>
 
@@ -136,9 +137,16 @@ onMounted(() => {
 </script>
 <style scoped>
 .ibg {
+  height: calc(100svh - 30px);
+  position: fixed;
+  top: 0;
+  right: 0;
   background-image: url('../assets/fundofotos.png');
-  background-repeat: repeat-y;
   background-position: top right;
+  background-repeat: repeat-y;
+  background-size: contain;
+  max-width: 40vw;
+  width: 100%;
 }
 
 .categorias {

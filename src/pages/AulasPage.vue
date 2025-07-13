@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md ibg">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Aulas" icon="school" />
     </q-breadcrumbs>
@@ -58,6 +58,7 @@
         <q-separator />
       </div>
     </div>
+    <div class="ibg"></div>
   </div>
 </template>
 
@@ -77,9 +78,16 @@ onMounted(() => {
 
 <style scoped>
 .ibg {
+  height: calc(100svh - 30px);
+  position: fixed;
+  top: 0;
+  right: 0;
   background-image: url('../assets/fundoaulas.png');
-  background-repeat: no-repeat;
   background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 40vw;
+  width: 100%;
 }
 
 .categorias {
