@@ -169,6 +169,58 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Curió do Bico Doce -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Curió do Bico Doce"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm</p>
+            <p>Curió do bico doce</p>
+            <p>Passarinho quem te trouxe</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; A
+            </p>
+            <p>Pra chamar meu carimbó</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gm &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gm &nbsp; &nbsp; &nbsp; &nbsp; A
+            </p>
+            <p>Foi Verequete Verê, foi Verequete Verê</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Foi Verequete, foi Lucinda e Cupijó</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; A
+            </p>
+            <p>Na sombra do cajueiro, ô, ô, ô, ô</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Dm
+            </p>
+            <p>Lá no fundo do quintal</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;A
+            </p>
+            <p>A moça que roda a saia</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Gm &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Dm
+            </p>
+            <p>É mimo de Marambaia na roda de carimbó</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Dança do carimbó (Dona Maria) -->
       <q-expansion-item
         dense
