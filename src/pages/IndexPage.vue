@@ -41,6 +41,8 @@ onMounted(() => {
 
 <style scoped>
 .img {
+  width: 100%;
+  max-height: 50vh;
   position: fixed;
   bottom: 15px;
 }
