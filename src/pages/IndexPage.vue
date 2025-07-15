@@ -22,7 +22,7 @@
       para você!
     </p>
   </div>
-  <div class="ibg2"></div>
+  <img src="../assets/banjonotas.png" alt="" class="img" />
 </template>
 
 <script setup lang="ts">
@@ -40,14 +40,8 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.ibg2 {
-  width: 100%;
-  height: 50vh;
+.img {
   position: fixed;
   bottom: 15px;
-  background-image: url('../assets/banjonotas.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
 }
 </style>
