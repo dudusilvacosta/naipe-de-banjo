@@ -5,7 +5,7 @@
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
-      <q-breadcrumbs-el label="Toada" />
+      <q-breadcrumbs-el label="Boi" />
     </q-breadcrumbs>
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
