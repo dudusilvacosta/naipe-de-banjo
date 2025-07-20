@@ -166,6 +166,73 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Maio -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Maio"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">
+                Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F
+              </p>
+              <p>Quando vem chegando maio</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;C
+              </p>
+              <p>Meu balaio já tem flor</p>
+              <p class="vermelho">
+                Bm7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Am
+              </p>
+              <p>Traz Batalhão na balança</p>
+              <p class="vermelho">
+                Bm7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E7 &nbsp; &nbsp;
+                &nbsp; Am
+              </p>
+              <p>faz chão da terra tremer</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm7 &nbsp; &nbsp; E7
+                &nbsp; &nbsp;Am
+              </p>
+              <p>Buquê de flor no rosário</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm7 &nbsp; &nbsp; E7
+                &nbsp; &nbsp;Am
+              </p>
+              <p>No calendário é São João</p>
+              <p class="vermelho">
+                G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; C
+              </p>
+              <p>Fogueira arde a fogueira</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;C
+              </p>
+              <p>Clareia o meu coração</p>
+              <p class="vermelho">Bm7 &nbsp; &nbsp; &nbsp; &nbsp;E7 &nbsp; &nbsp; &nbsp;Am</p>
+              <p>Essa toada do tempo</p>
+              <p class="vermelho">Bm7 &nbsp; &nbsp; &nbsp;E7 &nbsp; &nbsp; &nbsp;Am</p>
+              <p>Traz alegria e luz</p>
+              <p class="vermelho">
+                G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; C
+              </p>
+              <p>Pra clarear noite escura</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+              </p>
+              <p>A Estrela D’Alva e a Luna</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
       </q-list>
     </div>
   </div>

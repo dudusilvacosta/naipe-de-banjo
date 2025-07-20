@@ -52,9 +52,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/CarimboPage.vue') }],
   },
   {
-    path: '/cifras/toada',
+    path: '/cifras/boi',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/ToadaPage.vue') }],
+    children: [{ path: '', component: () => import('pages/BoiPage.vue') }],
   },
   {
     path: '/cifras/retumbao',
@@ -67,9 +67,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/QuadrilhaPage.vue') }],
   },
   {
-    path: '/cifras/xote',
+    path: '/cifras/roda',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/XotePage.vue') }],
+    children: [{ path: '', component: () => import('src/pages/RodaPage.vue') }],
   },
   {
     path: '/aulas',

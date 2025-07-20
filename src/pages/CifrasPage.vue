@@ -9,24 +9,24 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
+          <div class="text-h6">
+            <router-link
+              to="/cifras/boi"
+              class="q-item q-item-type row no-wrap"
+              style="text-decoration: none; color: #0a66c2"
+            >
+              Boi
+            </router-link>
+          </div>
+
+          <q-separator />
+
           <router-link
             to="/cifras/carimbo"
             class="q-item q-item-type row no-wrap"
             style="text-decoration: none; color: #0a66c2"
           >
             Carimbó
-          </router-link>
-        </div>
-
-        <q-separator />
-
-        <div class="text-h6">
-          <router-link
-            to="/cifras/toada"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Toada
           </router-link>
         </div>
 
@@ -58,11 +58,11 @@
 
         <div class="text-h6">
           <router-link
-            to="/cifras/xote"
+            to="/cifras/roda"
             class="q-item q-item-type row no-wrap"
             style="text-decoration: none; color: #0a66c2"
           >
-            Xote
+            Roda Cantada
           </router-link>
         </div>
       </div>
