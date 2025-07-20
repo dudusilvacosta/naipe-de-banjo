@@ -5,7 +5,7 @@
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
-      <q-breadcrumbs-el label="Xote" />
+      <q-breadcrumbs-el label="Roda cantada" />
     </q-breadcrumbs>
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
@@ -230,6 +230,93 @@
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
               </p>
               <p>A Estrela D’Alva e a Luna</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+        <!-- Quando o banjo chegar -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Quando o banjo chegar"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">Am</p>
+              <p>Quando o banjo chegar</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;E7
+              </p>
+              <p>Eu vou sentar a mão</p>
+              <p>Pra ver o povo dançar</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Am
+              </p>
+              <p>Carimbó no salão</p>
+              <p class="vermelho">E7</p>
+              <p>Menino vai logo buscar</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Am
+              </p>
+              <p>Não posso esperar pra ver</p>
+              <p class="vermelho">
+                A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Dm7
+              </p>
+              <p>Quando o banjo chegar</p>
+              <p class="vermelho">
+                G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C7
+              </p>
+              <p>Multidão vai dançar</p>
+              <p class="vermelho">
+                F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bbm7
+              </p>
+              <p>E o povão vai cantar pra valer</p>
+              <p class="vermelho">
+                E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>E o povão vai dançar pra valer</p>
+              <p class="vermelho">
+                Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7
+              </p>
+              <p>Roda a tua saia menina</p>
+              <p class="vermelho">
+                Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7
+              </p>
+              <p>É tanta gente bonita</p>
+              <p class="vermelho">F7</p>
+              <p>Esse tambor me alucina</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;E7
+              </p>
+              <p>Meu coração quer te ver</p>
+              <p class="vermelho">
+                A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm7
+              </p>
+              <p>Roda tua saia menina</p>
+              <p class="vermelho">
+                G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+              </p>
+              <p>É tanta gente bonita</p>
+              <p class="vermelho">
+                F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bbm7
+              </p>
+              <p>Esse tambor me alucina</p>
+              <p class="vermelho">
+                E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Am
+              </p>
+              <p>Meu coração quer te ver</p>
+              <p class="vermelho">Am</p>
+              <p>O banjo na minha mão</p>
+              <p class="vermelho">E7</p>
+              <p>Esquenta o salão</p>
+              <p class="vermelho">Am</p>
+              <p>Sua boca na minha boca</p>
+              <p class="vermelho">E7</p>
+              <p>Esquenta o meu coração</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
