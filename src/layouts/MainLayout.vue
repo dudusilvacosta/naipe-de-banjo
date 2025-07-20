@@ -26,11 +26,19 @@
     <q-footer style="height: 30px; display: flex; align-items: center; background-color: #e0e0e0">
       <q-toolbar>
         <q-toolbar-title class="text-subtitle2 text-grey-8">
-          Naipe de Banjo 1.0.0 &copy; 2025
-          <a href="https://eduardosilvacosta.netlify.app/" target="_blank"
-            >Eduardo Silva Costa</a
-          ></q-toolbar-title
-        >
+          <div
+            style="
+              width: 100%;
+              max-width: 500px;
+              margin: 0 auto;
+              display: flex;
+              justify-content: space-evenly;
+            "
+          >
+            <span>Naipe de Banjo</span> <span>{{ version }}</span> &copy; {{ ano }}
+            <a href="https://eduardosilvacosta.netlify.app/" target="_blank">Eduardo Silva Costa</a>
+          </div>
+        </q-toolbar-title>
       </q-toolbar>
     </q-footer>
   </q-layout>
@@ -96,6 +104,9 @@ const leftDrawerOpen = ref(false);
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
+
+const ano = new Date().getFullYear();
+const version = '1.0.0';
 </script>
 
 <style scoped>
