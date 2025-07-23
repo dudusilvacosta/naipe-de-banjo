@@ -22,7 +22,7 @@
       para você!
     </p>
   </div>
-  <img src="../assets/banjonotas.png" alt="" class="img" />
+  <img src="../assets/banjonotas.png" alt="imagem de um banjo e partitura" class="img" />
 </template>
 
 <script setup lang="ts">
@@ -42,8 +42,13 @@ onMounted(() => {
 <style scoped>
 .img {
   width: 100%;
-  max-height: 50vh;
   position: fixed;
   bottom: 15px;
+}
+
+@media screen and (min-width: 820px) {
+  .img {
+    width: 700px;
+  }
 }
 </style>

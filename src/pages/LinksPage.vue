@@ -41,7 +41,6 @@
         <q-separator />
       </div>
     </div>
-    <div class="ibg"></div>
   </div>
 </template>
 
@@ -67,16 +66,10 @@ a {
 }
 
 .ibg {
-  height: calc(100svh - 30px);
-  position: fixed;
-  top: 0;
-  right: 0;
   background-image: url('../assets/fundolinks.png');
-  background-position: right center;
-  background-repeat: no-repeat;
+  background-position: right top;
+  background-repeat: repeat-y;
   background-size: contain;
-  max-width: 60vw;
-  width: 100%;
 }
 
 .categorias {

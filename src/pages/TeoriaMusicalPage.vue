@@ -7,7 +7,7 @@
       <q-breadcrumbs-el label="Aulas" icon="school" />
       <q-breadcrumbs-el label="Teoria Musical" />
     </q-breadcrumbs>
-    <div class="row jq-gutter-sm">
+    <div class="row justify-center q-gutter-sm">
       <q-intersection class="example-item">
         <q-card flat bordered class="q-ma-sm">
           <q-video

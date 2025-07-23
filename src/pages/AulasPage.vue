@@ -35,7 +35,7 @@
 
         <div class="text-h6">
           <router-link
-            to="/cifras/quadrilha"
+            to="/aulas/graus-harmonia"
             class="q-item q-item-type row no-wrap"
             style="text-decoration: none; color: #0a66c2"
           >
@@ -58,7 +58,6 @@
         <q-separator />
       </div>
     </div>
-    <div class="ibg"></div>
   </div>
 </template>
 
@@ -77,19 +76,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.ibg {
-  height: calc(100svh - 30px);
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-image: url('../assets/fundoaulas.png');
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 40vw;
-  width: 100%;
-}
-
 .categorias {
   height: calc(100svh - 142px);
   display: flex;

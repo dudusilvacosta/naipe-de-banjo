@@ -111,6 +111,7 @@ const version = '1.0.0';
 
 <style scoped>
 a {
+  margin: 0;
   text-decoration: none;
   color: #0a66c2;
 }
