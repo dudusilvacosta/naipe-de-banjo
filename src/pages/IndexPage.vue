@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
+  <div class="q-pa-md home">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Boas-Vindas" icon="celebration" />
     </q-breadcrumbs>
@@ -22,7 +22,7 @@
       para você!
     </p>
   </div>
-  <img src="../assets/banjonotas.png" alt="imagem de um banjo e partitura" class="img" />
+  <!-- <img src="../assets/notas.png" alt="imagem de partitura" class="img" /> -->
 </template>
 
 <script setup lang="ts">
@@ -40,15 +40,12 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.img {
+.home {
+  height: calc(100vh - 80px);
+  background-image: url('../assets/banjo.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
-  position: fixed;
-  bottom: 15px;
-}
-
-@media screen and (min-width: 820px) {
-  .img {
-    width: 700px;
-  }
 }
 </style>

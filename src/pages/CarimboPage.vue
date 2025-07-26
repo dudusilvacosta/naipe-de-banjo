@@ -409,6 +409,40 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Relâmpago -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Relâmpago"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">Bb</p>
+            <p>Tá chovendo, tá relampeando,</p>
+            <p class="vermelho">F7</p>
+            <p>tá trovejando, tá relampeando</p>
+            <p class="vermelho">Bb</p>
+            <p>Tá chovendo, tá relampeando,</p>
+            <p class="vermelho">F7</p>
+            <p>tá trovejando, tá relampeando</p>
+            <p class="vermelho">
+              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Bb &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; Bb
+            </p>
+            <p>Roda pião, roda pião, roda pião no chão</p>
+            <p class="vermelho">
+              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Bb &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; Bb
+            </p>
+            <p>Roda pião, roda pião, roda pião no chão</p>
+            -3
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
     </q-list>
   </div>
 </template>
