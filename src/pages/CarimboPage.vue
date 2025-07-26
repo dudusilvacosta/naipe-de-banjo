@@ -8,6 +8,59 @@
       <q-breadcrumbs-el label="Carimbó" />
     </q-breadcrumbs>
     <q-list padding bordered class="rounded-borders">
+      <!-- Borboleta de Asa Amarela -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Borboleta de Asa Amarela"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
+            </p>
+            <p>Moça bonita que tá na janela</p>
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
+            </p>
+            <p>Borboleta da asa amarela</p>
+            <p class="vermelho">
+              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7
+            </p>
+            <p>Moça bonita que tá na janela</p>
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7
+            </p>
+            <p>Borboleta da asa amarela</p>
+            <p class="vermelho">
+              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
+            </p>
+            <p>Amarela, amarela, amarela</p>
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7
+            </p>
+            <p>Borboleta da asa amarela</p>
+            <p class="vermelho">
+              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
+            </p>
+            <p>Amarela, amarela, amarela</p>
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E
+            </p>
+            <p>Borboleta da asa amarela</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Carimbó da Ilha -->
       <q-expansion-item
         dense
@@ -419,13 +472,25 @@
       >
         <q-card>
           <q-card-section>
-            <p class="vermelho">Bb</p>
+            <p class="vermelho">
+              Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
+            </p>
             <p>Tá chovendo, tá relampeando,</p>
-            <p class="vermelho">F7</p>
+            <p class="vermelho">
+              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb
+            </p>
             <p>tá trovejando, tá relampeando</p>
-            <p class="vermelho">Bb</p>
+            <p class="vermelho">
+              Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
+            </p>
             <p>Tá chovendo, tá relampeando,</p>
-            <p class="vermelho">F7</p>
+            <p class="vermelho">
+              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb
+            </p>
             <p>tá trovejando, tá relampeando</p>
             <p class="vermelho">
               C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Bb &nbsp; &nbsp; &nbsp;
@@ -439,7 +504,6 @@
               &nbsp; Bb
             </p>
             <p>Roda pião, roda pião, roda pião no chão</p>
-            -3
           </q-card-section>
         </q-card>
       </q-expansion-item>
