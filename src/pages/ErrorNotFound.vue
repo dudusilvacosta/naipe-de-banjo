@@ -3,9 +3,9 @@
     <div>
       <div>
         <div class="text-subtitle1 text-blue text-weight-bolder">
-          Você não disse a palavrinha mágica!
+          você não disse a palavrinha mágica!
         </div>
-        <video autoplay loop playsinline height="360">
+        <video ref="videoRef" autoplay loop muted playsinline controls height="360">
           <source src="../assets/404.mp4" type="video/mp4" />
         </video>
       </div>
@@ -16,5 +16,23 @@
 </template>
 
 <script setup lang="ts">
-//
+import { ref, onMounted } from 'vue';
+
+const videoRef = ref<HTMLVideoElement | null>(null);
+
+onMounted(() => {
+  // toca o vídeo muted para garantir autoplay
+  videoRef.value?.play().catch(() => {});
+
+  // após 3 segundos tenta remover o muted e ativar o som
+  setTimeout(() => {
+    if (videoRef.value) {
+      videoRef.value.muted = false;
+      videoRef.value.volume = 1;
+      videoRef.value.play().catch(() => {
+        // pode falhar se o navegador bloquear autoplay com som
+      });
+    }
+  }, 3000); // 3000ms = 3 segundos
+});
 </script>
