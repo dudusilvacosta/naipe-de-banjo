@@ -9,6 +9,74 @@
     </q-breadcrumbs>
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
+        <!-- Água de Ouro -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Água de Ouro"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">
+                Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;Gm7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G7
+              </p>
+              <p>Ó Dona deixa eu te dar o lírio das pedras</p>
+
+              <p class="vermelho">
+                Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; F7
+              </p>
+              <p>Emana desses teus olhos a prata lunar</p>
+
+              <p class="vermelho">
+                Gm7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb &nbsp;
+                &nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm7
+              </p>
+              <p>Ó Dona venha à vela de longe te oiá</p>
+
+              <p class="vermelho">
+                E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp; A7
+              </p>
+              <p>E te ofertar as pérolas doces da praia</p>
+
+              <p class="vermelho">Dm</p>
+              <p>Água de ouro brilha da estrela</p>
+
+              <p class="vermelho">Gm</p>
+              <p>Do manto belo, Do teu altar</p>
+
+              <p class="vermelho">A7</p>
+              <p>Acende o Círio das eras</p>
+
+              <p class="vermelho">Dm &nbsp; &nbsp; &nbsp; &nbsp; A7</p>
+              <p>Clareia!</p>
+
+              <p class="vermelho">Dm</p>
+              <p>No breu da noite és a estrela</p>
+
+              <p class="vermelho">Gm</p>
+              <p>Luz da candeia lunar</p>
+
+              <p class="vermelho">
+                Edim &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; A7
+              </p>
+              <p>Linda com manto de ouro</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm</p>
+              <p>Do reino da pedra</p>
+
+              <p class="vermelho">A7</p>
+              <p>Do mar</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Ataiô -->
         <q-expansion-item
           dense
