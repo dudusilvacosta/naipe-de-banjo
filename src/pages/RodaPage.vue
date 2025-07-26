@@ -150,6 +150,76 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Barra Nova -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Barra Nova"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">Am</p>
+              <p>Meu vaqueiro vai dizer</p>
+              <p>Que a madeira do meu boi</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;Bm7
+              </p>
+              <p>Tá dourada, tem brilhante</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Am
+              </p>
+              <p>Fita verde e amarela</p>
+              <p class="vermelho">
+                G7 &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7 &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>Da &nbsp; &nbsp; janela vejo ela</p>
+              <p class="vermelho">
+                G7 &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7 &nbsp; &nbsp; &nbsp; &nbsp;
+                Am
+              </p>
+              <p>Luna prata, luna bela</p>
+              <p>No horizonte a claridão</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+              </p>
+              <p>Do meu cordão balanceando com meu boi</p>
+
+              <p class="vermelho">
+                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; E7
+              </p>
+              <p>Ô, rola Boi Malhadinho!</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Am
+              </p>
+              <p>Barriqueiro da virada</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;C
+              </p>
+              <p>No romper da madrugada</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp;G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; G7
+              </p>
+              <p>Barra nova pelo vento</p>
+              <p class="vermelho">
+                G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+              </p>
+              <p>Barra nova pelo vento</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Domingo de Tartde -->
         <q-expansion-item
           dense
