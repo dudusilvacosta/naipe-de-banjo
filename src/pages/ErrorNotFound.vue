@@ -1,23 +1,16 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        404
+      <div>
+        <div class="text-subtitle1 text-blue text-weight-bolder">
+          Você não disse a palavrinha mágica!
+        </div>
+        <video autoplay loop playsinline height="360">
+          <source src="../assets/404.mp4" type="video/mp4" />
+        </video>
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
-
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
+      <q-btn class="q-mt-xl" text-color="blue" unelevated to="/" label="Ir para o início" no-caps />
     </div>
   </div>
 </template>
