@@ -222,6 +222,59 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Chama Verequete -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Chama Verequete"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
+            </p>
+            <p>Chama Verequete, ô, ô, ô</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb
+            </p>
+            <p>Chama Verequete, ô, ô, ô, ô</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
+            </p>
+            <p>Chama Verequete, ô, ô, ô</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb
+            </p>
+            <p>Chama Verequete</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
+            </p>
+            <p>Chama Verequete, Oh! Verê</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb
+            </p>
+            <p>Oi chama Verequete, Oh! Verê</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7</p>
+            <p>Ogum Balailê, pelejar, pelejar</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb</p>
+            <p>Ogum balaiê velejá velejá</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7</p>
+            <p>Ogum balaiê velejá velejá</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb</p>
+            <p>Ogum balaiê velejá velejá</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7</p>
+            <p>Ogum ogum tatara com deus</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb</p>
+            <p>Papai ogum tatara com deus</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7</p>
+            <p>Ogum ogum tatara com deus</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb</p>
+            <p>Papai ogum tatara com deus</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Curió do Bico Doce -->
       <q-expansion-item
         dense
