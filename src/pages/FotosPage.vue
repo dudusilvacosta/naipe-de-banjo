@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
+  <div class="q-pl-md q-pt-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Fotos" icon="image" />
     </q-breadcrumbs>
@@ -136,8 +136,26 @@ onMounted(() => {
 </script>
 <style scoped>
 .categorias {
-  height: calc(100svh - 142px);
+  position: relative;
+  height: calc(100svh - 120px);
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.categorias::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url('../assets/fotos.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  pointer-events: none;
+  z-index: 0;
 }
 </style>

@@ -65,16 +65,28 @@ a {
   text-decoration: none;
 }
 
-.ibg {
-  background-image: url('../assets/fundolinks.png');
-  background-position: right top;
-  background-repeat: repeat-y;
-  background-size: contain;
-}
-
 .categorias {
-  height: calc(100svh - 142px);
+  position: relative;
+  height: calc(100svh - 120px);
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.categorias::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 37vw;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url('../assets/download.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  pointer-events: none;
+  z-index: 0;
 }
 </style>

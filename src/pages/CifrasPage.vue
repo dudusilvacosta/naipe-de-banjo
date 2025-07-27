@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
+  <div class="q-pl-md q-pt-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
@@ -31,18 +31,6 @@
         </div>
 
         <q-separator />
-
-        <!-- <div class="text-h6">
-        <router-link
-          to="/cifras/retumbao"
-          class="q-item q-item-type row no-wrap"
-          style="text-decoration: none; color: #0a66c2"
-        >
-          Retumbão
-        </router-link>
-      </div>
-
-      <q-separator /> -->
 
         <div class="text-h6">
           <router-link
@@ -86,8 +74,26 @@ onMounted(() => {
 
 <style scoped>
 .categorias {
-  height: calc(100svh - 142px);
+  position: relative;
+  height: calc(100svh - 120px);
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.categorias::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url('../assets/cifras.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  pointer-events: none;
+  z-index: 0;
 }
 </style>

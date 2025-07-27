@@ -41,11 +41,27 @@ onMounted(() => {
 
 <style scoped>
 .home {
-  height: calc(100vh - 80px);
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 85px);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.home::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
   background-image: url('../assets/banjo.png');
-  background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  background-position: bottom center;
+  pointer-events: none;
+  z-index: -1;
 }
 </style>
