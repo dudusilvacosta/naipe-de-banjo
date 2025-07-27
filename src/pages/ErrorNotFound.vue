@@ -2,9 +2,7 @@
   <div class="fullscreen text-center q-pa-md flex flex-center">
     <div>
       <div>
-        <div class="text-subtitle1 text-blue text-weight-bolder">
-          você não disse a palavrinha mágica!
-        </div>
+        <div class="text-subtitle1 text-blue text-weight-bolder">Você digitou a URL errada!</div>
         <video ref="videoRef" autoplay loop muted playsinline controls height="360">
           <source src="../assets/404.mp4" type="video/mp4" />
         </video>
@@ -33,6 +31,6 @@ onMounted(() => {
         // pode falhar se o navegador bloquear autoplay com som
       });
     }
-  }, 3000); // 3000ms = 3 segundos
+  }, 1000);
 });
 </script>
