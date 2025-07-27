@@ -780,6 +780,53 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Urrou Meu Boi -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Urrou Meu Boi"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">F#</p>
+              <p>Urrou meu boi</p>
+              <p>Que abalou as estrelas do céu</p>
+              <p>Clareou no balanço do mar</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;E
+              </p>
+              <p>No lençol de areia,</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#
+              </p>
+              <p>fez a sereia cantar</p>
+              <p class="vermelho">B</p>
+              <p>Urrou! Urrou! Urrou!</p>
+              <p class="vermelho">B</p>
+              <p>Eu vi uma onça gemer,</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F# &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; B
+              </p>
+              <p>na mata do arvoredo</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; E</p>
+              <p>O lê lê, São João!</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; B
+              </p>
+              <p>Me valha São Pedro!</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; F# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B
+              </p>
+              <p>De onça eu tenho medo</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
       </q-list>
     </div>
   </div>
