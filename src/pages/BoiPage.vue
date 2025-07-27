@@ -305,7 +305,7 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
-        <!-- Boi da Estrela -->
+        <!-- Bordado de Flores -->
         <q-expansion-item
           dense
           dense-toggle
@@ -405,6 +405,102 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Bordado de Flores"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;DM7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Bm
+              </p>
+              <p>Mandei fazer um bordado</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+              </p>
+              <p>Com flores de toda cor</p>
+
+              <p class="vermelho">
+                F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; Bm
+              </p>
+              <p>Para enfeitar o meu bolero</p>
+
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; A7
+              </p>
+              <p>Enfeitar o meu cordão</p>
+
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;D
+              </p>
+              <p>Flores do rio Caeté</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7 &nbsp; &nbsp; F#7
+              </p>
+              <p>Flores do rio Ararí</p>
+
+              <p class="vermelho">
+                Bm &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;D
+              </p>
+              <p>Flo &nbsp;&nbsp;res, bordado de flores</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7</p>
+              <p>De rara beleza</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp;C#
+              </p>
+              <p>Encanto de todas as &nbsp; cores</p>
+
+              <p class="vermelho">D7</p>
+              <p>Quando chegar mês de junho</p>
+
+              <p class="vermelho">G</p>
+              <p>Eu vou dançar, tocar tambor</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;D
+              </p>
+              <p>Sou do Batalhão da Estrela</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7
+              </p>
+              <p>Barriqueiro do Guamá</p>
+
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+              </p>
+              <p>Embalando boi pelas ruas</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+              </p>
+              <p>Embalando boi pelas ruas</p>
+
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                D
+              </p>
+              <p>Embalando boi pelas ruas de Belém</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+
         <!-- Estrela do Chão -->
         <q-expansion-item
           dense
