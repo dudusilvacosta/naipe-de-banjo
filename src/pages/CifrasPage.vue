@@ -8,7 +8,7 @@
     </q-breadcrumbs>
     <div class="categorias">
       <div class="q-gutter-sm">
-        <div class="text-h5">
+        <div class="text-h6">
           <router-link
             to="/cifras/boi"
             class="q-item q-item-type row no-wrap"
@@ -83,7 +83,7 @@ onMounted(() => {
   height: 100%;
   aspect-ratio: 1 / 1;
   background-image: url('../assets/notas.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
   background-position: top right;
   pointer-events: none;

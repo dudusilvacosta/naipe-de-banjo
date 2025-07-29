@@ -8,7 +8,7 @@
     </q-breadcrumbs>
     <div class="categorias">
       <div class="q-gutter-sm">
-        <div class="text-h5">
+        <div class="text-h6">
           <a
             href="https://drive.google.com/file/d/1MvmmSv0lq9RauqsHt5MF9dIPHAkz5S0t/view?usp=drive_link"
             target="_blank"
@@ -76,11 +76,11 @@ a {
   top: 0;
   right: 0;
   width: 100%;
-  max-width: 37vw;
+  max-width: 60%;
   height: 100%;
   aspect-ratio: 1 / 1;
   background-image: url('../assets/notas.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
   background-position: top right;
   pointer-events: none;
