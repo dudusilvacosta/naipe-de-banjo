@@ -2,8 +2,8 @@
   <div class="fullscreen text-center q-pa-md flex flex-center">
     <div>
       <div>
-        <div class="text-subtitle1 text-blue text-weight-bolder">Você digitou a URL errada!</div>
-        <video ref="videoRef" autoplay loop muted playsinline controls height="360">
+        <div class="text-h6 text-blue text-weight-bolder">Você digitou a URL errada!</div>
+        <video ref="videoRef" autoplay loop muted playsinline controls height="400">
           <source src="../assets/404.mp4" type="video/mp4" />
         </video>
       </div>
