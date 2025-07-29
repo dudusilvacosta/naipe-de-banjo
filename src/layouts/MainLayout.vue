@@ -3,8 +3,12 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-        <q-toolbar-title style="color: #be961e; font-weight: #fcba10">
-          Naipe de Banjo
+        <q-toolbar-title style="color: #ffca28; font-weight: bold">
+          <q-img
+            src="../assets/logo.png"
+            style="width: 103px; height: 50px"
+            alt="Logo Naipe de Banjo"
+          />
         </q-toolbar-title>
 
         <div>v1.0.0</div>
@@ -60,24 +64,24 @@ const linksList: EssentialLinkProps[] = [
     icon: 'home',
     link: '/',
   },
-  // {
-  //   title: 'História',
-  //   caption: 'o banjo no batalhão',
-  //   icon: 'menu_book',
-  //   link: '/historia',
-  // },
-  // {
-  //   title: 'Fotos',
-  //   caption: 'ensaios e cortejos',
-  //   icon: 'image',
-  //   link: '/fotos',
-  // },
-  // {
-  //   title: 'Vídeos',
-  //   caption: 'vivências',
-  //   icon: 'smart_display',
-  //   link: '/videos',
-  // },
+  {
+    title: 'História',
+    caption: 'o banjo no batalhão',
+    icon: 'menu_book',
+    link: '/historia',
+  },
+  {
+    title: 'Fotos',
+    caption: 'ensaios e cortejos',
+    icon: 'image',
+    link: '/fotos',
+  },
+  {
+    title: 'Vídeos',
+    caption: 'vivências',
+    icon: 'smart_display',
+    link: '/videos',
+  },
   {
     title: 'Cifras',
     caption: 'roda cantada e cortejo',

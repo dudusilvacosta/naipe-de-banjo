@@ -8,28 +8,25 @@
     </q-breadcrumbs>
     <div class="categorias">
       <div class="q-gutter-sm">
-        <div class="text-h6">
+        <div class="text-h5">
           <a
             href="https://drive.google.com/file/d/1MvmmSv0lq9RauqsHt5MF9dIPHAkz5S0t/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             >Roda Cantada 2025</a
           >
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <a
             href="https://drive.google.com/file/d/1D5qR1A2L8nzHRdISlIMpoK8Azvb_PTMU/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             >Roda Cantada 2024</a
           >
-        </div>
 
-        <q-separator />
-        <div class="text-h6">
+          <q-separator />
+
           <a
             href="https://drive.google.com/file/d/1-P0kq_pX7-tgelpaswFQB0wrZLhW4aKw/view?usp=sharing"
             target="_blank"
@@ -82,7 +79,7 @@ a {
   max-width: 37vw;
   height: 100%;
   aspect-ratio: 1 / 1;
-  background-image: url('../assets/download.png');
+  background-image: url('../assets/notas.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;

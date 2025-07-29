@@ -21,8 +21,8 @@
       para quem admira esse trabalho. Esperamos que você aproveite o conteúdo e que ele seja útil
       para você!
     </p>
+    <img src="../assets/notas.png" alt="imagem de partitura" class="img" />
   </div>
-  <!-- <img src="../assets/notas.png" alt="imagem de partitura" class="img" /> -->
 </template>
 
 <script setup lang="ts">
@@ -41,27 +41,10 @@ onMounted(() => {
 
 <style scoped>
 .home {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 85px);
-  margin: 0 auto;
+  height: calc(100svh - 75px);
   overflow: hidden;
 }
-
-.home::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.img {
   width: 100%;
-  max-width: 500px;
-  height: 100%;
-  background-image: url('../assets/banjo.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom center;
-  pointer-events: none;
-  z-index: -1;
 }
 </style>

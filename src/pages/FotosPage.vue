@@ -2,14 +2,14 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pl-md q-pt-md">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Fotos" icon="image" />
     </q-breadcrumbs>
 
     <div class="categorias">
       <div class="q-gutter-sm">
-        <div class="text-h6">
+        <div class="text-h5">
           <router-link
             to="/fotos/junho25"
             class="q-item q-item-type row no-wrap"
@@ -17,11 +17,9 @@
           >
             Junho 2025
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <router-link
             to="/fotos/cirio24"
             class="q-item q-item-type row no-wrap"
@@ -29,11 +27,9 @@
           >
             Círio 2024
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <router-link
             to="/fotos/junho24"
             class="q-item q-item-type row no-wrap"
@@ -41,11 +37,9 @@
           >
             Junho 2024
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <router-link
             to="/fotos/cirio23"
             class="q-item q-item-type row no-wrap"
@@ -53,9 +47,8 @@
           >
             Círio 2023
           </router-link>
-        </div>
 
-        <!-- <q-separator />
+          <!-- <q-separator />
 
         <div class="text-h6">
           <router-link
@@ -115,7 +108,8 @@
           </router-link>
         </div> -->
 
-        <q-separator />
+          <q-separator />
+        </div>
       </div>
     </div>
   </div>
@@ -148,10 +142,10 @@ onMounted(() => {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   aspect-ratio: 1 / 1;
-  background-image: url('../assets/fotos.png');
+  background-image: url('../assets/notas.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;

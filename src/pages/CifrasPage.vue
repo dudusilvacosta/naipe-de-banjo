@@ -2,22 +2,20 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pl-md q-pt-md">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
     <div class="categorias">
       <div class="q-gutter-sm">
-        <div class="text-h6">
-          <div class="text-h6">
-            <router-link
-              to="/cifras/boi"
-              class="q-item q-item-type row no-wrap"
-              style="text-decoration: none; color: #0a66c2"
-            >
-              Boi
-            </router-link>
-          </div>
+        <div class="text-h5">
+          <router-link
+            to="/cifras/boi"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Boi
+          </router-link>
 
           <q-separator />
 
@@ -28,11 +26,8 @@
           >
             Carimbó
           </router-link>
-        </div>
 
-        <q-separator />
-
-        <div class="text-h6">
+          <q-separator />
           <router-link
             to="/cifras/quadrilha"
             class="q-item q-item-type row no-wrap"
@@ -40,11 +35,9 @@
           >
             Quadrilha
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <router-link
             to="/cifras/roda"
             class="q-item q-item-type row no-wrap"
@@ -86,10 +79,10 @@ onMounted(() => {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   aspect-ratio: 1 / 1;
-  background-image: url('../assets/cifras.png');
+  background-image: url('../assets/notas.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;

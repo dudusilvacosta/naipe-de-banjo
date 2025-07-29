@@ -2,14 +2,14 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pl-md q-pt-md">
+  <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Aulas" icon="school" />
     </q-breadcrumbs>
 
     <div class="categorias">
       <div class="q-gutter-sm">
-        <div class="text-h6">
+        <div class="text-h5">
           <router-link
             to="/aulas/teoria-musical"
             class="q-item q-item-type row no-wrap"
@@ -17,11 +17,9 @@
           >
             Teoria Musical
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <router-link
             to="/aulas/acordes-cifras"
             class="q-item q-item-type row no-wrap"
@@ -29,11 +27,9 @@
           >
             Acordes e Cifras
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <router-link
             to="/aulas/graus-harmonia"
             class="q-item q-item-type row no-wrap"
@@ -41,11 +37,9 @@
           >
             Graus e Harmonia
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
 
-        <div class="text-h6">
           <router-link
             to="/aulas/carimbo-cifrado"
             class="q-item q-item-type row no-wrap"
@@ -53,9 +47,9 @@
           >
             Carimbó Cifrado
           </router-link>
-        </div>
 
-        <q-separator />
+          <q-separator />
+        </div>
       </div>
     </div>
   </div>
@@ -89,10 +83,10 @@ onMounted(() => {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   aspect-ratio: 1 / 1;
-  background-image: url('../assets/cifras.png');
+  background-image: url('../assets/notas.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;

@@ -9,6 +9,8 @@
     <div>
       <div style="width: 100%; letter-spacing: 1px; max-width: 400px; font-weight: 500">
         <q-chat-message
+          bg-color="blue-9"
+          text-color="white"
           :text="[
             '🎉 Este espaço é dedicado exclusivamente às suas notificações. Aqui você receberá avisos importantes como atualizações, novidades, mensagens e lembretes relevantes para você. Tudo organizado e ao seu alcance. Fique de olho nas notificações e aproveite ao máximo o nosso app!',
           ]"
@@ -16,6 +18,8 @@
         />
 
         <q-chat-message
+          bg-color="blue-9"
+          text-color="white"
           :text="[
             '📢 Aviso Importante Este site ainda está em fase de desenvolvimento. Por isso, pedimos que o compartilhamento seja feito somente entre os membros do grupo de testes. 👀 Encontrou algum erro, bug ou tem alguma sugestão? Sua opinião é muito importante! Por favor, compartilhe com a equipe de desenvolvimento. 🙏 Agradecemos pela colaboração e paciência!',
           ]"

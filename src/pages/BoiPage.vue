@@ -135,7 +135,7 @@
               </p>
               <p>Do meu guarnicê.</p>
               <p class="vermelho">C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
-              <p>Canta,Vardé</p>
+              <p>Canta, Vardé</p>
               <p class="vermelho">
                 C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
               </p>
@@ -305,7 +305,7 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
-        <!-- Bordado de Flores -->
+        <!-- Boi da Estrela -->
         <q-expansion-item
           dense
           dense-toggle
@@ -405,6 +405,7 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Bordado de Flores -->
         <q-expansion-item
           dense
           dense-toggle
