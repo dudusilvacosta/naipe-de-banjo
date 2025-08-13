@@ -19,60 +19,44 @@
         >
           <q-card>
             <q-card-section>
-              <p class="vermelho">
-                Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp;Gm7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G7
-              </p>
+              <p class="autor">Allan Carvalho</p>
+              <p class="vermelho"></p>
               <p>Ó Dona deixa eu te dar o lírio das pedras</p>
 
-              <p class="vermelho">
-                Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp;C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; F7
-              </p>
+              <p class="vermelho"></p>
               <p>Emana desses teus olhos a prata lunar</p>
 
-              <p class="vermelho">
-                Gm7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb &nbsp;
-                &nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm7
-              </p>
+              <p class="vermelho"></p>
               <p>Ó Dona venha à vela de longe te oiá</p>
 
-              <p class="vermelho">
-                E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp;&nbsp; A7
-              </p>
+              <p class="vermelho"></p>
               <p>E te ofertar as pérolas doces da praia</p>
 
-              <p class="vermelho">Dm</p>
+              <p class="vermelho"></p>
               <p>Água de ouro brilha da estrela</p>
 
-              <p class="vermelho">Gm</p>
+              <p class="vermelho"></p>
               <p>Do manto belo, Do teu altar</p>
 
-              <p class="vermelho">A7</p>
+              <p class="vermelho"></p>
               <p>Acende o Círio das eras</p>
 
-              <p class="vermelho">Dm &nbsp; &nbsp; &nbsp; &nbsp; A7</p>
+              <p class="vermelho"></p>
               <p>Clareia!</p>
 
-              <p class="vermelho">Dm</p>
+              <p class="vermelho"></p>
               <p>No breu da noite és a estrela</p>
 
-              <p class="vermelho">Gm</p>
+              <p class="vermelho"></p>
               <p>Luz da candeia lunar</p>
 
-              <p class="vermelho">
-                Edim &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; A7
-              </p>
+              <p class="vermelho"></p>
               <p>Linda com manto de ouro</p>
 
-              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm</p>
+              <p class="vermelho"></p>
               <p>Do reino da pedra</p>
 
-              <p class="vermelho">A7</p>
+              <p class="vermelho"></p>
               <p>Do mar</p>
             </q-card-section>
           </q-card>
@@ -87,20 +71,21 @@
         >
           <q-card>
             <q-card-section>
-              <p class="vermelho">G# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#</p>
+              <p class="autor">Ronaldo Silva</p>
+              <p class="vermelho">Ab &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Db</p>
               <p>Nos olhos tá escrito</p>
               <p class="vermelho">
-                C# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G# &nbsp;&nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;D#m &nbsp; &nbsp; &nbsp; G#
+                Ab &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ebm &nbsp;&nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ab
               </p>
               Tá escrito que você namora
               <p class="vermelho">
-                C# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; Fm
+                Db &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; Fm
               </p>
               <p>Que você serena e chora</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb7 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;D#7 &nbsp;
-                &nbsp; &nbsp; &nbsp;&nbsp;G# &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb7 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Eb7 &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp;Ab &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               </p>
               <p>Com saudade desse amor</p>
               <p class="vermelho">
@@ -110,24 +95,24 @@
               Pro chão você no meu caminho
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Db
               </p>
               <p>Também vou chorar baixinho</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ab
               </p>
               <p>Se você disser que não</p>
               <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Db &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;C# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Ab
               </p>
               <p>Tem zabumbeiro na zabumba marcação</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bbm &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D#7 &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Eb7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp;Ab
               </p>
               <p>Sacode xote o arrasta-pé nesse salão</p>
               <p class="vermelho">
@@ -139,11 +124,11 @@
               <p>Se espiche pra escorregar</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Db
               </p>
               <p>Meu namoro não tem pressa</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C# &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Db &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#
               </p>
               <p>Meu amor pode esperar</p>
@@ -160,6 +145,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Allan Carva e Ronaldo Silva</p>
               <p class="vermelho">Am</p>
               <p>Meu vaqueiro vai dizer</p>
               <p>Que a madeira do meu boi</p>
@@ -230,6 +216,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Iris da Selva</p>
               <p class="vermelho">
                 A &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp;&nbsp; &nbsp;
@@ -314,6 +301,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Allan Carvalho e Ronaldo Silva</p>
               <p class="vermelho">
                 Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F
@@ -381,6 +369,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Vinícius Leite e Allan Carvalho</p>
               <p class="vermelho">Am</p>
               <p>Quando o banjo chegar</p>
               <p class="vermelho">
@@ -478,6 +467,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.autor {
+  color: #666;
+  font-style: italic;
+}
 p {
   margin: 0;
   padding: 0;

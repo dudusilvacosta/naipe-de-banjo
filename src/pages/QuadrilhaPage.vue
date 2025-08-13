@@ -351,6 +351,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.autor {
+  color: #666;
+  font-style: italic;
+}
 p {
   margin: 0;
   padding: 0;

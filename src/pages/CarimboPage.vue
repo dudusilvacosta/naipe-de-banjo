@@ -18,45 +18,22 @@
       >
         <q-card>
           <q-card-section>
-            <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
-            </p>
+            <p class="autor">Mestre Verequete</p>
+            <p class="vermelho"></p>
             <p>Moça bonita que tá na janela</p>
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
-            </p>
+            <p class="vermelho"></p>
             <p>Borboleta da asa amarela</p>
-            <p class="vermelho">
-              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7
-            </p>
+            <p class="vermelho"></p>
             <p>Moça bonita que tá na janela</p>
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7
-            </p>
+            <p class="vermelho"></p>
             <p>Borboleta da asa amarela</p>
-            <p class="vermelho">
-              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
-            </p>
+            <p class="vermelho"></p>
             <p>Amarela, amarela, amarela</p>
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7
-            </p>
+            <p class="vermelho"></p>
             <p>Borboleta da asa amarela</p>
-            <p class="vermelho">
-              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
-            </p>
+            <p class="vermelho"></p>
             <p>Amarela, amarela, amarela</p>
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E
-            </p>
+            <p class="vermelho"></p>
             <p>Borboleta da asa amarela</p>
           </q-card-section>
         </q-card>
@@ -232,6 +209,7 @@
       >
         <q-card>
           <q-card-section>
+            <p class="autor">Mestre Verequete</p>
             <p class="vermelho">
               Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
             </p>
@@ -285,6 +263,7 @@
       >
         <q-card>
           <q-card-section>
+            <p class="autor">Gonzaga Blantez</p>
             <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm</p>
             <p>Curió do bico doce</p>
             <p>Passarinho quem te trouxe</p>
@@ -337,6 +316,7 @@
       >
         <q-card>
           <q-card-section>
+            <p class="autor">Pinduca</p>
             <p class="vermelho">
               F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               C7
@@ -393,6 +373,7 @@
       >
         <q-card>
           <q-card-section>
+            <p class="autor">Mestre Lucindo</p>
             <p class="vermelho">
               F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -454,6 +435,7 @@
       >
         <q-card>
           <q-card-section>
+            <p class="autor">Dona Onete</p>
             <p class="vermelho">Dm</p>
             <p>A garça namoradeira</p>
             <p class="vermelho">
@@ -602,6 +584,7 @@
       >
         <q-card>
           <q-card-section>
+            <p class="autor">Mestre Lucindo</p>
             <p class="vermelho">
               Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7
             </p>
@@ -673,37 +656,17 @@
       >
         <q-card>
           <q-card-section>
-            <p class="vermelho">
-              Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
-            </p>
+            <p class="vermelho"></p>
             <p>Tá chovendo, tá relampeando,</p>
-            <p class="vermelho">
-              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb
-            </p>
+            <p class="vermelho"></p>
             <p>tá trovejando, tá relampeando</p>
-            <p class="vermelho">
-              Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
-            </p>
+            <p class="vermelho"></p>
             <p>Tá chovendo, tá relampeando,</p>
-            <p class="vermelho">
-              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb
-            </p>
+            <p class="vermelho"></p>
             <p>tá trovejando, tá relampeando</p>
-            <p class="vermelho">
-              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Bb &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp;F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; Bb
-            </p>
+            <p class="vermelho"></p>
             <p>Roda pião, roda pião, roda pião no chão</p>
-            <p class="vermelho">
-              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Bb &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp;F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; Bb
-            </p>
+            <p class="vermelho"></p>
             <p>Roda pião, roda pião, roda pião no chão</p>
           </q-card-section>
         </q-card>
@@ -727,6 +690,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.autor {
+  color: #666;
+  font-style: italic;
+}
 p {
   margin: 0;
   padding: 0;

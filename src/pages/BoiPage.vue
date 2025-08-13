@@ -249,6 +249,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Papete</p>
               <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E</p>
               <p>Meu São João</p>
               <p class="vermelho">Am</p>
@@ -944,6 +945,10 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.autor {
+  color: #666;
+  font-style: italic;
+}
 p {
   margin: 0;
   padding: 0;
