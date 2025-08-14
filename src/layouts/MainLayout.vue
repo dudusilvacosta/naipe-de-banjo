@@ -61,13 +61,13 @@ const linksList: EssentialLinkProps[] = [
   {
     title: 'Início',
     caption: 'boas-vindas',
-    icon: 'home',
+    icon: 'celebration',
     link: '/',
   },
   {
-    title: 'História',
-    caption: 'o banjo no batalhão',
-    icon: 'menu_book',
+    title: 'Naipe',
+    caption: 'os primórdios',
+    icon: 'star',
     link: '/historia',
   },
   {
