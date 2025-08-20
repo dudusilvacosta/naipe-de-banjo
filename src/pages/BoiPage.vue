@@ -316,6 +316,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Júnior Soares e Ronaldo Silva</p>
               <p class="vermelho">C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D#m7</p>
               <p>A roseira tá florida</p>
 
@@ -416,6 +417,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Júnior Soares e Ronaldo Silva</p>
               <p class="vermelho">
                 D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;DM7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; Bm
@@ -502,7 +504,6 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
-
         <!-- Estrela do Chão -->
         <q-expansion-item
           dense
@@ -596,7 +597,7 @@
               <p class="vermelho">C</p>
               <p>Vou enfeitar o rosário</p>
               <p class="vermelho">
-                G &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp;
+                G &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7 &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Am
               </p>
               <p>Pra quando for mês de maio</p>
@@ -612,7 +613,7 @@
               <p class="vermelho">C</p>
               <p>A estrela d'alva e a lua</p>
               <p class="vermelho">
-                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp; &nbsp; &nbsp;
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7 &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; Am
               </p>
               <p>Pro astro rei... luz divina</p>
@@ -629,7 +630,7 @@
               <p>As inicias BP</p>
               <p class="vermelho">
                 Dm &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; Am
+                &nbsp; &nbsp; C
               </p>
               <p>De rubis e diamantes</p>
               <p class="vermelho">B7</p>
@@ -743,6 +744,7 @@
         >
           <q-card>
             <q-card-section>
+              <p class="autor">Ronaldo Silva,Júnior Soares, Rui Baldez e Toni Soares</p>
               <p class="vermelho">
                 E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
                 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
