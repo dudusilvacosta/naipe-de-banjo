@@ -206,6 +206,55 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Canoinha Bailarina -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Canoinha Bailarina"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="autor">Allan Carva, Cincinato Jr e Ronaldo Silva</p>
+              <p class="vermelho">Dm G</p>
+              <p>Canoinha é bailarina</p>
+
+              <p class="vermelho">C Am</p>
+              <p>Menina dos olhos meus</p>
+
+              <p class="vermelho">Dm G</p>
+              <p>Navega o tempo e o sol poente</p>
+
+              <p class="vermelho">C Am</p>
+              <p>Labirintos de água e céu</p>
+
+              <p class="vermelho">Dm G</p>
+              <p>Canoa</p>
+
+              <p class="vermelho">C Am</p>
+              <p>Banzeiro</p>
+
+              <p class="vermelho">Dm G</p>
+              <p>Vento</p>
+
+              <p class="vermelho">C Am</p>
+              <p>Balanço do mar</p>
+
+              <p class="vermelho">Dm G</p>
+              <p>Chegar bem perto da Lua</p>
+
+              <p class="vermelho">C Am</p>
+              <p>Olhar de perto as sereias</p>
+
+              <p class="vermelho">Dm G</p>
+              <p>O vento forte dos mares</p>
+
+              <p class="vermelho">C Am</p>
+              <p>A valsa dos lumes, as loas de areia</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Domingo de Tartde -->
         <q-expansion-item
           dense
@@ -288,6 +337,60 @@
                 &nbsp; &nbsp; &nbsp; &nbsp;A
               </p>
               <p>Que ela é meu cantar</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+        <!-- Florindo Tapera -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Florindo Tapera"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="autor">Ronaldo Silva</p>
+              <p class="vermelho">
+                A &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp;&nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Ciranda, ciranda</p>
+              <p class="vermelho">G F</p>
+              <p>da beira da praia</p>
+              <p>Arraia, espadarte</p>
+              <p class="vermelho">G</p>
+              <p>cavalo marinho</p>
+              <p class="vermelho">C</p>
+              <p>Meninos de barro</p>
+              <p>Ó, aro da lua</p>
+              <p class="vermelho">G</p>
+              <p>Eu vou pelos rios</p>
+              <p class="vermelho">F G</p>
+              <p>florindo taperas</p>
+              <p class="vermelho">C</p>
+              <p>Eu vou pelos rios</p>
+              <p class="vermelho">G F</p>
+              <p>florindo taperas</p>
+              <p class="vermelho">G</p>
+              <p>Pois é na floresta</p>
+              <p class="vermelho">C G</p>
+              <p>que eu vivo cantando</p>
+              <p>Dançando ciranda</p>
+              <p class="vermelho">F</p>
+              <p>Bailando, pois é</p>
+              <p class="vermelho">G</p>
+              <p>E o verde exala</p>
+              <p>Em torno de mim</p>
+              <p class="vermelho">C</p>
+              <p>O cheiro suave</p>
+              <p class="vermelho">G F</p>
+              <p>de patchouli</p>
+              <p class="vermelho">G</p>
+              <p>O cheiro suave</p>
+              <p class="vermelho">C G</p>
+              <p>de patchouli</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
@@ -552,6 +655,80 @@
               <p>Sua boca na minha boca</p>
               <p class="vermelho">E7</p>
               <p>Esquenta o meu coração</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+        <!-- Senhora da Amazônia -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Senhora da Amazônia"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="autor">Vinícius Leite e Allan Carvalho</p>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;D
+              </p>
+              <p>Senhora da Amazônia</p>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; D
+              </p>
+              <p>Venho trazer uma prenda</p>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Bm
+              </p>
+              <p>Cortejo de miritis</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm
+              </p>
+              <p>Meu Batalhão de ouro e prata</p>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; D
+              </p>
+              <p>Quando chegas nas águas do Guajará</p>
+
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              </p>
+              <p>Vens com teu manto abençoando</p>
+
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+              </p>
+              <p>Rainha mãe da floresta És mãe,</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
+              </p>
+              <p>és luz do mundo</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
+              </p>
+              <p>Maria dos navegantes</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Bm
+              </p>
+              <p>Maria dos pescadores</p>
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp;
+                &nbsp; Bm
+              </p>
+              <p>Maria dos cantadores</p>
+              <p class="vermelho">
+                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#7 &nbsp; &nbsp; Bm
+              </p>
+              <p>Maria de Nazaré</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
