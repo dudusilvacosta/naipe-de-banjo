@@ -678,7 +678,7 @@
           dense
           dense-toggle
           expand-separator
-          label="Quando o banjo chegar"
+          label="Quando o Banjo Chegar"
           header-class="text-primary"
         >
           <q-card>
