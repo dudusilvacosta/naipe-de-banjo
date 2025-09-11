@@ -10,6 +10,17 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
+          <div class="text-h6">
+            <router-link
+              to="/fotos/cirio25"
+              class="q-item q-item-type row no-wrap"
+              style="text-decoration: none; color: #0a66c2"
+            >
+              Círio 2025
+            </router-link>
+          </div>
+
+          <q-separator />
           <router-link
             to="/fotos/junho25"
             class="q-item q-item-type row no-wrap"

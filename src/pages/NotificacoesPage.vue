@@ -21,6 +21,22 @@
           bg-color="blue-9"
           text-color="white"
           :text="[
+            '✅ Confirmação da inscrição do cortejo do Círio 2025: 07 de setembro, 🎶 Início dos ensaios: 08 de setembro',
+          ]"
+        />
+
+        <q-chat-message
+          bg-color="blue-9"
+          text-color="white"
+          :text="[
+            '🚫 No dia 11 de setembro não haverá ensaio, para que todos possam prestigiar o show do Ronaldo Silva. 🎤✨',
+          ]"
+        />
+
+        <q-chat-message
+          bg-color="blue-9"
+          text-color="white"
+          :text="[
             '📢 Aviso Importante Este site ainda está em fase de desenvolvimento. Por isso, pedimos que o compartilhamento seja feito somente entre os membros do grupo de testes. 👀 Encontrou algum erro, bug ou tem alguma sugestão? Sua opinião é muito importante! Por favor, compartilhe com a equipe de desenvolvimento. 🙏 Agradecemos pela colaboração e paciência!',
           ]"
         />
