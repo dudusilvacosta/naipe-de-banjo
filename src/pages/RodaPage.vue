@@ -281,24 +281,26 @@
           <q-card>
             <q-card-section>
               <p class="autor">Iris da Selva</p>
+              <p class="vermelho">A</p>
+              <p>Quero que me encontre</p>
               <p class="vermelho">
-                A &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp;&nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+                E &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
               </p>
-              <p>Quero que me encontre da janela do busão</p>
-              <p class="vermelho">
-                Bm &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-              </p>
-              <p>Chamando meu nome feliz de emoção</p>
+              <p>da janela do busão</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; A
+                &nbsp; &nbsp; &nbsp;Bm
               </p>
-              <p>Aceno pra você surpresa na rua</p>
+              <p>Chamando meu nome</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>feliz de emoção</p>
+              <p>Aceno pra você</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>surpresa na rua</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
@@ -306,34 +308,33 @@
               <p>Quando menos perceber</p>
               <p class="vermelho">
                 E &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
               </p>
-              <p>Lá se foi minha doçura</p>
-              <p class="vermelho">
-                E &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; A
-              </p>
-              <p>Queria ter gritado “quero te ver”</p>
+              <p>lá se foi minha doçura</p>
+              <p>Queria ter gritado</p>
+              <p class="vermelho">&nbsp;E &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A</p>
+              <p>“quero te ver”</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; Bm &nbsp; &nbsp; E &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; A
+                &nbsp; &nbsp; &nbsp; &nbsp; Bm
               </p>
-              <p>Num domingo de tarde só eu e você</p>
+              <p>Num domingo de tarde</p>
+              <p class="vermelho">E &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A</p>
+              <p>só eu e você</p>
+              <p>Depois tem carimbó</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;A
               </p>
-              <p>Depois tem carimbó quem abre é a lua</p>
+              <p>quem abre é a lua</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
               </p>
               <p>Vou dizer quando acabar</p>
               <p class="vermelho">
-                E &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+                &nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
               </p>
               <p>“minha dança ainda é tua”</p>
 

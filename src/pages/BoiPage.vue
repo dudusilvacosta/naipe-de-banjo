@@ -205,27 +205,32 @@
 
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                D
+                &nbsp;G
               </p>
-              <p>Dança boi pavulagem, dança que eu quero ver</p>
+              <p>Dança boi pavulagem,</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              </p>
+              <p>dança que eu quero ver</p>
 
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; D
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
               </p>
               <p>Dança e balança, pelas ruas eu quero ver</p>
 
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;D
+                &nbsp; &nbsp; &nbsp; &nbsp; G
               </p>
-              <p>Dança boi pavulagem, dança que eu quero ver</p>
+              <p>Dança boi pavulagem,</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              </p>
+              <p>dança que eu quero ver</p>
 
               <p class="vermelho">
                 Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E
@@ -747,16 +752,13 @@
               <p class="autor">Ronaldo Silva,Júnior Soares, Rui Baldez e Toni Soares</p>
               <p class="vermelho">
                 E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                A &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp; E
+                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E
               </p>
-              <p>Lá vem meu boi, lá vem pelas ruas de Belém</p>
+              <p>Lá vem meu boi, lá vem</p>
               <p class="vermelho">
-                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-                &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                A &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp; E
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B &nbsp; &nbsp; &nbsp; E
               </p>
-              <p>Lá vem meu boi, lá vem pelas ruas de Belém</p>
+              <p>pelas ruas de Belém</p>
               <p class="vermelho">
                 C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G#m &nbsp; &nbsp; A &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E

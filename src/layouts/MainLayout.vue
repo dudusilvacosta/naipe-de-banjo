@@ -70,18 +70,18 @@ const linksList: EssentialLinkProps[] = [
   //   icon: 'star',
   //   link: '/historia',
   // },
-  // {
-  //   title: 'Fotos',
-  //   caption: 'ensaios e cortejos',
-  //   icon: 'image',
-  //   link: '/fotos',
-  // },
-  // {
-  //   title: 'Vídeos',
-  //   caption: 'vivências',
-  //   icon: 'smart_display',
-  //   link: '/videos',
-  // },
+  {
+    title: 'Fotos',
+    caption: 'ensaios e cortejos',
+    icon: 'image',
+    link: '/fotos',
+  },
+  {
+    title: 'Vídeos',
+    caption: 'vivências',
+    icon: 'smart_display',
+    link: '/videos',
+  },
   {
     title: 'Cifras',
     caption: 'repertório do banjo',
