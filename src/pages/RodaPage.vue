@@ -217,40 +217,55 @@
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carva, Cincinato Jr e Ronaldo Silva</p>
-              <p class="vermelho">Dm G</p>
+              <p class="vermelho">
+                Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;E
+              </p>
               <p>Canoinha é bailarina</p>
-
-              <p class="vermelho">C Am</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; F#m
+              </p>
               <p>Menina dos olhos meus</p>
-
-              <p class="vermelho">Dm G</p>
+              <p class="vermelho">
+                Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              </p>
               <p>Navega o tempo e o sol poente</p>
-
-              <p class="vermelho">C Am</p>
+              <p class="vermelho">
+                A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
+              </p>
               <p>Labirintos de água e céu</p>
-
-              <p class="vermelho">Dm G</p>
-              <p>Canoa</p>
-
-              <p class="vermelho">C Am</p>
+              <p class="vermelho">Bm &nbsp; &nbsp; &nbsp;&nbsp;E</p>
+              <p>C a n o a</p>
+              <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;F#m</p>
               <p>Banzeiro</p>
-
-              <p class="vermelho">Dm G</p>
-              <p>Vento</p>
-
-              <p class="vermelho">C Am</p>
+              <p class="vermelho">Bm &nbsp; &nbsp;&nbsp;E</p>
+              <p>V e n t o</p>
+              <p class="vermelho">
+                A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
+              </p>
               <p>Balanço do mar</p>
-
-              <p class="vermelho">Dm G</p>
+              <p class="vermelho">
+                Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;E
+              </p>
               <p>Chegar bem perto da Lua</p>
-
-              <p class="vermelho">C Am</p>
+              <p class="vermelho">
+                A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; F#m
+              </p>
               <p>Olhar de perto as sereias</p>
-
-              <p class="vermelho">Dm G</p>
+              <p class="vermelho">
+                Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;E
+              </p>
               <p>O vento forte dos mares</p>
-
-              <p class="vermelho">C Am</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+              </p>
               <p>A valsa dos lumes, as loas de areia</p>
             </q-card-section>
           </q-card>
@@ -391,6 +406,94 @@
               <p>O cheiro suave</p>
               <p class="vermelho">C G</p>
               <p>de patchouli</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+        <!-- Luz Divina -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Luz Divina"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="autor">Ronaldo Silva</p>
+              <p class="vermelho">C</p>
+              <p>Luz divina, ê...</p>
+
+              <p class="vermelho">Am</p>
+              <p>Luz do dia, ê...</p>
+
+              <p class="vermelho">C</p>
+              <p>Luz da aurora, ê...</p>
+
+              <p class="vermelho">Am</p>
+              <p>Ilumina ê...</p>
+
+              <p class="vermelho">
+                C &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>Esse brinquedo singelo</p>
+              <p>Esse brinquedo singelo</p>
+
+              <p class="vermelho">
+                C &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Am
+              </p>
+              <p>Que vem na embarcação</p>
+              <p>Que vem na embarcação</p>
+
+              <p class="vermelho">
+                C &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Am
+              </p>
+              <p>Para alegrar corações</p>
+              <p>Para alegrar corações</p>
+
+              <p class="vermelho">
+                C &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>Para alegrar a floresta</p>
+
+              <p class="vermelho">C</p>
+              <p>Luz divina, ê...</p>
+
+              <p class="vermelho">Am</p>
+              <p>Luz do dia, ê...</p>
+
+              <p class="vermelho">C</p>
+              <p>Luz da aurora, ê...</p>
+
+              <p class="vermelho">Am</p>
+              <p>Ilumina ê...</p>
+
+              <p class="vermelho">C</p>
+              <p>
+                Cordão do mar <br />
+                é maré cheia
+              </p>
+
+              <p class="vermelho">Am</p>
+              <p>vem raiando</p>
+
+              <p class="vermelho">C</p>
+              <p>
+                O astro rei <br />
+                vem clareando
+              </p>
+
+              <p class="vermelho">Am</p>
+              <p>A Guajarina</p>
+
+              <p class="vermelho">C</p>
+              <p>Vem raiando o dia, vem</p>
+
+              <p class="vermelho">Am</p>
+              <p>Vem raiando o dia, vem</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
