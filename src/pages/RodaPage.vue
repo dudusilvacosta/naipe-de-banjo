@@ -777,6 +777,137 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Uirapuru -->
+        <q-expansion-item dense dense-toggle expand-separator label="Uirapuru" header-class="text-primary">
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;B7</p>
+              <p>Certa vez de montaria</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;Em
+              </p>
+              <p>Eu descia o Paraná</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;&nbsp;Am
+              </p>
+              <p>O caboclo que remava</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;G</p>
+              <p>Não parava de falar</p>
+
+              <p class="vermelho">B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em</p>
+              <p>ah, ah Não parava de falar</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp;B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em</p>
+              <p>ah, ah Que caboclo falador</p>
+
+              <p class="vermelho">Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; B7</p>
+              <p>Me contou do lobisomem</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Em
+              </p>
+              <p>Da mãe-d'água, do tajá</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                D7 &nbsp; &nbsp; &nbsp;
+                &nbsp; G</p>
+              <p>Disse do Jurutai Que se ri pro luar</p>
+
+              <p class="vermelho">B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Em</p>
+              <p>ah, ah Que se ri pro luar</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Em</p>
+              <p>ah, ah Que caboclo falador!</p>
+
+              <p class="vermelho">Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; B7</p>
+              <p>Que mangava de visagem</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; Em
+              </p>
+              <p>Que matou surucucú</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am</p>
+              <p>E jurou com pavulagem</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;G</p>
+              <p>Que pegou uirapuru</p>
+
+              <p class="vermelho">B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Em</p>
+              <p>ah, ah Que pegou uirapuru</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em</p>
+              <p>ah, ah Que caboclo tentador!</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D</p>
+              <p>Caboclinho, meu amor</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
+              <p>Arranja um pra mim</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp;G</p>
+              <p>Ando roxo pra pegar Unzinho assim</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; Em</p>
+              <p>O diabo foi-se embora Não quis me dar</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7</p>
+              <p>Vou juntar meu dinheirinho</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
+              </p>
+              <p>Pra poder comprar</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7</p>
+              <p>Mas no dia que eu comprar</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Em</p>
+              <p>O caboclo vai sofrer</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp;
+                G</p>
+              <p>Eu vou desassossegar O seu bem querer</p>
+
+              <p class="vermelho">B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Em</p>
+              <p>ah, ah O seu bem querer</p>
+
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em</p>
+              <p>ah, ah Ora deixa ele pra lá!</p>
+
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
       </q-list>
     </div>
   </div>
