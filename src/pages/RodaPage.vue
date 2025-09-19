@@ -134,6 +134,58 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Balanço da Canoa -->
+        <q-expansion-item dense dense-toggle expand-separator label="Balanço da Canoa" header-class="text-primary">
+          <q-card>
+            <q-card-section>
+              <p class="vermelho">E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; E</p>
+              <p>Vou no balanço da canoa</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7
+              </p>
+              <p>Navegando lá na foz do rio</p>
+              <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E</p>
+              <p>Minha igarité vai na flor d'água</p>
+              <p class="vermelho">B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E</p>
+              <p>Vai na correnteza da maré</p>
+              <p class="vermelho">C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#m &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; C#m</p>
+              <p>Levo meu balaio bem florido</p>
+              <p class="vermelho">C#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+              </p>
+              <p>Levo meu tambor de sucuri</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Pra cantar lundu marajoara</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#7 &nbsp; B7
+              </p>
+              <p>No clarão da lua do arari</p>
+              <p class="vermelho">E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E</p>
+              <p>Dança no balanço da canoa</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7
+              </p>
+              <p>Balanceia vento e maresia</p>
+              <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E</p>
+              <p>Dançando lundu vou navegando</p>
+              <p class="vermelho">B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E</p>
+              <p>Bailando lundu da cachoeira</p>
+
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Barra Nova -->
         <q-expansion-item dense dense-toggle expand-separator label="Barra Nova" header-class="text-primary">
           <q-card>
