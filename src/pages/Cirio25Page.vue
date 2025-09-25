@@ -11,31 +11,31 @@
       <q-intersection class="example-item" @click="card10 = true">
         <q-card flat bordered>
           <img
-            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-25/10.jpeg?raw=true"
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-25/9.jpeg?raw=true"
           />
         </q-card>
       </q-intersection>
       <q-dialog v-model="card10">
         <q-card class="my-card">
           <q-img
-            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-25/10.jpeg?raw=true"
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-25/9.jpeg?raw=true"
           />
         </q-card>
       </q-dialog>
-      <!-- <q-intersection class="example-item" @click="card9 = true">
+      <q-intersection class="example-item" @click="card9 = true">
         <q-card flat bordered>
           <img
-            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-23/2.jpeg?raw=true"
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-25/10.jpeg?raw=true"
           />
         </q-card>
       </q-intersection>
       <q-dialog v-model="card9">
         <q-card class="my-card">
           <q-img
-            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-23/2.jpeg?raw=true"
+            src="https://github.com/dudusilvacosta/fotos-naipe-banjo/blob/main/cirio-25/10.jpeg?raw=true"
           />
         </q-card>
-      </q-dialog> -->
+      </q-dialog>
       <!-- <q-intersection class="example-item" @click="card8 = true">
       <q-card flat bordered>
         <img
@@ -167,7 +167,7 @@ const { registerTimeout } = useTimeout();
 // const card6 = ref(false);
 // const card7 = ref(false);
 // const card8 = ref(false);
-// const card9 = ref(false);
+const card9 = ref(false);
 const card10 = ref(false);
 
 onMounted(() => {
