@@ -9,13 +9,8 @@
     </q-breadcrumbs>
     <q-list padding bordered class="rounded-borders">
       <!-- Borboleta de Asa Amarela -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Borboleta de Asa Amarela"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Borboleta de Asa Amarela"
+        header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="autor">Mestre Verequete</p>
@@ -39,13 +34,7 @@
         </q-card>
       </q-expansion-item>
       <!-- Carimbó da Ilha -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Carimbó da Ilha"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Carimbó da Ilha" header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="vermelho">
@@ -127,13 +116,7 @@
         </q-card>
       </q-expansion-item>
       <!-- Carimbó do Marajó -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Carimbó do Marajó"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Carimbó do Marajó" header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="vermelho">
@@ -200,13 +183,7 @@
         </q-card>
       </q-expansion-item>
       <!-- Chama Verequete -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Chama Verequete"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Chama Verequete" header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="autor">Mestre Verequete</p>
@@ -254,13 +231,7 @@
         </q-card>
       </q-expansion-item>
       <!-- Curió do Bico Doce -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Curió do Bico Doce"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Curió do Bico Doce" header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="autor">Gonzaga Blantez</p>
@@ -307,13 +278,8 @@
         </q-card>
       </q-expansion-item>
       <!-- Dança do carimbó (Dona Maria) -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Dança do carimbó (Dona Maria)"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Dança do carimbó (Dona Maria)"
+        header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="autor">Pinduca</p>
@@ -364,13 +330,8 @@
         </q-card>
       </q-expansion-item>
       <!-- Meninda bonita (Anel de ouro) -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Meninda bonita (Anel de ouro)"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Meninda bonita (Anel de ouro)"
+        header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="autor">Mestre Lucindo</p>
@@ -426,13 +387,7 @@
         </q-card>
       </q-expansion-item>
       <!-- No Meio do Pitiú -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="No Meio do Pitiú"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="No Meio do Pitiú" header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="autor">Dona Onete</p>
@@ -575,13 +530,7 @@
         </q-card>
       </q-expansion-item>
       <!-- Pescador -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Pescador"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Pescador" header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="autor">Mestre Lucindo</p>
@@ -647,13 +596,7 @@
         </q-card>
       </q-expansion-item>
       <!-- Relâmpago -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Relâmpago"
-        header-class="text-primary"
-      >
+      <q-expansion-item dense dense-toggle expand-separator label="Relâmpago" header-class="text-primary">
         <q-card>
           <q-card-section>
             <p class="vermelho"></p>
@@ -668,6 +611,52 @@
             <p>Roda pião, roda pião, roda pião no chão</p>
             <p class="vermelho"></p>
             <p>Roda pião, roda pião, roda pião no chão</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Três Marias -->
+      <q-expansion-item dense dense-toggle expand-separator label="Três Marias" header-class="text-primary">
+        <q-card>
+          <q-card-section>
+            <p class="autor">Iris da Selva</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+              &nbsp;
+              D &nbsp; Bm
+            </p>
+            <p>Calma Maria</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7</p>
+            <p>Não conte assim seus planos</p>
+            <p class="vermelho">F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              D</p>
+            <p>Pra qualquer pessoa</p>
+            <p class="vermelho">Bm &nbsp; &nbsp; &nbsp; &nbsp; C#7</p>
+            <p>Que atravessa a porta</p>
+            <p class="vermelho">F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D</p>
+            <p>Você não conhece</p>
+            <p class="vermelho">Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7</p>
+            <p>&nbsp; &nbsp; &nbsp; O território alheio</p>
+            <p class="vermelho">F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D</p>
+            <p>Você se entristece</p>
+            <p class="vermelho">Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7</p>
+            <p>&nbsp; &nbsp; &nbsp; E eu vou falar porque</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
+            </p>
+            <p>Eu gosto quando você assovia</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7</p>
+            <p>Tudo fica leve</p>
+            <p class="vermelho">F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D</p>
+            <p>Você não percebe mas</p>
+            <p class="vermelho">&nbsp; &nbsp; Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7</p>
+            <p>A casa inteira fica alegre</p>
+            <p class="vermelho">F#m &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp;Bm &nbsp; C#7</p>
+            <p>Você &nbsp;tem a for &nbsp; ça</p>
+            <p class="vermelho">F#m &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; Bm &nbsp; C#7</p>
+            <p>Do vento</p>
+            <p class="vermelho">F#m &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm &nbsp; &nbsp;C#7 &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m</p>
+            <p>Você &nbsp; é mais forte do que não diz</p>
+
           </q-card-section>
         </q-card>
       </q-expansion-item>
@@ -694,10 +683,12 @@ onMounted(() => {
   color: #666;
   font-style: italic;
 }
+
 p {
   margin: 0;
   padding: 0;
 }
+
 .vermelho {
   color: red;
 }

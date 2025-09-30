@@ -10,25 +10,17 @@
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
         <!-- Água de Ouro -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Água de Ouro"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Água de Ouro" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carvalho</p>
               <p class="vermelho">
-                Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                Em(#5) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em6
-              </p>
+                Em</p>
               <p>Ó Dona deixa eu te dar o lírio das pedras</p>
 
               <p class="vermelho">
-                Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; G
               </p>
               <p>Emana desses teus olhos a prata lunar</p>
@@ -81,13 +73,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Ataiô -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Ataiô"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Ataiô" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva</p>
@@ -155,86 +141,74 @@
           </q-card>
         </q-expansion-item>
         <!-- Balanço da Canoa -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Balanço da Canoa"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Balanço da Canoa" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">
-                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A# &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>Vou no balanço da canoa</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
               </p>
               <p>Navegando lá na foz do rio</p>
               <p class="vermelho">
-                A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+                A# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>Minha igarité vai na flor d'água</p>
               <p class="vermelho">
-                B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+                C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>Vai na correnteza da maré</p>
               <p class="vermelho">
-                C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#m &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; C#m
+                Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Dm
               </p>
               <p>Levo meu balaio bem florido</p>
               <p class="vermelho">
-                C#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+                D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
               </p>
               <p>Levo meu tambor de sucuri</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
               </p>
               <p>Pra cantar lundu marajoara</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G#7 &nbsp; B7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; C7
               </p>
               <p>No clarão da lua do arari</p>
               <p class="vermelho">
-                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>Dança no balanço da canoa</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
               </p>
               <p>Balanceia vento e maresia</p>
               <p class="vermelho">
-                A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+                A# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>Dançando lundu vou navegando</p>
               <p class="vermelho">
-                B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+                C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>Bailando lundu da cachoeira</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
         <!-- Barra Nova -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Barra Nova"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Barra Nova" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carva e Ronaldo Silva</p>
@@ -299,13 +273,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Canoinha Bailarina -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Canoinha Bailarina"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Canoinha Bailarina" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carva, Cincinato Jr e Ronaldo Silva</p>
@@ -363,13 +331,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Domingo de Tartde -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Domingo de Tartde"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Domingo de Tartde" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Iris da Selva</p>
@@ -449,13 +411,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Florindo Tapera -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Florindo Tapera"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Florindo Tapera" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva</p>
@@ -505,13 +461,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Luz Divina -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Luz Divina"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Luz Divina" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva</p>
@@ -536,7 +486,7 @@
 
               <p class="vermelho">
                 D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Am
+                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm
               </p>
               <p>Que vem na embarcação</p>
               <p>Que vem na embarcação</p>
@@ -593,13 +543,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Maio -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Maio"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Maio" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carvalho e Ronaldo Silva</p>
@@ -661,13 +605,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Navio de Ouro -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Navio de Ouro"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Navio de Ouro" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carvalho e Ronaldo Silva</p>
@@ -769,13 +707,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Quando o banjo chegar -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Quando o Banjo Chegar"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Quando o Banjo Chegar" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Vinícius Leite e Allan Carvalho</p>
@@ -857,13 +789,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Senhora da Amazônia -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Senhora da Amazônia"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Senhora da Amazônia" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Vinícius Leite e Allan Carvalho</p>
@@ -931,13 +857,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Uirapuru -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Uirapuru"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Uirapuru" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">
