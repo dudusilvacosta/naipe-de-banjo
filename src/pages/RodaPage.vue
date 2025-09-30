@@ -804,7 +804,7 @@
               </p>
               <p>Venho trazer uma prenda</p>
               <p class="vermelho">
-                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; Bm
               </p>
               <p>Cortejo de miritis</p>
