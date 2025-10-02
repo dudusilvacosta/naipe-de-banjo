@@ -252,7 +252,7 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
             </p>
-            <p>Foi Verequete, foi Lucinda e Cupijó</p>
+            <p>Foi Verequete, foi Lucindo e Cupijó</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; A
@@ -285,47 +285,87 @@
             <p class="autor">Pinduca</p>
             <p class="vermelho">
               F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              C7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
             </p>
             <p>Dona Maria que dança é essa</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; F
             </p>
             <p>Que a gente dança só</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
             </p>
             <p>Dona Maria que dança é essa</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; F
             </p>
             <p>É carimbó, é carimbó</p>
             <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; F
+              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
             </p>
             <p>Braço pra cima, braço pra baixo</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              &nbsp;
               &nbsp; &nbsp; F
             </p>
             <p>Agora eu já sei como é que é</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              C7
             </p>
             <p>Só falta bater a mão</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; F
             </p>
             <p>Batendo também o pé</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              C7
             </p>
             <p>Só falta bater a mão</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;F
             </p>
             <p>Batendo também o pé</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Embarca Morena Embarca -->
+      <q-expansion-item dense dense-toggle expand-separator label="Embarca Morena Embarca" header-class="text-primary">
+        <q-card>
+          <q-card-section>
+            <p class="autor">Pinduca</p>
+            <p class="vermelho">
+              F
+            </p>
+            <p>Embarca, morena, embarca</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>molha o pé mas não molha a meia</p>
+            <p class="vermelho">
+              Bb &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Viemos de nossa terra</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>fazer barulho na terra alheia</p>
           </q-card-section>
         </q-card>
       </q-expansion-item>
