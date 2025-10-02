@@ -9,33 +9,29 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
-          <a
-            href="https://drive.google.com/file/d/1MvmmSv0lq9RauqsHt5MF9dIPHAkz5S0t/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Roda Cantada 2025</a
-          >
+          <a href="https://drive.google.com/file/d/1MvmmSv0lq9RauqsHt5MF9dIPHAkz5S0t/view?usp=drive_link"
+            target="_blank" rel="noopener noreferrer">Roda Cantada 2025</a>
 
           <q-separator />
 
-          <a
-            href="https://drive.google.com/file/d/1D5qR1A2L8nzHRdISlIMpoK8Azvb_PTMU/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Roda Cantada 2024</a
-          >
+          <a href="https://drive.google.com/file/d/1D5qR1A2L8nzHRdISlIMpoK8Azvb_PTMU/view?usp=drive_link"
+            target="_blank" rel="noopener noreferrer">Roda Cantada 2024</a>
 
           <q-separator />
 
-          <a
-            href="https://drive.google.com/file/d/1-P0kq_pX7-tgelpaswFQB0wrZLhW4aKw/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Roda Cantada 2023</a
-          >
+          <a href="https://drive.google.com/file/d/1-P0kq_pX7-tgelpaswFQB0wrZLhW4aKw/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">Roda Cantada 2023</a>
+
+          <q-separator />
+
+          <a href="https://drive.google.com/file/d/1-P0kq_pX7-tgelpaswFQB0wrZLhW4aKw/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">Roda Cantada 2023</a>
+          <q-separator />
+
+          <a href="https://drive.google.com/file/d/1vY9PMFYUV1QJ6MdsfiMJldECbVuqgncw/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer">Coletânea de Acordes (afinação em E)</a>
+          <q-separator />
         </div>
-
-        <q-separator />
       </div>
     </div>
   </div>
