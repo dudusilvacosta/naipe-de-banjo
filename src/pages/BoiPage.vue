@@ -10,76 +10,65 @@
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
         <!-- Balança de Ouro -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Balança de Ouro"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Balança de Ouro" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">Dm</p>
               <p>Canoa, me leva pra ver minha amada que tá no cruzeiro</p>
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; A
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; A7
               </p>
               <p>Fiando e bordando o couro do boi as minhas bandeiras</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp;Dm
               </p>
               <p>Com linhas de ouro e fita amarela</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+                Dm
               </p>
               <p>Olhei na janela e vi uma estrela</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
               </p>
-              <p>Passando ligeira no céu do Guamá pra mim, um sinal sagrado e bonito</p>
+              <p>Passando ligeira no céu do Guamá pra mim um sinal sagrado e bonito</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp;Dm
               </p>
               <p>É meu São João abrindo a cancela</p>
               <p class="vermelho">
-                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+                Gm &nbsp; &nbsp;
+                &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Dm &nbsp; &nbsp; Bb
               </p>
               <p>Vai meu batalhão alegre e formoso</p>
               <p class="vermelho">
-                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; Dm
               </p>
               <p>Nossa fortaleza é linda de ver</p>
               <p class="vermelho">
-                F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Dm
+                Gm &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Dm &nbsp; &nbsp; &nbsp; Bb
               </p>
-              <p>A rapaziada é balança de ouro</p>
+              <p>Que a rapaziada é balança de ouro</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;&nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; Dm
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+                &nbsp; &nbsp; &nbsp; Dm
               </p>
               <p>Esse boi é um tesouro, é meu bem-querer</p>
             </q-card-section>
           </q-card>
         </q-expansion-item>
         <!-- Batalhão das Estrelas -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Batalhão das Estrelas"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Batalhão das Estrelas" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">
@@ -159,13 +148,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Boi Brinquedo -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Boi Brinquedo"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Boi Brinquedo" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">D</p>
@@ -245,13 +228,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Boi da Lua -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Boi da Lua"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Boi da Lua" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Papete</p>
@@ -312,13 +289,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Boi da Estrela -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Boi da Estrela"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Boi da Estrela" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Júnior Soares e Ronaldo Silva</p>
@@ -413,13 +384,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Bordado de Flores -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Bordado de Flores"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Bordado de Flores" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Júnior Soares e Ronaldo Silva</p>
@@ -510,13 +475,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Estrela do Chão -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Estrela do Chão"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Estrela do Chão" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">Cm</p>
@@ -586,13 +545,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Iniciais BP -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Iniciais BP"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Iniciais BP" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">Am</p>
@@ -646,13 +599,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Noite de São João -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Noite de São João"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Noite de São João" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">
@@ -740,13 +687,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Reunida -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Reunida"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Reunida" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva,Júnior Soares, Rui Baldez e Toni Soares</p>
@@ -804,13 +745,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Toada do Igapó -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Toada do Igapó"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Toada do Igapó" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">Dm</p>
@@ -883,13 +818,7 @@
           </q-card>
         </q-expansion-item>
         <!-- Urrou Meu Boi -->
-        <q-expansion-item
-          dense
-          dense-toggle
-          expand-separator
-          label="Urrou Meu Boi"
-          header-class="text-primary"
-        >
+        <q-expansion-item dense dense-toggle expand-separator label="Urrou Meu Boi" header-class="text-primary">
           <q-card>
             <q-card-section>
               <p class="vermelho">F#</p>
@@ -953,10 +882,12 @@ onMounted(() => {
   color: #666;
   font-style: italic;
 }
+
 p {
   margin: 0;
   padding: 0;
 }
+
 .vermelho {
   color: red;
 }
