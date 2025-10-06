@@ -654,6 +654,39 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
+      <!-- Se Anamaitá -->
+      <q-expansion-item dense dense-toggle expand-separator label="Se Anamaitá" header-class="text-primary">
+        <q-card>
+          <q-card-section>
+            <p class="autor">Coletivo Artivista Mairi</p>
+            <p class="vermelho">Em</p>
+            <p>Se anamaitá, (2X)</p>
+            <p class="vermelho">Bm</p>
+            <p>Borari, Borari,</p>
+            <p class="vermelho">Em</p>
+            <p>Se anamaitá, (2X)</p>
+            <p class="vermelho">Bm</p>
+            <p>Borari, Borari,</p>
+            <p class="vermelho">Em</p>
+            <p>Se anamaitá, (2X)</p>
+            <p class="vermelho">Bm</p>
+            <p>Arapium, Arapium,</p>
+            <p class="vermelho">Em</p>
+            <p>Se anamaitá, (2X)</p>
+            <p class="vermelho">Bm</p>
+            <p>Arapium, Arapium,</p>
+            <p class="vermelho">Em</p>
+            <p>Se anamaitá, (2X)</p>
+            <p class="vermelho">Bm</p>
+            <p>Tupayú</p>
+            <p>Tapajó</p>
+            <p>Tupinambá</p>
+            <p>Munduruku</p>
+            <p>Maytapú</p>
+            Kumarú
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Três Marias -->
       <q-expansion-item dense dense-toggle expand-separator label="Três Marias" header-class="text-primary">
         <q-card>
