@@ -29,6 +29,18 @@
           bg-color="blue-9"
           text-color="white"
           :text="[
+            `Avisos Importantes
+
+➡️ 7/10 (terça-feira - hoje): ensaio normal, às 19h;
+➡️ 8/10 (quarta-feira - amanhã): entrega das camisas, das 9h às 20h;
+➡️ 9/10 (quinta-feira - depois de amanhã): ensaio geral, horário a confirmar.`,
+          ]"
+        />
+
+        <q-chat-message
+          bg-color="blue-9"
+          text-color="white"
+          :text="[
             '🚫 No dia 11 de setembro não haverá ensaio, para que todos possam prestigiar o show do Ronaldo Silva. 🎤✨',
           ]"
         />
