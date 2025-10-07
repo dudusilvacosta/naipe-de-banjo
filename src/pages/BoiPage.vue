@@ -389,86 +389,85 @@
             <q-card-section>
               <p class="autor">Júnior Soares e Ronaldo Silva</p>
               <p class="vermelho">
-                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;DM7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; Bm
+                Db &nbsp; &nbsp; &nbsp; &nbsp; F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Gm
               </p>
               <p>Mandei fazer um bordado</p>
 
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Eb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp;Db
               </p>
               <p>Com flores de toda cor</p>
 
               <p class="vermelho">
-                F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; Bm
+                D7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Gm
               </p>
               <p>Para enfeitar o meu bolero</p>
 
               <p class="vermelho">
-                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; A7
+                C7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; F
               </p>
               <p>Enfeitar o meu cordão</p>
 
               <p class="vermelho">
-                G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp;D
+                Eb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; Db
               </p>
               <p>Flores do rio Caeté</p>
 
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7 &nbsp; &nbsp; F#7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
               </p>
               <p>Flores do rio Ararí</p>
 
               <p class="vermelho">
-                Bm &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp;D
+                Eb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Db
               </p>
-              <p>Flo &nbsp;&nbsp;res, bordado de flores</p>
+              <p>Flores, bordado de flores</p>
 
-              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7</p>
+              <p class="vermelho">F</p>
               <p>De rara beleza</p>
 
               <p class="vermelho">
-                &nbsp; &nbsp; G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp;C#
+                Eb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Db
               </p>
               <p>Encanto de todas as &nbsp; cores</p>
 
-              <p class="vermelho">D7</p>
+              <p class="vermelho">A#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Eb
+              </p>
               <p>Quando chegar mês de junho</p>
-
-              <p class="vermelho">G</p>
               <p>Eu vou dançar, tocar tambor</p>
 
               <p class="vermelho">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp;D
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Db
               </p>
               <p>Sou do Batalhão da Estrela</p>
 
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7
+                F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Db
               </p>
               <p>Barriqueiro do Guamá</p>
 
               <p class="vermelho">
-                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F7
               </p>
               <p>Embalando boi pelas ruas</p>
 
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Db
               </p>
               <p>Embalando boi pelas ruas</p>
 
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F7
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                D
+                &nbsp; &nbsp; &nbsp; Db
               </p>
               <p>Embalando boi pelas ruas de Belém</p>
             </q-card-section>
