@@ -10,7 +10,13 @@
     <div class="q-pa-md">
       <q-list padding bordered class="rounded-borders">
         <!-- Água de Ouro -->
-        <q-expansion-item dense dense-toggle expand-separator label="Água de Ouro" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Água de Ouro"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carvalho</p>
@@ -73,7 +79,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Ataiô -->
-        <q-expansion-item dense dense-toggle expand-separator label="Ataiô" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Ataiô"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva</p>
@@ -141,7 +153,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Balanço da Canoa -->
-        <q-expansion-item dense dense-toggle expand-separator label="Balanço da Canoa" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Balanço da Canoa"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="vermelho">
@@ -205,7 +223,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Barra Nova -->
-        <q-expansion-item dense dense-toggle expand-separator label="Barra Nova" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Barra Nova"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carva e Ronaldo Silva</p>
@@ -270,7 +294,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Canoinha Bailarina -->
-        <q-expansion-item dense dense-toggle expand-separator label="Canoinha Bailarina" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Canoinha Bailarina"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carva, Cincinato Jr e Ronaldo Silva</p>
@@ -328,7 +358,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Domingo de Tartde -->
-        <q-expansion-item dense dense-toggle expand-separator label="Domingo de Tartde" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Domingo de Tartde"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Iris da Selva</p>
@@ -407,8 +443,88 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Folias da Aurora -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Folias da Aurora"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="autor">Allan Carvalho e Ronaldo Silva</p>
+              <p class="vermelho">A</p>
+              <p>Violeiros da lua de prata</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Bm
+              </p>
+              <p>Que viajam no tempo, nas eras</p>
+              <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E</p>
+              <p>Vem chegando no raiar do dia</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Vem trazendo as folias da aurora</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; A
+              </p>
+              <p>Vem cantando e tocando viola</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; A
+              </p>
+              <p>Pelas casas em noites de lua</p>
+              <p class="vermelho">
+                D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Pelas ruas serenas lá vai</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Alegrando janelas, taperas</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Cantam as folias dos rios</p>
+              <p class="vermelho">
+                E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Cantam as folias do mar</p>
+              <p class="vermelho">D</p>
+              <p>Cantam para o sol</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; A
+              </p>
+              <p>Cantam para a lua</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              </p>
+              <p>Cantam as estrelas cadentes</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Florindo Tapera -->
-        <q-expansion-item dense dense-toggle expand-separator label="Florindo Tapera" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Florindo Tapera"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva</p>
@@ -454,8 +570,93 @@
             </q-card-section>
           </q-card>
         </q-expansion-item>
+        <!-- Lôa -->
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Lôa"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section>
+              <p class="autor">Ronaldo Silva</p>
+              <p class="vermelho">
+                Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              </p>
+              <p>Roda, roda, roda morena</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>Dança na areia da praia</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              </p>
+              <p>A lua cheia serena morena</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>O vento espalha tua saia</p>
+              <p class="vermelho">Am</p>
+              <p>Sereia cantando lôa</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+              </p>
+              <p>Não cansa de me chamar</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; E
+              </p>
+              <p>Remo de faia canoa</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>Vai me levando pro mar</p>
+              <p class="vermelho">
+                Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              </p>
+              <p>Roda, roda, roda morena</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>Dança na areia da praia</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              </p>
+              <p>A lua cheia serena morena</p>
+              <p class="vermelho">Am</p>
+              <p>No meu tambor vou batendo</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; Dm
+              </p>
+              <p>Um carimbó bem marcado</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              </p>
+              <p>O teu olhar me querendo</p>
+              <p class="vermelho">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+              </p>
+              <p>E eu te querendo embarcado</p>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
         <!-- Luz Divina -->
-        <q-expansion-item dense dense-toggle expand-separator label="Luz Divina" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Luz Divina"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva</p>
@@ -537,7 +738,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Maio -->
-        <q-expansion-item dense dense-toggle expand-separator label="Maio" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Maio"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carvalho e Ronaldo Silva</p>
@@ -599,7 +806,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Navio de Ouro -->
-        <q-expansion-item dense dense-toggle expand-separator label="Navio de Ouro" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Navio de Ouro"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Allan Carvalho e Ronaldo Silva</p>
@@ -701,57 +914,61 @@
           </q-card>
         </q-expansion-item>
         <!-- Peixe Voador -->
-        <q-expansion-item dense dense-toggle expand-separator label="Peixe Voador" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Peixe Voador"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Ronaldo Silva</p>
               <p class="vermelho">A#</p>
               <p>Marinheira, marinheira</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
               </p>
               <p>eu quero saber quem foi</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>que mandou essa ribeira</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
               </p>
               <p>pra brincar no peixe-boi</p>
               <p>Foi a sereia do mar</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; Cm
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
               </p>
               <p>não foi, não foi</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; F
               </p>
               <p>Foi o peixe voador</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; A#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
               </p>
               <p>não foi, não foi</p>
               <p>Foi estrela matutina</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; Cm
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; Cm
               </p>
               <p>nessa noite de luar</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
               </p>
               <p>que mandou essa menina</p>
               <p class="vermelho">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; A#
               </p>
               <p>ver a onda balançar</p>
 
@@ -759,12 +976,17 @@
               <p>vem voando, vem voando</p>
               <p>luar, luar</p>
               <p>navegando e marujando</p>
-
             </q-card-section>
           </q-card>
         </q-expansion-item>
         <!-- Quando o banjo chegar -->
-        <q-expansion-item dense dense-toggle expand-separator label="Quando o Banjo Chegar" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Quando o Banjo Chegar"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Vinícius Leite e Allan Carvalho</p>
@@ -846,7 +1068,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Senhora da Amazônia -->
-        <q-expansion-item dense dense-toggle expand-separator label="Senhora da Amazônia" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Senhora da Amazônia"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="autor">Vinícius Leite e Allan Carvalho</p>
@@ -913,7 +1141,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Uirapuru -->
-        <q-expansion-item dense dense-toggle expand-separator label="Uirapuru" header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Uirapuru"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="vermelho">
@@ -1088,8 +1322,13 @@
           </q-card>
         </q-expansion-item>
         <!-- Vós Sois o Lírio Mimoso -->
-        <q-expansion-item dense dense-toggle expand-separator label="Vós Sois o Lírio Mimoso"
-          header-class="text-primary">
+        <q-expansion-item
+          dense
+          dense-toggle
+          expand-separator
+          label="Vós Sois o Lírio Mimoso"
+          header-class="text-primary"
+        >
           <q-card>
             <q-card-section>
               <p class="vermelho">
