@@ -52,24 +52,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('src/pages/CifrasPage.vue') }],
   },
   {
-    path: '/cifras/carimbo',
+    path: '/cifras/cortejo',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/CarimboPage.vue') }],
-  },
-  {
-    path: '/cifras/boi',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/BoiPage.vue') }],
-  },
-  {
-    path: '/cifras/retumbao',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/RetumbaoPage.vue') }],
-  },
-  {
-    path: '/cifras/quadrilha',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/QuadrilhaPage.vue') }],
+    children: [{ path: '', component: () => import('pages/CortejoPage.vue') }],
   },
   {
     path: '/cifras/roda',
