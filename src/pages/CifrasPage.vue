@@ -9,31 +9,14 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
-          <router-link
-            to="/cifras/boi"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Boi
-          </router-link>
-
           <q-separator />
 
           <router-link
-            to="/cifras/carimbo"
+            to="/cifras/cortejo"
             class="q-item q-item-type row no-wrap"
             style="text-decoration: none; color: #0a66c2"
           >
-            Carimbó
-          </router-link>
-
-          <q-separator />
-          <router-link
-            to="/cifras/quadrilha"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Quadrilha
+            Cortejo
           </router-link>
 
           <q-separator />
@@ -45,6 +28,8 @@
           >
             Roda Cantada
           </router-link>
+
+          <q-separator />
         </div>
       </div>
     </div>
