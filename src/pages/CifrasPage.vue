@@ -9,11 +9,8 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
-<<<<<<< HEAD
           <q-separator />
 
-=======
->>>>>>> 5640050752f1d85ff974280a669db80208000574
           <router-link
             to="/cifras/cortejo"
             class="q-item q-item-type row no-wrap"
