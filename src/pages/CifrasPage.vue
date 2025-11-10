@@ -9,8 +9,6 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
-          <q-separator />
-
           <router-link
             to="/cifras/cortejo"
             class="q-item q-item-type row no-wrap"
