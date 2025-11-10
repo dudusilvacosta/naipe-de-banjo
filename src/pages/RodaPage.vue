@@ -626,18 +626,17 @@
               <p>Esse brinquedo singelo</p>
 
               <p class="vermelho">
-                D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
               </p>
-              <p>Que vem na embarcação</p>
-              <p>Que vem na embarcação</p>
+              <p>Emana desses teus olhos a prata lunar</p>
 
               <p class="vermelho">
-                D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp; Bm
+                Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
               </p>
-              <p>Para alegrar corações</p>
-              <p>Para alegrar corações</p>
+              <p>Ó Dona venha à vela de longe te oiá</p>
 
               <p class="vermelho">
                 D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
