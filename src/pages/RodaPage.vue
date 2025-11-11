@@ -612,74 +612,6 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
-      <!-- Sentinela do Mar -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Sentinela do Mar"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="autor">Ary Lobo</p>
-            <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-            </p>
-            <p>Nas ondas do mar eu vi</p>
-            <p class="vermelho">
-              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; E
-            </p>
-            <p>Mamãe sereia cantar</p>
-            <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-            </p>
-            <p>Nas ondas do mar eu vi</p>
-            <p class="vermelho">
-              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; E
-            </p>
-            <p>Num barquinho a navegar</p>
-            <p class="vermelho">E7</p>
-            <p>Mãe sereia quando canta</p>
-            <p>É bonito o seu cantar</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-            </p>
-            <p>A pureza no seu canto</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; E
-            </p>
-            <p>Como há em oxalá</p>
-            <p class="vermelho">E7</p>
-            <p>Vi seu barco pequenino</p>
-            <p>Sereno a navegar</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-            </p>
-            <p>Tinha como timoneiro</p>
-            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B</p>
-            <p>O grande guerreiro</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
-            </p>
-            <p>Ogum beira mar</p>
-            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A</p>
-            <p>Beira mar, ae beira mar</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; E
-            </p>
-            <p>Beira mar, ae beira mar</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
       <!-- Senhora da Amazônia -->
       <q-expansion-item
         dense
@@ -984,6 +916,54 @@
         </q-card>
       </q-expansion-item>
     </q-list>
+    <p class="text-body1">Banguê</p>
+    <q-list padding bordered class="rounded-borders">
+      <!-- Beijo da Primavera -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Beijo da Primavera"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="autor">Félix Faccon</p>
+            <p class="vermelho">Gm</p>
+            <p>Eu vi beija‐flor na janela, Eu vi beija‐flor voar,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;&nbsp; Cm &nbsp; &nbsp;D
+            </p>
+            <p>Ai que beijo que era, Coroa de pluma no ar</p>
+            <p class="vermelho">
+              Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;Gm
+            </p>
+            <p>Ai que verde que era, Mais bonito não há</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; D
+            </p>
+            <p>Beijo da primavera que gosto que tem,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Que vontade que dá</p>
+            <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
+            <p>E me leva um carinho e me leva um</p>
+            <p>denguinho nas asas pro meu amor</p>
+            <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
+            <p>E me leva um carinho e me leva um</p>
+            <p>denguinho nas asas pro meu amor</p>
+            <p>Ai que bom que é, ai que verde que era</p>
+            <p>Eu vi beija‐flor na janela</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+    </q-list>
     <p class="text-body1">Boi</p>
     <q-list padding bordered class="rounded-borders">
       <!-- Urrou Meu Boi -->
@@ -1249,6 +1229,77 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
             </p>
             <p>Bailando lundu da cachoeira</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+    </q-list>
+    <p class="text-body1">Marabaixo</p>
+    <q-list padding bordered class="rounded-borders">
+      <!-- Sentinela do Mar -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Sentinela do Mar"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="autor">Ary Lobo</p>
+            <p class="vermelho">
+              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+            </p>
+            <p>Nas ondas do mar eu vi</p>
+            <p class="vermelho">
+              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Mamãe sereia cantar</p>
+            <p class="vermelho">
+              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+            </p>
+            <p>Nas ondas do mar eu vi</p>
+            <p class="vermelho">
+              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Num barquinho a navegar</p>
+            <p class="vermelho">E7</p>
+            <p>Mãe sereia quando canta</p>
+            <p>É bonito o seu cantar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+            </p>
+            <p>A pureza no seu canto</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; E
+            </p>
+            <p>Como há em oxalá</p>
+            <p class="vermelho">E7</p>
+            <p>Vi seu barco pequenino</p>
+            <p>Sereno a navegar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+            </p>
+            <p>Tinha como timoneiro</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B</p>
+            <p>O grande guerreiro</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Ogum beira mar</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A</p>
+            <p>Beira mar, ae beira mar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Beira mar, ae beira mar</p>
           </q-card-section>
         </q-card>
       </q-expansion-item>
