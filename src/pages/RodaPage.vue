@@ -7,6 +7,145 @@
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
       <q-breadcrumbs-el label="Roda cantada" />
     </q-breadcrumbs>
+    <p class="text-body1">Banguê</p>
+    <q-list padding bordered class="rounded-borders">
+      <!-- Beijo da Primavera -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Beijo da Primavera"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="autor">Félix Faccon</p>
+            <p class="vermelho">Gm</p>
+            <p>Eu vi beija‐flor na janela, Eu vi beija‐flor voar,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;&nbsp; Cm &nbsp; &nbsp;D
+            </p>
+            <p>Ai que beijo que era, Coroa de pluma no ar</p>
+            <p class="vermelho">
+              Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;Gm
+            </p>
+            <p>Ai que verde que era, Mais bonito não há</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; D
+            </p>
+            <p>Beijo da primavera que gosto que tem,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Que vontade que dá</p>
+            <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
+            <p>E me leva um carinho e me leva um</p>
+            <p>denguinho nas asas pro meu amor</p>
+            <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
+            <p>E me leva um carinho e me leva um</p>
+            <p>denguinho nas asas pro meu amor</p>
+            <p>Ai que bom que é, ai que verde que era</p>
+            <p>Eu vi beija‐flor na janela</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+    </q-list>
+    <p class="text-body1">Batuque</p>
+    <q-list padding bordered class="rounded-borders">
+      <!-- Luz Divina -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Luz Divina"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="autor">Ronaldo Silva</p>
+            <p class="vermelho">D</p>
+            <p>Luz divina, ê...</p>
+
+            <p class="vermelho">Am</p>
+            <p>Luz do dia, ê...</p>
+
+            <p class="vermelho">D</p>
+            <p>Luz da aurora, ê...</p>
+
+            <p class="vermelho">Bm</p>
+            <p>Ilumina ê...</p>
+
+            <p class="vermelho">
+              D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Bm
+            </p>
+            <p>Esse brinquedo singelo</p>
+            <p>Esse brinquedo singelo</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+            </p>
+            <p>Emana desses teus olhos a prata lunar</p>
+
+            <p class="vermelho">
+              Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              D7 &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+            </p>
+            <p>Ó Dona venha à vela de longe te oiá</p>
+
+            <p class="vermelho">
+              D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Bm
+            </p>
+            <p>Para alegrar a floresta</p>
+
+            <p class="vermelho">D</p>
+            <p>Luz divina, ê...</p>
+
+            <p class="vermelho">Bm</p>
+            <p>Luz do dia, ê...</p>
+
+            <p class="vermelho">D</p>
+            <p>Luz da aurora, ê...</p>
+
+            <p class="vermelho">Bm</p>
+            <p>Ilumina ê...</p>
+
+            <p class="vermelho">D</p>
+            <p>
+              Cordão do mar <br />
+              é maré cheia
+            </p>
+
+            <p class="vermelho">Bm</p>
+            <p>vem raiando</p>
+
+            <p class="vermelho">D</p>
+            <p>
+              O astro rei <br />
+              vem clareando
+            </p>
+
+            <p class="vermelho">Bm</p>
+            <p>A Guajarina</p>
+
+            <p class="vermelho">D</p>
+            <p>Vem raiando o dia, vem</p>
+
+            <p class="vermelho">Bm</p>
+            <p>Vem raiando o dia, vem</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+    </q-list>
+    <p class="text-body1">Boi</p>
     <q-list padding bordered class="rounded-borders">
       <!-- Água de Ouro -->
       <q-expansion-item
@@ -145,209 +284,6 @@
               G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
             </p>
             <p>Barra nova pelo vento</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-      <!-- Canoinha Bailarina -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Canoinha Bailarina"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="autor">Allan Carva, Cincinato Jr e Ronaldo Silva</p>
-            <p class="vermelho">
-              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;E
-            </p>
-            <p>Canoinha é bailarina</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; F#m
-            </p>
-            <p>Menina dos olhos meus</p>
-            <p class="vermelho">
-              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
-            </p>
-            <p>Navega o tempo e o sol poente</p>
-            <p class="vermelho">
-              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
-            </p>
-            <p>Labirintos de água e céu</p>
-            <p class="vermelho">Bm &nbsp; &nbsp; &nbsp;&nbsp;E</p>
-            <p>C a n o a</p>
-            <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;F#m</p>
-            <p>Banzeiro</p>
-            <p class="vermelho">Bm &nbsp; &nbsp;&nbsp;E</p>
-            <p>V e n t o</p>
-            <p class="vermelho">
-              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
-            </p>
-            <p>Balanço do mar</p>
-            <p class="vermelho">
-              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;E
-            </p>
-            <p>Chegar bem perto da Lua</p>
-            <p class="vermelho">
-              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; F#m
-            </p>
-            <p>Olhar de perto as sereias</p>
-            <p class="vermelho">
-              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;E
-            </p>
-            <p>O vento forte dos mares</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
-            </p>
-            <p>A valsa dos lumes, as loas de areia</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-      <!-- Florindo Tapera -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Florindo Tapera"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="autor">Ronaldo Silva</p>
-            <p class="vermelho">G</p>
-            <p>Ciranda, ciranda</p>
-            <p class="vermelho">&nbsp; &nbsp; &nbsp; D</p>
-            <p>da beira da praia</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
-            </p>
-            <p>Arraia, espadarte</p>
-            <p class="vermelho">D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
-            <p>cavalo marinho</p>
-            <p class="vermelho">D/F#</p>
-            <p>Meninos de barro</p>
-            <p>Ó, aro da lua</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
-            </p>
-            <p>Eu vou pelos rios</p>
-            <p class="vermelho">D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
-            <p>florindo taperas</p>
-            <p class="vermelho">G</p>
-            <p>Pois é na floresta</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
-            </p>
-            <p>que eu vivo cantando</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
-            </p>
-            <p>Dançando ciranda</p>
-            <p class="vermelho">D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
-            <p>Bailando, pois é</p>
-            <p class="vermelho">D/F#</p>
-            <p>E o verde exala</p>
-            <p>Em torno de mim</p>
-            <p class="vermelho">&nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
-            <p>O cheiro suave</p>
-            <p class="vermelho">&nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G</p>
-            <p>de patchouli</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-      <!-- Luz Divina -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Luz Divina"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="autor">Ronaldo Silva</p>
-            <p class="vermelho">D</p>
-            <p>Luz divina, ê...</p>
-
-            <p class="vermelho">Am</p>
-            <p>Luz do dia, ê...</p>
-
-            <p class="vermelho">D</p>
-            <p>Luz da aurora, ê...</p>
-
-            <p class="vermelho">Bm</p>
-            <p>Ilumina ê...</p>
-
-            <p class="vermelho">
-              D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Bm
-            </p>
-            <p>Esse brinquedo singelo</p>
-            <p>Esse brinquedo singelo</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
-            </p>
-            <p>Emana desses teus olhos a prata lunar</p>
-
-            <p class="vermelho">
-              Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              D7 &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
-            </p>
-            <p>Ó Dona venha à vela de longe te oiá</p>
-
-            <p class="vermelho">
-              D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; Bm
-            </p>
-            <p>Para alegrar a floresta</p>
-
-            <p class="vermelho">D</p>
-            <p>Luz divina, ê...</p>
-
-            <p class="vermelho">Bm</p>
-            <p>Luz do dia, ê...</p>
-
-            <p class="vermelho">D</p>
-            <p>Luz da aurora, ê...</p>
-
-            <p class="vermelho">Bm</p>
-            <p>Ilumina ê...</p>
-
-            <p class="vermelho">D</p>
-            <p>
-              Cordão do mar <br />
-              é maré cheia
-            </p>
-
-            <p class="vermelho">Bm</p>
-            <p>vem raiando</p>
-
-            <p class="vermelho">D</p>
-            <p>
-              O astro rei <br />
-              vem clareando
-            </p>
-
-            <p class="vermelho">Bm</p>
-            <p>A Guajarina</p>
-
-            <p class="vermelho">D</p>
-            <p>Vem raiando o dia, vem</p>
-
-            <p class="vermelho">Bm</p>
-            <p>Vem raiando o dia, vem</p>
           </q-card-section>
         </q-card>
       </q-expansion-item>
@@ -524,94 +460,6 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
-      <!-- Quando o banjo chegar -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Quando o Banjo Chegar"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="autor">Vinícius Leite e Allan Carvalho</p>
-            <p class="vermelho">Am</p>
-            <p>Quando o banjo chegar</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp;E7
-            </p>
-            <p>Eu vou sentar a mão</p>
-            <p>Pra ver o povo dançar</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Am
-            </p>
-            <p>Carimbó no salão</p>
-            <p class="vermelho">E7</p>
-            <p>Menino vai logo buscar</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Am
-            </p>
-            <p>Não posso esperar pra ver</p>
-            <p class="vermelho">
-              A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              Dm7
-            </p>
-            <p>Quando o banjo chegar</p>
-            <p class="vermelho">
-              G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C7
-            </p>
-            <p>Multidão vai dançar</p>
-            <p class="vermelho">
-              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bbm7
-            </p>
-            <p>E o povão vai cantar pra valer</p>
-            <p class="vermelho">
-              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
-            </p>
-            <p>E o povão vai dançar pra valer</p>
-            <p class="vermelho">
-              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7
-            </p>
-            <p>Roda a tua saia menina</p>
-            <p class="vermelho">
-              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7
-            </p>
-            <p>É tanta gente bonita</p>
-            <p class="vermelho">F7</p>
-            <p>Esse tambor me alucina</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;E7
-            </p>
-            <p>Meu coração quer te ver</p>
-            <p class="vermelho">
-              A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm7
-            </p>
-            <p>Roda tua saia menina</p>
-            <p class="vermelho">
-              G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
-            </p>
-            <p>É tanta gente bonita</p>
-            <p class="vermelho">
-              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bbm7
-            </p>
-            <p>Esse tambor me alucina</p>
-            <p class="vermelho">
-              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Am
-            </p>
-            <p>Meu coração quer te ver</p>
-            <p class="vermelho">Am</p>
-            <p>O banjo na minha mão</p>
-            <p class="vermelho">E7</p>
-            <p>Esquenta o salão</p>
-            <p class="vermelho">Am</p>
-            <p>Sua boca na minha boca</p>
-            <p class="vermelho">E7</p>
-            <p>Esquenta o meu coração</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
       <!-- Senhora da Amazônia -->
       <q-expansion-item
         dense
@@ -683,289 +531,6 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
-      <!-- Uirapuru -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Uirapuru"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="vermelho">
-              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp;B7
-            </p>
-            <p>Certa vez de montaria</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;Em
-            </p>
-            <p>Eu descia o Paraná</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp;&nbsp;Am
-            </p>
-            <p>O caboclo que remava</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;G
-            </p>
-            <p>Não parava de falar</p>
-
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>ah, ah Não parava de falar</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp;B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>ah, ah Que caboclo falador</p>
-
-            <p class="vermelho">
-              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; B7
-            </p>
-            <p>Me contou do lobisomem</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>Da mãe-d'água, do tajá</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp; G
-            </p>
-            <p>Disse do Jurutai Que se ri pro luar</p>
-
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>ah, ah Que se ri pro luar</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>ah, ah Que caboclo falador!</p>
-
-            <p class="vermelho">
-              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; B7
-            </p>
-            <p>Que mangava de visagem</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>Que matou surucucú</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
-            </p>
-            <p>E jurou com pavulagem</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;G
-            </p>
-            <p>Que pegou uirapuru</p>
-
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>ah, ah Que pegou uirapuru</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
-            </p>
-            <p>ah, ah Que caboclo tentador!</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
-            </p>
-            <p>Caboclinho, meu amor</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
-            </p>
-            <p>Arranja um pra mim</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G
-            </p>
-            <p>Ando roxo pra pegar Unzinho assim</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>O diabo foi-se embora Não quis me dar</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
-            </p>
-            <p>Vou juntar meu dinheirinho</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
-            </p>
-            <p>Pra poder comprar</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
-            </p>
-            <p>Mas no dia que eu comprar</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>O caboclo vai sofrer</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp; G
-            </p>
-            <p>Eu vou desassossegar O seu bem querer</p>
-
-            <p class="vermelho">
-              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Em
-            </p>
-            <p>ah, ah O seu bem querer</p>
-
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
-            </p>
-            <p>ah, ah Ora deixa ele pra lá!</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-      <!-- Vós Sois o Lírio Mimoso -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Vós Sois o Lírio Mimoso"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
-            </p>
-            <p>Vós sois o lírio mimoso</p>
-            <p class="vermelho">
-              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
-            </p>
-            <p>Do mais suave perfume</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
-            </p>
-            <p>Que ao lado do Santo Esposo</p>
-            <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; C
-            </p>
-            <p>A castidade resume</p>
-            <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; C
-            </p>
-            <p>Ó, Virgem Mãe amorosa</p>
-            <p class="vermelho">
-              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; F
-            </p>
-            <p>Fonte de amor e de fé</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;F7 &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
-            </p>
-            <p>Dai-nos a bênção bondosa</p>
-            <p class="vermelho">
-              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;F
-            </p>
-            <p>Senhora de Nazaré!</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-    </q-list>
-    <p class="text-body1">Banguê</p>
-    <q-list padding bordered class="rounded-borders">
-      <!-- Beijo da Primavera -->
-      <q-expansion-item
-        dense
-        dense-toggle
-        expand-separator
-        label="Beijo da Primavera"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section>
-            <p class="autor">Félix Faccon</p>
-            <p class="vermelho">Gm</p>
-            <p>Eu vi beija‐flor na janela, Eu vi beija‐flor voar,</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp;&nbsp; Cm &nbsp; &nbsp;D
-            </p>
-            <p>Ai que beijo que era, Coroa de pluma no ar</p>
-            <p class="vermelho">
-              Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp;Gm
-            </p>
-            <p>Ai que verde que era, Mais bonito não há</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; D
-            </p>
-            <p>Beijo da primavera que gosto que tem,</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; Gm
-            </p>
-            <p>Que vontade que dá</p>
-            <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
-            <p>E me leva um carinho e me leva um</p>
-            <p>denguinho nas asas pro meu amor</p>
-            <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
-            <p>E me leva um carinho e me leva um</p>
-            <p>denguinho nas asas pro meu amor</p>
-            <p>Ai que bom que é, ai que verde que era</p>
-            <p>Eu vi beija‐flor na janela</p>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-    </q-list>
-    <p class="text-body1">Boi</p>
-    <q-list padding bordered class="rounded-borders">
       <!-- Urrou Meu Boi -->
       <q-expansion-item
         dense
@@ -1016,6 +581,167 @@
     </q-list>
     <p class="text-body1">Carimbó</p>
     <q-list padding bordered class="rounded-borders">
+      <!-- Carimbó da Ilha -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Carimbó da Ilha"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm
+            </p>
+            <p>Os versos de maiandeua carrego no coração</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7
+            </p>
+            <p>Em minhas asas de vidro</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;F#m
+            </p>
+            <p>Canção de vento e de chão</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; F#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; A
+            </p>
+            <p>Canoa, veloz maresia balança no mar lá fora</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; F#m
+            </p>
+            <p>Maré não está pra peixe já é hora de ir embora</p>
+            <p class="vermelho">
+              F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm
+            </p>
+            <p>Vagueia no mar, vagueia vagueia na imensidão</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp; &nbsp; &nbsp;C#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+            </p>
+            <p>Vaguei, linda sereia nos versos dessa canção</p>
+            <p class="vermelho">
+              F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;C#7
+            </p>
+            <p>Chico Braga eu me lembro batucando na rua</p>
+            <p class="vermelho">
+              F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; F#m
+            </p>
+            <p>Falando que a princesa nasceu do sol e da lua</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
+            </p>
+            <p>Qualquer lugar da ilha encanta na pedra creia</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#7 &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;F#m
+            </p>
+            <p>Que a menina morena à noite, virou sereia</p>
+            <p class="vermelho">
+              F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
+            </p>
+            <p>Vagueia no mar, vagueia vagueia na imensidão</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;C#7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
+            </p>
+            <p>Vaguei, linda sereia nos versos dessa canção</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Carimbó do Marajó -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Carimbó do Marajó"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+            </p>
+            <p>Dança carimbó do Marajó</p>
+            <p class="vermelho">
+              A7 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm &nbsp;&nbsp; D7
+            </p>
+            <p>Dança carimbó lá da barreira</p>
+            <p class="vermelho">
+              Gm &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Dança no balanço do tambor</p>
+            <p class="vermelho">
+              Bb &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7 &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Dança carimbó da cachoeira</p>
+            <p class="vermelho">
+              D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+            </p>
+            <p>A roda girando eu quero ver</p>
+            <p class="vermelho">
+              G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+            </p>
+            <p>Ver girando a roda que beleza</p>
+            <p class="vermelho">
+              G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp;C &nbsp;B7
+            </p>
+            <p>Ver a flor no galho da roseira</p>
+            <p class="vermelho">
+              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; D
+            </p>
+            <p>Pelo vento forte perfumar</p>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7
+            </p>
+            <p>Dança no balanço do milheiro</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Dança no rufar desse tambor</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7</p>
+            <p>Dança quando for raiando o dia</p>
+            <p class="vermelho">
+              Bb &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7
+            </p>
+            <p>No curral do boi do Piticaia</p>
+            <p class="vermelho">
+              Bb &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A7
+            </p>
+            <p>Dançarina vem girando a saia</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Lôa -->
       <q-expansion-item dense dense-toggle expand-separator label="Lôa" header-class="text-primary">
         <q-card>
@@ -1235,6 +961,158 @@
     </q-list>
     <p class="text-body1">Marabaixo</p>
     <q-list padding bordered class="rounded-borders">
+      <!-- Canoinha Bailarina -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Canoinha Bailarina"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="autor">Allan Carva, Cincinato Jr e Ronaldo Silva</p>
+            <p class="vermelho">
+              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;E
+            </p>
+            <p>Canoinha é bailarina</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; F#m
+            </p>
+            <p>Menina dos olhos meus</p>
+            <p class="vermelho">
+              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+            </p>
+            <p>Navega o tempo e o sol poente</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
+            </p>
+            <p>Labirintos de água e céu</p>
+            <p class="vermelho">Bm &nbsp; &nbsp; &nbsp;&nbsp;E</p>
+            <p>C a n o a</p>
+            <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;F#m</p>
+            <p>Banzeiro</p>
+            <p class="vermelho">Bm &nbsp; &nbsp;&nbsp;E</p>
+            <p>V e n t o</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F#m
+            </p>
+            <p>Balanço do mar</p>
+            <p class="vermelho">
+              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;E
+            </p>
+            <p>Chegar bem perto da Lua</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; F#m
+            </p>
+            <p>Olhar de perto as sereias</p>
+            <p class="vermelho">
+              Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;E
+            </p>
+            <p>O vento forte dos mares</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F#m
+            </p>
+            <p>A valsa dos lumes, as loas de areia</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Quando o banjo chegar -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Quando o Banjo Chegar"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="autor">Vinícius Leite e Allan Carvalho</p>
+            <p class="vermelho">Am</p>
+            <p>Quando o banjo chegar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;E7
+            </p>
+            <p>Eu vou sentar a mão</p>
+            <p>Pra ver o povo dançar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Am
+            </p>
+            <p>Carimbó no salão</p>
+            <p class="vermelho">E7</p>
+            <p>Menino vai logo buscar</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Am
+            </p>
+            <p>Não posso esperar pra ver</p>
+            <p class="vermelho">
+              A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Dm7
+            </p>
+            <p>Quando o banjo chegar</p>
+            <p class="vermelho">
+              G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C7
+            </p>
+            <p>Multidão vai dançar</p>
+            <p class="vermelho">
+              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bbm7
+            </p>
+            <p>E o povão vai cantar pra valer</p>
+            <p class="vermelho">
+              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+            </p>
+            <p>E o povão vai dançar pra valer</p>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E7
+            </p>
+            <p>Roda a tua saia menina</p>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E7
+            </p>
+            <p>É tanta gente bonita</p>
+            <p class="vermelho">F7</p>
+            <p>Esse tambor me alucina</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;E7
+            </p>
+            <p>Meu coração quer te ver</p>
+            <p class="vermelho">
+              A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm7
+            </p>
+            <p>Roda tua saia menina</p>
+            <p class="vermelho">
+              G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C7
+            </p>
+            <p>É tanta gente bonita</p>
+            <p class="vermelho">
+              F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bbm7
+            </p>
+            <p>Esse tambor me alucina</p>
+            <p class="vermelho">
+              E7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Am
+            </p>
+            <p>Meu coração quer te ver</p>
+            <p class="vermelho">Am</p>
+            <p>O banjo na minha mão</p>
+            <p class="vermelho">E7</p>
+            <p>Esquenta o salão</p>
+            <p class="vermelho">Am</p>
+            <p>Sua boca na minha boca</p>
+            <p class="vermelho">E7</p>
+            <p>Esquenta o meu coração</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Sentinela do Mar -->
       <q-expansion-item
         dense
@@ -1306,6 +1184,58 @@
     </q-list>
     <p class="text-body1">Mazurca</p>
     <q-list padding bordered class="rounded-borders">
+      <!-- Florindo Tapera -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Florindo Tapera"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="autor">Ronaldo Silva</p>
+            <p class="vermelho">G</p>
+            <p>Ciranda, ciranda</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; D</p>
+            <p>da beira da praia</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+            </p>
+            <p>Arraia, espadarte</p>
+            <p class="vermelho">D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
+            <p>cavalo marinho</p>
+            <p class="vermelho">D/F#</p>
+            <p>Meninos de barro</p>
+            <p>Ó, aro da lua</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+            </p>
+            <p>Eu vou pelos rios</p>
+            <p class="vermelho">D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
+            <p>florindo taperas</p>
+            <p class="vermelho">G</p>
+            <p>Pois é na floresta</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+            </p>
+            <p>que eu vivo cantando</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+            </p>
+            <p>Dançando ciranda</p>
+            <p class="vermelho">D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
+            <p>Bailando, pois é</p>
+            <p class="vermelho">D/F#</p>
+            <p>E o verde exala</p>
+            <p>Em torno de mim</p>
+            <p class="vermelho">&nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G</p>
+            <p>O cheiro suave</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G</p>
+            <p>de patchouli</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Folias da Aurora -->
       <q-expansion-item
         dense
@@ -1381,6 +1311,59 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
             </p>
             <p>Cantam as estrelas cadentes</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Vós Sois o Lírio Mimoso -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Vós Sois o Lírio Mimoso"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Vós sois o lírio mimoso</p>
+            <p class="vermelho">
+              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Do mais suave perfume</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; F7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
+            </p>
+            <p>Que ao lado do Santo Esposo</p>
+            <p class="vermelho">
+              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; C
+            </p>
+            <p>A castidade resume</p>
+            <p class="vermelho">
+              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Ó, Virgem Mãe amorosa</p>
+            <p class="vermelho">
+              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Fonte de amor e de fé</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;F7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
+            </p>
+            <p>Dai-nos a bênção bondosa</p>
+            <p class="vermelho">
+              C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;F
+            </p>
+            <p>Senhora de Nazaré!</p>
           </q-card-section>
         </q-card>
       </q-expansion-item>
@@ -1612,6 +1595,185 @@
               &nbsp; &nbsp; &nbsp;A
             </p>
             <p>Que ela é meu cantar</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Uirapuru -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Uirapuru"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section>
+            <p class="vermelho">
+              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;B7
+            </p>
+            <p>Certa vez de montaria</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;Em
+            </p>
+            <p>Eu descia o Paraná</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;&nbsp;Am
+            </p>
+            <p>O caboclo que remava</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;G
+            </p>
+            <p>Não parava de falar</p>
+
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>ah, ah Não parava de falar</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp;B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>ah, ah Que caboclo falador</p>
+
+            <p class="vermelho">
+              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; B7
+            </p>
+            <p>Me contou do lobisomem</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>Da mãe-d'água, do tajá</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp; G
+            </p>
+            <p>Disse do Jurutai Que se ri pro luar</p>
+
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>ah, ah Que se ri pro luar</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>ah, ah Que caboclo falador!</p>
+
+            <p class="vermelho">
+              Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; B7
+            </p>
+            <p>Que mangava de visagem</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>Que matou surucucú</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+            </p>
+            <p>E jurou com pavulagem</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;G
+            </p>
+            <p>Que pegou uirapuru</p>
+
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>ah, ah Que pegou uirapuru</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
+            </p>
+            <p>ah, ah Que caboclo tentador!</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+            </p>
+            <p>Caboclinho, meu amor</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+            </p>
+            <p>Arranja um pra mim</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G
+            </p>
+            <p>Ando roxo pra pegar Unzinho assim</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>O diabo foi-se embora Não quis me dar</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
+            </p>
+            <p>Vou juntar meu dinheirinho</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
+            </p>
+            <p>Pra poder comprar</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B7
+            </p>
+            <p>Mas no dia que eu comprar</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>O caboclo vai sofrer</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp; G
+            </p>
+            <p>Eu vou desassossegar O seu bem querer</p>
+
+            <p class="vermelho">
+              B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Em
+            </p>
+            <p>ah, ah O seu bem querer</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Em
+            </p>
+            <p>ah, ah Ora deixa ele pra lá!</p>
           </q-card-section>
         </q-card>
       </q-expansion-item>

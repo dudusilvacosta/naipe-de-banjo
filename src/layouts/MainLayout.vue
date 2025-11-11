@@ -84,7 +84,7 @@ const linksList: EssentialLinkProps[] = [
   },
   {
     title: 'Cifras',
-    caption: 'repertório do banjo',
+    caption: 'repertório e extras',
     icon: 'music_note',
     link: '/cifras',
   },
@@ -95,10 +95,10 @@ const linksList: EssentialLinkProps[] = [
     link: '/aulas',
   },
   {
-    title: 'Links',
-    caption: 'recursos extras',
-    icon: 'link',
-    link: '/links',
+    title: 'Downloads',
+    caption: 'material didático',
+    icon: 'download',
+    link: '/downloads',
   },
   {
     title: 'Notificações',

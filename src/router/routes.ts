@@ -62,6 +62,11 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('src/pages/RodaPage.vue') }],
   },
   {
+    path: '/cifras/extras',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('src/pages/CifrasExtrasPage.vue') }],
+  },
+  {
     path: '/aulas',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/AulasPage.vue') }],
@@ -87,9 +92,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/CarimboCifradoPage.vue') }],
   },
   {
-    path: '/links',
+    path: '/downloads',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/LinksPage.vue') }],
+    children: [{ path: '', component: () => import('src/pages/DonloadsPage.vue') }],
   },
   {
     path: '/notificacoes',

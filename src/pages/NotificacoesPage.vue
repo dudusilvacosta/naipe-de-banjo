@@ -48,6 +48,14 @@
           bg-color="blue-9"
           text-color="white"
           :text="[
+            'O Instituto Arraial do Pavulagem informa que a dinâmica dos ensaios do Cordão do Peixe-Boi passará por algumas mudanças, os encontros não acontecerão mais diariamente, e sim em dias alternados e passam a ocorrer sempre às terças, quintas e sábados. Horários: 🕖 19h às 21h (terças e quintas) 🕓 16h às 18h (sábados) ‼️ Na última semana pré-cortejo, de 24 a 28/11, os ensaios voltam a ser diários, no horário de 19h às 21h.',
+          ]"
+        />
+
+        <q-chat-message
+          bg-color="blue-9"
+          text-color="white"
+          :text="[
             '📢 Aviso Importante Este site ainda está em fase de desenvolvimento. Por isso, pedimos que o compartilhamento seja feito somente entre os membros do grupo de testes. 👀 Encontrou algum erro, bug ou tem alguma sugestão? Sua opinião é muito importante! Por favor, compartilhe com a equipe de desenvolvimento. 🙏 Agradecemos pela colaboração e paciência!',
           ]"
         />

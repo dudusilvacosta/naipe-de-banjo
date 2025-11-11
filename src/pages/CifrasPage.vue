@@ -28,6 +28,16 @@
           </router-link>
 
           <q-separator />
+
+          <router-link
+            to="/cifras/extras"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            Extras
+          </router-link>
+
+          <q-separator />
         </div>
       </div>
     </div>
