@@ -1124,24 +1124,18 @@
         <q-card>
           <q-card-section>
             <p class="autor">Ary Lobo</p>
-            <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-            </p>
+            <p class="vermelho">E</p>
             <p>Nas ondas do mar eu vi</p>
             <p class="vermelho">
-              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; E
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;&nbsp; E
             </p>
             <p>Mamãe sereia cantar</p>
-            <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-            </p>
+            <p class="vermelho">E</p>
             <p>Nas ondas do mar eu vi</p>
             <p class="vermelho">
-              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; E
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Num barquinho a navegar</p>
             <p class="vermelho">E7</p>
