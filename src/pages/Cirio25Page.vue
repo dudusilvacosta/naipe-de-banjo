@@ -5,7 +5,7 @@
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Fotos" icon="image" />
-      <q-breadcrumbs-el label="Outubro 2025" />
+      <q-breadcrumbs-el label="Círiio 2025" />
     </q-breadcrumbs>
     <div class="row justify-center q-gutter-sm">
       <q-intersection class="example-item" @click="card10 = true">
