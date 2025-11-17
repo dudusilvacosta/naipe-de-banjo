@@ -749,7 +749,8 @@
             </p>
             <p>Lá vem meu boi, lá vem</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B &nbsp; &nbsp; &nbsp; E
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp;&nbsp;
+              &nbsp;E
             </p>
             <p>pelas ruas de Belém</p>
             <p class="vermelho">

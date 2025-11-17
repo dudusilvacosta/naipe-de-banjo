@@ -21,19 +21,28 @@
           <q-card-section>
             <p class="autor">Félix Faccon</p>
             <p class="vermelho">Gm</p>
-            <p>Eu vi beija‐flor na janela, Eu vi beija‐flor voar,</p>
+            <p>Eu vi beija‐flor na janela,</p>
+            <p>Eu vi beija‐flor voar,</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; Cm &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+              &nbsp; &nbsp; &nbsp; Cm
             </p>
-            <p>Ai que beijo que era, &nbsp;Coroa de pluma no ar</p>
+            <p>Ai que beijo que era,</p>
+            <p class="vermelho">
+              D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Gm
+            </p>
+            <p>Coroa de pluma no ar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp;Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gm
+              &nbsp; &nbsp; &nbsp; &nbsp;Cm
             </p>
-            <p>Ai que verde que era, Mais bonito não há</p>
+            <p>Ai que verde que era,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp;Gm
+            </p>
+            <p>Mais bonito não há</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -45,14 +54,23 @@
               &nbsp; &nbsp; &nbsp; Gm
             </p>
             <p>Que vontade que dá</p>
-            <p class="vermelho">Gm</p>
+            <p class="vermelho">
+              Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
             <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+            </p>
             <p>E me leva um carinho e me leva um</p>
-            <p>denguinho nas asas pro meu amor</p>
-            <p class="vermelho">Gm</p>
-            <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
-            <p>E me leva um carinho e me leva um</p>
-            <p>denguinho nas asas pro meu amor</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Gm
+            </p>
+            <p>Denguinho nas asas pro meu amor</p>
             <p class="vermelho">
               Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -61,7 +79,7 @@
             <p>Ai que bom que é, ai que verde que era</p>
             <p class="vermelho">
               D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gm
             </p>
             <p>Eu vi beija‐flor na janela</p>
           </q-card-section>
@@ -84,7 +102,7 @@
             <p class="vermelho">D</p>
             <p>Luz divina, ê...</p>
 
-            <p class="vermelho">Am</p>
+            <p class="vermelho">Bm</p>
             <p>Luz do dia, ê...</p>
 
             <p class="vermelho">D</p>
@@ -98,20 +116,16 @@
               &nbsp; &nbsp; &nbsp; &nbsp; Bm
             </p>
             <p>Esse brinquedo singelo</p>
-            <p>Esse brinquedo singelo</p>
-
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D7 &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+              D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Bm
             </p>
-            <p>Emana desses teus olhos a prata lunar</p>
-
+            <p>Que vem na embarcação</p>
             <p class="vermelho">
-              Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              D7 &nbsp; &nbsp; &nbsp; &nbsp;G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+              D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Bm
             </p>
-            <p>Ó Dona venha à vela de longe te oiá</p>
+            <p>Para alegrar corações</p>
 
             <p class="vermelho">
               D &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -132,19 +146,13 @@
             <p>Ilumina ê...</p>
 
             <p class="vermelho">D</p>
-            <p>
-              Cordão do mar <br />
-              é maré cheia
-            </p>
+            <p>Cordão do mar é maré cheia</p>
 
             <p class="vermelho">Bm</p>
             <p>vem raiando</p>
 
             <p class="vermelho">D</p>
-            <p>
-              O astro rei <br />
-              vem clareando
-            </p>
+            <p>O astro rei vem clareando</p>
 
             <p class="vermelho">Bm</p>
             <p>A Guajarina</p>
