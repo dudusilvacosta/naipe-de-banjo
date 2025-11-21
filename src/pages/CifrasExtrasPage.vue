@@ -377,7 +377,7 @@
             <p>Tupinambá</p>
             <p>Munduruku</p>
             <p>Maytapú</p>
-            Kumarú
+            <p>Kumarú</p>
           </q-card-section>
         </q-card>
       </q-expansion-item>
