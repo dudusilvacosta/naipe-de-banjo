@@ -9,6 +9,117 @@
     </q-breadcrumbs>
     <p class="text-body1">Carimbó</p>
     <q-list padding bordered class="rounded-borders">
+      <!-- Barreira do Mar -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Barreira do Mar"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section class="q-pt-none">
+            <p class="autor">André Nascimento</p>
+
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>La na barreira do mar eu vi!</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>As tribos tocando tambor pra lua (2x)</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;Gm
+            </p>
+            <p>A noite parece que vai me encantar,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Ouvindo o vibrado do maracá. (2x)</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; D7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Gm
+            </p>
+            <p>Quem manda no Marajó é a maré!</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Quem manda na maré é a lua! (2x)</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;Gm
+            </p>
+            <p>A noite parece que vai me encantar,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Ouvindo o vibrado do maracá. (2x)</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Cachaça, Aruãs, Formigas!</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Aráras, Mundis, Maruanázes! (2x)</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7 &nbsp; &nbsp; &nbsp; &nbsp;
+              Gm
+            </p>
+            <p>Em quarto crescente maré lancei!</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Dm
+            </p>
+            <p>Busquei na maré minguante é morta! (2x)</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;Gm
+            </p>
+            <p>A noite parece que vai me encantar,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Ouvindo o vibrado do maracá. (2x)</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Na barreira do mar, eu vi...</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; A7&nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Na barreira do mar, eu vi...</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>Na barreira do mar, eu vi...</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; A7&nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Na barreira do Mar, Marajó.</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Mar aqui jó -->
       <q-expansion-item
         dense
