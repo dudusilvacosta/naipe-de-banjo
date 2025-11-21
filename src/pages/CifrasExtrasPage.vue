@@ -9,6 +9,116 @@
     </q-breadcrumbs>
     <p class="text-body1">Carimbó</p>
     <q-list padding bordered class="rounded-borders">
+      <!-- Canto de Atravessar -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Canto de Atravessar"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section class="q-pt-none">
+            <p class="autor">Márcio Montoril / Pimentel</p>
+            <p class="vermelho">F</p>
+            <p>O pescador quer beber</p>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Am
+            </p>
+            <p>Vai beber no Guajará</p>
+
+            <p class="vermelho">
+              Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Vento no bote, força no remo</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Canto de atravessar (2x)</p>
+
+            <p class="vermelho">F</p>
+            <p>Sentir a força do vento que vem do norte</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Levantei peguei o bote</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;F
+            </p>
+            <p>Naveguei pra Gapuiá</p>
+            <br />
+            <p>Tava tão forte essa maré tava de morte</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Quase que virou o bote, fez bote rodopiar</p>
+
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bb</p>
+            <p>Virei a proa pro rumo de São José</p>
+            <br />
+            <p>Pra não pegar contra maré</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+            </p>
+            <p>Pra ver se dava pra chegar</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Cheiro de peixe, pitiú, olho de boto</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Barco que dorme no porto</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>De costa pro Guajará</p>
+
+            <p class="vermelho">
+              F &nbsp; &nbsp; &nbsp; &nbsp; Am &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+            </p>
+            <p>Vem morena, vem de Canapijó</p>
+
+            <p class="vermelho">
+              Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; F
+            </p>
+            <p>Vem mostrar pra gente</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Como se dança o Carimbó</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Am
+            </p>
+            <p>Quero te ver morena, quero que venha só</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
+            </p>
+            <p>Pra dançar o tipiti e também o Carimbó</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Barreira do Mar -->
       <q-expansion-item
         dense
