@@ -18,11 +18,11 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Félix Faccon</p>
             <p class="vermelho">Gm</p>
             <p>Eu vi beija‐flor na janela,</p>
-            <p>Eu vi beija‐flor voar,</p>
+            <p>Eu vi beija‐flor avoar,</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; Cm
@@ -45,8 +45,8 @@
             <p>Mais bonito não há</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; D
+              &nbsp; A# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; A
             </p>
             <p>Beijo da primavera que gosto que tem,</p>
             <p class="vermelho">
@@ -54,6 +54,19 @@
               &nbsp; &nbsp; &nbsp; Gm
             </p>
             <p>Que vontade que dá</p>
+            <br />
+            <p>Eu vi beija‐flor na janela,</p>
+            <p>Eu vi beija‐flor avoar,</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Cm
+            </p>
+            <p>Ai que beijo que era,</p>
+            <p class="vermelho">
+              D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; Gm
+            </p>
+            <p>Coroa de pluma no ar</p>
             <p class="vermelho">
               Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -62,19 +75,18 @@
             <p>Voa, vai beija‐flor, voa na janela da casa dela</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              &nbsp; A#
             </p>
             <p>E me leva um carinho e me leva um</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; Gm
+              &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Gm
             </p>
             <p>Denguinho nas asas pro meu amor</p>
             <p class="vermelho">
-              Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Cm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>Ai que bom que é, ai que verde que era</p>
             <p class="vermelho">
@@ -97,7 +109,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Ronaldo Silva</p>
             <p class="vermelho">D</p>
             <p>Luz divina, ê...</p>
@@ -177,7 +189,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Allan Carvalho</p>
             <p class="vermelho">
               Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -246,7 +258,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Allan Carva e Ronaldo Silva</p>
             <p class="vermelho">Am</p>
             <p>Meu vaqueiro vai dizer</p>
@@ -317,7 +329,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Mestre Cardoso</p>
             <p class="vermelho">A#</p>
             <p>Mamãe cadê a floresta?</p>
@@ -356,15 +368,16 @@
               &nbsp; &nbsp; &nbsp; A#
             </p>
             <p>Do verde da natureza.</p>
+            <br />
             <p>Mamãe cadê a floresta?</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>O que é que os pássaros comem?</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp;F
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F
             </p>
             <p>Meu filho é assim mesmo</p>
             <p class="vermelho">
@@ -404,7 +417,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Allan Carvalho e Ronaldo Silva</p>
             <p class="vermelho">
               Am &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -472,7 +485,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Allan Carvalho e Ronaldo Silva</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -577,7 +590,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Vinícius Leite e Allan Carvalho</p>
             <p class="vermelho">
               D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -648,7 +661,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">F#</p>
             <p>Urrou meu boi</p>
             <p>Que abalou as estrelas do céu</p>
@@ -698,7 +711,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               F#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -786,7 +799,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
@@ -853,7 +866,7 @@
       <!-- Lôa -->
       <q-expansion-item dense dense-toggle expand-separator label="Lôa" header-class="text-primary">
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Ronaldo Silva</p>
             <p class="vermelho">
               Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -939,7 +952,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Mestre Cardoso</p>
             <p class="vermelho">D</p>
             <p>Eu fui numa pescaria</p>
@@ -1012,7 +1025,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; A#
@@ -1085,7 +1098,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Allan Carva, Cincinato Jr e Ronaldo Silva</p>
             <p class="vermelho">
               Bm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -1149,7 +1162,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Vinícius Leite e Allan Carvalho</p>
             <p class="vermelho">Am</p>
             <p>Quando o banjo chegar</p>
@@ -1237,7 +1250,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Ary Lobo</p>
             <p class="vermelho">E</p>
             <p>Nas ondas do mar eu vi</p>
@@ -1302,7 +1315,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Ronaldo Silva</p>
             <p class="vermelho">G</p>
             <p>Ciranda, ciranda</p>
@@ -1354,70 +1367,71 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Allan Carvalho e Ronaldo Silva</p>
-            <p class="vermelho">A</p>
+            <p class="vermelho">E</p>
             <p>Violeiros da lua de prata</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              F#m
             </p>
             <p>Que viajam no tempo, nas eras</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; E
+              &nbsp; B
             </p>
             <p>Vem chegando no raiar do dia</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Vem trazendo as folias da aurora</p>
             <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Vem cantando e tocando viola</p>
             <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Pelas casas em noites de lua</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Pelas ruas serenas lá vai</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Alegrando janelas, taperas</p>
             <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Cantam as folias dos rios</p>
             <p class="vermelho">
-              E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Cantam as folias do mar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; D
+              &nbsp; &nbsp; &nbsp; A
             </p>
             <p>Cantam para o sol</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; A
+              &nbsp; &nbsp; E
             </p>
             <p>Cantam para a lua</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
             </p>
             <p>Cantam as estrelas cadentes</p>
           </q-card-section>
@@ -1432,7 +1446,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
@@ -1488,7 +1502,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Ronaldo Silva</p>
             <p class="vermelho">F</p>
             <p>Marinheira, marinheira</p>
@@ -1565,7 +1579,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Ronaldo Silva</p>
             <p class="vermelho">Ab &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Db</p>
             <p>Nos olhos tá escrito</p>
@@ -1639,7 +1653,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Iris da Selva</p>
             <p class="vermelho">A</p>
             <p>Quero que me encontre</p>
@@ -1724,7 +1738,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp;B7

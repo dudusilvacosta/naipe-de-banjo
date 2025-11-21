@@ -18,7 +18,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">Dm</p>
             <p>Canoa, me leva pra ver minha amada que tá no cruzeiro</p>
             <p class="vermelho">
@@ -76,7 +76,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               G &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C &nbsp; &nbsp; &nbsp; &nbsp; G &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -162,7 +162,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">D</p>
             <p>Vem chegando o mês de maio</p>
             <p>E eu já vou me preparando</p>
@@ -248,7 +248,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Papete</p>
             <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E</p>
             <p>Meu São João</p>
@@ -315,7 +315,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Júnior Soares e Ronaldo Silva</p>
             <p class="vermelho">C#m &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D#m7</p>
             <p>A roseira tá florida</p>
@@ -416,7 +416,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Júnior Soares e Ronaldo Silva</p>
             <p class="vermelho">
               Db &nbsp; &nbsp; &nbsp; &nbsp; F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -511,7 +511,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">Cm</p>
             <p>Menina que pula a fogueira teu boi já chegou</p>
             <p class="vermelho">
@@ -587,7 +587,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">Am</p>
             <p>Eu venho da fortaleza</p>
             <p class="vermelho">F</p>
@@ -647,7 +647,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
@@ -741,7 +741,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Ronaldo Silva,Júnior Soares, Rui Baldez e Toni Soares</p>
             <p class="vermelho">
               E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
@@ -805,7 +805,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">Dm</p>
             <p>E morena já faz mais de ano</p>
             <p class="vermelho">
@@ -887,7 +887,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Pinduca</p>
             <p class="vermelho">
               F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -951,7 +951,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Mestre Verequete</p>
             <p class="vermelho">
               Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
@@ -1005,7 +1005,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Gonzaga Blantez</p>
             <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm</p>
             <p>Curió do bico doce</p>
@@ -1058,7 +1058,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Pinduca</p>
             <p class="vermelho">F</p>
             <p>Embarca, morena, embarca</p>
@@ -1090,7 +1090,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Mestre Lucindo</p>
             <p class="vermelho">
               F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -1152,7 +1152,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Dona Onete</p>
             <p class="vermelho">Dm</p>
             <p>A garça namoradeira</p>
@@ -1301,7 +1301,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Mestre Lucindo</p>
             <p class="vermelho">
               Gm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7
@@ -1373,7 +1373,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Pinduca</p>
             <p class="vermelho">
               Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -1431,7 +1431,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp;&nbsp;F &nbsp; &nbsp; &nbsp;A#
@@ -1509,7 +1509,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bm &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
@@ -1603,7 +1603,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">
               Gm &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -1684,7 +1684,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="vermelho">Dm</p>
             <p>Olha pro céu, meu amor</p>
             <p class="vermelho">

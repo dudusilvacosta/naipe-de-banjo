@@ -9,6 +9,118 @@
     </q-breadcrumbs>
     <p class="text-body1">Carimbó</p>
     <q-list padding bordered class="rounded-borders">
+      <!-- Mar aqui jó -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Mar aqui jó"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section class="q-pt-none">
+            <p class="autor">Gilson Sobreiro E Acácio Cardoso</p>
+
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+            </p>
+            <p>Mar aqui, Mar aqui, mar aqui ,Mar aqui Jo</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb
+            </p>
+            <p>Mar aqui, Mar aqui, mar aqui ,Mar aqui Jo</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7
+            </p>
+            <p>Mar aqui, Mar aqui, mar aqui ,Mar aqui Jo</p>
+            <p class="vermelho">Dm &nbsp; &nbsp; &nbsp;A7</p>
+            <p>É Marajó ....</p>
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Tuas belezas cantadas pelos poetas</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; Dm &nbsp; A7
+            </p>
+            <p>Matas virgens,campos verdes,belas praias.</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>No suor e no gingado do caboclo</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp; A7
+            </p>
+            <p>Do tapuio,tapuio marajoara.</p>
+
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Ao luar sai o boto pelas festas</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp;&nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; Dm &nbsp; &nbsp; A7
+            </p>
+            <p>Para encantar e seduzir moças donzelas.</p>
+
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+            </p>
+            <p>Lá no rio a Iara entoou um canto</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp;&nbsp;A7
+            </p>
+            <p>Para agarrar os moços La da tapera.</p>
+
+            <p class="vermelho">
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
+            </p>
+            <p>Cai á noite e se acende a lamparina</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp;A7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp;Dm &nbsp; &nbsp;A7
+            </p>
+            <p>Mocho pronto,curumim senta na beira.</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
+            </p>
+            <p>Para escutar dos mais velhos as estórias,</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bb &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A7 &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm &nbsp; A7
+            </p>
+            <p>De visagem e de matinta pereira.</p>
+          </q-card-section>
+        </q-card>
+      </q-expansion-item>
       <!-- Se Anamaitá -->
       <q-expansion-item
         dense
@@ -18,7 +130,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Coletivo Artivista Mairi</p>
             <p class="vermelho">Em</p>
             <p>Se anamaitá, (2X)</p>
@@ -57,7 +169,7 @@
         header-class="text-primary"
       >
         <q-card>
-          <q-card-section>
+          <q-card-section class="q-pt-none">
             <p class="autor">Iris da Selva</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
