@@ -1009,6 +1009,7 @@
             <p class="autor">Gonzaga Blantez</p>
             <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dm</p>
             <p>Curió do bico doce</p>
+            <br />
             <p>Passarinho quem te trouxe</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
