@@ -649,24 +649,24 @@
         <q-card>
           <q-card-section class="q-pt-none">
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+              Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
             </p>
             <p>Eu fiz promessa pro meu boi</p>
 
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              Dm
+              &nbsp; Dm
             </p>
             <p>Pra você ficar comigo</p>
 
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+              &nbsp; &nbsp; &nbsp; &nbsp; Gm
             </p>
             <p>Se nessa noite de São João</p>
 
-            <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm</p>
+            <p class="vermelho">A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm</p>
             <p>Você aparecer</p>
 
             <p class="vermelho">
@@ -677,7 +677,7 @@
 
             <p class="vermelho">
               A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; Dm
+              &nbsp; &nbsp; Dm
             </p>
             <p>Trago o meu batalhão</p>
 
