@@ -67,12 +67,12 @@
           </q-card-section>
         </q-card>
       </q-expansion-item>
-      <!-- Batalhão das Estrelas -->
+      <!-- Batalhão da Estrela -->
       <q-expansion-item
         dense
         dense-toggle
         expand-separator
-        label="Batalhão das Estrelas"
+        label="Batalhão da Estrela"
         header-class="text-primary"
       >
         <q-card>
