@@ -354,7 +354,7 @@
             </p>
             <p>Meu filho rio Guamá</p>
             <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; A#
             </p>
             <p>Criou pai filhos e netos</p>
@@ -364,7 +364,7 @@
             </p>
             <p>Agora só tem o resto</p>
             <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp;F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; A#
             </p>
             <p>Do verde da natureza.</p>
@@ -391,7 +391,7 @@
             </p>
             <p>Meu filho rio Guamá</p>
             <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
             </p>
             <p>Desmataram as cabeceiras</p>
@@ -401,8 +401,8 @@
             </p>
             <p>Não tem mais as cachoeiras</p>
             <p class="vermelho">
-              F &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A#
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F&nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A#
             </p>
             <p>E quem faz isso é o homem.</p>
           </q-card-section>
@@ -1642,6 +1642,81 @@
             </p>
             <p>Meu amor pode esperar</p>
           </q-card-section>
+        </q-card>
+      </q-expansion-item>
+      <!-- Relva -->
+      <q-expansion-item
+        dense
+        dense-toggle
+        expand-separator
+        label="Relva"
+        header-class="text-primary"
+      >
+        <q-card>
+          <q-card-section class="q-pt-none">
+            <p class="autor">Allan Carvalho e Ronaldo Silva</p>
+            <p class="vermelho">Gm</p>
+            <p>Não vejo mais pela relva</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Dm
+            </p>
+            <p>O balé do beija-flor</p>
+
+            <p class="vermelho">Gm</p>
+            <p>As cores das borboletas</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Dm
+            </p>
+            <p>Nem o perfume do Sol</p>
+
+            <p class="vermelho">Gm</p>
+            <p>Cadê o ipê-amarelo</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Dm
+            </p>
+            <p>O vento leve da flor</p>
+
+            <p class="vermelho">Gm</p>
+            <p>A livre voz do canário</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Dm
+            </p>
+            <p>O vago-lume* do amor?</p>
+
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
+            </p>
+            <p>A morada que Deus nos criou</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>É um presente Divino de luz</p>
+
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; Gm</p>
+            <p>Não descuide do, sim, da paisagem</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
+            <p>Como quem joga pedra na cruz</p>
+
+            <p class="vermelho">Gm</p>
+            <p>Assim que florescer, quando o bem voltar</p>
+            <p class="vermelho">
+              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Dm
+            </p>
+            <p>Eu quero ver nos teu rosto, morena</p>
+
+            <p class="vermelho">Gm</p>
+            <p>A mesma alegria que tinhas no olhar</p></q-card-section
+          >
         </q-card>
       </q-expansion-item>
       <!-- Domingo de Tartde -->
