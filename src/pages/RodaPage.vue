@@ -804,7 +804,7 @@
             <p class="autor">Ronaldo Silva</p>
             <p class="vermelho">
               Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; F7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
             </p>
             <p>Roda, roda, roda morena</p>
             <p class="vermelho">
@@ -837,7 +837,7 @@
             <p>Vai me levando pro mar</p>
             <p class="vermelho">
               Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; F7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
             </p>
             <p>Roda, roda, roda morena</p>
             <p class="vermelho">
@@ -876,60 +876,57 @@
         <q-card>
           <q-card-section class="q-pt-none">
             <p class="autor">Mestre Cardoso</p>
-            <p class="vermelho">D</p>
+            <p class="vermelho">G</p>
             <p>Eu fui numa pescaria</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
             </p>
             <p>Botei minha malhadeira</p>
-            <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
-            </p>
+            <br>
             <p>Quando foi no outro dia</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; D
+              &nbsp; &nbsp; &nbsp; &nbsp; G
             </p>
             <p>Tava só a bagaceira</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; D &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
+              G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C
             </p>
             <p>Os peixes que estavam mortos</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; D
+              &nbsp; &nbsp; &nbsp; &nbsp; G
             </p>
             <p>Eu não sei quem foi</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp;A
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7
             </p>
             <p>Eu boto a culpa no boto</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; D
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G
             </p>
             <p>E cismo do peixe‐boi</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G
+              G7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
             </p>
             <p>Eu estava só</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; D
+              &nbsp; &nbsp; &nbsp; G
             </p>
             <p>Perdido no alto mar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; Dm
             </p>
             <p>Remei para o Marajó</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
             </p>
             <p>Cheguei foi em Marudá</p>
           </q-card-section>
