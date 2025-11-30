@@ -959,10 +959,13 @@
             <p>Eu fui numa pescaria</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C
             </p>
             <p>Botei minha malhadeira</p>
-            <br />
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D
+            </p>
             <p>Quando foi no outro dia</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -981,7 +984,7 @@
             <p>Eu não sei quem foi</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; D
             </p>
             <p>Eu boto a culpa no boto</p>
             <p class="vermelho">
@@ -998,7 +1001,7 @@
             <p>Perdido no alto mar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; Dm
+              &nbsp; &nbsp; &nbsp; &nbsp; D
             </p>
             <p>Remei para o Marajó</p>
             <p class="vermelho">
