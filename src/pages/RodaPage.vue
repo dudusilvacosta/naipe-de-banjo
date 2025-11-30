@@ -871,16 +871,16 @@
             <p class="autor">Ronaldo Silva</p>
             <p class="vermelho">
               Cm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
+              &nbsp; G
             </p>
             <p>Roda, roda, roda morena</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>Dança na areia da praia</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
             </p>
             <p>A lua cheia serena morena</p>
             <p class="vermelho">
@@ -888,32 +888,35 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cm
             </p>
             <p>O vento espalha tua saia</p>
-            <p class="vermelho">Em</p>
+            <p class="vermelho">Cm</p>
             <p>Sereia cantando lôa</p>
-            <br />
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fm
+            </p>
             <p>Não cansa de me chamar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; F7
+              &nbsp; G
             </p>
             <p>Remo de faia canoa</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>Vai me levando pro mar</p>
             <p class="vermelho">
               Em &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;F7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;G
             </p>
             <p>Roda, roda, roda morena</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>Dança na areia da praia</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F7
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; G
             </p>
             <p>A lua cheia serena morena</p>
             <p class="vermelho">
@@ -921,18 +924,21 @@
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cm
             </p>
             <p>O vento espalha tua saia</p>
-            <p class="vermelho">Em</p>
+            <p class="vermelho">Cm</p>
             <p>No meu tambor vou batendo</p>
-            <br />
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fm
+            </p>
             <p>Um carimbó bem marcado</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F7
+              &nbsp; &nbsp; &nbsp; &nbsp;G
             </p>
             <p>O teu olhar me querendo</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>E eu te querendo embarcado</p>
           </q-card-section>
