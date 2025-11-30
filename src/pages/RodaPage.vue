@@ -1251,52 +1251,52 @@
         <q-card>
           <q-card-section class="q-pt-none">
             <p class="autor">Ary Lobo</p>
-            <p class="vermelho">E</p>
+            <p class="vermelho">Gm</p>
             <p>Nas ondas do mar eu vi</p>
             <p class="vermelho">
-              A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;&nbsp; E
+              Cm &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gm
             </p>
             <p>Mamãe sereia cantar</p>
-            <p class="vermelho">E</p>
+            <p class="vermelho">Gm</p>
             <p>Nas ondas do mar eu vi</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp; &nbsp;
+              &nbsp; &nbsp; Gm
             </p>
             <p>Num barquinho a navegar</p>
-            <p class="vermelho">E7</p>
+            <p class="vermelho">G7</p>
             <p>Mãe sereia quando canta</p>
             <p>É bonito o seu cantar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>A pureza no seu canto</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; E
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; Gm
             </p>
             <p>Como há em oxalá</p>
-            <p class="vermelho">E7</p>
+            <p class="vermelho">G7</p>
             <p>Vi seu barco pequenino</p>
             <p>Sereno a navegar</p>
             <p class="vermelho">
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm
             </p>
             <p>Tinha como timoneiro</p>
-            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B</p>
+            <p class="vermelho">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Dm
+            </p>
             <p>O grande guerreiro</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm
             </p>
             <p>Ogum beira mar</p>
-            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A</p>
+            <p class="vermelho">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cm</p>
             <p>Beira mar, ae beira mar</p>
             <p class="vermelho">
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; E &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; E
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gm &nbsp; Dm &nbsp; &nbsp; &nbsp; &nbsp; Gm
             </p>
             <p>Beira mar, ae beira mar</p>
           </q-card-section>
