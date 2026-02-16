@@ -3,13 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-        <q-toolbar-title style="color: #ffca28; font-weight: bold">
-          <q-img
-            src="../assets/logo.png"
-            style="width: 103px; height: 50px"
-            alt="Logo Naipe de Banjo"
-          />
-        </q-toolbar-title>
+        <q-toolbar-title style="color: #ffca28; font-weight: bold"> Dashboard </q-toolbar-title>
 
         <div>v1.0.0</div>
       </q-toolbar>
@@ -60,63 +54,45 @@ import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink
 const linksList: EssentialLinkProps[] = [
   {
     title: 'Início',
-    caption: 'boas-vindas',
-    icon: 'celebration',
+    caption: 'site principal',
+    icon: 'home',
     link: '/',
   },
-  // {
-  //   title: 'Naipe',
-  //   caption: 'os primórdios',
-  //   icon: 'star',
-  //   link: '/historia',
-  // },
   {
     title: 'Fotos',
-    caption: 'ensaios e cortejos',
+    caption: 'crud de imagens',
     icon: 'image',
-    link: '/fotos',
+    link: '/dashboard/fotos',
   },
   {
     title: 'Vídeos',
-    caption: 'vivências',
+    caption: 'crud de vídeos',
     icon: 'smart_display',
-    link: '/videos',
+    link: '/dashboard/videos',
   },
   {
     title: 'Cifras',
-    caption: 'repertório e extras',
+    caption: 'crud de cifras',
     icon: 'music_note',
-    link: '/cifras',
+    link: '/dashboard/cifras',
   },
   {
     title: 'Vídeo Aulas',
-    caption: 'teoria e musical',
+    caption: 'crud de aulas',
     icon: 'video_library',
-    link: '/aulas',
+    link: '/dashboard/aulas',
   },
   {
     title: 'Downloads',
-    caption: 'material didático',
+    caption: 'crud de arquivos',
     icon: 'download',
-    link: '/downloads',
+    link: '/dashboard/downloads',
   },
   {
     title: 'Notificações',
-    caption: 'notícias e avisos',
+    caption: 'crud de avisos',
     icon: 'notifications',
-    link: '/notificacoes',
-  },
-  {
-    title: 'Entrar',
-    caption: 'login',
-    icon: 'login',
-    link: '/login',
-  },
-  {
-    title: 'DashBoard',
-    caption: 'área do administrador',
-    icon: 'dashboard',
-    link: '/dashboard',
+    link: '/dashboard/notificacoes',
   },
 ];
 

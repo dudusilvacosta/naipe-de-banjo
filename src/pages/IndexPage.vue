@@ -13,7 +13,6 @@
       da Estrela. O objetivo é oferecer conteúdos úteis e práticos que possam contribuir com seu
       aprendizado e sua prática musical. Aproveite ao máximo!
     </p>
-    <img src="../assets/notas.png" alt="imagem de partitura" class="img" />
   </div>
 </template>
 
@@ -35,8 +34,5 @@ onMounted(() => {
 .home {
   height: calc(100svh - 75px);
   overflow: hidden;
-}
-.img {
-  width: 100%;
 }
 </style>

@@ -2,6 +2,10 @@ import type { RouteRecordRaw } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
   {
+    path: '/login',
+    component: () => import('pages/LoginPage.vue'),
+  },
+  {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
@@ -104,6 +108,23 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
+  },
+
+  {
+    path: '/dashboard',
+    component: () => import('layouts/DashboardLayout.vue'),
+    meta: { requiresAuth: true },
+    children: [
+      { path: '/dashboard/aulas', component: () => import('pages/dashboard/AulasPage.vue') },
+      { path: '/dashboard/cifras', component: () => import('pages/dashboard/CifrasPage.vue') },
+      { path: '/dashboard/downloads', component: () => import('pages/dashboard/DonloadsPage.vue') },
+      { path: '/dashboard/fotos', component: () => import('pages/dashboard/FotosPage.vue') },
+      {
+        path: '/dashboard/notificacoes',
+        component: () => import('pages/dashboard/NotificacoesPage.vue'),
+      },
+      { path: '/dashboard/videos', component: () => import('pages/dashboard/VideosPage.vue') },
+    ],
   },
 ];
 
