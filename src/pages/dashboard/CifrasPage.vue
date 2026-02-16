@@ -3,23 +3,23 @@
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
   <div class="q-pa-md">
-    <q-breadcrumbs class="q-mb-sm">
+    <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
     <div class="pesquisa">
       <q-input v-model="pesquisa.nome" label="Música" />
       <q-input v-model="pesquisa.autor" label="Autor" />
       <q-input v-model="pesquisa.tom" label="Tom" />
-      <q-input v-model="pesquisa.genero" label="Gênero" />
-      <q-input v-model="pesquisa.repertorio" label="Repertório" />
-      <q-toggle v-model="pesquisa.status" label="Status" />
+      <q-select v-model="pesquisa.genero" :options="generos" label="Gênero" />
+      <q-select v-model="pesquisa.repertorio" :options="repertorio" label="Repertório" />
+      <q-btn color="primary" label="Pesquisar" size="sm" class="q-mt-md" style="width: 100%" />
     </div>
-    <q-btn color="primary" label="Pesquisar" size="sm" class="q-mt-sm" />
-    <div class="q-mt-md btns">
-      <q-btn-group push>
-        <q-btn size="sm" label="Nova" icon="add" @click="alertSalvar" />
-        <q-btn size="sm" label="Editar" icon="edit" @click="alertEditar" />
-        <q-btn size="sm" label="Apagar" icon="delete" @click="apagar" />
+    <q-separator color="grey" inset />
+    <div class="q-mt-md">
+      <q-btn-group spread>
+        <q-btn size="sm" color="green" label="Nova" icon="add" @click="alertSalvar" />
+        <q-btn size="sm" color="info" label="Editar" icon="edit" @click="alertEditar" />
+        <q-btn size="sm" color="red" label="Apagar" icon="delete" @click="apagar" />
       </q-btn-group>
     </div>
     <div class="q-mt-md">
@@ -31,6 +31,14 @@
               @update:model-value="() => selecionar(null as any, props.row)"
               @click.stop
             />
+          </q-td>
+        </template>
+
+        <template v-slot:body-cell-status="props">
+          <q-td :props="props">
+            <q-badge outline :color="props.row.status ? 'green' : 'red'">
+              {{ props.row.status ? 'Ativo' : 'Inativo' }}
+            </q-badge>
           </q-td>
         </template>
       </q-table>
@@ -55,7 +63,8 @@
 
           <q-select v-model="musica.repertorio" :options="repertorio" label="Repertório" />
 
-          <q-toggle v-model="musica.status" label="Status" />
+          <q-radio left-label v-model="musica.status" :val="true" label="Status Ativo" />
+          <q-radio left-label v-model="musica.status" :val="false" label="Status Inativo" />
 
           <q-editor v-model="musica.cifra" min-height="5rem" />
 
@@ -81,8 +90,8 @@ import type { QTableColumn } from 'quasar';
 const modal = ref(false);
 const showProgress = ref(true);
 const { registerTimeout } = useTimeout();
-const generos = ['Bois', 'Quadrilha', 'Carimbó'];
-const repertorio = ['Roda', 'Cortejo'];
+const generos = ['Boi', 'Quadrilha', 'Carimbó'];
+const repertorio = ['Roda', 'Cortejo', 'Extra'];
 const selectedMusica = ref<Musica | null>(null);
 
 interface Musica {
@@ -101,7 +110,7 @@ const pesquisa = ref({
   autor: '',
   genero: '',
   repertorio: '',
-  status: false,
+  status: true,
 });
 const musica = ref<Musica>({
   id: null,
@@ -116,10 +125,10 @@ const musica = ref<Musica>({
 const columns: QTableColumn<Musica>[] = [
   {
     name: 'id',
-    label: '',
+    label: '#',
     field: 'id',
-    align: 'left',
-    sortable: true,
+    align: 'center',
+    sortable: false,
   },
   {
     name: 'nome',
@@ -133,94 +142,71 @@ const columns: QTableColumn<Musica>[] = [
     label: 'Autor',
     field: 'autor',
     align: 'left',
-    sortable: true,
+    sortable: false,
   },
   {
     name: 'tom',
     label: 'Tom',
     field: 'tom',
-    align: 'left',
-    sortable: true,
+    align: 'center',
+    sortable: false,
   },
   {
     name: 'genero',
     label: 'Gênero',
     field: 'genero',
     align: 'left',
-    sortable: true,
+    sortable: false,
   },
   {
     name: 'repertorio',
     label: 'Repertório',
     field: 'repertorio',
     align: 'left',
-    sortable: true,
+    sortable: false,
   },
   {
     name: 'status',
     label: 'Status',
     field: 'status',
-    align: 'left',
-    sortable: true,
+    align: 'center',
+    sortable: false,
   },
 ];
 
 const rows: Musica[] = [
   {
     id: 1,
-    nome: 'Oceans',
-    autor: 'Hillsong United',
-    cifra: `Am
-
-Eu venho da fortaleza
-
-F
-
-Colhendo flor no balaio
-
-C
-
-Vou enfeitar o rosário
-
-G                   E7                  Am
-
-Pra quando for mês de maio
-
-F          G                   Am
-
-Deixar bonito meu boi
-
-Am
-
-Bordei no couro esse ano
-
-F
-
-Com linha fina de prata
-
-C
-
-A estrela d'alva e a lua
-
-G                E7               Am
-
-Pro astro rei... luz divina
-
-F          G             Am
-
-Fiz um ponteio dourado
-
-G                                       C
-
-É d'ouro, prata e brilhante
-
-G                C
-
-As inicias BP`,
+    nome: 'inicias BP',
+    autor: 'Arraial do Pavulagem',
+    cifra: `<p>Am</p>
+<p>Eu venho da fortaleza</p>
+<p>F</p>
+<p>Colhendo flor no balaio</p>
+<p>C</p>
+<p>Vou enfeitar o rosário</p>
+<p>G                   E7                  Am</p>
+<p>Pra quando for mês de maio</p>
+<p>F          G                   Am</p>
+<p>Deixar bonito meu boi</p>
+<p>Am</p>
+<p>Bordei no couro esse ano</p>
+<p>F</p>
+<p>Com linha fina de prata</p>
+<p>C</p>
+<p>A estrela d'alva e a lua</p>
+<p>G                E7               Am</p>
+<p>Pro astro rei... luz divina</p>
+<p>F          G             Am</p>
+<p>Fiz um ponteio dourado</p>
+<p>G                                       C</p>
+<p>É d'ouro, prata e brilhante</p>
+<p>G                C</p>
+<p>As inicias BP</p>`,
     tom: 'Am',
-    genero: 'Gospel',
-    repertorio: 'Roda',
-    status: false,
+    genero: 'Boi',
+    repertorio: 'Cortejo',
+    status: true,
   },
   {
     id: 2,
@@ -313,14 +299,8 @@ onMounted(() => {
 
 <style scoped>
 .pesquisa {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.btns {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 </style>
