@@ -2,7 +2,7 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
-  <div class="q-pa-md">
+  <div class="q-pa-md" style="max-width: 1200px; margin: 0 auto">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
@@ -10,16 +10,22 @@
       <q-input v-model="pesquisa.nome" label="Música" />
       <q-input v-model="pesquisa.autor" label="Autor" />
       <q-input v-model="pesquisa.tom" label="Tom" />
-      <q-select v-model="pesquisa.genero" :options="generos" label="Gênero" />
-      <q-select v-model="pesquisa.repertorio" :options="repertorio" label="Repertório" />
-      <q-btn color="primary" label="Pesquisar" size="sm" class="q-mt-md" style="width: 100%" />
+      <q-select v-model="pesquisa.genero" :options="generos" label="Gênero" class="select" />
+      <q-select
+        v-model="pesquisa.repertorio"
+        :options="repertorio"
+        label="Repertório"
+        class="select"
+      />
+      <q-select v-model="pesquisa.repertorio" :options="status" label="Status" class="select" />
     </div>
-    <q-separator color="grey" inset />
-    <div class="q-mt-md">
+
+    <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn size="sm" color="green" label="Nova" icon="add" @click="alertSalvar" />
-        <q-btn size="sm" color="info" label="Editar" icon="edit" @click="alertEditar" />
-        <q-btn size="sm" color="red" label="Apagar" icon="delete" @click="apagar" />
+        <q-btn color="primary" label="Pesquisar" icon="search" />
+        <q-btn color="green" label="Cadastrar" icon="add" @click="alertSalvar" />
+        <q-btn color="info" label="Editar" icon="edit" @click="alertEditar" />
+        <q-btn color="red" label="Apagar" icon="delete" @click="apagar" />
       </q-btn-group>
     </div>
     <div class="q-mt-md">
@@ -27,7 +33,7 @@
         <template v-slot:body-cell-id="props">
           <q-td :props="props">
             <q-checkbox
-              :model-value="selectedMusica?.id === props.row.id"
+              :model-value="selecionada?.id === props.row.id"
               @update:model-value="() => selecionar(null as any, props.row)"
               @click.stop
             />
@@ -48,7 +54,7 @@
   <q-dialog v-model="modal">
     <q-card style="width: 100%">
       <q-card-section>
-        <div class="text-h6">{{ musica.id ? 'Editar' : 'Nova' }}</div>
+        <div class="text-h6">{{ musica.id ? 'Editar' : 'Cadastrar' }}</div>
       </q-card-section>
 
       <q-card-section class="q-pt-none">
@@ -92,7 +98,8 @@ const showProgress = ref(true);
 const { registerTimeout } = useTimeout();
 const generos = ['Boi', 'Quadrilha', 'Carimbó'];
 const repertorio = ['Roda', 'Cortejo', 'Extra'];
-const selectedMusica = ref<Musica | null>(null);
+const status = ['Ativo', 'Inativo'];
+const selecionada = ref<Musica | null>(null);
 
 interface Musica {
   id: number | null;
@@ -142,21 +149,21 @@ const columns: QTableColumn<Musica>[] = [
     label: 'Autor',
     field: 'autor',
     align: 'left',
-    sortable: false,
+    sortable: true,
   },
   {
     name: 'tom',
     label: 'Tom',
     field: 'tom',
-    align: 'center',
-    sortable: false,
+    align: 'left',
+    sortable: true,
   },
   {
     name: 'genero',
     label: 'Gênero',
     field: 'genero',
     align: 'left',
-    sortable: false,
+    sortable: true,
   },
   {
     name: 'repertorio',
@@ -169,8 +176,8 @@ const columns: QTableColumn<Musica>[] = [
     name: 'status',
     label: 'Status',
     field: 'status',
-    align: 'center',
-    sortable: false,
+    align: 'left',
+    sortable: true,
   },
 ];
 
@@ -232,7 +239,7 @@ const rows: Musica[] = [
 
 const alertSalvar = () => {
   onReset();
-  selectedMusica.value = null;
+  selecionada.value = null;
   modal.value = true;
 };
 
@@ -286,7 +293,7 @@ const onReset = () => {
 };
 
 const selecionar = (_: Event, row: Musica) => {
-  selectedMusica.value = row;
+  selecionada.value = row;
   musica.value = { ...row };
 };
 
@@ -299,8 +306,12 @@ onMounted(() => {
 
 <style scoped>
 .pesquisa {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.select {
+  min-width: 150px;
 }
 </style>
