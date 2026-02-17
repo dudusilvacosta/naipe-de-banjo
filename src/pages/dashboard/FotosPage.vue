@@ -7,17 +7,10 @@
       <q-breadcrumbs-el label="Fotos" icon="image" />
     </q-breadcrumbs>
     <div class="pesquisa">
-      <q-input v-model="pesquisa.nome" label="Música" />
-      <q-input v-model="pesquisa.autor" label="Autor" />
-      <q-input v-model="pesquisa.tom" label="Tom" />
-      <q-select v-model="pesquisa.genero" :options="generos" label="Gênero" class="select" />
-      <q-select
-        v-model="pesquisa.repertorio"
-        :options="repertorio"
-        label="Repertório"
-        class="select"
-      />
-      <q-select v-model="pesquisa.repertorio" :options="status" label="Status" class="select" />
+      <q-input v-model="pesquisa.nome" label="Album" />
+      <q-date v-model="pesquisa.ano" minimal />
+
+      <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
     </div>
 
     <div class="q-mt-md" style="margin: 2rem 0">
@@ -40,11 +33,9 @@
           </q-td>
         </template>
 
-        <template v-slot:body-cell-status="props">
+        <template v-slot:body-cell-fotos="props">
           <q-td :props="props">
-            <q-badge outline :color="props.row.status ? 'green' : 'red'">
-              {{ props.row.status ? 'Ativo' : 'Inativo' }}
-            </q-badge>
+            {{ album.fotos.length }}
           </q-td>
         </template>
       </q-table>
@@ -54,36 +45,24 @@
   <q-dialog v-model="modal">
     <q-card style="width: 100%">
       <q-card-section>
-        <div class="text-h6">{{ musica.id ? 'Editar' : 'Cadastrar' }}</div>
+        <div class="text-h6">{{ album.id ? 'Editar' : 'Cadastrar' }}</div>
       </q-card-section>
 
       <q-card-section class="q-pt-none">
         <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-          <q-input v-model="musica.nome" label="Música *" lazy-rules />
+          <q-input v-model="album.nome" label="Album *" lazy-rules />
 
-          <q-input v-model="musica.tom" label="Tom" hint="" lazy-rules />
+          <q-date v-model="album.ano" minimal />
 
-          <q-input v-model="musica.autor" label="Autor" hint="" lazy-rules />
-
-          <q-select v-model="musica.genero" :options="generos" label="Gênero" />
-
-          <q-select v-model="musica.repertorio" :options="repertorio" label="Repertório" />
-
-          <q-radio left-label v-model="musica.status" :val="true" label="Status Ativo" />
-          <q-radio left-label v-model="musica.status" :val="false" label="Status Inativo" />
-
-          <q-editor v-model="musica.cifra" min-height="5rem" />
+          <q-select v-model="album.status" :options="status" label="Status" />
 
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
             <q-btn label="Limpar" type="reset" color="primary" flat class="q-ml-sm" />
+            <q-btn flat label="Cancelar" color="negative" v-close-popup />
           </div>
         </q-form>
       </q-card-section>
-
-      <q-card-actions align="right">
-        <q-btn flat label="Cancelar" color="negative" v-close-popup />
-      </q-card-actions>
     </q-card>
   </q-dialog>
 </template>
@@ -96,40 +75,29 @@ import type { QTableColumn } from 'quasar';
 const modal = ref(false);
 const showProgress = ref(true);
 const { registerTimeout } = useTimeout();
-const generos = ['Boi', 'Quadrilha', 'Carimbó'];
-const repertorio = ['Roda', 'Cortejo', 'Extra'];
 const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Musica | null>(null);
+const selecionada = ref<Album | null>(null);
 
-interface Musica {
+interface Album {
   id: number | null;
   nome: string;
-  tom: string;
-  autor: string;
-  genero: string;
-  repertorio: string;
-  status: boolean;
-  cifra: string;
+  ano: string;
+  fotos: [];
+  status: string;
 }
 const pesquisa = ref({
   nome: '',
-  tom: '',
-  autor: '',
-  genero: '',
-  repertorio: '',
+  ano: '',
   status: true,
 });
-const musica = ref<Musica>({
+const album = ref<Album>({
   id: null,
   nome: '',
-  tom: '',
-  autor: '',
-  genero: '',
-  repertorio: '',
-  status: false,
-  cifra: '',
+  ano: '',
+  fotos: [],
+  status: '',
 });
-const columns: QTableColumn<Musica>[] = [
+const columns: QTableColumn<Album>[] = [
   {
     name: 'id',
     label: '#',
@@ -138,9 +106,9 @@ const columns: QTableColumn<Musica>[] = [
     sortable: false,
   },
   {
-    name: 'album',
+    name: 'nome',
     label: 'Album',
-    field: 'album',
+    field: 'nome',
     align: 'left',
     sortable: true,
   },
@@ -152,9 +120,9 @@ const columns: QTableColumn<Musica>[] = [
     sortable: true,
   },
   {
-    name: 'n_fotos',
+    name: 'fotos',
     label: 'N Fotos',
-    field: 'n_fotos',
+    field: 'fotos',
     align: 'left',
     sortable: true,
   },
@@ -167,59 +135,27 @@ const columns: QTableColumn<Musica>[] = [
   },
 ];
 
-const rows: Musica[] = [
+const rows: Album[] = [
   {
     id: 1,
-    nome: 'inicias BP',
-    autor: 'Arraial do Pavulagem',
-    cifra: `<p>Am</p>
-<p>Eu venho da fortaleza</p>
-<p>F</p>
-<p>Colhendo flor no balaio</p>
-<p>C</p>
-<p>Vou enfeitar o rosário</p>
-<p>G                   E7                  Am</p>
-<p>Pra quando for mês de maio</p>
-<p>F          G                   Am</p>
-<p>Deixar bonito meu boi</p>
-<p>Am</p>
-<p>Bordei no couro esse ano</p>
-<p>F</p>
-<p>Com linha fina de prata</p>
-<p>C</p>
-<p>A estrela d'alva e a lua</p>
-<p>G                E7               Am</p>
-<p>Pro astro rei... luz divina</p>
-<p>F          G             Am</p>
-<p>Fiz um ponteio dourado</p>
-<p>G                                       C</p>
-<p>É d'ouro, prata e brilhante</p>
-<p>G                C</p>
-<p>As inicias BP</p>`,
-    tom: 'Am',
-    genero: 'Boi',
-    repertorio: 'Cortejo',
-    status: true,
+    nome: 'Círio',
+    ano: '2025-10-10',
+    fotos: [],
+    status: 'Ativo',
   },
   {
     id: 2,
     nome: 'Tempo Perdido',
-    autor: 'Legião Urbana',
-    cifra: 'C G Am F ...',
-    tom: 'C',
-    genero: 'Rock',
-    repertorio: 'Roda',
-    status: false,
+    ano: 'Legião Urbana',
+    fotos: [],
+    status: 'Inativo',
   },
   {
     id: 3,
     nome: 'Trem Bala',
-    autor: 'Ana Vilela',
-    cifra: 'G D Em C ...',
-    tom: 'G',
-    genero: 'MPB',
-    repertorio: 'Cortejo',
-    status: false,
+    ano: 'Ana Vilela',
+    fotos: [],
+    status: 'Inativo',
   },
 ];
 
@@ -230,7 +166,7 @@ const alertSalvar = () => {
 };
 
 const alertEditar = () => {
-  if (!musica.value.id) {
+  if (!album.value.id) {
     window.alert('Escolha uma cifra');
     return;
   }
@@ -246,7 +182,7 @@ const editar = () => {
 };
 
 const apagar = () => {
-  if (!musica.value.id) {
+  if (!album.value.id) {
     window.alert('Escolha uma cifra');
     return;
   }
@@ -258,7 +194,7 @@ const apagar = () => {
 };
 
 const onSubmit = () => {
-  if (musica.value.id) {
+  if (album.value.id) {
     editar();
   } else {
     salvar();
@@ -266,21 +202,18 @@ const onSubmit = () => {
 };
 
 const onReset = () => {
-  musica.value = {
+  album.value = {
     id: null,
     nome: '',
-    tom: '',
-    autor: '',
-    genero: '',
-    repertorio: '',
-    status: false,
-    cifra: '',
+    ano: '',
+    fotos: [],
+    status: '',
   };
 };
 
-const selecionar = (_: Event, row: Musica) => {
+const selecionar = (_: Event, row: Album) => {
   selecionada.value = row;
-  musica.value = { ...row };
+  album.value = { ...row };
 };
 
 onMounted(() => {

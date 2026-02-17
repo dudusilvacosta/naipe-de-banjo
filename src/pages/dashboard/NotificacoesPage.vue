@@ -77,13 +77,10 @@
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
             <q-btn label="Limpar" type="reset" color="primary" flat class="q-ml-sm" />
+            <q-btn flat label="Cancelar" color="negative" v-close-popup />
           </div>
         </q-form>
       </q-card-section>
-
-      <q-card-actions align="right">
-        <q-btn flat label="Cancelar" color="negative" v-close-popup />
-      </q-card-actions>
     </q-card>
   </q-dialog>
 </template>

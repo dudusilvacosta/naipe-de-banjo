@@ -17,7 +17,7 @@
         label="Repertório"
         class="select"
       />
-      <q-select v-model="pesquisa.repertorio" :options="status" label="Status" class="select" />
+      <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
     </div>
 
     <div class="q-mt-md" style="margin: 2rem 0">
@@ -37,14 +37,6 @@
               @update:model-value="() => selecionar(null as any, props.row)"
               @click.stop
             />
-          </q-td>
-        </template>
-
-        <template v-slot:body-cell-status="props">
-          <q-td :props="props">
-            <q-badge outline :color="props.row.status ? 'green' : 'red'">
-              {{ props.row.status ? 'Ativo' : 'Inativo' }}
-            </q-badge>
           </q-td>
         </template>
       </q-table>
@@ -69,21 +61,17 @@
 
           <q-select v-model="musica.repertorio" :options="repertorio" label="Repertório" />
 
-          <q-radio left-label v-model="musica.status" :val="true" label="Status Ativo" />
-          <q-radio left-label v-model="musica.status" :val="false" label="Status Inativo" />
+          <q-select v-model="musica.status" :options="status" label="Status" class="select" />
 
           <q-editor v-model="musica.cifra" min-height="5rem" />
 
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
             <q-btn label="Limpar" type="reset" color="primary" flat class="q-ml-sm" />
+            <q-btn flat label="Cancelar" color="negative" v-close-popup />
           </div>
         </q-form>
       </q-card-section>
-
-      <q-card-actions align="right">
-        <q-btn flat label="Cancelar" color="negative" v-close-popup />
-      </q-card-actions>
     </q-card>
   </q-dialog>
 </template>
@@ -108,7 +96,7 @@ interface Musica {
   autor: string;
   genero: string;
   repertorio: string;
-  status: boolean;
+  status: string;
   cifra: string;
 }
 const pesquisa = ref({
@@ -117,7 +105,7 @@ const pesquisa = ref({
   autor: '',
   genero: '',
   repertorio: '',
-  status: true,
+  status: '',
 });
 const musica = ref<Musica>({
   id: null,
@@ -126,7 +114,7 @@ const musica = ref<Musica>({
   autor: '',
   genero: '',
   repertorio: '',
-  status: false,
+  status: '',
   cifra: '',
 });
 const columns: QTableColumn<Musica>[] = [
@@ -213,7 +201,7 @@ const rows: Musica[] = [
     tom: 'Am',
     genero: 'Boi',
     repertorio: 'Cortejo',
-    status: true,
+    status: 'Ativo',
   },
   {
     id: 2,
@@ -223,7 +211,7 @@ const rows: Musica[] = [
     tom: 'C',
     genero: 'Rock',
     repertorio: 'Roda',
-    status: false,
+    status: 'Inativo',
   },
   {
     id: 3,
@@ -233,7 +221,7 @@ const rows: Musica[] = [
     tom: 'G',
     genero: 'MPB',
     repertorio: 'Cortejo',
-    status: false,
+    status: 'Inativo',
   },
 ];
 
@@ -287,7 +275,7 @@ const onReset = () => {
     autor: '',
     genero: '',
     repertorio: '',
-    status: false,
+    status: '',
     cifra: '',
   };
 };
