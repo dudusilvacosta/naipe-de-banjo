@@ -916,7 +916,8 @@ async function buscaCifrasBois() {
     .from('musicas')
     .select('*')
     .eq('repertorio', 'Cortejo')
-    .eq('genero', 'Boi');
+    .eq('genero', 'Boi')
+    .order('nome', { ascending: true });
 
   if (error) {
     console.log(error);
