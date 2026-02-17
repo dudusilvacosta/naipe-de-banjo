@@ -15,7 +15,7 @@
         dense
         dense-toggle
         expand-separator
-        :label="value.nome"
+        :label="value.nome + ' - ' + value.tom"
         header-class="text-primary"
       >
         <q-card>
