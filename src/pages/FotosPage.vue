@@ -12,112 +12,15 @@
         <div class="text-h6">
           <div class="text-h6">
             <router-link
-              to="/fotos/cirio25"
+              v-for="(link, index) in links"
+              :key="index"
+              :to="`/fotos/${link.album}/${link.ano}`"
               class="q-item q-item-type row no-wrap"
               style="text-decoration: none; color: #0a66c2"
             >
-              Círio 2025
+              {{ link.album }} - {{ link.ano }}
             </router-link>
           </div>
-
-          <q-separator />
-          <router-link
-            to="/fotos/junho25"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Junho 2025
-          </router-link>
-
-          <q-separator />
-
-          <router-link
-            to="/fotos/cirio24"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Círio 2024
-          </router-link>
-
-          <q-separator />
-
-          <router-link
-            to="/fotos/junho24"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Junho 2024
-          </router-link>
-
-          <q-separator />
-
-          <router-link
-            to="/fotos/cirio23"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Círio 2023
-          </router-link>
-
-          <!-- <q-separator />
-
-        <div class="text-h6">
-          <router-link
-            to="/fotos/junho23"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Junho 2023
-          </router-link>
-        </div>
-
-        <q-separator />
-
-        <div class="text-h6">
-          <router-link
-            to="/fotos/cirio19"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Círio 2019
-          </router-link>
-        </div>
-
-        <q-separator />
-
-        <div class="text-h6">
-          <router-link
-            to="/fotos/junho19"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Junho 2019
-          </router-link>
-        </div>
-
-        <q-separator />
-
-        <div class="text-h6">
-          <router-link
-            to="/fotos/cirio18"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Círio 2018
-          </router-link>
-        </div>
-
-        <q-separator />
-
-        <div class="text-h6">
-          <router-link
-            to="/fotos/junho18"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Junho 2018
-          </router-link>
-        </div> -->
 
           <q-separator />
         </div>
@@ -129,14 +32,38 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { useTimeout } from 'quasar';
+import { supabase } from 'src/boot/supabase';
 
 const showProgress = ref(true);
 const { registerTimeout } = useTimeout();
+type FotoLink = { album: string; ano: string };
+const links = ref<FotoLink[]>([]);
+
+async function buscaAlbuns() {
+  const { data, error } = await supabase.from('albuns').select('*');
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  if (!data || data.length === 0) {
+    links.value = [];
+    return;
+  }
+
+  links.value = data.map((row) => ({
+    album: row.nome,
+    ano: row.ano,
+  }));
+}
 
 onMounted(() => {
   registerTimeout(() => {
     showProgress.value = false;
   }, 1000); // 1 segundo = 1000 ms
+
+  void buscaAlbuns();
 });
 </script>
 <style scoped>

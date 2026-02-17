@@ -2,14 +2,24 @@
   <div style="height: 1px">
     <q-linear-progress v-if="showProgress" indeterminate color="amber-7" />
   </div>
+
   <div class="q-pa-md" style="max-width: 1200px; margin: 0 auto">
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Fotos" icon="image" />
     </q-breadcrumbs>
+
     <div class="pesquisa">
       <q-input v-model="pesquisa.nome" label="Album" />
-      <q-date v-model="pesquisa.ano" minimal />
-
+      <q-btn icon="event" color="primary">
+        <q-popup-proxy cover transition-show="scale" transition-hide="scale">
+          <q-date v-model="pesquisa.ano" minimal default-view="Years">
+            <div class="row items-center justify-end q-gutter-sm">
+              <q-btn label="Cancel" color="primary" flat v-close-popup />
+              <q-btn label="OK" color="primary" flat v-close-popup />
+            </div>
+          </q-date>
+        </q-popup-proxy>
+      </q-btn>
       <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
     </div>
 
@@ -18,20 +28,25 @@
         <q-btn color="primary" icon="search">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
-        <q-btn color="green" icon="add" @click="alertSalvar"
-          ><q-tooltip>Cadastrar</q-tooltip>
+        <q-btn color="green" icon="add" @click="alertSalvar">
+          <q-tooltip>Cadastrar</q-tooltip>
         </q-btn>
-        <q-btn color="info" icon="edit" @click="alertEditar"><q-tooltip>Editar</q-tooltip> </q-btn>
-        <q-btn color="red" icon="delete" @click="apagar"><q-tooltip>Apagar</q-tooltip> </q-btn>
+        <q-btn color="info" icon="edit" @click="alertEditar">
+          <q-tooltip>Editar</q-tooltip>
+        </q-btn>
+        <q-btn color="red" icon="delete" @click="apagar">
+          <q-tooltip>Apagar</q-tooltip>
+        </q-btn>
       </q-btn-group>
     </div>
+
     <div class="q-mt-md">
-      <q-table title="" :rows="rows" :columns="columns" row-key="id" @row-click="selecionar">
+      <q-table :rows="rows" :columns="columns" row-key="id" @row-click="selecionar">
         <template v-slot:body-cell-id="props">
           <q-td :props="props">
             <q-checkbox
               :model-value="selecionada?.id === props.row.id"
-              @update:model-value="() => selecionar(null as any, props.row)"
+              @update:model-value="(val) => val && selecionar(null, props.row)"
               @click.stop
             />
           </q-td>
@@ -39,7 +54,7 @@
 
         <template v-slot:body-cell-fotos="props">
           <q-td :props="props">
-            {{ album.fotos.length }}
+            {{ props.row.fotos?.length || 0 }}
           </q-td>
         </template>
       </q-table>
@@ -47,7 +62,7 @@
   </div>
 
   <q-dialog v-model="modal">
-    <q-card style="width: 100%">
+    <q-card>
       <q-card-section>
         <div class="text-h6">{{ album.id ? 'Editar' : 'Cadastrar' }}</div>
       </q-card-section>
@@ -55,11 +70,9 @@
       <q-card-section class="q-pt-none">
         <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
           <q-input v-model="album.nome" label="Album *" lazy-rules />
-
-          <q-date v-model="album.ano" minimal />
-
+          <q-date v-model="album.ano" minimal default-view="Years" />
           <q-select v-model="album.status" :options="status" label="Status" />
-
+          <q-input v-model="album.pasta_git" label="Pasta Git" />
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
             <q-btn label="Limpar" type="reset" color="primary" flat class="q-ml-sm" />
@@ -72,9 +85,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useTimeout } from 'quasar';
 import type { QTableColumn } from 'quasar';
+import { supabase } from 'src/boot/supabase';
 
 const modal = ref(false);
 const showProgress = ref(true);
@@ -86,82 +100,36 @@ interface Album {
   id: number | null;
   nome: string;
   ano: string;
-  fotos: [];
+  fotos: unknown[];
   status: string;
+  pasta_git: string;
 }
+
 const pesquisa = ref({
   nome: '',
   ano: '',
-  status: true,
+  status: '',
 });
+
 const album = ref<Album>({
   id: null,
   nome: '',
   ano: '',
   fotos: [],
   status: '',
+  pasta_git: '',
 });
+
 const columns: QTableColumn<Album>[] = [
-  {
-    name: 'id',
-    label: '#',
-    field: 'id',
-    align: 'center',
-    sortable: false,
-  },
-  {
-    name: 'nome',
-    label: 'Album',
-    field: 'nome',
-    align: 'left',
-    sortable: true,
-  },
-  {
-    name: 'ano',
-    label: 'Ano',
-    field: 'ano',
-    align: 'left',
-    sortable: true,
-  },
-  {
-    name: 'fotos',
-    label: 'N Fotos',
-    field: 'fotos',
-    align: 'left',
-    sortable: true,
-  },
-  {
-    name: 'status',
-    label: 'Status',
-    field: 'status',
-    align: 'left',
-    sortable: true,
-  },
+  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
+  { name: 'nome', label: 'Album', field: 'nome', align: 'left', sortable: true },
+  { name: 'ano', label: 'Ano', field: 'ano', align: 'left', sortable: true },
+  { name: 'fotos', label: 'N Fotos', field: 'fotos', align: 'left', sortable: true },
+  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
 ];
 
-const rows: Album[] = [
-  {
-    id: 1,
-    nome: 'Círio',
-    ano: '2025-10-10',
-    fotos: [],
-    status: 'Ativo',
-  },
-  {
-    id: 2,
-    nome: 'Tempo Perdido',
-    ano: 'Legião Urbana',
-    fotos: [],
-    status: 'Inativo',
-  },
-  {
-    id: 3,
-    nome: 'Trem Bala',
-    ano: 'Ana Vilela',
-    fotos: [],
-    status: 'Inativo',
-  },
-];
+const albuns = ref<Album[]>([]);
+const rows = computed(() => albuns.value);
 
 const alertSalvar = () => {
   onReset();
@@ -170,28 +138,28 @@ const alertSalvar = () => {
 };
 
 const alertEditar = () => {
-  if (!album.value.id) {
-    window.alert('Escolha uma cifra');
+  if (!selecionada.value?.id) {
+    window.alert('Escolha um álbum');
     return;
   }
   modal.value = true;
 };
 
 const salvar = () => {
-  //
+  console.log('Salvar', album.value);
 };
 
 const editar = () => {
-  //
+  console.log('Editar', album.value);
 };
 
 const apagar = () => {
-  if (!album.value.id) {
-    window.alert('Escolha uma cifra');
+  if (!selecionada.value?.id) {
+    window.alert('Escolha um álbum');
     return;
   }
   if (confirm('Tem certeza que deseja apagar?')) {
-    console.log('Item apagado!');
+    console.log('Item apagado!', selecionada.value);
   } else {
     console.log('Ação cancelada.');
   }
@@ -206,24 +174,38 @@ const onSubmit = () => {
 };
 
 const onReset = () => {
-  album.value = {
-    id: null,
-    nome: '',
-    ano: '',
-    fotos: [],
-    status: '',
-  };
+  album.value = { id: null, nome: '', ano: '', fotos: [], status: '', pasta_git: '' };
 };
 
-const selecionar = (_: Event, row: Album) => {
+const selecionar = (_: Event | null, row: Album) => {
   selecionada.value = row;
   album.value = { ...row };
 };
 
+async function buscaAlbuns() {
+  const { data, error } = await supabase.from('albuns').select('*');
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  albuns.value = (data as Record<string, unknown>[]).map((item: Record<string, unknown>) => ({
+    id: item.id as number,
+    nome: item.nome as string,
+    ano: item.ano as string,
+    fotos: (item.fotos as unknown[]) || [],
+    status: item.status as string,
+    pasta_git: item.pasta_git as string,
+  }));
+}
+
 onMounted(() => {
   registerTimeout(() => {
     showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
+  }, 1000);
+
+  void buscaAlbuns();
 });
 </script>
 

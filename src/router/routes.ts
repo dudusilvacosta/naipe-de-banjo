@@ -21,29 +21,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/FotosPage.vue') }],
   },
   {
-    path: '/fotos/cirio25',
+    path: '/fotos/:album/:ano',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Cirio25Page.vue') }],
-  },
-  {
-    path: '/fotos/junho25',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Junho25Page.vue') }],
-  },
-  {
-    path: '/fotos/cirio24',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Cirio24Page.vue') }],
-  },
-  {
-    path: '/fotos/junho24',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Junho24Page.vue') }],
-  },
-  {
-    path: '/fotos/cirio23',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Cirio23Page.vue') }],
+    children: [{ path: '', component: () => import('pages/AlbumPage.vue') }],
   },
   {
     path: '/videos',
