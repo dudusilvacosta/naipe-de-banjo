@@ -15,11 +15,12 @@
         dense
         dense-toggle
         expand-separator
-        :label="value.nome + ' - ' + value.autor"
+        :label="value.nome"
         header-class="text-primary"
       >
         <q-card>
           <q-card-section class="q-pt-none">
+            <p class="autor">{{ value.autor }}</p>
             <div v-html="value.cifra"></div>
           </q-card-section>
         </q-card>
@@ -945,9 +946,5 @@ onMounted(() => {
 p {
   margin: 0;
   padding: 0;
-}
-
-.vermelho {
-  color: red;
 }
 </style>
