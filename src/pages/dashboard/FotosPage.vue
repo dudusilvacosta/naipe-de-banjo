@@ -15,10 +15,14 @@
 
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" label="Pesquisar" icon="search" />
-        <q-btn color="green" label="Cadastrar" icon="add" @click="alertSalvar" />
-        <q-btn color="info" label="Editar" icon="edit" @click="alertEditar" />
-        <q-btn color="red" label="Apagar" icon="delete" @click="apagar" />
+        <q-btn color="primary" icon="search">
+          <q-tooltip>Pesquisar</q-tooltip>
+        </q-btn>
+        <q-btn color="green" icon="add" @click="alertSalvar"
+          ><q-tooltip>Cadastrar</q-tooltip>
+        </q-btn>
+        <q-btn color="info" icon="edit" @click="alertEditar"><q-tooltip>Editar</q-tooltip> </q-btn>
+        <q-btn color="red" icon="delete" @click="apagar"><q-tooltip>Apagar</q-tooltip> </q-btn>
       </q-btn-group>
     </div>
     <div class="q-mt-md">
