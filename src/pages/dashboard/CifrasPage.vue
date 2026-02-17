@@ -82,12 +82,11 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useTimeout } from 'quasar';
 import type { QTableColumn } from 'quasar';
+import { supabase } from 'src/boot/supabase';
 
 const modal = ref(false);
 const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
 const generos = ['Boi', 'Quadrilha', 'Carimbó'];
 const repertorio = ['Roda', 'Cortejo', 'Extra'];
 const status = ['Ativo', 'Inativo'];
@@ -173,61 +172,7 @@ const columns: QTableColumn<Musica>[] = [
   },
 ];
 
-const rows: Musica[] = [
-  {
-    id: 1,
-    nome: 'inicias BP',
-    autor: 'Arraial do Pavulagem',
-    cifra: `<p>Am</p>
-<p>Eu venho da fortaleza</p>
-<p>F</p>
-<p>Colhendo flor no balaio</p>
-<p>C</p>
-<p>Vou enfeitar o rosário</p>
-<p>G                   E7                  Am</p>
-<p>Pra quando for mês de maio</p>
-<p>F          G                   Am</p>
-<p>Deixar bonito meu boi</p>
-<p>Am</p>
-<p>Bordei no couro esse ano</p>
-<p>F</p>
-<p>Com linha fina de prata</p>
-<p>C</p>
-<p>A estrela d'alva e a lua</p>
-<p>G                E7               Am</p>
-<p>Pro astro rei... luz divina</p>
-<p>F          G             Am</p>
-<p>Fiz um ponteio dourado</p>
-<p>G                                       C</p>
-<p>É d'ouro, prata e brilhante</p>
-<p>G                C</p>
-<p>As inicias BP</p>`,
-    tom: 'Am',
-    genero: 'Boi',
-    repertorio: 'Cortejo',
-    status: 'Ativo',
-  },
-  {
-    id: 2,
-    nome: 'Tempo Perdido',
-    autor: 'Legião Urbana',
-    cifra: 'C G Am F ...',
-    tom: 'C',
-    genero: 'Rock',
-    repertorio: 'Roda',
-    status: 'Inativo',
-  },
-  {
-    id: 3,
-    nome: 'Trem Bala',
-    autor: 'Ana Vilela',
-    cifra: 'G D Em C ...',
-    tom: 'G',
-    genero: 'MPB',
-    repertorio: 'Cortejo',
-    status: 'Inativo',
-  },
-];
+let rows: Musica[] = [];
 
 const alertSalvar = () => {
   onReset();
@@ -289,10 +234,22 @@ const selecionar = (_: Event, row: Musica) => {
   musica.value = { ...row };
 };
 
-onMounted(() => {
-  registerTimeout(() => {
+async function buscaCifras() {
+  showProgress.value = true;
+  const { data, error } = await supabase.from('musicas').select('*');
+
+  if (error) {
+    console.log(error);
     showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
+    return;
+  }
+
+  rows = data;
+  showProgress.value = false;
+}
+
+onMounted(() => {
+  void buscaCifras();
 });
 </script>
 
