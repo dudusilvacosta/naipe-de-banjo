@@ -52,6 +52,12 @@
           </q-td>
         </template>
 
+        <template v-slot:body-cell-ano="props">
+          <q-td :props="props">
+            {{ new Date(props.row.ano).getFullYear() }}
+          </q-td>
+        </template>
+
         <template v-slot:body-cell-fotos="props">
           <q-td :props="props">
             {{ props.row.fotos?.length || 0 }}
