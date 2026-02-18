@@ -10,19 +10,17 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
-          <div class="text-h6">
+          <div v-for="(link, index) in links" :key="index">
             <router-link
-              v-for="(link, index) in links"
-              :key="index"
               :to="`/fotos/${link.album}/${link.ano}`"
               class="q-item q-item-type row no-wrap"
               style="text-decoration: none; color: #0a66c2"
             >
               {{ link.album }} - {{ link.ano }}
             </router-link>
-          </div>
 
-          <q-separator />
+            <q-separator />
+          </div>
         </div>
       </div>
     </div>
@@ -40,7 +38,12 @@ type FotoLink = { album: string; ano: string };
 const links = ref<FotoLink[]>([]);
 
 async function buscaAlbuns() {
-  const { data, error } = await supabase.from('albuns').select('*');
+  const { data, error } = await supabase
+    .from('albuns')
+    .select('*')
+
+    .order('ano', { ascending: false })
+    .order('nome', { ascending: true });
 
   if (error) {
     console.log(error);

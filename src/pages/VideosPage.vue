@@ -7,76 +7,9 @@
       <q-breadcrumbs-el label="Vídeos" icon="smart_display" />
     </q-breadcrumbs>
     <div class="row justify-center q-gutter-sm">
-      <q-intersection class="example-item">
+      <q-intersection class="example-item" v-for="(value, index) in videos" :key="index">
         <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/3urf_fTijj4?si=1OdZ_kGn_InJiLWM"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/oHGxLRcADys?si=2bo9E7O7TZJs6b1Y"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/I0XveOblOpc?si=1kzl2bVFPn_M7RDJ"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/WX5toz-JIII?si=_VLjo2QpWI_VnAYQ"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/bs6TnumYTXg?si=Qa9cPediJOdEEuX4"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/x7rsx5eRF58?si=Bd0gsvBLZuBB3Vq4"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/k_ju3HXX75U?si=6GTCE5Jm-sZOEbhO"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/RTBWrJWvTvs?si=utNw-cwOy1UjKwyJ"
-          />
-        </q-card>
-      </q-intersection>
-      <q-intersection class="example-item">
-        <q-card flat bordered class="q-ma-sm">
-          <q-video
-            :ratio="16 / 9"
-            src="https://www.youtube.com/embed/NgOI7yVn-lk?si=4nIaA92Uu-Hl03T3"
-          />
+          <q-video :ratio="16 / 9" :src="`https://www.youtube.com/embed/${value.id_youtube}`" />
         </q-card>
       </q-intersection>
     </div>
@@ -85,15 +18,35 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useTimeout } from 'quasar';
+import { supabase } from 'src/boot/supabase';
+
+interface Video {
+  id: number | null;
+  video: string;
+  id_youtube: string;
+  status: string;
+}
 
 const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
+const videos = ref<Video[]>([]);
+
+async function buscaVideos() {
+  const { data, error } = await supabase
+    .from('videos')
+    .select('*')
+    .order('nome', { ascending: true });
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  videos.value = data;
+}
 
 onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
+  void buscaVideos();
+  showProgress.value = false;
 });
 </script>
 

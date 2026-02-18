@@ -183,7 +183,10 @@ const selecionar = (_: Event | null, row: Album) => {
 };
 
 async function buscaAlbuns() {
-  const { data, error } = await supabase.from('albuns').select('*');
+  const { data, error } = await supabase
+    .from('albuns')
+    .select('*')
+    .order('nome', { ascending: true });
 
   if (error) {
     console.log(error);

@@ -67,6 +67,7 @@
 import { ref, onMounted } from 'vue';
 import { useTimeout } from 'quasar';
 import type { QTableColumn } from 'quasar';
+import { supabase } from 'src/boot/supabase';
 
 const modal = ref(false);
 const showProgress = ref(true);
@@ -122,26 +123,7 @@ const columns: QTableColumn<Video>[] = [
   },
 ];
 
-const rows: Video[] = [
-  {
-    id: 1,
-    video: 'inicias BP',
-    id_youtube: '3651651',
-    status: 'Ativo',
-  },
-  {
-    id: 2,
-    video: 'Tempo Perdido',
-    id_youtube: '362161651',
-    status: 'Inativo',
-  },
-  {
-    id: 3,
-    video: 'Trem Bala',
-    id_youtube: '3216581',
-    status: 'Inativo',
-  },
-];
+const rows = ref<Video[]>([]);
 
 const alertSalvar = () => {
   onReset();
@@ -199,10 +181,26 @@ const selecionar = (_: Event, row: Video) => {
   video.value = { ...row };
 };
 
+async function buscaVideos() {
+  const { data, error } = await supabase
+    .from('videos')
+    .select('*')
+    .order('nome', { ascending: true });
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  rows.value = data;
+}
+
 onMounted(() => {
   registerTimeout(() => {
     showProgress.value = false;
   }, 1000); // 1 segundo = 1000 ms
+
+  void buscaVideos();
 });
 </script>
 
