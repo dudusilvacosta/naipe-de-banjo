@@ -7,67 +7,27 @@
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
       <q-breadcrumbs-el label="Cortejo" />
     </q-breadcrumbs>
-    <!-- ============================================================================================================ -->
-    <p class="text-body1">Boi</p>
-    <q-list padding bordered class="rounded-borders">
-      <q-expansion-item
-        v-for="(value, index) in boiCifras"
-        :key="index"
-        dense
-        dense-toggle
-        expand-separator
-        :label="value.nome + ' - ' + value.tom"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section class="q-pt-none">
-            <p class="autor">{{ value.autor }}</p>
-            <div v-html="value.cifra"></div>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-    </q-list>
-    <!-- ============================================================================================================ -->
-    <p class="text-body1">Carimbó</p>
-    <q-list padding bordered class="rounded-borders">
-      <q-expansion-item
-        v-for="(value, index) in carimboCifras"
-        :key="index"
-        dense
-        dense-toggle
-        expand-separator
-        :label="value.nome + ' - ' + value.tom"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section class="q-pt-none">
-            <p class="autor">{{ value.autor }}</p>
-            <div v-html="value.cifra"></div>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-    </q-list>
-    <!-- ============================================================================================================ -->
-    <p class="text-body1">Quadrilha</p>
-    <q-list padding bordered class="rounded-borders">
-      <q-expansion-item
-        v-for="(value, index) in quadrilhaCifras"
-        :key="index"
-        dense
-        dense-toggle
-        expand-separator
-        :label="value.nome + ' - ' + value.tom"
-        header-class="text-primary"
-      >
-        <q-card>
-          <q-card-section class="q-pt-none">
-            <p class="autor">{{ value.autor }}</p>
-            <div v-html="value.cifra"></div>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-    </q-list>
-    <!-- ============================================================================================================ -->
+    <div v-for="(musicas, genero) in generosCifras" :key="genero">
+      <p class="text-body1">{{ genero }}</p>
+      <q-list padding bordered class="rounded-borders">
+        <q-expansion-item
+          v-for="(musica, index) in musicas"
+          :key="index"
+          dense
+          dense-toggle
+          expand-separator
+          :label="musica.nome + ' - ' + musica.tom"
+          header-class="text-primary"
+        >
+          <q-card>
+            <q-card-section class="q-pt-none">
+              <p class="autor">{{ musica.autor }}</p>
+              <div v-html="musica.cifra"></div>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+      </q-list>
+    </div>
   </div>
 </template>
 
@@ -87,16 +47,13 @@ interface Musica {
 }
 
 const showProgress = ref(true);
-const boiCifras = ref<Musica[]>([]);
-const carimboCifras = ref<Musica[]>([]);
-const quadrilhaCifras = ref<Musica[]>([]);
+const generosCifras = ref<Record<string, Musica[]>>({});
 
-async function cifrasBoi() {
+async function carregarCifras() {
   const { data, error } = await supabase
     .from('musicas')
     .select('*')
     .eq('repertorio', 'Cortejo')
-    .eq('genero', 'Boi')
     .order('nome', { ascending: true });
 
   if (error) {
@@ -104,43 +61,19 @@ async function cifrasBoi() {
     return;
   }
 
-  boiCifras.value = data as Musica[];
-}
-async function cifrasCarimbo() {
-  const { data, error } = await supabase
-    .from('musicas')
-    .select('*')
-    .eq('repertorio', 'Cortejo')
-    .eq('genero', 'Carimbó')
-    .order('nome', { ascending: true });
-
-  if (error) {
-    console.log(error);
-    return;
-  }
-
-  carimboCifras.value = data as Musica[];
-}
-async function cifrasQuadrilha() {
-  const { data, error } = await supabase
-    .from('musicas')
-    .select('*')
-    .eq('repertorio', 'Cortejo')
-    .eq('genero', 'Quadrilha')
-    .order('nome', { ascending: true });
-
-  if (error) {
-    console.log(error);
-    return;
-  }
-
-  quadrilhaCifras.value = data as Musica[];
+  // Agrupa por gênero
+  generosCifras.value = (data as Musica[]).reduce(
+    (acc, musica) => {
+      if (!acc[musica.genero]) acc[musica.genero] = [];
+      acc[musica.genero]!.push(musica);
+      return acc;
+    },
+    {} as Record<string, Musica[]>,
+  );
 }
 
-onMounted(() => {
-  void cifrasBoi();
-  void cifrasCarimbo();
-  void cifrasQuadrilha();
+onMounted(async () => {
+  await carregarCifras();
   showProgress.value = false;
 });
 </script>
