@@ -50,19 +50,14 @@ const showProgress = ref(true);
 const generosCifras = ref<Record<string, Musica[]>>({});
 
 async function carregarCifras() {
-  const { data, error } = await supabase
-    .from('musicas')
-    .select('*')
-    .eq('repertorio', 'Cortejo')
-    .order('nome', { ascending: true });
+  const { data, error } = await supabase.from('musicas').select('*').eq('repertorio', 'Cortejo');
 
   if (error) {
     console.log(error);
     return;
   }
 
-  // Agrupa por gênero
-  generosCifras.value = (data as Musica[]).reduce(
+  const agrupado = (data as Musica[]).reduce(
     (acc, musica) => {
       if (!acc[musica.genero]) acc[musica.genero] = [];
       acc[musica.genero]!.push(musica);
@@ -70,6 +65,18 @@ async function carregarCifras() {
     },
     {} as Record<string, Musica[]>,
   );
+
+  const ordenado: Record<string, Musica[]> = {};
+
+  Object.keys(agrupado)
+    .sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' })) // gêneros
+    .forEach((genero) => {
+      ordenado[genero] = agrupado[genero]!.sort(
+        (a, b) => a.nome.localeCompare(b.nome, 'pt-BR', { sensitivity: 'base' }), // músicas
+      );
+    });
+
+  generosCifras.value = ordenado;
 }
 
 onMounted(async () => {

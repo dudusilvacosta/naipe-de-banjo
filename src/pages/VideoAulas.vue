@@ -5,7 +5,7 @@
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Aulas" icon="school" />
-      <q-breadcrumbs-el label="Teoria Musical" />
+      <q-breadcrumbs-el :label="aux" />
     </q-breadcrumbs>
     <div class="row justify-center q-gutter-sm">
       <q-intersection class="example-item" v-for="(value, index) in aula.videos" :key="index">
