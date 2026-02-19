@@ -9,15 +9,17 @@
     <div class="categorias">
       <div class="q-gutter-sm">
         <div class="text-h6">
-          <router-link
-            to="/cifras/cortejo"
-            class="q-item q-item-type row no-wrap"
-            style="text-decoration: none; color: #0a66c2"
-          >
-            Cortejo
-          </router-link>
+          <div v-for="(value, index) in cifras" :key="index">
+            <router-link
+              :to="`/cifras/${value.repertorio}`"
+              class="q-item q-item-type row no-wrap"
+              style="text-decoration: none; color: #0a66c2"
+            >
+              {{ value.repertorio }}
+            </router-link>
 
-          <q-separator />
+            <q-separator />
+          </div>
 
           <router-link
             to="/cifras/roda"
@@ -46,15 +48,35 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useTimeout } from 'quasar';
+import { supabase } from 'src/boot/supabase';
+
+interface Link {
+  repertorio: string;
+}
 
 const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
+const cifras = ref<Link[]>([]);
+
+async function buscaCifras() {
+  const { data, error } = await supabase
+    .from('musicas')
+    .select('repertorio')
+    .order('repertorio', { ascending: true });
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  // Cria um mapa para filtrar duplicados por repertorio
+  const unicos = Array.from(new Map(data.map((item) => [item.repertorio, item])).values());
+
+  cifras.value = unicos;
+}
 
 onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
+  void buscaCifras();
+  showProgress.value = false;
 });
 </script>
 
