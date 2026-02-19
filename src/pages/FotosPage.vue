@@ -12,11 +12,11 @@
         <div class="text-h6">
           <div v-for="(link, index) in links" :key="index">
             <router-link
-              :to="`/fotos/${link.album}/${link.ano}`"
+              :to="`/fotos/${link.album}`"
               class="q-item q-item-type row no-wrap"
               style="text-decoration: none; color: #0a66c2"
             >
-              {{ link.album }} - {{ link.ano }}
+              {{ link.album }}
             </router-link>
 
             <q-separator />
@@ -34,7 +34,7 @@ import { supabase } from 'src/boot/supabase';
 
 const showProgress = ref(true);
 const { registerTimeout } = useTimeout();
-type FotoLink = { album: string; ano: string };
+type FotoLink = { album: string };
 const links = ref<FotoLink[]>([]);
 
 async function buscaAlbuns() {
@@ -42,7 +42,6 @@ async function buscaAlbuns() {
     .from('albuns')
     .select('*')
 
-    .order('ano', { ascending: false })
     .order('nome', { ascending: true });
 
   if (error) {
@@ -57,7 +56,6 @@ async function buscaAlbuns() {
 
   links.value = data.map((row) => ({
     album: row.nome,
-    ano: row.ano,
   }));
 }
 

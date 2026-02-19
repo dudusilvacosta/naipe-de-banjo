@@ -21,7 +21,7 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/FotosPage.vue') }],
   },
   {
-    path: '/fotos/:album/:ano',
+    path: '/fotos/:album',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/AlbumPage.vue') }],
   },

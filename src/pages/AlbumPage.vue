@@ -14,7 +14,7 @@
         animated
         thumbnails
         infinite
-        style="width: 100vw; max-width: 800px"
+        style="width: 100vw; max-width: 800px; aspect-ratio: 4 / 3; height: auto"
       >
         <q-carousel-slide
           v-for="(value, index) in fotos"
@@ -29,17 +29,14 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useTimeout } from 'quasar';
 import { supabase } from 'src/boot/supabase';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
 const slide = ref('1.jpeg');
 const fotos = ref<object[]>([]);
 const album = ref('');
-const ano = ref('');
 const pasta_git = ref('');
 
 async function buscaAlbuns() {
@@ -47,7 +44,6 @@ async function buscaAlbuns() {
     .from('albuns')
     .select('*')
     .eq('nome', album.value)
-    .eq('ano', ano.value)
     .order('nome', { ascending: true });
 
   if (error) {
@@ -60,12 +56,7 @@ async function buscaAlbuns() {
 
 onMounted(() => {
   album.value = route.params.album as string;
-  ano.value = route.params.ano as string;
-
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
-
   void buscaAlbuns();
+  showProgress.value = false;
 });
 </script>
