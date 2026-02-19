@@ -12,7 +12,7 @@
       expand-separator
       label="Filtros de pesquisa"
       header-class="text-primary"
-      class="q-mt-md"
+      class="q-mt-md bg-grey-3"
     >
       <div class="pesquisa">
         <q-input v-model="pesquisa.video" label="Vídeo" />
