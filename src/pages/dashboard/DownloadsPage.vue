@@ -7,7 +7,7 @@
       <q-breadcrumbs-el label="Donwloads" icon="download" />
     </q-breadcrumbs>
     <div class="pesquisa">
-      <q-input v-model="pesquisa.titulo" label="Título" />
+      <q-input v-model="pesquisa.nome" label="Título" />
       <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
     </div>
 
@@ -39,17 +39,17 @@
   </div>
 
   <q-dialog v-model="modal">
-    <q-card style="width: 100%">
+    <q-card>
       <q-card-section>
-        <div class="text-h6">{{ notificacao.id ? 'Editar' : 'Cadastrar' }}</div>
+        <div class="text-h6">{{ download.id ? 'Editar' : 'Cadastrar' }}</div>
       </q-card-section>
 
       <q-card-section class="q-pt-none">
         <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-          <q-input v-model="notificacao.titulo" label="Título *" lazy-rules />
+          <q-input v-model="download.nome" label="Nome *" lazy-rules />
 
-          <q-select v-model="notificacao.status" :options="status" label="Status *" lazy-rules />
-          <q-editor v-model="notificacao.msg" min-height="34rem" />
+          <q-input v-model="download.id_drive" label="ID" hint="" lazy-rules />
+          <q-select v-model="download.status" :options="status" label="Status" class="select" />
 
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
@@ -64,34 +64,32 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useTimeout } from 'quasar';
 import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
 
 const modal = ref(false);
 const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
 const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Notificacao | null>(null);
+const selecionada = ref<Download | null>(null);
 
-interface Notificacao {
+interface Download {
   id: number | null;
-  titulo: string;
-  msg: string;
+  nome: string;
+  id_drive: string;
   status: string;
 }
 const pesquisa = ref({
-  titulo: '',
-  msg: '',
+  nome: '',
+  id_drive: '',
   status: '',
 });
-const notificacao = ref<Notificacao>({
+const download = ref<Download>({
   id: null,
-  titulo: '',
-  msg: '',
+  nome: '',
+  id_drive: '',
   status: '',
 });
-const columns: QTableColumn<Notificacao>[] = [
+const columns: QTableColumn<Download>[] = [
   {
     name: 'id',
     label: '#',
@@ -100,9 +98,16 @@ const columns: QTableColumn<Notificacao>[] = [
     sortable: true,
   },
   {
-    name: 'titulo',
+    name: 'nome',
     label: 'Título',
-    field: 'titulo',
+    field: 'nome',
+    align: 'left',
+    sortable: true,
+  },
+  {
+    name: 'id_drive',
+    label: 'ID',
+    field: 'id_drive',
     align: 'left',
     sortable: true,
   },
@@ -115,7 +120,7 @@ const columns: QTableColumn<Notificacao>[] = [
   },
 ];
 
-const rows = ref<Notificacao[]>([]);
+const rows = ref<Download[]>([]);
 
 const alertSalvar = () => {
   onReset();
@@ -124,7 +129,7 @@ const alertSalvar = () => {
 };
 
 const alertEditar = () => {
-  if (!notificacao.value.id) {
+  if (!download.value.id) {
     window.alert('Escolha uma cifra');
     return;
   }
@@ -140,7 +145,7 @@ const editar = () => {
 };
 
 const apagar = () => {
-  if (!notificacao.value.id) {
+  if (!download.value.id) {
     window.alert('Escolha uma cifra');
     return;
   }
@@ -152,7 +157,7 @@ const apagar = () => {
 };
 
 const onSubmit = () => {
-  if (notificacao.value.id) {
+  if (download.value.id) {
     editar();
   } else {
     salvar();
@@ -160,21 +165,21 @@ const onSubmit = () => {
 };
 
 const onReset = () => {
-  notificacao.value = {
+  download.value = {
     id: null,
-    titulo: '',
-    msg: '',
+    nome: '',
+    id_drive: '',
     status: '',
   };
 };
 
-const selecionar = (_: Event, row: Notificacao) => {
+const selecionar = (_: Event, row: Download) => {
   selecionada.value = row;
-  notificacao.value = { ...row };
+  download.value = { ...row };
 };
 
-async function buscaNotificacoes() {
-  const { data, error } = await supabase.from('notificacoes').select('*');
+async function buscaDownloads() {
+  const { data, error } = await supabase.from('downloads').select('*');
 
   if (error) {
     console.log(error);
@@ -185,20 +190,15 @@ async function buscaNotificacoes() {
 }
 
 onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
-
-  void buscaNotificacoes();
+  void buscaDownloads();
+  showProgress.value = false;
 });
 </script>
 
 <style scoped>
 .pesquisa {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1erm;
+  gap: 1rem;
 }
 .select {
   min-width: 150px;

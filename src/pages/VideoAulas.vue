@@ -5,24 +5,14 @@
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Aulas" icon="school" />
+      <q-breadcrumbs-el label="Teoria Musical" />
     </q-breadcrumbs>
-
-    <div class="categorias">
-      <div class="q-gutter-sm">
-        <div class="text-h6">
-          <div v-for="(value, index) in aulas" :key="index">
-            <router-link
-              :to="`/aulas/aula/${value.nome}`"
-              class="q-item q-item-type row no-wrap"
-              style="text-decoration: none; color: #0a66c2"
-            >
-              {{ value.nome }}
-            </router-link>
-
-            <q-separator />
-          </div>
-        </div>
-      </div>
+    <div class="row justify-center q-gutter-sm">
+      <q-intersection class="example-item" v-for="(value, index) in aula.videos" :key="index">
+        <q-card flat bordered class="q-ma-sm">
+          <q-video :ratio="16 / 9" :src="`https://www.youtube.com/embed/${value}`" />
+        </q-card>
+      </q-intersection>
     </div>
   </div>
 </template>
@@ -30,21 +20,31 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { supabase } from 'src/boot/supabase';
+import { useRoute } from 'vue-router';
 
 interface Aula {
   id: number | null;
   nome: string;
-  id_youtube: string;
+  videos: unknown[];
   status: string;
 }
 
+const route = useRoute();
+const aux = ref('');
+
 const showProgress = ref(true);
-const aulas = ref<Aula[]>([]);
+const aula = ref<Aula>({
+  id: null,
+  nome: '',
+  videos: [],
+  status: '',
+});
 
 async function buscaAulas() {
   const { data, error } = await supabase
     .from('aulas')
     .select('*')
+    .eq('nome', aux.value)
     .order('nome', { ascending: true });
 
   if (error) {
@@ -52,21 +52,21 @@ async function buscaAulas() {
     return;
   }
 
-  aulas.value = data;
+  aula.value = data[0];
 }
 
 onMounted(() => {
+  aux.value = route.params.nome as string;
   void buscaAulas();
   showProgress.value = false;
 });
 </script>
 
-<style scoped>
-.categorias {
-  position: relative;
-  height: calc(100svh - 120px);
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
+<style lang="sass" scoped>
+.example-item
+  width: 290px
+
+@media screen and (max-width: 600px)
+  .example-item
+    width: 100%
 </style>

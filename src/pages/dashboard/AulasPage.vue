@@ -6,22 +6,20 @@
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Aulas" icon="video_library" />
     </q-breadcrumbs>
+    <q-expansion-item
+      dense
+      dense-toggle
+      expand-separator
+      label="Filtros de pesquisa"
+      header-class="text-primary"
+      class="q-mt-md"
+    >
+      <div class="pesquisa">
+        <q-input v-model="pesquisa.nome" label="Album" />
 
-    <div class="pesquisa">
-      <q-input v-model="pesquisa.nome" label="Album" />
-      <q-btn icon="event" color="primary">
-        <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-          <q-date v-model="pesquisa.ano" minimal default-view="Years">
-            <div class="row items-center justify-end q-gutter-sm">
-              <q-btn label="Cancel" color="primary" flat v-close-popup />
-              <q-btn label="OK" color="primary" flat v-close-popup />
-            </div>
-          </q-date>
-        </q-popup-proxy>
-      </q-btn>
-      <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
-    </div>
-
+        <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
+      </div>
+    </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
         <q-btn color="primary" icon="search">
@@ -51,9 +49,9 @@
           </q-td>
         </template>
 
-        <template v-slot:body-cell-fotos="props">
+        <template v-slot:body-cell-videos="props">
           <q-td :props="props">
-            {{ props.row.fotos?.length || 0 }}
+            {{ props.row.videos?.length || 0 }}
           </q-td>
         </template>
       </q-table>
@@ -63,15 +61,13 @@
   <q-dialog v-model="modal">
     <q-card>
       <q-card-section>
-        <div class="text-h6">{{ album.id ? 'Editar' : 'Cadastrar' }}</div>
+        <div class="text-h6">{{ aula.id ? 'Editar' : 'Cadastrar' }}</div>
       </q-card-section>
 
       <q-card-section class="q-pt-none">
         <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
-          <q-input v-model="album.nome" label="Album *" lazy-rules />
-          <q-date v-model="album.ano" minimal default-view="Years" />
-          <q-select v-model="album.status" :options="status" label="Status" />
-          <q-input v-model="album.pasta_git" label="Pasta Git" />
+          <q-input v-model="aula.nome" label="Album *" lazy-rules />
+          <q-select v-model="aula.status" :options="status" label="Status" />
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
             <q-btn label="Limpar" type="reset" color="primary" flat class="q-ml-sm" />
@@ -93,42 +89,36 @@ const modal = ref(false);
 const showProgress = ref(true);
 const { registerTimeout } = useTimeout();
 const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Album | null>(null);
+const selecionada = ref<Aula | null>(null);
 
-interface Album {
+interface Aula {
   id: number | null;
   nome: string;
-  ano: string;
-  fotos: unknown[];
+  videos: unknown[];
   status: string;
-  pasta_git: string;
 }
 
 const pesquisa = ref({
   nome: '',
-  ano: '',
   status: '',
 });
 
-const album = ref<Album>({
+const aula = ref<Aula>({
   id: null,
   nome: '',
-  ano: '',
-  fotos: [],
+  videos: [],
   status: '',
-  pasta_git: '',
 });
 
-const columns: QTableColumn<Album>[] = [
+const columns: QTableColumn<Aula>[] = [
   { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
-  { name: 'nome', label: 'Album', field: 'nome', align: 'left', sortable: true },
-  { name: 'ano', label: 'Ano', field: 'ano', align: 'left', sortable: true },
-  { name: 'fotos', label: 'N Fotos', field: 'fotos', align: 'left', sortable: true },
+  { name: 'nome', label: 'Aula', field: 'nome', align: 'left', sortable: true },
+  { name: 'videos', label: 'Nº Vídeos', field: 'videos', align: 'left', sortable: true },
   { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
 ];
 
-const albuns = ref<Album[]>([]);
-const rows = computed(() => albuns.value);
+const aulas = ref<Aula[]>([]);
+const rows = computed(() => aulas.value);
 
 const alertSalvar = () => {
   onReset();
@@ -145,11 +135,11 @@ const alertEditar = () => {
 };
 
 const salvar = () => {
-  console.log('Salvar', album.value);
+  console.log('Salvar', aula.value);
 };
 
 const editar = () => {
-  console.log('Editar', album.value);
+  console.log('Editar', aula.value);
 };
 
 const apagar = () => {
@@ -165,7 +155,7 @@ const apagar = () => {
 };
 
 const onSubmit = () => {
-  if (album.value.id) {
+  if (aula.value.id) {
     editar();
   } else {
     salvar();
@@ -173,17 +163,17 @@ const onSubmit = () => {
 };
 
 const onReset = () => {
-  album.value = { id: null, nome: '', ano: '', fotos: [], status: '', pasta_git: '' };
+  aula.value = { id: null, nome: '', videos: [], status: '' };
 };
 
-const selecionar = (_: Event | null, row: Album) => {
+const selecionar = (_: Event | null, row: Aula) => {
   selecionada.value = row;
-  album.value = { ...row };
+  aula.value = { ...row };
 };
 
-async function buscaAlbuns() {
+async function buscaAulas() {
   const { data, error } = await supabase
-    .from('albuns')
+    .from('aulas')
     .select('*')
     .order('nome', { ascending: true });
 
@@ -192,13 +182,11 @@ async function buscaAlbuns() {
     return;
   }
 
-  albuns.value = (data as Record<string, unknown>[]).map((item: Record<string, unknown>) => ({
+  aulas.value = (data as Record<string, unknown>[]).map((item: Record<string, unknown>) => ({
     id: item.id as number,
     nome: item.nome as string,
-    ano: item.ano as string,
-    fotos: (item.fotos as unknown[]) || [],
+    videos: (item.videos as unknown[]) || [],
     status: item.status as string,
-    pasta_git: item.pasta_git as string,
   }));
 }
 
@@ -207,7 +195,7 @@ onMounted(() => {
     showProgress.value = false;
   }, 1000);
 
-  void buscaAlbuns();
+  void buscaAulas();
 });
 </script>
 

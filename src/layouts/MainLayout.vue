@@ -89,7 +89,7 @@ const linksList: EssentialLinkProps[] = [
     link: '/cifras',
   },
   {
-    title: 'Vídeo Aulas',
+    title: 'Aulas',
     caption: 'teoria e musical',
     icon: 'video_library',
     link: '/aulas',
@@ -105,12 +105,6 @@ const linksList: EssentialLinkProps[] = [
     caption: 'notícias e avisos',
     icon: 'notifications',
     link: '/notificacoes',
-  },
-  {
-    title: 'Entrar',
-    caption: 'login',
-    icon: 'login',
-    link: '/login',
   },
   {
     title: 'DashBoard',

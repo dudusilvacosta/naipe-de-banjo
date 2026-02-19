@@ -6,12 +6,20 @@
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Vídeos" icon="video_library" />
     </q-breadcrumbs>
-    <div class="pesquisa">
-      <q-input v-model="pesquisa.video" label="Vídeo" />
-      <q-input v-model="pesquisa.id_youtube" label="ID" />
-      <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
-    </div>
-
+    <q-expansion-item
+      dense
+      dense-toggle
+      expand-separator
+      label="Filtros de pesquisa"
+      header-class="text-primary"
+      class="q-mt-md"
+    >
+      <div class="pesquisa">
+        <q-input v-model="pesquisa.video" label="Vídeo" />
+        <q-input v-model="pesquisa.id_youtube" label="ID" />
+        <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
+      </div>
+    </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
         <q-btn color="primary" icon="search">
@@ -40,7 +48,7 @@
   </div>
 
   <q-dialog v-model="modal">
-    <q-card style="width: 100%">
+    <q-card>
       <q-card-section>
         <div class="text-h6">{{ video.id ? 'Editar' : 'Cadastrar' }}</div>
       </q-card-section>

@@ -77,7 +77,7 @@ const linksList: EssentialLinkProps[] = [
     link: '/dashboard/cifras',
   },
   {
-    title: 'Vídeo Aulas',
+    title: 'Aulas',
     caption: 'crud de aulas',
     icon: 'video_library',
     link: '/dashboard/aulas',

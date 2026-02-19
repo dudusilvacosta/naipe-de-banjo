@@ -56,29 +56,14 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/AulasPage.vue') }],
   },
   {
-    path: '/aulas/teoria-musical',
+    path: '/aulas/aula/:nome',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/TeoriaMusicalPage.vue') }],
-  },
-  {
-    path: '/aulas/acordes-cifras',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/AcordesCifrasPage.vue') }],
-  },
-  {
-    path: '/aulas/graus-harmonia',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/GrausHarmoniaPage.vue') }],
-  },
-  {
-    path: '/aulas/carimbo-cifrado',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/CarimboCifradoPage.vue') }],
+    children: [{ path: '', component: () => import('pages/VideoAulas.vue') }],
   },
   {
     path: '/downloads',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('src/pages/DonloadsPage.vue') }],
+    children: [{ path: '', component: () => import('src/pages/DownloadsPage.vue') }],
   },
   {
     path: '/notificacoes',
@@ -89,15 +74,18 @@ const routes: RouteRecordRaw[] = [
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),
   },
-
   {
     path: '/dashboard',
     component: () => import('layouts/DashboardLayout.vue'),
     meta: { requiresAuth: true },
     children: [
+      { path: '', component: () => import('pages/dashboard/IndexPage.vue') },
       { path: '/dashboard/aulas', component: () => import('pages/dashboard/AulasPage.vue') },
       { path: '/dashboard/cifras', component: () => import('pages/dashboard/CifrasPage.vue') },
-      { path: '/dashboard/downloads', component: () => import('pages/dashboard/DonloadsPage.vue') },
+      {
+        path: '/dashboard/downloads',
+        component: () => import('src/pages/dashboard/DownloadsPage.vue'),
+      },
       { path: '/dashboard/fotos', component: () => import('pages/dashboard/FotosPage.vue') },
       {
         path: '/dashboard/notificacoes',

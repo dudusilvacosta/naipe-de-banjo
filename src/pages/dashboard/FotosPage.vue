@@ -7,22 +7,19 @@
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Fotos" icon="image" />
     </q-breadcrumbs>
-
-    <div class="pesquisa">
-      <q-input v-model="pesquisa.nome" label="Album" />
-      <q-btn icon="event" color="primary">
-        <q-popup-proxy cover transition-show="scale" transition-hide="scale">
-          <q-date v-model="pesquisa.ano" minimal default-view="Years">
-            <div class="row items-center justify-end q-gutter-sm">
-              <q-btn label="Cancel" color="primary" flat v-close-popup />
-              <q-btn label="OK" color="primary" flat v-close-popup />
-            </div>
-          </q-date>
-        </q-popup-proxy>
-      </q-btn>
-      <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
-    </div>
-
+    <q-expansion-item
+      dense
+      dense-toggle
+      expand-separator
+      label="Filtros de pesquisa"
+      header-class="text-primary"
+      class="q-mt-md"
+    >
+      <div class="pesquisa">
+        <q-input v-model="pesquisa.nome" label="Album" />
+        <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
+      </div>
+    </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
         <q-btn color="primary" icon="search">
@@ -52,12 +49,6 @@
           </q-td>
         </template>
 
-        <template v-slot:body-cell-ano="props">
-          <q-td :props="props">
-            {{ new Date(props.row.ano).getFullYear() }}
-          </q-td>
-        </template>
-
         <template v-slot:body-cell-fotos="props">
           <q-td :props="props">
             {{ props.row.fotos?.length || 0 }}
@@ -76,7 +67,6 @@
       <q-card-section class="q-pt-none">
         <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
           <q-input v-model="album.nome" label="Album *" lazy-rules />
-          <q-date v-model="album.ano" minimal default-view="Years" />
           <q-select v-model="album.status" :options="status" label="Status" />
           <q-input v-model="album.pasta_git" label="Pasta Git" />
           <div>
@@ -105,7 +95,6 @@ const selecionada = ref<Album | null>(null);
 interface Album {
   id: number | null;
   nome: string;
-  ano: string;
   fotos: unknown[];
   status: string;
   pasta_git: string;
@@ -113,14 +102,12 @@ interface Album {
 
 const pesquisa = ref({
   nome: '',
-  ano: '',
   status: '',
 });
 
 const album = ref<Album>({
   id: null,
   nome: '',
-  ano: '',
   fotos: [],
   status: '',
   pasta_git: '',
@@ -129,8 +116,7 @@ const album = ref<Album>({
 const columns: QTableColumn<Album>[] = [
   { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
   { name: 'nome', label: 'Album', field: 'nome', align: 'left', sortable: true },
-  { name: 'ano', label: 'Ano', field: 'ano', align: 'left', sortable: true },
-  { name: 'fotos', label: 'N Fotos', field: 'fotos', align: 'left', sortable: true },
+  { name: 'fotos', label: 'Nº Fotos', field: 'fotos', align: 'left', sortable: true },
   { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
 ];
 
@@ -180,7 +166,7 @@ const onSubmit = () => {
 };
 
 const onReset = () => {
-  album.value = { id: null, nome: '', ano: '', fotos: [], status: '', pasta_git: '' };
+  album.value = { id: null, nome: '', fotos: [], status: '', pasta_git: '' };
 };
 
 const selecionar = (_: Event | null, row: Album) => {
