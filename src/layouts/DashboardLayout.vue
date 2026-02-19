@@ -53,10 +53,16 @@ import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink
 
 const linksList: EssentialLinkProps[] = [
   {
-    title: 'Início',
+    title: 'Voltar',
     caption: 'site principal',
-    icon: 'home',
+    icon: 'reply',
     link: '/',
+  },
+  {
+    title: 'Início',
+    caption: 'dashboard',
+    icon: 'home',
+    link: '/dashboard',
   },
   {
     title: 'Fotos',
