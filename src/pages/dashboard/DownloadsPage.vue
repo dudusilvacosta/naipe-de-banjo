@@ -6,11 +6,19 @@
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Donwloads" icon="download" />
     </q-breadcrumbs>
-    <div class="pesquisa">
-      <q-input v-model="pesquisa.nome" label="Título" />
-      <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
-    </div>
-
+    <q-expansion-item
+      dense
+      dense-toggle
+      expand-separator
+      label="Filtros de pesquisa"
+      header-class="text-primary bg-blue-1"
+      class="q-mt-md"
+    >
+      <div class="pesquisa">
+        <q-input v-model="pesquisa.nome" label="Título" />
+        <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
+      </div>
+    </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
         <q-btn color="primary" icon="search">

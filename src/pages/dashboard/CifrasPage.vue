@@ -11,8 +11,8 @@
       dense-toggle
       expand-separator
       label="Filtros de pesquisa"
-      header-class="text-primary"
-      class="q-mt-md bg-grey-3"
+      header-class="text-primary bg-blue-1"
+      class="q-mt-md"
     >
       <div class="pesquisa">
         <q-input v-model="pesquisa.nome" label="Música" />
