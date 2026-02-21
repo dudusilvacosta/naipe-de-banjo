@@ -110,7 +110,7 @@ const linksList: EssentialLinkProps[] = [
     title: 'DashBoard',
     caption: 'área do administrador',
     icon: 'dashboard',
-    link: '/dashboard',
+    link: '/login',
   },
 ];
 
