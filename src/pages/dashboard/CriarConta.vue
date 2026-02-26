@@ -27,16 +27,16 @@
     </div>
   </div>
 </template>
-
 <script lang="ts">
 import { supabase } from 'src/boot/supabase';
 import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 
 export default {
   setup() {
     const nome = ref('');
     const email = ref('');
+    const route = useRoute();
     const router = useRouter();
 
     return {
@@ -44,17 +44,20 @@ export default {
       email,
 
       async onSubmit() {
-        const { data, error } = await supabase.auth.signInWithPassword({
-          email: 'valid.email@supabase.io',
-          password: 'example-password',
+        const { data, error } = await supabase.auth.signUp({
+          email: email.value,
+          password: nome.value,
+          options: {
+            emailRedirectTo: 'https://example.com/welcome'
+          }
         });
 
         if (error) {
-          console.error('Error signing in:', error.message);
+          console.error('Error signing up:', error);
           return;
         }
 
-        console.log('User signed in successfully:', data);
+        console.log('User signed up successfully:', data);
         await router.push('/dashboard');
       },
 
@@ -66,12 +69,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-</style>
