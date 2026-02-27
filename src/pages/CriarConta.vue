@@ -8,12 +8,12 @@
         class="q-gutter-md"
         style="display: flex; flex-direction: column; align-items: center"
       >
-        <q-input filled v-model="nome" label="Email *" lazy-rules style="width: 100%" />
+        <q-input filled v-model="email" label="Email *" lazy-rules style="width: 100%" />
 
         <q-input
-          type="password"
           filled
-          v-model="email"
+          type="password"
+          v-model="senha"
           label="Senha *"
           lazy-rules
           style="width: 100%"
@@ -35,18 +35,18 @@ import { useRouter } from 'vue-router';
 
 export default {
   setup() {
-    const nome = ref('');
     const email = ref('');
+    const senha = ref('');
     const router = useRouter();
 
     return {
-      nome,
+      senha,
       email,
 
       async onSubmit() {
         const { data, error } = await supabase.auth.signUp({
           email: email.value,
-          password: nome.value,
+          password: senha.value,
           options: {
             emailRedirectTo: 'https://example.com/welcome',
           },
@@ -57,13 +57,14 @@ export default {
           return;
         }
 
+        alert('Conta criada com sucesso! Verifique seu email para confirmar a conta.');
         console.log('User signed up successfully:', data);
-        await router.push('/dashboard');
+        await router.push('/');
       },
 
       onReset() {
-        nome.value = '';
         email.value = '';
+        senha.value = '';
       },
 
       async irParaLogin() {
