@@ -1,6 +1,7 @@
 <template>
   <div class="login">
     <div class="q-pa-md" style="width: 100%; max-width: 400px">
+      <div class="text-h4 q-mb-md">Criar Conta</div>
       <q-form
         @submit="onSubmit"
         @reset="onReset"
@@ -19,10 +20,10 @@
         />
 
         <div>
-          <q-btn label="Entrar" type="submit" color="primary" />
+          <q-btn label="Criar conta" type="submit" color="primary" />
           <q-btn outline label="Limpar" type="reset" color="primary" class="q-ml-sm" />
         </div>
-        <q-btn flat style="color: goldenrod" label="Criar Conta" />
+        <q-btn flat style="color: goldenrod" label="Voltar" @click="irParaLogin" />
       </q-form>
     </div>
   </div>
@@ -63,6 +64,10 @@ export default {
       onReset() {
         nome.value = '';
         email.value = '';
+      },
+
+      async irParaLogin() {
+        await router.push('/login');
       },
     };
   },

@@ -1,6 +1,7 @@
 <template>
   <div class="login">
     <div class="q-pa-md" style="width: 100%; max-width: 400px">
+      <div class="text-h4 q-mb-md">Login</div>
       <q-form
         @submit="onSubmit"
         @reset="onReset"
@@ -38,14 +39,10 @@ export default {
     const nome = ref('');
     const email = ref('');
     const router = useRouter();
-    async function irParaCadastro() {
-      await router.push('/criar-conta');
-    }
 
     return {
       nome,
       email,
-      irParaCadastro,
 
       async onSubmit() {
         const { data, error } = await supabase.auth.signInWithPassword({
@@ -65,6 +62,10 @@ export default {
       onReset() {
         nome.value = '';
         email.value = '';
+      },
+
+      async irParaCadastro() {
+        await router.push('/criar-conta');
       },
     };
   },
