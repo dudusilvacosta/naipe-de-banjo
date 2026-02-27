@@ -22,7 +22,7 @@
           <q-btn label="Entrar" type="submit" color="primary" />
           <q-btn outline label="Limpar" type="reset" color="primary" class="q-ml-sm" />
         </div>
-        <q-btn flat style="color: goldenrod" label="Criar Conta" />
+        <q-btn flat style="color: goldenrod" label="Criar Conta" @click="irParaCadastro" />
       </q-form>
     </div>
   </div>
@@ -38,10 +38,14 @@ export default {
     const nome = ref('');
     const email = ref('');
     const router = useRouter();
+    async function irParaCadastro() {
+      await router.push('/cadastro');
+    }
 
     return {
       nome,
       email,
+      irParaCadastro,
 
       async onSubmit() {
         const { data, error } = await supabase.auth.signInWithPassword({
