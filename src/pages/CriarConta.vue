@@ -30,13 +30,13 @@
 <script lang="ts">
 import { supabase } from 'src/boot/supabase';
 import { ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { useRouter } from 'vue-router';
 
 export default {
   setup() {
     const nome = ref('');
     const email = ref('');
-    const route = useRoute();
+    const route = useRouter();
     const router = useRouter();
 
     return {
@@ -48,8 +48,8 @@ export default {
           email: email.value,
           password: nome.value,
           options: {
-            emailRedirectTo: 'https://example.com/welcome'
-          }
+            emailRedirectTo: 'https://example.com/welcome',
+          },
         });
 
         if (error) {
