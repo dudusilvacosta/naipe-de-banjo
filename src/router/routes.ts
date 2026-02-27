@@ -79,18 +79,12 @@ const routes: RouteRecordRaw[] = [
     meta: { requiresAuth: true },
     children: [
       { path: '', component: () => import('pages/dashboard/IndexPage.vue') },
-      { path: '/dashboard/aulas', component: () => import('pages/dashboard/AulasPage.vue') },
-      { path: '/dashboard/cifras', component: () => import('pages/dashboard/CifrasPage.vue') },
-      {
-        path: '/dashboard/downloads',
-        component: () => import('src/pages/dashboard/DownloadsPage.vue'),
-      },
-      { path: '/dashboard/fotos', component: () => import('pages/dashboard/FotosPage.vue') },
-      {
-        path: '/dashboard/notificacoes',
-        component: () => import('pages/dashboard/NotificacoesPage.vue'),
-      },
-      { path: '/dashboard/videos', component: () => import('pages/dashboard/VideosPage.vue') },
+      { path: 'aulas', component: () => import('pages/dashboard/AulasPage.vue') },
+      { path: 'cifras', component: () => import('pages/dashboard/CifrasPage.vue') },
+      { path: 'downloads', component: () => import('src/pages/dashboard/DownloadsPage.vue') },
+      { path: 'fotos', component: () => import('pages/dashboard/FotosPage.vue') },
+      { path: 'notificacoes', component: () => import('pages/dashboard/NotificacoesPage.vue') },
+      { path: 'videos', component: () => import('pages/dashboard/VideosPage.vue') },
     ],
   },
 ];

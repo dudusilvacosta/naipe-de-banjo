@@ -50,8 +50,12 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink.vue';
+import { computed } from 'vue';
+import { useAuthStore } from 'src/stores/auth';
 
-const linksList: EssentialLinkProps[] = [
+const authStore = useAuthStore();
+
+const linksList = computed<EssentialLinkProps[]>(() => [
   {
     title: 'Voltar',
     caption: 'site principal',
@@ -95,12 +99,12 @@ const linksList: EssentialLinkProps[] = [
     link: '/dashboard/downloads',
   },
   {
-    title: 'Notificações',
-    caption: 'crud de avisos',
-    icon: 'notifications',
-    link: '/dashboard/notificacoes',
+    title: authStore.isAuthenticated ? 'Dashboard' : 'Login',
+    caption: authStore.isAuthenticated ? 'área do administrador' : 'acesso ao sistema',
+    icon: 'dashboard',
+    link: authStore.isAuthenticated ? '/dashboard' : '/login',
   },
-];
+]);
 
 const leftDrawerOpen = ref(false);
 

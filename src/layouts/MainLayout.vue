@@ -54,22 +54,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink.vue';
+import { useAuthStore } from 'src/stores/auth';
 
-const linksList: EssentialLinkProps[] = [
+const authStore = useAuthStore();
+
+const linksList = computed<EssentialLinkProps[]>(() => [
   {
     title: 'Início',
     caption: 'boas-vindas',
     icon: 'celebration',
     link: '/',
   },
-  // {
-  //   title: 'Naipe',
-  //   caption: 'os primórdios',
-  //   icon: 'star',
-  //   link: '/historia',
-  // },
   {
     title: 'Fotos',
     caption: 'ensaios e cortejos',
@@ -107,12 +104,12 @@ const linksList: EssentialLinkProps[] = [
     link: '/notificacoes',
   },
   {
-    title: 'DashBoard',
-    caption: 'área do administrador',
+    title: authStore.isAuthenticated ? 'Dashboard' : 'Login',
+    caption: authStore.isAuthenticated ? 'área do administrador' : 'acesso ao sistema',
     icon: 'dashboard',
-    link: '/login',
+    link: authStore.isAuthenticated ? '/dashboard' : '/login',
   },
-];
+]);
 
 const leftDrawerOpen = ref(false);
 
@@ -123,10 +120,3 @@ function toggleLeftDrawer() {
 const ano = new Date().getFullYear();
 const version = '1.0.0';
 </script>
-
-<style scoped>
-a {
-  margin: 0;
-  color: #0a66c2;
-}
-</style>
