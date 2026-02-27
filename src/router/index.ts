@@ -6,6 +6,7 @@ import {
   createWebHistory,
 } from 'vue-router';
 import routes from './routes';
+import { useAuthStore } from 'src/stores/auth';
 
 export default defineRouter(function () {
   const createHistory = process.env.SERVER
@@ -20,14 +21,16 @@ export default defineRouter(function () {
     history: createHistory(process.env.VUE_ROUTER_BASE),
   });
 
-  router.beforeEach((to, from, next) => {
-    // const isAuth = !!localStorage.getItem('token');
-    const isAuth = true;
+  router.beforeEach(async (to) => {
+    const authStore = useAuthStore();
 
-    if (to.meta.requiresAuth && !isAuth) {
-      next('/login');
-    } else {
-      next();
+    // 🔑 garante que a sessão foi carregada
+    if (authStore.loading) {
+      await authStore.loadSession();
+    }
+
+    if (to.meta.requiresAuth && !authStore.isAuthenticated) {
+      return '/login';
     }
   });
 

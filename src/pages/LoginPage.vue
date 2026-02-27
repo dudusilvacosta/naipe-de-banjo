@@ -2,27 +2,21 @@
   <div class="login">
     <div class="q-pa-md" style="width: 100%; max-width: 400px">
       <div class="text-h4 q-mb-md">Login</div>
+
       <q-form
         @submit="onSubmit"
         @reset="onReset"
         class="q-gutter-md"
         style="display: flex; flex-direction: column; align-items: center"
       >
-        <q-input filled v-model="email" label="Email *" lazy-rules style="width: 100%" />
-
-        <q-input
-          type="password"
-          filled
-          v-model="senha"
-          label="Senha *"
-          lazy-rules
-          style="width: 100%"
-        />
+        <q-input filled v-model="email" label="Email *" style="width: 100%" />
+        <q-input filled type="password" v-model="senha" label="Senha *" style="width: 100%" />
 
         <div>
           <q-btn label="Entrar" type="submit" color="primary" />
           <q-btn outline label="Limpar" type="reset" color="primary" class="q-ml-sm" />
         </div>
+
         <q-btn flat style="color: goldenrod" label="Criar Conta" @click="irParaCadastro" />
       </q-form>
     </div>
@@ -30,43 +24,41 @@
 </template>
 
 <script lang="ts">
-import { supabase } from 'src/boot/supabase';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { useAuthStore } from 'src/stores/auth';
 
 export default {
   setup() {
     const email = ref('');
     const senha = ref('');
     const router = useRouter();
+    const authStore = useAuthStore();
+
+    async function onSubmit() {
+      try {
+        await authStore.signIn(email.value, senha.value);
+        await router.push('/dashboard');
+      } catch (error) {
+        alert(error);
+      }
+    }
+
+    function onReset() {
+      email.value = '';
+      senha.value = '';
+    }
+
+    async function irParaCadastro() {
+      await router.push('/criar-conta');
+    }
 
     return {
-      senha,
       email,
-
-      async onSubmit() {
-        const { data, error } = await supabase.auth.signInWithPassword({
-          email: 'valid.email@supabase.io',
-          password: 'example-password',
-        });
-
-        if (error) {
-          console.error('Error signing in:', error.message);
-          return;
-        }
-
-        console.log('User signed in successfully:', data);
-        await router.push('/dashboard');
-      },
-
-      onReset() {
-        senha.value = '';
-        email.value = '';
-      },
-
-      async irParaCadastro() {
-        await router.push('/criar-conta');
-      },
+      senha,
+      onSubmit,
+      onReset,
+      irParaCadastro,
     };
   },
 };

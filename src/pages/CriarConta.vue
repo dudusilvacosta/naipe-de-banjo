@@ -47,9 +47,6 @@ export default {
         const { data, error } = await supabase.auth.signUp({
           email: email.value,
           password: senha.value,
-          options: {
-            emailRedirectTo: 'https://example.com/welcome',
-          },
         });
 
         if (error) {
