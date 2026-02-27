@@ -36,7 +36,6 @@ export default {
   setup() {
     const nome = ref('');
     const email = ref('');
-    const route = useRouter();
     const router = useRouter();
 
     return {
