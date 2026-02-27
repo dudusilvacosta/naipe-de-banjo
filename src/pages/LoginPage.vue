@@ -17,7 +17,8 @@
           <q-btn outline label="Limpar" type="reset" color="primary" class="q-ml-sm" />
         </div>
 
-        <q-btn flat style="color: goldenrod" label="Criar Conta" @click="irParaCadastro" />
+        <q-btn flat style="color: black" label="Criar Conta" @click="irParaCadastro" />
+        <q-btn flat style="color: black" label="Voltar ao Site" @click="irParaInicio" />
       </q-form>
     </div>
   </div>
@@ -53,12 +54,17 @@ export default {
       await router.push('/criar-conta');
     }
 
+    async function irParaInicio() {
+      await router.push('/');
+    }
+
     return {
       email,
       senha,
       onSubmit,
       onReset,
       irParaCadastro,
+      irParaInicio,
     };
   },
 };

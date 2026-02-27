@@ -5,7 +5,7 @@
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
         <q-toolbar-title style="color: #ffca28; font-weight: bold"> Dashboard </q-toolbar-title>
 
-        <div>v1.0.0</div>
+        <q-btn outline size="sm" text-color="white" label="Sair" @click="sair" />
       </q-toolbar>
     </q-header>
 
@@ -52,9 +52,21 @@ import { ref } from 'vue';
 import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink.vue';
 import { computed } from 'vue';
 import { useAuthStore } from 'src/stores/auth';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
 const authStore = useAuthStore();
+const leftDrawerOpen = ref(false);
+const ano = new Date().getFullYear();
+const version = '1.0.0';
 
+function toggleLeftDrawer() {
+  leftDrawerOpen.value = !leftDrawerOpen.value;
+}
+async function sair() {
+  await authStore.signOut();
+  await router.push('/login'); // ou '/'
+}
 const linksList = computed<EssentialLinkProps[]>(() => [
   {
     title: 'Voltar',
@@ -105,15 +117,6 @@ const linksList = computed<EssentialLinkProps[]>(() => [
     link: authStore.isAuthenticated ? '/dashboard' : '/login',
   },
 ]);
-
-const leftDrawerOpen = ref(false);
-
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value;
-}
-
-const ano = new Date().getFullYear();
-const version = '1.0.0';
 </script>
 
 <style scoped>

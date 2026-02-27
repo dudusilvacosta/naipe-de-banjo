@@ -23,7 +23,7 @@
           <q-btn label="Criar conta" type="submit" color="primary" />
           <q-btn outline label="Limpar" type="reset" color="primary" class="q-ml-sm" />
         </div>
-        <q-btn flat style="color: goldenrod" label="Voltar" @click="irParaLogin" />
+        <q-btn flat style="color: black" label="Voltar" @click="irParaLogin" />
       </q-form>
     </div>
   </div>
