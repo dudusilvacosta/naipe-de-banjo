@@ -39,7 +39,7 @@ export default {
     const email = ref('');
     const router = useRouter();
     async function irParaCadastro() {
-      await router.push('/cadastro');
+      await router.push('/criar-conta');
     }
 
     return {
