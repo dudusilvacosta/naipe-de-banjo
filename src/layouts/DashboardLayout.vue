@@ -7,7 +7,7 @@
           >Olá {{ profile?.nome }}</q-toolbar-title
         >
 
-        <div>v1.0.0</div>
+        <div>{{ menusFromDB.length === 0 ? 'sem menus' : `com ${menusFromDB.length} menus` }}</div>
       </q-toolbar>
     </q-header>
 

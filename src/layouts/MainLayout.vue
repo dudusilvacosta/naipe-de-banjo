@@ -68,28 +68,22 @@ const linksList = computed<EssentialLinkProps[]>(() => [
     link: '/',
   },
   {
-    title: 'Fotos',
+    title: 'Álbuns de fotos',
     caption: 'ensaios e cortejos',
     icon: 'image',
     link: '/fotos',
-  },
-  {
-    title: 'Vídeos',
-    caption: 'vivências',
-    icon: 'smart_display',
-    link: '/videos',
-  },
-  {
-    title: 'Cifras',
-    caption: 'repertório e extras',
-    icon: 'music_note',
-    link: '/cifras',
   },
   {
     title: 'Aulas',
     caption: 'teoria e musical',
     icon: 'video_library',
     link: '/aulas',
+  },
+  {
+    title: 'Cifras',
+    caption: 'repertório + extra',
+    icon: 'music_note',
+    link: '/cifras',
   },
   {
     title: 'Downloads',
@@ -102,6 +96,12 @@ const linksList = computed<EssentialLinkProps[]>(() => [
     caption: 'notícias e avisos',
     icon: 'notifications',
     link: '/notificacoes',
+  },
+  {
+    title: 'Vídeos',
+    caption: 'vivências',
+    icon: 'smart_display',
+    link: '/videos',
   },
   {
     title: authStore.isAuthenticated ? 'Dashboard' : 'Login',

@@ -15,7 +15,7 @@ async function logout() {
   await router.push('/');
 }
 
-onMounted(() => {
-  logout();
+onMounted(async () => {
+  await logout();
 });
 </script>
