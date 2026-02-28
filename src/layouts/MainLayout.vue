@@ -120,3 +120,10 @@ function toggleLeftDrawer() {
 const ano = new Date().getFullYear();
 const version = '1.0.0';
 </script>
+
+<style scoped>
+a {
+  margin: 0;
+  color: #0a66c2;
+}
+</style>

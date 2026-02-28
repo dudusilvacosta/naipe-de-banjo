@@ -3,9 +3,11 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-        <q-toolbar-title style="color: #ffca28; font-weight: bold"> Dashboard </q-toolbar-title>
+        <q-toolbar-title style="color: #ffca28; font-weight: bold"
+          >Olá {{ profile?.nome }}</q-toolbar-title
+        >
 
-        <q-btn outline size="sm" text-color="white" label="Sair" @click="sair" />
+        <div>v1.0.0</div>
       </q-toolbar>
     </q-header>
 
@@ -48,25 +50,67 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink.vue';
-import { computed } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import { useAuthStore } from 'src/stores/auth';
-import { useRouter } from 'vue-router';
+import { supabase } from 'src/boot/supabase';
+import EssentialLink, { type EssentialLinkProps } from 'components/EssentialLink.vue';
 
-const router = useRouter();
+interface Profile {
+  id: string;
+  nome: string;
+  email: string;
+  avatar_url: string;
+}
+
 const authStore = useAuthStore();
 const leftDrawerOpen = ref(false);
+const profile = ref<Profile | null>(null);
 const ano = new Date().getFullYear();
 const version = '1.0.0';
+const menusFromDB = ref<EssentialLinkProps[]>([]);
 
+async function getProfile() {
+  const { data, error } = await supabase.from('profiles').select('*').eq('id', authStore.user?.id);
+  if (error) {
+    console.error('Erro ao buscar perfil:', error);
+    return;
+  }
+  profile.value = data?.[0] || null;
+}
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
-async function sair() {
-  await authStore.signOut();
-  await router.push('/login'); // ou '/'
+async function carregarMenus() {
+  const user = authStore.user;
+
+  if (!user) return;
+
+  const { data, error } = await supabase
+    .from('user_menus')
+    .select(
+      `
+    menus (
+      title,
+      caption,
+      icon,
+      link
+    )
+  `,
+    )
+    .eq('user_id', user.id);
+
+  if (error) {
+    console.error('Erro ao buscar menus:', error);
+    return;
+  }
+
+  menusFromDB.value = data?.flatMap((item) => item.menus ?? []) ?? [];
 }
+
+onMounted(async () => {
+  await carregarMenus();
+  await getProfile();
+});
 const linksList = computed<EssentialLinkProps[]>(() => [
   {
     title: 'Voltar',
@@ -75,46 +119,17 @@ const linksList = computed<EssentialLinkProps[]>(() => [
     link: '/',
   },
   {
-    title: 'Início',
-    caption: 'dashboard',
-    icon: 'home',
+    title: 'Visão geral',
+    caption: 'métricas',
+    icon: 'timeline',
     link: '/dashboard',
   },
+  ...menusFromDB.value,
   {
-    title: 'Fotos',
-    caption: 'crud de imagens',
-    icon: 'image',
-    link: '/dashboard/fotos',
-  },
-  {
-    title: 'Vídeos',
-    caption: 'crud de vídeos',
-    icon: 'smart_display',
-    link: '/dashboard/videos',
-  },
-  {
-    title: 'Cifras',
-    caption: 'crud de cifras',
-    icon: 'music_note',
-    link: '/dashboard/cifras',
-  },
-  {
-    title: 'Aulas',
-    caption: 'crud de aulas',
-    icon: 'video_library',
-    link: '/dashboard/aulas',
-  },
-  {
-    title: 'Downloads',
-    caption: 'crud de arquivos',
-    icon: 'download',
-    link: '/dashboard/downloads',
-  },
-  {
-    title: authStore.isAuthenticated ? 'Dashboard' : 'Login',
-    caption: authStore.isAuthenticated ? 'área do administrador' : 'acesso ao sistema',
-    icon: 'dashboard',
-    link: authStore.isAuthenticated ? '/dashboard' : '/login',
+    title: 'Sair',
+    caption: 'sair do sistema',
+    icon: 'logout',
+    link: '/logout',
   },
 ]);
 </script>

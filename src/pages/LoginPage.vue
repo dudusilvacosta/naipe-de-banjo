@@ -1,80 +1,93 @@
 <template>
-  <div class="login">
-    <div class="q-pa-md" style="width: 100%; max-width: 400px">
-      <div class="text-h4 q-mb-md">Login</div>
+  <div class="login-page row items-center justify-center">
+    <q-card class="q-pa-lg" style="width: 100%; max-width: 400px">
+      <q-card-section class="text-center">
+        <div class="text-h5 text-weight-bold">Login</div>
+      </q-card-section>
 
-      <q-form
-        @submit="onSubmit"
-        @reset="onReset"
-        class="q-gutter-md"
-        style="display: flex; flex-direction: column; align-items: center"
-      >
-        <q-input filled v-model="email" label="Email *" style="width: 100%" />
-        <q-input filled type="password" v-model="senha" label="Senha *" style="width: 100%" />
+      <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
+        <q-input
+          filled
+          v-model="email"
+          label="Email"
+          type="email"
+          lazy-rules
+          :rules="[(val) => !!val || 'Informe o email']"
+        />
 
-        <div>
-          <q-btn label="Entrar" type="submit" color="primary" />
-          <q-btn outline label="Limpar" type="reset" color="primary" class="q-ml-sm" />
+        <q-input
+          filled
+          v-model="senha"
+          label="Senha"
+          type="password"
+          lazy-rules
+          :rules="[(val) => !!val || 'Informe a senha']"
+        />
+
+        <q-btn label="Entrar" type="submit" color="primary" class="full-width" :loading="loading" />
+
+        <div style="display: flex; justify-content: space-between">
+          <q-btn flat label="Criar conta" class="full-width" @click="irParaCadastro" />
+          <q-btn flat label="Voltar ao site" class="full-width" @click="irParaInicio" />
         </div>
-
-        <q-btn flat style="color: black" label="Criar Conta" @click="irParaCadastro" />
-        <q-btn flat style="color: black" label="Voltar ao Site" @click="irParaInicio" />
       </q-form>
-    </div>
+    </q-card>
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from 'src/stores/auth';
+import { Notify } from 'quasar';
 
-export default {
-  setup() {
-    const email = ref('');
-    const senha = ref('');
-    const router = useRouter();
-    const authStore = useAuthStore();
+const email = ref('');
+const senha = ref('');
+const loading = ref(false);
 
-    async function onSubmit() {
-      try {
-        await authStore.signIn(email.value, senha.value);
-        await router.push('/dashboard');
-      } catch (error) {
-        alert(error);
-      }
-    }
+const router = useRouter();
+const authStore = useAuthStore();
 
-    function onReset() {
-      email.value = '';
-      senha.value = '';
-    }
+async function onSubmit() {
+  if (!email.value || !senha.value) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Por favor, preencha todos os campos',
+    });
+    return;
+  }
+  try {
+    loading.value = true;
+    await authStore.signIn(email.value, senha.value);
+    await router.push('/dashboard');
+  } catch (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao fazer login' + (error instanceof Error ? error.message : ''),
+    });
+  } finally {
+    loading.value = false;
+  }
+}
 
-    async function irParaCadastro() {
-      await router.push('/criar-conta');
-    }
+function onReset() {
+  email.value = '';
+  senha.value = '';
+}
 
-    async function irParaInicio() {
-      await router.push('/');
-    }
+function irParaCadastro() {
+  void router.push('/criar-conta');
+}
 
-    return {
-      email,
-      senha,
-      onSubmit,
-      onReset,
-      irParaCadastro,
-      irParaInicio,
-    };
-  },
-};
+function irParaInicio() {
+  void router.push('/');
+}
 </script>
 
 <style>
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.login-page {
+  min-height: 100vh;
 }
 </style>

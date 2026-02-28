@@ -90,7 +90,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import type { QTableColumn } from 'quasar';
+import { Notify, type QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
 
 const modal = ref(false);
@@ -190,7 +190,11 @@ const alertSalvar = () => {
 
 const alertEditar = () => {
   if (!musica.value.id) {
-    window.alert('Escolha uma cifra');
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma música',
+    });
     return;
   }
   modal.value = true;
@@ -206,7 +210,11 @@ const editar = () => {
 
 const apagar = () => {
   if (!musica.value.id) {
-    window.alert('Escolha uma cifra');
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma música',
+    });
     return;
   }
   if (confirm('Tem certeza que deseja apagar?')) {

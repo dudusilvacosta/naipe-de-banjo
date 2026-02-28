@@ -6,6 +6,10 @@ const routes: RouteRecordRaw[] = [
     component: () => import('pages/LoginPage.vue'),
   },
   {
+    path: '/logout',
+    component: () => import('pages/LogoutPage.vue'),
+  },
+  {
     path: '/criar-conta',
     component: () => import('pages/CriarConta.vue'),
   },

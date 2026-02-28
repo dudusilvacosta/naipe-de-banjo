@@ -73,7 +73,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useTimeout } from 'quasar';
+import { Notify, useTimeout } from 'quasar';
 import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
 
@@ -141,7 +141,11 @@ const alertSalvar = () => {
 
 const alertEditar = () => {
   if (!video.value.id) {
-    window.alert('Escolha uma cifra');
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha um vídeo',
+    });
     return;
   }
   modal.value = true;
@@ -157,7 +161,11 @@ const editar = () => {
 
 const apagar = () => {
   if (!video.value.id) {
-    window.alert('Escolha uma cifra');
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha um vídeo',
+    });
     return;
   }
   if (confirm('Tem certeza que deseja apagar?')) {
