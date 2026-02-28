@@ -1,5 +1,4 @@
-import fetch from 'node-fetch';
-import parsePrometheusTextFormat from 'parse-prometheus-text-format';
+import { parsePrometheusTextFormat } from 'parse-prometheus-text-format';
 
 export async function handler() {
   try {
@@ -27,6 +26,7 @@ export async function handler() {
       body: JSON.stringify(parsed),
     };
   } catch (err) {
+    console.error(err);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: err.message }),
