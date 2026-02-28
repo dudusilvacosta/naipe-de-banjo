@@ -1,4 +1,4 @@
-import * as parsePrometheusTextFormat from 'parse-prometheus-text-format';
+import parsePrometheusTextFormat from 'parse-prometheus-text-format';
 
 export async function handler() {
   try {
@@ -14,7 +14,8 @@ export async function handler() {
 
     const text = await res.text();
 
-    const parsed = parsePrometheusTextFormat.parsePrometheusTextFormat(text);
+    // Aqui chamamos a função default corretamente
+    const parsed = parsePrometheusTextFormat(text);
 
     return {
       statusCode: 200,
