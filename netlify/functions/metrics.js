@@ -1,4 +1,4 @@
-import { parsePrometheusTextFormat } from 'parse-prometheus-text-format';
+import * as parsePrometheusTextFormat from 'parse-prometheus-text-format';
 
 export async function handler() {
   try {
@@ -6,23 +6,19 @@ export async function handler() {
       'base64',
     );
 
-    const res = await fetch(
-      `https://${process.env.PROJECT_REF}.supabase.co/customer/v1/privileged/metrics`,
-      {
-        headers: {
-          Authorization: `Basic ${auth}`,
-        },
-      },
-    );
+    const url = `https://${process.env.PROJECT_REF}.supabase.co/customer/v1/privileged/metrics`;
+
+    const res = await fetch(url, {
+      headers: { Authorization: `Basic ${auth}` },
+    });
 
     const text = await res.text();
-    const parsed = parsePrometheusTextFormat(text);
+
+    const parsed = parsePrometheusTextFormat.parsePrometheusTextFormat(text);
 
     return {
       statusCode: 200,
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(parsed),
     };
   } catch (err) {
