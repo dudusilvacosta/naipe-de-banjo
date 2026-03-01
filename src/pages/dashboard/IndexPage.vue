@@ -3,7 +3,7 @@
     <div class="row q-col-gutter-md">
       <div class="col-12 col-md-6">
         <q-card flat bordered>
-          <q-card-section class="text-h6">Total por Tipo</q-card-section>
+          <q-card-section class="text-h6">Total Geral</q-card-section>
           <q-card-section>
             <div style="position: relative; height: 300px; width: 100%">
               <canvas ref="graficoTotal"></canvas>
@@ -25,7 +25,7 @@
 
       <div class="col-12 col-md-6">
         <q-card flat bordered>
-          <q-card-section class="text-h6">Vídeos por Aula</q-card-section>
+          <q-card-section class="text-h6">Vídeo Aulas</q-card-section>
           <q-card-section>
             <div style="position: relative; height: 300px; width: 100%">
               <canvas ref="graficoAulas"></canvas>
@@ -36,7 +36,7 @@
 
       <div class="col-12 col-md-6">
         <q-card flat bordered>
-          <q-card-section class="text-h6">Músicas por Repertório</q-card-section>
+          <q-card-section class="text-h6">Repertórios</q-card-section>
           <q-card-section>
             <div style="position: relative; height: 300px; width: 100%">
               <canvas ref="graficoMusicas"></canvas>
@@ -141,7 +141,7 @@ const renderizarGraficos = () => {
       graficoTotal.value,
       totalTipo.value.map((t) => t.tipo),
       totalTipo.value.map((t) => t.total),
-      'Quantidade',
+      'Total',
     );
   }
 
@@ -171,7 +171,7 @@ const renderizarGraficos = () => {
       graficoMusicas.value,
       dadosMusicas.value.map((m) => m.tipo),
       dadosMusicas.value.map((m) => m.total),
-      'Repertório',
+      'Músicas',
     );
   }
 };
