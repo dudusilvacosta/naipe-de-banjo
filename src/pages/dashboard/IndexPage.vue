@@ -1,73 +1,233 @@
 <template>
   <div class="q-pa-md">
-    <q-card flat bordered>
-      <q-card-section>
-        <div class="text-h6">Totais por tipo de conteúdo</div>
-      </q-card-section>
+    <div class="row q-col-gutter-md">
+      <div class="col-12 col-md-6">
+        <q-card flat bordered>
+          <q-card-section class="text-h6">Total por Tipo</q-card-section>
+          <q-card-section>
+            <div style="position: relative; height: 300px; width: 100%">
+              <canvas ref="graficoTotal"></canvas>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
 
-      <q-markup-table>
-        <thead>
-          <tr>
-            <th class="text-left">Tipo</th>
-            <th class="text-right">Total</th>
-          </tr>
-        </thead>
+      <div class="col-12 col-md-6">
+        <q-card flat bordered>
+          <q-card-section class="text-h6">Fotos por Álbum</q-card-section>
+          <q-card-section>
+            <div style="position: relative; height: 300px; width: 100%">
+              <canvas ref="graficoAlbuns"></canvas>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
 
-        <tbody>
-          <tr v-for="item in totais" :key="item.tipo">
-            <td class="text-left">{{ item.tipo }}</td>
-            <td class="text-right">{{ item.total }}</td>
-          </tr>
-        </tbody>
-      </q-markup-table>
-    </q-card>
+      <div class="col-12 col-md-6">
+        <q-card flat bordered>
+          <q-card-section class="text-h6">Vídeos por Aula</q-card-section>
+          <q-card-section>
+            <div style="position: relative; height: 300px; width: 100%">
+              <canvas ref="graficoAulas"></canvas>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <q-card flat bordered>
+          <q-card-section class="text-h6">Músicas por Repertório</q-card-section>
+          <q-card-section>
+            <div style="position: relative; height: 300px; width: 100%">
+              <canvas ref="graficoMusicas"></canvas>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
+    </div>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
+import { ref, onMounted, markRaw } from 'vue';
 import { supabase } from 'src/boot/supabase';
+import Chart from 'chart.js/auto';
 
-export default defineComponent({
-  data() {
-    return {
-      totais: [] as { tipo: string; total: number }[],
-    };
-  },
+interface Item {
+  tipo: string;
+  total: number;
+}
 
-  async mounted() {
-    await this.carregarTotais();
-  },
+// Refs dos Canvas
+const graficoTotal = ref<HTMLCanvasElement | null>(null);
+const graficoAlbuns = ref<HTMLCanvasElement | null>(null);
+const graficoAulas = ref<HTMLCanvasElement | null>(null);
+const graficoMusicas = ref<HTMLCanvasElement | null>(null);
 
-  methods: {
-    async getTotal(tabela: string) {
-      const { count, error } = await supabase
-        .from(tabela)
-        .select('*', { count: 'exact', head: true });
+// Dados
+const totalTipo = ref<Item[]>([]);
+const dadosAlbuns = ref<Item[]>([]);
+const dadosAulas = ref<Item[]>([]);
+const dadosMusicas = ref<Item[]>([]);
 
-      if (error) {
-        console.error('Erro ao buscar total de', tabela, error);
-        return 0;
-      }
+// Instâncias dos Gráficos
+let instanciaGraficoTipo: Chart | null = null;
+let instanciaGraficoAlbuns: Chart | null = null;
+let instanciaGraficoAulas: Chart | null = null;
+let instanciaGraficoMusicas: Chart | null = null;
 
-      return count ?? 0;
-    },
+// Cores reutilizáveis
+const coresBackground = [
+  'rgba(255, 99, 132, 0.6)',
+  'rgba(54, 162, 235, 0.6)',
+  'rgba(255, 206, 86, 0.6)',
+  'rgba(75, 192, 192, 0.6)',
+  'rgba(153, 102, 255, 0.6)',
+  'rgba(255, 159, 64, 0.6)',
+];
 
-    async carregarTotais() {
-      const fotos = await this.getTotal('albuns');
-      const videos = await this.getTotal('videos');
-      const cifras = await this.getTotal('musicas'); // 👈 corrigido
-      const aulas = await this.getTotal('aulas');
-      const downloads = await this.getTotal('downloads');
+const coresBorda = [
+  'rgb(255, 99, 132)',
+  'rgb(54, 162, 235)',
+  'rgb(255, 206, 86)',
+  'rgb(75, 192, 192)',
+  'rgb(153, 102, 255)',
+  'rgb(255, 159, 64)',
+];
 
-      this.totais = [
-        { tipo: 'Albuns', total: fotos },
-        { tipo: 'Vídeos', total: videos },
-        { tipo: 'Cifras', total: cifras },
-        { tipo: 'Aulas (temas)', total: aulas },
-        { tipo: 'Downloads', total: downloads },
-      ];
-    },
-  },
+const getTotal = async (tabela: string): Promise<number> => {
+  const { count, error } = await supabase.from(tabela).select('*', { count: 'exact', head: true });
+  if (error) return 0;
+  return count ?? 0;
+};
+
+// Função genérica para criar os gráficos tipo Pie
+const criarGraficoPie = (
+  canvas: HTMLCanvasElement,
+  labels: string[],
+  data: number[],
+  label: string,
+) => {
+  return markRaw(
+    new Chart(canvas, {
+      type: 'pie',
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: label,
+            data: data,
+            backgroundColor: coresBackground,
+            borderColor: coresBorda,
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom' },
+        },
+      },
+    }),
+  );
+};
+
+const renderizarGraficos = () => {
+  if (graficoTotal.value) {
+    if (instanciaGraficoTipo) instanciaGraficoTipo.destroy();
+    instanciaGraficoTipo = criarGraficoPie(
+      graficoTotal.value,
+      totalTipo.value.map((t) => t.tipo),
+      totalTipo.value.map((t) => t.total),
+      'Quantidade',
+    );
+  }
+
+  if (graficoAlbuns.value) {
+    if (instanciaGraficoAlbuns) instanciaGraficoAlbuns.destroy();
+    instanciaGraficoAlbuns = criarGraficoPie(
+      graficoAlbuns.value,
+      dadosAlbuns.value.map((a) => a.tipo),
+      dadosAlbuns.value.map((a) => a.total),
+      'Fotos',
+    );
+  }
+
+  if (graficoAulas.value) {
+    if (instanciaGraficoAulas) instanciaGraficoAulas.destroy();
+    instanciaGraficoAulas = criarGraficoPie(
+      graficoAulas.value,
+      dadosAulas.value.map((a) => a.tipo),
+      dadosAulas.value.map((a) => a.total),
+      'Vídeos',
+    );
+  }
+
+  if (graficoMusicas.value) {
+    if (instanciaGraficoMusicas) instanciaGraficoMusicas.destroy();
+    instanciaGraficoMusicas = criarGraficoPie(
+      graficoMusicas.value,
+      dadosMusicas.value.map((m) => m.tipo),
+      dadosMusicas.value.map((m) => m.total),
+      'Repertório',
+    );
+  }
+};
+
+const carregarDados = async () => {
+  // 1. Totalizadores
+  const [albuns, aulas, downloads, musicas, notificacoes, videos] = await Promise.all([
+    getTotal('albuns'),
+    getTotal('aulas'),
+    getTotal('downloads'),
+    getTotal('musicas'),
+    getTotal('notificacoes'),
+    getTotal('videos'),
+  ]);
+
+  totalTipo.value = [
+    { tipo: 'Álbuns', total: albuns },
+    { tipo: 'Aulas', total: aulas },
+    { tipo: 'Downloads', total: downloads },
+    { tipo: 'Músicas', total: musicas },
+    { tipo: 'Notificações', total: notificacoes },
+    { tipo: 'Vídeos', total: videos },
+  ];
+
+  // 2. Detalhes Álbuns
+  const { data: albunsData } = await supabase.from('albuns').select('nome, fotos');
+  if (albunsData) {
+    dadosAlbuns.value = albunsData.map((item) => ({
+      tipo: item.nome,
+      total: Array.isArray(item.fotos) ? item.fotos.length : 0,
+    }));
+  }
+
+  // 3. Detalhes Aulas
+  const { data: aulasData } = await supabase.from('aulas').select('nome, videos');
+  if (aulasData) {
+    dadosAulas.value = aulasData.map((item) => ({
+      tipo: item.nome,
+      total: Array.isArray(item.videos) ? item.videos.length : 0,
+    }));
+  }
+
+  // 4. Detalhes Músicas (Repertório)
+  const { data: musicasData } = await supabase.from('musicas').select('repertorio');
+  if (musicasData) {
+    const categorias = ['Cortejo', 'Roda', 'Extra'];
+    dadosMusicas.value = categorias.map((cat) => ({
+      tipo: cat,
+      total: musicasData.filter((item) => item.repertorio === cat).length,
+    }));
+  }
+
+  renderizarGraficos();
+};
+
+onMounted(() => {
+  void carregarDados();
 });
 </script>

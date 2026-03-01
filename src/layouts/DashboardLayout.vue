@@ -6,8 +6,6 @@
         <q-toolbar-title style="color: #ffca28; font-weight: bold"
           >Olá {{ profile?.nome }}</q-toolbar-title
         >
-
-        <div>{{ menusFromDB.length === 0 ? 'sem menus' : `com ${menusFromDB.length} menus` }}</div>
       </q-toolbar>
     </q-header>
 
@@ -107,16 +105,9 @@ async function carregarMenus() {
   menusFromDB.value = data?.flatMap((item) => item.menus ?? []) ?? [];
 }
 
-async function getMetrics() {
-  const res = await fetch('/api/metrics');
-  const data = await res.json();
-  console.log(data);
-}
-
 onMounted(async () => {
   await carregarMenus();
   await getProfile();
-  await getMetrics();
 });
 const linksList = computed<EssentialLinkProps[]>(() => [
   {

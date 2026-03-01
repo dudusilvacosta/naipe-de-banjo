@@ -80,20 +80,20 @@ const linksList = computed<EssentialLinkProps[]>(() => [
     link: '/aulas',
   },
   {
-    title: 'Cifras',
-    caption: 'repertório + extra',
-    icon: 'music_note',
-    link: '/cifras',
-  },
-  {
     title: 'Downloads',
     caption: 'material didático',
     icon: 'download',
     link: '/downloads',
   },
   {
+    title: 'Músicas',
+    caption: 'repertório do banjo',
+    icon: 'music_note',
+    link: '/cifras',
+  },
+  {
     title: 'Notificações',
-    caption: 'notícias e avisos',
+    caption: 'avisos imoportantes',
     icon: 'notifications',
     link: '/notificacoes',
   },
