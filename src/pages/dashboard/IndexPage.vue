@@ -14,7 +14,7 @@
 
       <div class="col-12 col-md-6">
         <q-card flat bordered>
-          <q-card-section class="text-h6">Fotos por Álbum</q-card-section>
+          <q-card-section class="text-h6">Álbuns de Fotos</q-card-section>
           <q-card-section>
             <div style="position: relative; height: 300px; width: 100%">
               <canvas ref="graficoAlbuns"></canvas>
@@ -36,7 +36,7 @@
 
       <div class="col-12 col-md-6">
         <q-card flat bordered>
-          <q-card-section class="text-h6">Repertórios</q-card-section>
+          <q-card-section class="text-h6">Músicas</q-card-section>
           <q-card-section>
             <div style="position: relative; height: 300px; width: 100%">
               <canvas ref="graficoMusicas"></canvas>
