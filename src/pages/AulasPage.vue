@@ -7,20 +7,18 @@
       <q-breadcrumbs-el label="Aulas" icon="school" />
     </q-breadcrumbs>
 
-    <div class="categorias">
-      <div class="q-gutter-sm">
-        <div class="text-h6">
-          <div v-for="(value, index) in aulas" :key="index">
-            <router-link
-              :to="`/aulas/aula/${value.nome}`"
-              class="q-item q-item-type row no-wrap"
-              style="text-decoration: none; color: #0a66c2"
-            >
-              {{ value.nome }}
-            </router-link>
+    <div class="q-gutter-sm">
+      <div class="text-h6">
+        <div v-for="(value, index) in aulas" :key="index">
+          <router-link
+            :to="`/aula/${value.nome}`"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            {{ value.nome }}
+          </router-link>
 
-            <q-separator />
-          </div>
+          <q-separator />
         </div>
       </div>
     </div>
@@ -60,13 +58,3 @@ onMounted(() => {
   showProgress.value = false;
 });
 </script>
-
-<style scoped>
-.categorias {
-  position: relative;
-  height: calc(100svh - 120px);
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-</style>

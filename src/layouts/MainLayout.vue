@@ -4,7 +4,11 @@
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
         <q-toolbar-title style="color: #ffca28; font-weight: bold">
-          <q-img src="../assets/logo.png" style="width: 103px; height: 50px" alt="Logo Naipe de Banjo" />
+          <q-img
+            src="../assets/logo.png"
+            style="width: 103px; height: 50px"
+            alt="Logo Naipe de Banjo"
+          />
         </q-toolbar-title>
 
         <div>v1.0.0</div>
@@ -26,16 +30,22 @@
     <q-footer style="height: 30px; display: flex; align-items: center; background-color: #f9f9f9">
       <q-toolbar>
         <q-toolbar-title class="text-subtitle2 text-grey-6">
-          <div style="
+          <div
+            style="
               width: 100%;
               height: 30px;
               display: flex;
               justify-content: space-evenly;
               align-items: center;
-            ">
+            "
+          >
             <span>Naipe de Banjo</span> <span>{{ version }}</span> &copy; {{ ano }}
-            <a href="https://eduardosilvacosta.netlify.app/" target="_blank" class="text-subtitle2 text-grey-6">Eduardo
-              Silva Costa</a>
+            <a
+              href="https://eduardosilvacosta.netlify.app/"
+              target="_blank"
+              class="text-subtitle2 text-grey-6"
+              >Eduardo Silva Costa</a
+            >
           </div>
         </q-toolbar-title>
       </q-toolbar>
@@ -61,7 +71,7 @@ const linksList = computed<EssentialLinkProps[]>(() => [
     title: 'Álbuns de fotos',
     caption: 'ensaios e cortejos',
     icon: 'image',
-    link: '/fotos',
+    link: '/albuns',
   },
   {
     title: 'Aulas',
@@ -76,10 +86,16 @@ const linksList = computed<EssentialLinkProps[]>(() => [
     link: '/downloads',
   },
   {
+    title: 'Favoritas',
+    caption: 'músicas preferidas',
+    icon: 'favorite',
+    link: '/favoritas',
+  },
+  {
     title: 'Músicas',
     caption: 'repertório do banjo',
     icon: 'music_note',
-    link: '/cifras',
+    link: '/musicas',
   },
   {
     title: 'Notificações',

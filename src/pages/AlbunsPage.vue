@@ -4,23 +4,21 @@
   </div>
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
-      <q-breadcrumbs-el label="Fotos" icon="image" />
+      <q-breadcrumbs-el label="Álbuns" icon="image" />
     </q-breadcrumbs>
 
-    <div class="categorias">
-      <div class="q-gutter-sm">
-        <div class="text-h6">
-          <div v-for="(link, index) in links" :key="index">
-            <router-link
-              :to="`/fotos/${link.album}`"
-              class="q-item q-item-type row no-wrap"
-              style="text-decoration: none; color: #0a66c2"
-            >
-              {{ link.album }}
-            </router-link>
+    <div class="q-gutter-sm">
+      <div class="text-h6">
+        <div v-for="(link, index) in links" :key="index">
+          <router-link
+            :to="`/album/${link.album}`"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            {{ link.album }}
+          </router-link>
 
-            <q-separator />
-          </div>
+          <q-separator />
         </div>
       </div>
     </div>
@@ -62,17 +60,8 @@ async function buscaAlbuns() {
 onMounted(() => {
   registerTimeout(() => {
     showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
+  }, 1000);
 
   void buscaAlbuns();
 });
 </script>
-<style scoped>
-.categorias {
-  position: relative;
-  height: calc(100svh - 120px);
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-</style>

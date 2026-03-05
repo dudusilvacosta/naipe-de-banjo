@@ -16,9 +16,24 @@
           dense
           dense-toggle
           expand-separator
-          :label="musica.nome + ' - ' + musica.tom"
           header-class="text-primary"
         >
+          <template v-slot:header>
+            <div class="row items-center full-width no-wrap">
+              <div class="col">{{ musica.nome }} - {{ musica.tom }}</div>
+
+              <div class="row items-center q-gutter-xs">
+                <q-btn
+                  flat
+                  round
+                  dense
+                  :icon="favoritos.includes(musica.id ?? -1) ? 'favorite' : 'favorite_border'"
+                  @click.stop="favoritar(musica.id)"
+                />
+              </div>
+            </div>
+          </template>
+
           <q-card>
             <q-card-section class="q-pt-none">
               <p class="autor">{{ musica.autor }}</p>
@@ -34,6 +49,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { supabase } from 'src/boot/supabase';
+import { useRoute } from 'vue-router';
 
 interface Musica {
   id: number | null;
@@ -46,11 +62,30 @@ interface Musica {
   cifra: string;
 }
 
+const route = useRoute();
 const showProgress = ref(true);
 const generosCifras = ref<Record<string, Musica[]>>({});
+const repertorio = ref('');
+const favoritos = ref<number[]>([]);
+
+function favoritar(id: number | null) {
+  if (id === null) return;
+  const index = favoritos.value.indexOf(id);
+  let novoArray: number[];
+  if (index === -1) {
+    novoArray = [...favoritos.value, id];
+  } else {
+    novoArray = favoritos.value.filter((favId) => favId !== id);
+  }
+  favoritos.value = novoArray;
+  localStorage.setItem('musicasFavoritas', JSON.stringify(novoArray));
+}
 
 async function carregarCifras() {
-  const { data, error } = await supabase.from('musicas').select('*').eq('repertorio', 'Cortejo');
+  const { data, error } = await supabase
+    .from('musicas')
+    .select('*')
+    .eq('repertorio', repertorio.value);
 
   if (error) {
     console.log(error);
@@ -80,7 +115,12 @@ async function carregarCifras() {
 }
 
 onMounted(async () => {
+  repertorio.value = route.params.repertorio as string;
   await carregarCifras();
+  const salvos = localStorage.getItem('musicasFavoritas');
+  if (salvos) {
+    favoritos.value = JSON.parse(salvos);
+  }
   showProgress.value = false;
 });
 </script>

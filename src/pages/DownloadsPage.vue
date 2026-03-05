@@ -6,18 +6,20 @@
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Downloads" icon="download" />
     </q-breadcrumbs>
-    <div class="categorias">
-      <div class="q-gutter-sm">
-        <div class="text-h6">
-          <div v-for="(value, index) in downloads" :key="index" class="q-mb-md">
-            <a
-              :href="`https://drive.google.com/file/d/${value.id_drive}/view?usp=drive_link`"
-              target="_blank"
-              rel="noopener noreferrer"
-              >{{ value.nome }}</a
-            >
-            <q-separator class="q-mt-md" />
-          </div>
+    <div class="q-gutter-sm">
+      <div class="text-h6">
+        <div v-for="(download, index) in downloads" :key="index">
+          <a
+            :href="`https://drive.google.com/file/d/${download.id_drive}/view?usp=drive_link`"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="q-item q-item-type row no-wrap"
+            style="text-decoration: none; color: #0a66c2"
+          >
+            {{ download.nome }}
+          </a>
+
+          <q-separator />
         </div>
       </div>
     </div>
@@ -57,19 +59,3 @@ onMounted(() => {
   showProgress.value = false;
 });
 </script>
-
-<style>
-a {
-  margin-bottom: 10px;
-  color: #0a66c2;
-  text-decoration: none;
-}
-
-.categorias {
-  position: relative;
-  height: calc(100svh - 120px);
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-</style>

@@ -214,7 +214,7 @@ async function buscaVideos() {
 onMounted(() => {
   registerTimeout(() => {
     showProgress.value = false;
-  }, 1000); // 1 segundo = 1000 ms
+  }, 1000);
 
   void buscaVideos();
 });

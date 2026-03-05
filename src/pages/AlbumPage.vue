@@ -4,7 +4,7 @@
   </div>
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
-      <q-breadcrumbs-el label="Fotos" icon="image" />
+      <q-breadcrumbs-el label="Álbum" icon="image" />
       <q-breadcrumbs-el :label="album" />
     </q-breadcrumbs>
     <div class="row justify-center q-gutter-sm">
@@ -55,7 +55,7 @@ async function buscaAlbuns() {
 }
 
 onMounted(() => {
-  album.value = route.params.album as string;
+  album.value = route.params.nome as string;
   void buscaAlbuns();
   showProgress.value = false;
 });

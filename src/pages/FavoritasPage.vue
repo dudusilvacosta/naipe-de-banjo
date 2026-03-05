@@ -4,8 +4,7 @@
   </div>
   <div class="q-pa-md">
     <q-breadcrumbs class="q-mb-sm">
-      <q-breadcrumbs-el label="Cifras" icon="music_note" />
-      <q-breadcrumbs-el label="Roda cantada" />
+      <q-breadcrumbs-el label="Favorits" icon="favorite" />
     </q-breadcrumbs>
     <div v-for="(musicas, genero) in generosCifras" :key="genero">
       <p class="text-body1">{{ genero }}</p>
@@ -27,6 +26,9 @@
           </q-card>
         </q-expansion-item>
       </q-list>
+    </div>
+    <div v-if="Object.keys(generosCifras).length === 0" class="text-grey">
+      Nenhuma música favoritada ainda ❤️
     </div>
   </div>
 </template>
@@ -50,7 +52,21 @@ const showProgress = ref(true);
 const generosCifras = ref<Record<string, Musica[]>>({});
 
 async function carregarCifras() {
-  const { data, error } = await supabase.from('musicas').select('*').eq('repertorio', 'Roda');
+  const salvos = localStorage.getItem('musicasFavoritas');
+
+  if (!salvos) {
+    generosCifras.value = {};
+    return;
+  }
+
+  const ids: number[] = JSON.parse(salvos);
+
+  if (ids.length === 0) {
+    generosCifras.value = {};
+    return;
+  }
+
+  const { data, error } = await supabase.from('musicas').select('*').in('id', ids);
 
   if (error) {
     console.log(error);
@@ -69,13 +85,11 @@ async function carregarCifras() {
   const ordenado: Record<string, Musica[]> = {};
 
   Object.keys(agrupado)
-    .sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' })) // gêneros
+    .sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }))
     .forEach((genero) => {
-      if (agrupado[genero]) {
-        ordenado[genero] = agrupado[genero].sort(
-          (a, b) => a.nome.localeCompare(b.nome, 'pt-BR', { sensitivity: 'base' }), // músicas
-        );
-      }
+      ordenado[genero] = agrupado[genero]!.sort((a, b) =>
+        a.nome.localeCompare(b.nome, 'pt-BR', { sensitivity: 'base' }),
+      );
     });
 
   generosCifras.value = ordenado;

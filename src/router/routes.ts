@@ -6,12 +6,12 @@ const routes: RouteRecordRaw[] = [
     component: () => import('pages/LoginPage.vue'),
   },
   {
-    path: '/logout',
-    component: () => import('pages/LogoutPage.vue'),
-  },
-  {
     path: '/criar-conta',
     component: () => import('pages/CriarConta.vue'),
+  },
+  {
+    path: '/logout',
+    component: () => import('pages/LogoutPage.vue'),
   },
   {
     path: '/',
@@ -24,34 +24,24 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/HistoriaPage.vue') }],
   },
   {
-    path: '/fotos',
+    path: '/albuns',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/FotosPage.vue') }],
+    children: [{ path: '', component: () => import('pages/AlbunsPage.vue') }],
   },
   {
-    path: '/fotos/:album',
+    path: '/album/:nome',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/AlbumPage.vue') }],
   },
   {
-    path: '/videos',
+    path: '/musicas',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/VideosPage.vue') }],
+    children: [{ path: '', component: () => import('src/pages/MusicasPage.vue') }],
   },
   {
-    path: '/cifras',
+    path: '/musicas/:repertorio',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('src/pages/CifrasPage.vue') }],
-  },
-  {
-    path: '/cifras/cortejo',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/CortejoPage.vue') }],
-  },
-  {
-    path: '/cifras/roda',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('src/pages/RodaPage.vue') }],
+    children: [{ path: '', component: () => import('src/pages/RepertorioPage.vue') }],
   },
   {
     path: '/aulas',
@@ -59,9 +49,9 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('pages/AulasPage.vue') }],
   },
   {
-    path: '/aulas/aula/:nome',
+    path: '/aula/:nome',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/VideoAulas.vue') }],
+    children: [{ path: '', component: () => import('src/pages/AulaPage.vue') }],
   },
   {
     path: '/downloads',
@@ -69,9 +59,19 @@ const routes: RouteRecordRaw[] = [
     children: [{ path: '', component: () => import('src/pages/DownloadsPage.vue') }],
   },
   {
+    path: '/favoritas',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('src/pages/FavoritasPage.vue') }],
+  },
+  {
     path: '/notificacoes',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/NotificacoesPage.vue') }],
+  },
+  {
+    path: '/videos',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [{ path: '', component: () => import('pages/VideosPage.vue') }],
   },
   {
     path: '/:catchAll(.*)*',
