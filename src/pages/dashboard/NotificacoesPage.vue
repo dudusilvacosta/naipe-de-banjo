@@ -28,7 +28,7 @@
           ><q-tooltip>Cadastrar</q-tooltip>
         </q-btn>
         <q-btn color="info" icon="edit" @click="alertEditar"><q-tooltip>Editar</q-tooltip> </q-btn>
-        <q-btn color="red" icon="delete" @click="apagar"><q-tooltip>Apagar</q-tooltip> </q-btn>
+        <q-btn color="red" icon="delete" @click="remove"><q-tooltip>Apagar</q-tooltip> </q-btn>
       </q-btn-group>
     </div>
     <div class="q-mt-md">
@@ -79,8 +79,8 @@ import { supabase } from 'src/boot/supabase';
 const modal = ref(false);
 const showProgress = ref(true);
 const { registerTimeout } = useTimeout();
+
 const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Notificacao | null>(null);
 
 interface Notificacao {
   id: number | null;
@@ -88,17 +88,22 @@ interface Notificacao {
   msg: string;
   status: string;
 }
-const pesquisa = ref({
-  titulo: '',
-  msg: '',
-  status: '',
-});
+
+const selecionada = ref<Notificacao | null>(null);
+
 const notificacao = ref<Notificacao>({
   id: null,
   titulo: '',
   msg: '',
   status: '',
 });
+
+const pesquisa = ref({
+  titulo: '',
+  msg: '',
+  status: '',
+});
+
 const columns: QTableColumn<Notificacao>[] = [
   {
     name: 'id',
@@ -125,6 +130,148 @@ const columns: QTableColumn<Notificacao>[] = [
 
 const rows = ref<Notificacao[]>([]);
 
+async function buscaNotificacoes() {
+  showProgress.value = true;
+
+  let query = supabase.from('notificacoes').select('*');
+
+  if (pesquisa.value.titulo) {
+    query = query.ilike('titulo', `%${pesquisa.value.titulo}%`);
+  }
+
+  if (pesquisa.value.msg) {
+    query = query.ilike('msg', `%${pesquisa.value.msg}%`);
+  }
+
+  if (pesquisa.value.status) {
+    query = query.eq('status', pesquisa.value.status);
+  }
+
+  const { data, error } = await query;
+
+  if (error) {
+    console.log(error);
+    showProgress.value = false;
+    return;
+  }
+
+  rows.value = data;
+  showProgress.value = false;
+}
+
+const create = async () => {
+  const { error } = await supabase.from('notificacoes').insert([
+    {
+      titulo: notificacao.value.titulo,
+      msg: notificacao.value.msg,
+      status: notificacao.value.status,
+    },
+  ]);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao salvar nova notificação',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Notificação criada com sucesso',
+  });
+
+  modal.value = false;
+  await buscaNotificacoes();
+  onReset();
+};
+
+const update = async () => {
+  if (!notificacao.value.id) return;
+
+  const { error } = await supabase
+    .from('notificacoes')
+    .update({
+      titulo: notificacao.value.titulo,
+      msg: notificacao.value.msg,
+      status: notificacao.value.status,
+    })
+    .eq('id', notificacao.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao atualizar notificação',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Notificação atualizada',
+  });
+
+  modal.value = false;
+  await buscaNotificacoes();
+};
+
+const remove = async () => {
+  if (!notificacao.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma notificação',
+    });
+    return;
+  }
+
+  if (!confirm('Tem certeza que deseja apagar?')) return;
+
+  const { error } = await supabase.from('notificacoes').delete().eq('id', notificacao.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao apagar notificação',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Notificação removida',
+  });
+
+  await buscaNotificacoes();
+  onReset();
+};
+
+const onSubmit = () => {
+  if (notificacao.value.id) {
+    void update();
+  } else {
+    void create();
+  }
+};
+
+const onReset = () => {
+  notificacao.value = {
+    id: null,
+    titulo: '',
+    msg: '',
+    status: '',
+  };
+};
+
 const alertSalvar = () => {
   onReset();
   selecionada.value = null;
@@ -140,65 +287,14 @@ const alertEditar = () => {
     });
     return;
   }
+
   modal.value = true;
-};
-
-const salvar = () => {
-  //
-};
-
-const editar = () => {
-  //
-};
-
-const apagar = () => {
-  if (!notificacao.value.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha uma notificação',
-    });
-    return;
-  }
-  if (confirm('Tem certeza que deseja apagar?')) {
-    console.log('Item apagado!');
-  } else {
-    console.log('Ação cancelada.');
-  }
-};
-
-const onSubmit = () => {
-  if (notificacao.value.id) {
-    editar();
-  } else {
-    salvar();
-  }
-};
-
-const onReset = () => {
-  notificacao.value = {
-    id: null,
-    titulo: '',
-    msg: '',
-    status: '',
-  };
 };
 
 const selecionar = (_: Event, row: Notificacao) => {
   selecionada.value = row;
   notificacao.value = { ...row };
 };
-
-async function buscaNotificacoes() {
-  const { data, error } = await supabase.from('notificacoes').select('*');
-
-  if (error) {
-    console.log(error);
-    return;
-  }
-
-  rows.value = data;
-}
 
 onMounted(() => {
   registerTimeout(() => {

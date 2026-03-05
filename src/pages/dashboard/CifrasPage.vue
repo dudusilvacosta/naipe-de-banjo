@@ -95,10 +95,10 @@ import { supabase } from 'src/boot/supabase';
 
 const modal = ref(false);
 const showProgress = ref(true);
+
 const generos = ['Boi', 'Quadrilha', 'Carimbó'];
 const repertorio = ['Roda', 'Cortejo', 'Extra'];
 const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Musica | null>(null);
 
 interface Musica {
   id: number | null;
@@ -110,14 +110,9 @@ interface Musica {
   status: string;
   cifra: string;
 }
-const pesquisa = ref({
-  nome: '',
-  tom: '',
-  autor: '',
-  genero: '',
-  repertorio: '',
-  status: '',
-});
+
+const selecionada = ref<Musica | null>(null);
+
 const musica = ref<Musica>({
   id: null,
   nome: '',
@@ -128,59 +123,172 @@ const musica = ref<Musica>({
   status: '',
   cifra: '',
 });
+
+const pesquisa = ref({
+  nome: '',
+  tom: '',
+  autor: '',
+  genero: '',
+  repertorio: '',
+  status: '',
+});
+
 const columns: QTableColumn<Musica>[] = [
-  {
-    name: 'id',
-    label: '#',
-    field: 'id',
-    align: 'center',
-    sortable: false,
-  },
-  {
-    name: 'nome',
-    label: 'Música',
-    field: 'nome',
-    align: 'left',
-    sortable: true,
-  },
-  {
-    name: 'autor',
-    label: 'Autor',
-    field: 'autor',
-    align: 'left',
-    sortable: true,
-  },
-  {
-    name: 'tom',
-    label: 'Tom',
-    field: 'tom',
-    align: 'left',
-    sortable: true,
-  },
-  {
-    name: 'genero',
-    label: 'Gênero',
-    field: 'genero',
-    align: 'left',
-    sortable: true,
-  },
-  {
-    name: 'repertorio',
-    label: 'Repertório',
-    field: 'repertorio',
-    align: 'left',
-    sortable: false,
-  },
-  {
-    name: 'status',
-    label: 'Status',
-    field: 'status',
-    align: 'left',
-    sortable: true,
-  },
+  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
+  { name: 'nome', label: 'Música', field: 'nome', align: 'left', sortable: true },
+  { name: 'autor', label: 'Autor', field: 'autor', align: 'left', sortable: true },
+  { name: 'tom', label: 'Tom', field: 'tom', align: 'left', sortable: true },
+  { name: 'genero', label: 'Gênero', field: 'genero', align: 'left', sortable: true },
+  { name: 'repertorio', label: 'Repertório', field: 'repertorio', align: 'left', sortable: false },
+  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
 ];
 
-let rows: Musica[] = [];
+const rows = ref<Musica[]>([]);
+
+async function buscaCifras() {
+  showProgress.value = true;
+
+  let query = supabase.from('musicas').select('*');
+
+  if (pesquisa.value.nome) {
+    query = query.eq('nome', pesquisa.value.nome);
+  }
+
+  if (pesquisa.value.autor) {
+    query = query.eq('autor', pesquisa.value.autor);
+  }
+
+  if (pesquisa.value.tom) {
+    query = query.eq('tom', pesquisa.value.tom);
+  }
+
+  if (pesquisa.value.genero) {
+    query = query.eq('genero', pesquisa.value.genero);
+  }
+
+  if (pesquisa.value.repertorio) {
+    query = query.eq('repertorio', pesquisa.value.repertorio);
+  }
+
+  if (pesquisa.value.status) {
+    query = query.eq('status', pesquisa.value.status);
+  }
+
+  const { data, error } = await query;
+
+  if (error) {
+    console.log(error);
+    showProgress.value = false;
+    return;
+  }
+
+  rows.value = data;
+  showProgress.value = false;
+}
+
+const salvar = async () => {
+  const { error } = await supabase.from('musicas').insert([
+    {
+      nome: musica.value.nome,
+      tom: musica.value.tom,
+      autor: musica.value.autor,
+      genero: musica.value.genero,
+      repertorio: musica.value.repertorio,
+      status: musica.value.status,
+      cifra: musica.value.cifra,
+    },
+  ]);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao salvar música',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Música salva com sucesso',
+  });
+
+  modal.value = false;
+  await buscaCifras();
+  onReset();
+};
+
+const editar = async () => {
+  if (!musica.value.id) return;
+
+  const { error } = await supabase
+    .from('musicas')
+    .update({
+      nome: musica.value.nome,
+      tom: musica.value.tom,
+      autor: musica.value.autor,
+      genero: musica.value.genero,
+      repertorio: musica.value.repertorio,
+      status: musica.value.status,
+      cifra: musica.value.cifra,
+    })
+    .eq('id', musica.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao atualizar música',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Música atualizada',
+  });
+
+  modal.value = false;
+  await buscaCifras();
+};
+
+const apagar = async () => {
+  if (!musica.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma música',
+    });
+    return;
+  }
+
+  if (!confirm('Tem certeza que deseja apagar?')) return;
+
+  const { error } = await supabase.from('musicas').delete().eq('id', musica.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao apagar música',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Música removida',
+  });
+
+  await buscaCifras();
+  onReset();
+};
 
 const alertSalvar = () => {
   onReset();
@@ -197,38 +305,15 @@ const alertEditar = () => {
     });
     return;
   }
+
   modal.value = true;
-};
-
-const salvar = () => {
-  //
-};
-
-const editar = () => {
-  //
-};
-
-const apagar = () => {
-  if (!musica.value.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha uma música',
-    });
-    return;
-  }
-  if (confirm('Tem certeza que deseja apagar?')) {
-    console.log('Item apagado!');
-  } else {
-    console.log('Ação cancelada.');
-  }
 };
 
 const onSubmit = () => {
   if (musica.value.id) {
-    editar();
+    void editar();
   } else {
-    salvar();
+    void salvar();
   }
 };
 
@@ -249,20 +334,6 @@ const selecionar = (_: Event, row: Musica) => {
   selecionada.value = row;
   musica.value = { ...row };
 };
-
-async function buscaCifras() {
-  showProgress.value = true;
-  const { data, error } = await supabase.from('musicas').select('*');
-
-  if (error) {
-    console.log(error);
-    showProgress.value = false;
-    return;
-  }
-
-  rows = data;
-  showProgress.value = false;
-}
 
 onMounted(() => {
   void buscaCifras();
