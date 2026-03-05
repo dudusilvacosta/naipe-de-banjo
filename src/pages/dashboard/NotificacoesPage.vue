@@ -57,7 +57,7 @@
           <q-input v-model="notificacao.titulo" label="Título *" lazy-rules />
 
           <q-select v-model="notificacao.status" :options="status" label="Status *" lazy-rules />
-          <q-editor v-model="notificacao.msg" min-height="34rem" />
+          <q-editor v-model="notificacao.msg" />
 
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />

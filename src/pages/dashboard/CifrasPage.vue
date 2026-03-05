@@ -75,7 +75,7 @@
 
           <q-select v-model="musica.status" :options="status" label="Status" class="select" />
 
-          <q-editor v-model="musica.cifra" min-height="24vh" />
+          <q-editor v-model="musica.cifra" />
 
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
