@@ -6,35 +6,23 @@
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
-    <q-expansion-item
-      dense
-      dense-toggle
-      expand-separator
-      label="Filtros de pesquisa"
-      header-class="text-primary bg-blue-1"
-      class="q-mt-md"
-    >
+    <q-expansion-item dense dense-toggle expand-separator label="Filtros de pesquisa"
+      header-class="text-primary bg-blue-1" class="q-mt-md">
       <div class="pesquisa">
         <q-input v-model="pesquisa.nome" label="Música" />
         <q-input v-model="pesquisa.autor" label="Autor" />
         <q-input v-model="pesquisa.tom" label="Tom" />
         <q-select v-model="pesquisa.genero" :options="generos" label="Gênero" class="select" />
-        <q-select
-          v-model="pesquisa.repertorio"
-          :options="repertorio"
-          label="Repertório"
-          class="select"
-        />
+        <q-select v-model="pesquisa.repertorio" :options="repertorio" label="Repertório" class="select" />
         <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
       </div>
     </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" icon="search">
+        <q-btn color="primary" icon="search" @click="buscaCifras">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
-        <q-btn color="green" icon="add" @click="alertSalvar"
-          ><q-tooltip>Cadastrar</q-tooltip>
+        <q-btn color="green" icon="add" @click="alertSalvar"><q-tooltip>Cadastrar</q-tooltip>
         </q-btn>
         <q-btn color="info" icon="edit" @click="alertEditar"><q-tooltip>Editar</q-tooltip> </q-btn>
         <q-btn color="red" icon="delete" @click="apagar"><q-tooltip>Apagar</q-tooltip> </q-btn>
@@ -44,11 +32,8 @@
       <q-table title="" :rows="rows" :columns="columns" row-key="id" @row-click="selecionar">
         <template v-slot:body-cell-id="props">
           <q-td :props="props">
-            <q-checkbox
-              :model-value="selecionada?.id === props.row.id"
-              @update:model-value="() => selecionar(null as any, props.row)"
-              @click.stop
-            />
+            <q-checkbox :model-value="selecionada?.id === props.row.id"
+              @update:model-value="() => selecionar(null as any, props.row)" @click.stop />
           </q-td>
         </template>
       </q-table>
@@ -75,7 +60,7 @@
 
           <q-select v-model="musica.status" :options="status" label="Status" class="select" />
 
-          <q-editor v-model="musica.cifra" />
+          <q-editor class="cifra" v-model="musica.cifra" />
 
           <div>
             <q-btn label="Salvar" type="submit" color="primary" />
@@ -151,11 +136,11 @@ async function buscaCifras() {
   let query = supabase.from('musicas').select('*');
 
   if (pesquisa.value.nome) {
-    query = query.eq('nome', pesquisa.value.nome);
+    query = query.ilike('nome', `%${pesquisa.value.nome}%`);
   }
 
   if (pesquisa.value.autor) {
-    query = query.eq('autor', pesquisa.value.autor);
+    query = query.ilike('autor', `%${pesquisa.value.autor}%`);
   }
 
   if (pesquisa.value.tom) {
@@ -221,7 +206,7 @@ const salvar = async () => {
 };
 
 const editar = async () => {
-  if (!musica.value.id) return;
+  if (!selecionada.value) return;
 
   const { error } = await supabase
     .from('musicas')
@@ -234,7 +219,7 @@ const editar = async () => {
       status: musica.value.status,
       cifra: musica.value.cifra,
     })
-    .eq('id', musica.value.id);
+    .eq('id', selecionada.value.id);
 
   if (error) {
     Notify.create({
@@ -257,7 +242,7 @@ const editar = async () => {
 };
 
 const apagar = async () => {
-  if (!musica.value.id) {
+  if (!selecionada.value) {
     Notify.create({
       type: 'negative',
       position: 'top',
@@ -268,7 +253,7 @@ const apagar = async () => {
 
   if (!confirm('Tem certeza que deseja apagar?')) return;
 
-  const { error } = await supabase.from('musicas').delete().eq('id', musica.value.id);
+  const { error } = await supabase.from('musicas').delete().eq('id', selecionada.value.id);
 
   if (error) {
     Notify.create({
@@ -297,7 +282,7 @@ const alertSalvar = () => {
 };
 
 const alertEditar = () => {
-  if (!musica.value.id) {
+  if (!selecionada.value) {
     Notify.create({
       type: 'negative',
       position: 'top',
@@ -347,7 +332,13 @@ onMounted(() => {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .select {
   min-width: 150px;
+}
+
+.cifra :deep(p) {
+  margin: 0;
+  padding: 0;
 }
 </style>

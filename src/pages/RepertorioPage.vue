@@ -10,26 +10,15 @@
     <div v-for="(musicas, genero) in generosCifras" :key="genero">
       <p class="text-body1">{{ genero }}</p>
       <q-list padding bordered class="rounded-borders">
-        <q-expansion-item
-          v-for="(musica, index) in musicas"
-          :key="index"
-          dense
-          dense-toggle
-          expand-separator
-          header-class="text-primary"
-        >
+        <q-expansion-item v-for="(musica, index) in musicas" :key="index" dense dense-toggle expand-separator
+          header-class="text-primary">
           <template v-slot:header>
             <div class="row items-center full-width no-wrap">
               <div class="col">{{ musica.nome }} - {{ musica.tom }}</div>
 
               <div class="row items-center q-gutter-xs">
-                <q-btn
-                  flat
-                  round
-                  dense
-                  :icon="favoritos.includes(musica.id ?? -1) ? 'favorite' : 'favorite_border'"
-                  @click.stop="favoritar(musica.id)"
-                />
+                <q-btn flat round dense :icon="favoritos.includes(musica.id ?? -1) ? 'favorite' : 'favorite_border'"
+                  @click.stop="favoritar(musica.id)" />
               </div>
             </div>
           </template>
@@ -37,7 +26,7 @@
           <q-card>
             <q-card-section class="q-pt-none">
               <p class="autor">{{ musica.autor }}</p>
-              <div v-html="musica.cifra"></div>
+              <div class="cifra" v-html="musica.cifra"></div>
             </q-card-section>
           </q-card>
         </q-expansion-item>
@@ -131,7 +120,7 @@ onMounted(async () => {
   font-style: italic;
 }
 
-p {
+.cifra :deep(p) {
   margin: 0;
   padding: 0;
 }
