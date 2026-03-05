@@ -36,10 +36,7 @@ const showProgress = ref(true);
 const cifras = ref<Link[]>([]);
 
 async function buscaCifras() {
-  const { data, error } = await supabase
-    .from('musicas')
-    .select('repertorio')
-    .order('repertorio', { ascending: true });
+  const { data, error } = await supabase.from('musicas').select('repertorio');
 
   if (error) {
     console.log(error);
