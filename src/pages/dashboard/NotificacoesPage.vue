@@ -21,7 +21,7 @@
     </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" icon="search">
+        <q-btn color="primary" icon="search" @click="buscaNotificacoes">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
         <q-btn color="green" icon="add" @click="alertSalvar"
@@ -72,15 +72,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { Notify, useTimeout } from 'quasar';
+import { Notify } from 'quasar';
 import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
-
-const modal = ref(false);
-const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
-
-const status = ['Ativo', 'Inativo'];
 
 interface Notificacao {
   id: number | null;
@@ -88,21 +82,6 @@ interface Notificacao {
   msg: string;
   status: string;
 }
-
-const selecionada = ref<Notificacao | null>(null);
-
-const notificacao = ref<Notificacao>({
-  id: null,
-  titulo: '',
-  msg: '',
-  status: '',
-});
-
-const pesquisa = ref({
-  titulo: '',
-  msg: '',
-  status: '',
-});
 
 const columns: QTableColumn<Notificacao>[] = [
   {
@@ -128,7 +107,46 @@ const columns: QTableColumn<Notificacao>[] = [
   },
 ];
 
+const showProgress = ref(true);
+const modal = ref(false);
 const rows = ref<Notificacao[]>([]);
+const selecionada = ref<Notificacao | null>(null);
+const status = ['Ativo', 'Inativo'];
+
+const pesquisa = ref({
+  titulo: '',
+  msg: '',
+  status: '',
+});
+
+const notificacao = ref<Notificacao>({
+  id: null,
+  titulo: '',
+  msg: '',
+  status: '',
+});
+
+const onSubmit = () => {
+  if (notificacao.value.id) {
+    void update();
+  } else {
+    void create();
+  }
+};
+
+const onReset = () => {
+  notificacao.value = {
+    id: null,
+    titulo: '',
+    msg: '',
+    status: '',
+  };
+};
+
+const selecionar = (_: Event, row: Notificacao) => {
+  selecionada.value = row;
+  notificacao.value = { ...row };
+};
 
 async function buscaNotificacoes() {
   showProgress.value = true;
@@ -189,6 +207,12 @@ const create = async () => {
   onReset();
 };
 
+const alertSalvar = () => {
+  onReset();
+  selecionada.value = null;
+  modal.value = true;
+};
+
 const update = async () => {
   if (!notificacao.value.id) return;
 
@@ -219,6 +243,19 @@ const update = async () => {
 
   modal.value = false;
   await buscaNotificacoes();
+};
+
+const alertEditar = () => {
+  if (!notificacao.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma notificação',
+    });
+    return;
+  }
+
+  modal.value = true;
 };
 
 const remove = async () => {
@@ -255,53 +292,9 @@ const remove = async () => {
   onReset();
 };
 
-const onSubmit = () => {
-  if (notificacao.value.id) {
-    void update();
-  } else {
-    void create();
-  }
-};
-
-const onReset = () => {
-  notificacao.value = {
-    id: null,
-    titulo: '',
-    msg: '',
-    status: '',
-  };
-};
-
-const alertSalvar = () => {
-  onReset();
-  selecionada.value = null;
-  modal.value = true;
-};
-
-const alertEditar = () => {
-  if (!notificacao.value.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha uma notificação',
-    });
-    return;
-  }
-
-  modal.value = true;
-};
-
-const selecionar = (_: Event, row: Notificacao) => {
-  selecionada.value = row;
-  notificacao.value = { ...row };
-};
-
 onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000);
-
   void buscaNotificacoes();
+  showProgress.value = false;
 });
 </script>
 

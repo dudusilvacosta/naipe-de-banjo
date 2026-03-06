@@ -22,7 +22,7 @@
     </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" icon="search">
+        <q-btn color="primary" icon="search" @click="buscaAulas">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
         <q-btn color="green" icon="add" @click="alertSalvar">
@@ -81,15 +81,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
-import { Notify, useTimeout } from 'quasar';
+import { Notify } from 'quasar';
 import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
-
-const modal = ref(false);
-const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
-const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Aula | null>(null);
 
 interface Aula {
   id: number | null;
@@ -97,6 +91,20 @@ interface Aula {
   videos: unknown[];
   status: string;
 }
+
+const columns: QTableColumn<Aula>[] = [
+  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
+  { name: 'nome', label: 'Aula', field: 'nome', align: 'left', sortable: true },
+  { name: 'videos', label: 'Nº Vídeos', field: 'videos', align: 'left', sortable: true },
+  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
+];
+
+const showProgress = ref(true);
+const modal = ref(false);
+const rows = computed(() => aulas.value);
+const selecionada = ref<Aula | null>(null);
+const aulas = ref<Aula[]>([]);
+const status = ['Ativo', 'Inativo'];
 
 const pesquisa = ref({
   nome: '',
@@ -110,63 +118,11 @@ const aula = ref<Aula>({
   status: '',
 });
 
-const columns: QTableColumn<Aula>[] = [
-  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
-  { name: 'nome', label: 'Aula', field: 'nome', align: 'left', sortable: true },
-  { name: 'videos', label: 'Nº Vídeos', field: 'videos', align: 'left', sortable: true },
-  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
-];
-
-const aulas = ref<Aula[]>([]);
-const rows = computed(() => aulas.value);
-
-const alertSalvar = () => {
-  onReset();
-  selecionada.value = null;
-  modal.value = true;
-};
-
-const alertEditar = () => {
-  if (!selecionada.value?.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha uma aula',
-    });
-    return;
-  }
-  modal.value = true;
-};
-
-const salvar = () => {
-  console.log('Salvar', aula.value);
-};
-
-const editar = () => {
-  console.log('Editar', aula.value);
-};
-
-const apagar = () => {
-  if (!selecionada.value?.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha uma aula',
-    });
-    return;
-  }
-  if (confirm('Tem certeza que deseja apagar?')) {
-    console.log('Item apagado!', selecionada.value);
-  } else {
-    console.log('Ação cancelada.');
-  }
-};
-
 const onSubmit = () => {
   if (aula.value.id) {
-    editar();
+    void editar();
   } else {
-    salvar();
+    void salvar();
   }
 };
 
@@ -180,17 +136,24 @@ const selecionar = (_: Event | null, row: Aula) => {
 };
 
 async function buscaAulas() {
-  const { data, error } = await supabase
-    .from('aulas')
-    .select('*')
-    .order('nome', { ascending: true });
+  let query = supabase.from('aulas').select('*').order('nome', { ascending: true });
+
+  if (pesquisa.value.nome) {
+    query = query.ilike('nome', `%${pesquisa.value.nome}%`);
+  }
+
+  if (pesquisa.value.status) {
+    query = query.eq('status', pesquisa.value.status);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     console.log(error);
     return;
   }
 
-  aulas.value = (data as Record<string, unknown>[]).map((item: Record<string, unknown>) => ({
+  aulas.value = (data as Record<string, unknown>[]).map((item) => ({
     id: item.id as number,
     nome: item.nome as string,
     videos: (item.videos as unknown[]) || [],
@@ -198,12 +161,124 @@ async function buscaAulas() {
   }));
 }
 
-onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000);
+const salvar = async () => {
+  const { error } = await supabase.from('notificacoes').insert([
+    {
+      nome: aula.value.nome,
+      videos: aula.value.videos,
+      status: aula.value.status,
+    },
+  ]);
 
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao salvar nova notificação',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Notificação criada com sucesso',
+  });
+
+  modal.value = false;
+  await buscaAulas();
+  onReset();
+};
+
+const alertSalvar = () => {
+  onReset();
+  selecionada.value = null;
+  modal.value = true;
+};
+
+const editar = async () => {
+  if (!aula.value.id) return;
+
+  const { error } = await supabase
+    .from('notificacoes')
+    .update({
+      nome: aula.value.nome,
+      videos: aula.value.videos,
+      status: aula.value.status,
+    })
+    .eq('id', aula.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao atualizar notificação',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Notificação atualizada',
+  });
+
+  modal.value = false;
+  await buscaAulas();
+};
+
+const alertEditar = () => {
+  if (!aula.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma notificação',
+    });
+    return;
+  }
+
+  modal.value = true;
+};
+
+const apagar = async () => {
+  if (!aula.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma notificação',
+    });
+    return;
+  }
+
+  if (!confirm('Tem certeza que deseja apagar?')) return;
+
+  const { error } = await supabase.from('notificacoes').delete().eq('id', aula.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao apagar notificação',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Notificação removida',
+  });
+
+  await buscaAulas();
+  onReset();
+};
+
+onMounted(() => {
   void buscaAulas();
+  showProgress.value = false;
 });
 </script>
 

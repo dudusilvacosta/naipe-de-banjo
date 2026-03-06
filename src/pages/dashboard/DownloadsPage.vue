@@ -21,7 +21,7 @@
     </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" icon="search">
+        <q-btn color="primary" icon="search" @click="buscaDownloads">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
         <q-btn color="green" icon="add" @click="alertSalvar"
@@ -72,13 +72,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { Notify, type QTableColumn } from 'quasar';
+import { Notify } from 'quasar';
+import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
-
-const modal = ref(false);
-const showProgress = ref(true);
-const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Download | null>(null);
 
 interface Download {
   id: number | null;
@@ -86,17 +82,7 @@ interface Download {
   id_drive: string;
   status: string;
 }
-const pesquisa = ref({
-  nome: '',
-  id_drive: '',
-  status: '',
-});
-const download = ref<Download>({
-  id: null,
-  nome: '',
-  id_drive: '',
-  status: '',
-});
+
 const columns: QTableColumn<Download>[] = [
   {
     name: 'id',
@@ -128,55 +114,30 @@ const columns: QTableColumn<Download>[] = [
   },
 ];
 
+const showProgress = ref(true);
+const modal = ref(false);
 const rows = ref<Download[]>([]);
+const selecionada = ref<Download | null>(null);
+const status = ['Ativo', 'Inativo'];
 
-const alertSalvar = () => {
-  onReset();
-  selecionada.value = null;
-  modal.value = true;
-};
+const pesquisa = ref({
+  nome: '',
+  id_drive: '',
+  status: '',
+});
 
-const alertEditar = () => {
-  if (!download.value.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha um download',
-    });
-    return;
-  }
-  modal.value = true;
-};
-
-const salvar = () => {
-  //
-};
-
-const editar = () => {
-  //
-};
-
-const apagar = () => {
-  if (!download.value.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha um download',
-    });
-    return;
-  }
-  if (confirm('Tem certeza que deseja apagar?')) {
-    console.log('Item apagado!');
-  } else {
-    console.log('Ação cancelada.');
-  }
-};
+const download = ref<Download>({
+  id: null,
+  nome: '',
+  id_drive: '',
+  status: '',
+});
 
 const onSubmit = () => {
   if (download.value.id) {
-    editar();
+    void editar();
   } else {
-    salvar();
+    void salvar();
   }
 };
 
@@ -195,7 +156,21 @@ const selecionar = (_: Event, row: Download) => {
 };
 
 async function buscaDownloads() {
-  const { data, error } = await supabase.from('downloads').select('*');
+  let query = supabase.from('downloads').select('*');
+
+  if (pesquisa.value.nome) {
+    query = query.ilike('nome', `%${pesquisa.value.nome}%`);
+  }
+
+  if (pesquisa.value.id_drive) {
+    query = query.ilike('id_drive', `%${pesquisa.value.id_drive}%`);
+  }
+
+  if (pesquisa.value.status) {
+    query = query.eq('status', pesquisa.value.status);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     console.log(error);
@@ -204,6 +179,120 @@ async function buscaDownloads() {
 
   rows.value = data;
 }
+
+const salvar = async () => {
+  const { error } = await supabase.from('downloads').insert([
+    {
+      nome: download.value.nome,
+      id_drive: download.value.id_drive,
+      status: download.value.status,
+    },
+  ]);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao salvar download',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Download criado com sucesso',
+  });
+
+  modal.value = false;
+  await buscaDownloads();
+  onReset();
+};
+
+const alertSalvar = () => {
+  onReset();
+  selecionada.value = null;
+  modal.value = true;
+};
+
+const editar = async () => {
+  if (!download.value.id) return;
+
+  const { error } = await supabase
+    .from('downloads')
+    .update({
+      nome: download.value.nome,
+      id_drive: download.value.id_drive,
+      status: download.value.status,
+    })
+    .eq('id', download.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao atualizar download',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Download atualizado',
+  });
+
+  modal.value = false;
+  await buscaDownloads();
+};
+
+const alertEditar = () => {
+  if (!download.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha um download',
+    });
+    return;
+  }
+  modal.value = true;
+};
+
+const apagar = async () => {
+  if (!download.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha um download',
+    });
+    return;
+  }
+
+  if (!confirm('Tem certeza que deseja apagar?')) return;
+
+  const { error } = await supabase.from('downloads').delete().eq('id', download.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao apagar download',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Download removido',
+  });
+
+  await buscaDownloads();
+  onReset();
+};
 
 onMounted(() => {
   void buscaDownloads();

@@ -84,9 +84,9 @@ const routes: RouteRecordRaw[] = [
     children: [
       { path: '', component: () => import('pages/dashboard/IndexPage.vue') },
       { path: 'aulas', component: () => import('pages/dashboard/AulasPage.vue') },
-      { path: 'cifras', component: () => import('pages/dashboard/CifrasPage.vue') },
+      { path: 'musicas', component: () => import('pages/dashboard/MusicasPage.vue') },
       { path: 'downloads', component: () => import('src/pages/dashboard/DownloadsPage.vue') },
-      { path: 'fotos', component: () => import('pages/dashboard/FotosPage.vue') },
+      { path: 'albuns', component: () => import('src/pages/dashboard/AlbunsPage.vue') },
       { path: 'notificacoes', component: () => import('pages/dashboard/NotificacoesPage.vue') },
       { path: 'videos', component: () => import('pages/dashboard/VideosPage.vue') },
     ],

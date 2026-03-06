@@ -6,23 +6,35 @@
     <q-breadcrumbs>
       <q-breadcrumbs-el label="Cifras" icon="music_note" />
     </q-breadcrumbs>
-    <q-expansion-item dense dense-toggle expand-separator label="Filtros de pesquisa"
-      header-class="text-primary bg-blue-1" class="q-mt-md">
+    <q-expansion-item
+      dense
+      dense-toggle
+      expand-separator
+      label="Filtros de pesquisa"
+      header-class="text-primary bg-blue-1"
+      class="q-mt-md"
+    >
       <div class="pesquisa">
         <q-input v-model="pesquisa.nome" label="Música" />
         <q-input v-model="pesquisa.autor" label="Autor" />
         <q-input v-model="pesquisa.tom" label="Tom" />
         <q-select v-model="pesquisa.genero" :options="generos" label="Gênero" class="select" />
-        <q-select v-model="pesquisa.repertorio" :options="repertorio" label="Repertório" class="select" />
+        <q-select
+          v-model="pesquisa.repertorio"
+          :options="repertorio"
+          label="Repertório"
+          class="select"
+        />
         <q-select v-model="pesquisa.status" :options="status" label="Status" class="select" />
       </div>
     </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" icon="search" @click="buscaCifras">
+        <q-btn color="primary" icon="search" @click="buscaMusicas">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
-        <q-btn color="green" icon="add" @click="alertSalvar"><q-tooltip>Cadastrar</q-tooltip>
+        <q-btn color="green" icon="add" @click="alertSalvar"
+          ><q-tooltip>Cadastrar</q-tooltip>
         </q-btn>
         <q-btn color="info" icon="edit" @click="alertEditar"><q-tooltip>Editar</q-tooltip> </q-btn>
         <q-btn color="red" icon="delete" @click="apagar"><q-tooltip>Apagar</q-tooltip> </q-btn>
@@ -32,8 +44,11 @@
       <q-table title="" :rows="rows" :columns="columns" row-key="id" @row-click="selecionar">
         <template v-slot:body-cell-id="props">
           <q-td :props="props">
-            <q-checkbox :model-value="selecionada?.id === props.row.id"
-              @update:model-value="() => selecionar(null as any, props.row)" @click.stop />
+            <q-checkbox
+              :model-value="selecionada?.id === props.row.id"
+              @update:model-value="() => selecionar(null as any, props.row)"
+              @click.stop
+            />
           </q-td>
         </template>
       </q-table>
@@ -75,15 +90,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { Notify, type QTableColumn } from 'quasar';
+import { Notify } from 'quasar';
+import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
-
-const modal = ref(false);
-const showProgress = ref(true);
-
-const generos = ['Boi', 'Quadrilha', 'Carimbó'];
-const repertorio = ['Roda', 'Cortejo', 'Extra'];
-const status = ['Ativo', 'Inativo'];
 
 interface Musica {
   id: number | null;
@@ -96,7 +105,32 @@ interface Musica {
   cifra: string;
 }
 
+const columns: QTableColumn<Musica>[] = [
+  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
+  { name: 'nome', label: 'Música', field: 'nome', align: 'left', sortable: true },
+  { name: 'autor', label: 'Autor', field: 'autor', align: 'left', sortable: true },
+  { name: 'tom', label: 'Tom', field: 'tom', align: 'left', sortable: true },
+  { name: 'genero', label: 'Gênero', field: 'genero', align: 'left', sortable: true },
+  { name: 'repertorio', label: 'Repertório', field: 'repertorio', align: 'left', sortable: false },
+  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
+];
+
+const showProgress = ref(true);
+const modal = ref(false);
+const rows = ref<Musica[]>([]);
 const selecionada = ref<Musica | null>(null);
+const generos = ['Boi', 'Quadrilha', 'Carimbó'];
+const repertorio = ['Roda', 'Cortejo', 'Extra'];
+const status = ['Ativo', 'Inativo'];
+
+const pesquisa = ref({
+  nome: '',
+  tom: '',
+  autor: '',
+  genero: '',
+  repertorio: '',
+  status: '',
+});
 
 const musica = ref<Musica>({
   id: null,
@@ -109,28 +143,33 @@ const musica = ref<Musica>({
   cifra: '',
 });
 
-const pesquisa = ref({
-  nome: '',
-  tom: '',
-  autor: '',
-  genero: '',
-  repertorio: '',
-  status: '',
-});
+const onSubmit = () => {
+  if (musica.value.id) {
+    void editar();
+  } else {
+    void salvar();
+  }
+};
 
-const columns: QTableColumn<Musica>[] = [
-  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
-  { name: 'nome', label: 'Música', field: 'nome', align: 'left', sortable: true },
-  { name: 'autor', label: 'Autor', field: 'autor', align: 'left', sortable: true },
-  { name: 'tom', label: 'Tom', field: 'tom', align: 'left', sortable: true },
-  { name: 'genero', label: 'Gênero', field: 'genero', align: 'left', sortable: true },
-  { name: 'repertorio', label: 'Repertório', field: 'repertorio', align: 'left', sortable: false },
-  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
-];
+const onReset = () => {
+  musica.value = {
+    id: null,
+    nome: '',
+    tom: '',
+    autor: '',
+    genero: '',
+    repertorio: '',
+    status: '',
+    cifra: '',
+  };
+};
 
-const rows = ref<Musica[]>([]);
+const selecionar = (_: Event, row: Musica) => {
+  selecionada.value = row;
+  musica.value = { ...row };
+};
 
-async function buscaCifras() {
+async function buscaMusicas() {
   showProgress.value = true;
 
   let query = supabase.from('musicas').select('*');
@@ -201,8 +240,14 @@ const salvar = async () => {
   });
 
   modal.value = false;
-  await buscaCifras();
+  await buscaMusicas();
   onReset();
+};
+
+const alertSalvar = () => {
+  onReset();
+  selecionada.value = null;
+  modal.value = true;
 };
 
 const editar = async () => {
@@ -238,7 +283,20 @@ const editar = async () => {
   });
 
   modal.value = false;
-  await buscaCifras();
+  await buscaMusicas();
+};
+
+const alertEditar = () => {
+  if (!selecionada.value) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha uma música',
+    });
+    return;
+  }
+
+  modal.value = true;
 };
 
 const apagar = async () => {
@@ -271,57 +329,12 @@ const apagar = async () => {
     message: 'Música removida',
   });
 
-  await buscaCifras();
+  await buscaMusicas();
   onReset();
-};
-
-const alertSalvar = () => {
-  onReset();
-  selecionada.value = null;
-  modal.value = true;
-};
-
-const alertEditar = () => {
-  if (!selecionada.value) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha uma música',
-    });
-    return;
-  }
-
-  modal.value = true;
-};
-
-const onSubmit = () => {
-  if (musica.value.id) {
-    void editar();
-  } else {
-    void salvar();
-  }
-};
-
-const onReset = () => {
-  musica.value = {
-    id: null,
-    nome: '',
-    tom: '',
-    autor: '',
-    genero: '',
-    repertorio: '',
-    status: '',
-    cifra: '',
-  };
-};
-
-const selecionar = (_: Event, row: Musica) => {
-  selecionada.value = row;
-  musica.value = { ...row };
 };
 
 onMounted(() => {
-  void buscaCifras();
+  void buscaMusicas();
 });
 </script>
 

@@ -22,7 +22,7 @@
     </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" icon="search">
+        <q-btn color="primary" icon="search" @click="buscaVideos">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
         <q-btn color="green" icon="add" @click="alertSalvar"
@@ -73,15 +73,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { Notify, useTimeout } from 'quasar';
+import { Notify } from 'quasar';
 import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
-
-const modal = ref(false);
-const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
-const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Video | null>(null);
 
 interface Video {
   id: number | null;
@@ -89,17 +83,7 @@ interface Video {
   id_youtube: string;
   status: string;
 }
-const pesquisa = ref({
-  video: '',
-  id_youtube: '',
-  status: '',
-});
-const video = ref<Video>({
-  id: null,
-  video: '',
-  id_youtube: '',
-  status: '',
-});
+
 const columns: QTableColumn<Video>[] = [
   {
     name: 'id',
@@ -131,55 +115,30 @@ const columns: QTableColumn<Video>[] = [
   },
 ];
 
+const showProgress = ref(true);
+const modal = ref(false);
 const rows = ref<Video[]>([]);
+const selecionada = ref<Video | null>(null);
+const status = ['Ativo', 'Inativo'];
 
-const alertSalvar = () => {
-  onReset();
-  selecionada.value = null;
-  modal.value = true;
-};
+const pesquisa = ref({
+  video: '',
+  id_youtube: '',
+  status: '',
+});
 
-const alertEditar = () => {
-  if (!video.value.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha um vídeo',
-    });
-    return;
-  }
-  modal.value = true;
-};
-
-const salvar = () => {
-  //
-};
-
-const editar = () => {
-  //
-};
-
-const apagar = () => {
-  if (!video.value.id) {
-    Notify.create({
-      type: 'negative',
-      position: 'top',
-      message: 'Escolha um vídeo',
-    });
-    return;
-  }
-  if (confirm('Tem certeza que deseja apagar?')) {
-    console.log('Item apagado!');
-  } else {
-    console.log('Ação cancelada.');
-  }
-};
+const video = ref<Video>({
+  id: null,
+  video: '',
+  id_youtube: '',
+  status: '',
+});
 
 const onSubmit = () => {
   if (video.value.id) {
-    editar();
+    void editar();
   } else {
-    salvar();
+    void salvar();
   }
 };
 
@@ -198,25 +157,147 @@ const selecionar = (_: Event, row: Video) => {
 };
 
 async function buscaVideos() {
-  const { data, error } = await supabase
-    .from('videos')
-    .select('*')
-    .order('nome', { ascending: true });
+  let query = supabase.from('videos').select('*').order('video', { ascending: true });
+
+  if (pesquisa.value.video) {
+    query = query.ilike('video', `%${pesquisa.value.video}%`);
+  }
+
+  if (pesquisa.value.id_youtube) {
+    query = query.ilike('id_youtube', `%${pesquisa.value.id_youtube}%`);
+  }
+
+  if (pesquisa.value.status) {
+    query = query.eq('status', pesquisa.value.status);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     console.log(error);
     return;
   }
 
-  rows.value = data;
+  rows.value = data as Video[];
 }
 
-onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000);
+const salvar = async () => {
+  const { error } = await supabase.from('videos').insert([
+    {
+      video: video.value.video,
+      id_youtube: video.value.id_youtube,
+      status: video.value.status,
+    },
+  ]);
 
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao salvar vídeo',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Vídeo criado com sucesso',
+  });
+
+  modal.value = false;
+  await buscaVideos();
+  onReset();
+};
+
+const alertSalvar = () => {
+  onReset();
+  selecionada.value = null;
+  modal.value = true;
+};
+
+const editar = async () => {
+  if (!video.value.id) return;
+
+  const { error } = await supabase
+    .from('videos')
+    .update({
+      video: video.value.video,
+      id_youtube: video.value.id_youtube,
+      status: video.value.status,
+    })
+    .eq('id', video.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao atualizar vídeo',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Vídeo atualizado',
+  });
+
+  modal.value = false;
+  await buscaVideos();
+};
+
+const alertEditar = () => {
+  if (!video.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha um vídeo',
+    });
+    return;
+  }
+  modal.value = true;
+};
+
+const apagar = async () => {
+  if (!video.value.id) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Escolha um vídeo',
+    });
+    return;
+  }
+
+  if (!confirm('Tem certeza que deseja apagar?')) return;
+
+  const { error } = await supabase.from('videos').delete().eq('id', video.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao apagar vídeo',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Vídeo removido',
+  });
+
+  await buscaVideos();
+  onReset();
+};
+
+onMounted(() => {
   void buscaVideos();
+  showProgress.value = false;
 });
 </script>
 

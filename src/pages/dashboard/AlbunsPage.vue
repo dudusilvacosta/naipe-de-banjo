@@ -22,7 +22,7 @@
     </q-expansion-item>
     <div class="q-mt-md" style="margin: 2rem 0">
       <q-btn-group spread>
-        <q-btn color="primary" icon="search">
+        <q-btn color="primary" icon="search" @click="buscaAlbuns">
           <q-tooltip>Pesquisar</q-tooltip>
         </q-btn>
         <q-btn color="green" icon="add" @click="alertSalvar">
@@ -82,15 +82,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue';
-import { Notify, useTimeout } from 'quasar';
+import { Notify } from 'quasar';
 import type { QTableColumn } from 'quasar';
 import { supabase } from 'src/boot/supabase';
-
-const modal = ref(false);
-const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
-const status = ['Ativo', 'Inativo'];
-const selecionada = ref<Album | null>(null);
 
 interface Album {
   id: number | null;
@@ -99,6 +93,20 @@ interface Album {
   status: string;
   pasta_git: string;
 }
+
+const columns: QTableColumn<Album>[] = [
+  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
+  { name: 'nome', label: 'Album', field: 'nome', align: 'left', sortable: true },
+  { name: 'fotos', label: 'Nº Fotos', field: 'fotos', align: 'left', sortable: true },
+  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
+];
+
+const showProgress = ref(true);
+const modal = ref(false);
+const rows = computed(() => albuns.value);
+const selecionada = ref<Album | null>(null);
+const albuns = ref<Album[]>([]);
+const status = ['Ativo', 'Inativo'];
 
 const pesquisa = ref({
   nome: '',
@@ -113,20 +121,118 @@ const album = ref<Album>({
   pasta_git: '',
 });
 
-const columns: QTableColumn<Album>[] = [
-  { name: 'id', label: '#', field: 'id', align: 'center', sortable: false },
-  { name: 'nome', label: 'Album', field: 'nome', align: 'left', sortable: true },
-  { name: 'fotos', label: 'Nº Fotos', field: 'fotos', align: 'left', sortable: true },
-  { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
-];
+const onSubmit = () => {
+  if (album.value.id) {
+    void editar();
+  } else {
+    void salvar();
+  }
+};
 
-const albuns = ref<Album[]>([]);
-const rows = computed(() => albuns.value);
+const onReset = () => {
+  album.value = { id: null, nome: '', fotos: [], status: '', pasta_git: '' };
+};
+
+const selecionar = (_: Event | null, row: Album) => {
+  selecionada.value = row;
+  album.value = { ...row };
+};
+
+async function buscaAlbuns() {
+  let query = supabase.from('albuns').select('*').order('nome', { ascending: true });
+
+  if (pesquisa.value.nome) {
+    query = query.ilike('nome', `%${pesquisa.value.nome}%`);
+  }
+
+  if (pesquisa.value.status) {
+    query = query.eq('status', pesquisa.value.status);
+  }
+
+  const { data, error } = await query;
+
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  albuns.value = (data as Record<string, unknown>[]).map((item) => ({
+    id: item.id as number,
+    nome: item.nome as string,
+    fotos: (item.fotos as unknown[]) || [],
+    status: item.status as string,
+    pasta_git: item.pasta_git as string,
+  }));
+}
+
+const salvar = async () => {
+  const { error } = await supabase.from('albuns').insert([
+    {
+      nome: album.value.nome,
+      status: album.value.status,
+      pasta_git: album.value.pasta_git,
+      fotos: album.value.fotos,
+    },
+  ]);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao salvar álbum',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Álbum criado com sucesso',
+  });
+
+  modal.value = false;
+  await buscaAlbuns();
+  onReset();
+};
 
 const alertSalvar = () => {
   onReset();
   selecionada.value = null;
   modal.value = true;
+};
+
+const editar = async () => {
+  if (!album.value.id) return;
+
+  const { error } = await supabase
+    .from('albuns')
+    .update({
+      nome: album.value.nome,
+      status: album.value.status,
+      pasta_git: album.value.pasta_git,
+      fotos: album.value.fotos,
+    })
+    .eq('id', album.value.id);
+
+  if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao atualizar álbum',
+    });
+    console.log(error);
+    return;
+  }
+
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Álbum atualizado',
+  });
+
+  modal.value = false;
+  await buscaAlbuns();
 };
 
 const alertEditar = () => {
@@ -141,72 +247,42 @@ const alertEditar = () => {
   modal.value = true;
 };
 
-const salvar = () => {
-  console.log('Salvar', album.value);
-};
-
-const editar = () => {
-  console.log('Editar', album.value);
-};
-
-const apagar = () => {
+const apagar = async () => {
   if (!selecionada.value?.id) {
     Notify.create({
       type: 'negative',
+      position: 'top',
       message: 'Escolha um álbum',
     });
     return;
   }
-  if (confirm('Tem certeza que deseja apagar?')) {
-    console.log('Item apagado!', selecionada.value);
-  } else {
-    console.log('Ação cancelada.');
-  }
-};
 
-const onSubmit = () => {
-  if (album.value.id) {
-    editar();
-  } else {
-    salvar();
-  }
-};
+  if (!confirm('Tem certeza que deseja apagar?')) return;
 
-const onReset = () => {
-  album.value = { id: null, nome: '', fotos: [], status: '', pasta_git: '' };
-};
-
-const selecionar = (_: Event | null, row: Album) => {
-  selecionada.value = row;
-  album.value = { ...row };
-};
-
-async function buscaAlbuns() {
-  const { data, error } = await supabase
-    .from('albuns')
-    .select('*')
-    .order('nome', { ascending: true });
+  const { error } = await supabase.from('albuns').delete().eq('id', selecionada.value.id);
 
   if (error) {
+    Notify.create({
+      type: 'negative',
+      position: 'top',
+      message: 'Erro ao apagar álbum',
+    });
     console.log(error);
     return;
   }
 
-  albuns.value = (data as Record<string, unknown>[]).map((item: Record<string, unknown>) => ({
-    id: item.id as number,
-    nome: item.nome as string,
-    ano: item.ano as string,
-    fotos: (item.fotos as unknown[]) || [],
-    status: item.status as string,
-    pasta_git: item.pasta_git as string,
-  }));
-}
+  Notify.create({
+    type: 'positive',
+    position: 'top',
+    message: 'Álbum removido',
+  });
+
+  await buscaAlbuns();
+  onReset();
+};
 
 onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000);
-
+  showProgress.value = false;
   void buscaAlbuns();
 });
 </script>
