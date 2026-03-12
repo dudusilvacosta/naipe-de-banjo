@@ -27,11 +27,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-import { useTimeout } from 'quasar';
 import { supabase } from 'src/boot/supabase';
 
 const showProgress = ref(true);
-const { registerTimeout } = useTimeout();
 type FotoLink = { album: string };
 const links = ref<FotoLink[]>([]);
 
@@ -58,10 +56,7 @@ async function buscaAlbuns() {
 }
 
 onMounted(() => {
-  registerTimeout(() => {
-    showProgress.value = false;
-  }, 1000);
-
   void buscaAlbuns();
+  showProgress.value = false;
 });
 </script>
