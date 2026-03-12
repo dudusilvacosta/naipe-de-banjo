@@ -6,12 +6,36 @@
     <q-breadcrumbs class="q-mb-sm">
       <q-breadcrumbs-el label="Boas-Vindas" icon="celebration" />
     </q-breadcrumbs>
+
     <p>Olá! É uma alegria ter você aqui.</p>
 
     <p>
-      Este site foi desenvolvido especialmente para apoiar os músicos do naipe de banjo do Batalhão
-      da Estrela. O objetivo é oferecer conteúdos úteis e práticos que possam contribuir com seu
-      aprendizado e sua prática musical. Aproveite ao máximo!
+      Este sistema é uma plataforma digital gratuita criada para apoiar o estudo musical dos
+      banjoístas do Batalhão da Estrela. A ferramenta reúne materiais educativos, cifras musicais e
+      conteúdos culturais relacionados ao repertório do grupo, facilitando o acesso ao conhecimento
+      e à prática do instrumento.
+    </p>
+
+    <p>
+      O Batalhão da Estrela é um grupo cultural que utiliza o banjo em suas apresentações musicais,
+      valorizando tradições populares e ritmos característicos do estado do Pará, como carimbó,
+      lundum e outras expressões da cultura paraense.
+    </p>
+
+    <p>A plataforma foi criada com o objetivo de:</p>
+
+    <ul>
+      <li>facilitar o acesso ao repertório musical utilizado pelo batalhão</li>
+      <li>organizar materiais de estudo para os banjoístas</li>
+      <li>apoiar iniciantes no aprendizado do instrumento</li>
+      <li>preservar e divulgar ritmos tradicionais paraenses</li>
+      <li>utilizar tecnologias digitais para fortalecer a aprendizagem musical</li>
+    </ul>
+
+    <p>
+      Todo o sistema é totalmente gratuito, não possui propagandas e não cobra qualquer tipo de
+      valor dos usuários, sendo uma iniciativa voltada exclusivamente ao apoio cultural, educativo e
+      à valorização da música tradicional.
     </p>
   </div>
 </template>
