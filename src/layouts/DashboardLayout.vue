@@ -124,6 +124,12 @@ const linksList = computed<EssentialLinkProps[]>(() => [
   },
   ...menusFromDB.value,
   {
+    title: 'Perfil',
+    caption: 'configurações',
+    icon: 'person',
+    link: '/dashboard/profile',
+  },
+  {
     title: 'Sair',
     caption: 'sair do sistema',
     icon: 'logout',

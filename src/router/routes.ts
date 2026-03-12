@@ -89,6 +89,7 @@ const routes: RouteRecordRaw[] = [
       { path: 'albuns', component: () => import('src/pages/dashboard/AlbunsPage.vue') },
       { path: 'notificacoes', component: () => import('pages/dashboard/NotificacoesPage.vue') },
       { path: 'videos', component: () => import('pages/dashboard/VideosPage.vue') },
+      { path: 'profile', component: () => import('pages/dashboard/ProfilePage.vue') },
     ],
   },
 ];
