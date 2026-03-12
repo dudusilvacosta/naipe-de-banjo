@@ -11,7 +11,7 @@
           />
         </q-toolbar-title>
 
-        <div>v1.0.0</div>
+        <div>{{ version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -124,7 +124,7 @@ function toggleLeftDrawer() {
 }
 
 const ano = new Date().getFullYear();
-const version = '1.1.0';
+const version = '2.1.0';
 </script>
 
 <style scoped>
