@@ -17,9 +17,8 @@
     </p>
 
     <p>
-      O Batalhão da Estrela utiliza o banjo em suas apresentações musicais, valorizando tradições
-      populares e ritmos característicos do estado do Pará, como carimbó, lundum e outras expressões
-      da cultura paraense.
+      O Batalhão da Estrela utiliza o banjo em suas atividades, valorizando tradições populares e
+      ritmos característicos do estado do Pará.
     </p>
 
     <p>A plataforma foi criada com o objetivo de:</p>
