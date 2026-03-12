@@ -55,9 +55,8 @@
 </template>
 
 <script setup lang="ts">
-// import { ref, onMounted, computed } from 'vue';
+import { onMounted, ref } from 'vue';
 // import { Notify } from 'quasar';
-// import type { QTableColumn } from 'quasar';
 // import { supabase } from 'src/boot/supabase';
 
 // interface Album {
@@ -75,7 +74,7 @@
 //   { name: 'status', label: 'Status', field: 'status', align: 'left', sortable: true },
 // ];
 
-// const showProgress = ref(true);
+const showProgress = ref(true);
 // const modal = ref(false);
 // const selecionada = ref<Album | null>(null);
 // const albuns = ref<Album[]>([]);
@@ -253,10 +252,10 @@
 //   onReset();
 // };
 
-// onMounted(() => {
-//   showProgress.value = false;
-//   void buscaAlbuns();
-// });
+onMounted(() => {
+  showProgress.value = false;
+  // void buscaAlbuns();
+});
 </script>
 
 <style scoped>
