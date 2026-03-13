@@ -16,11 +16,6 @@
       e à prática do instrumento.
     </p>
 
-    <p>
-      O Batalhão da Estrela utiliza o banjo em suas atividades, valorizando tradições populares e
-      ritmos característicos do estado do Pará.
-    </p>
-
     <p>A plataforma foi criada com o objetivo de:</p>
 
     <ul>
